@@ -41,7 +41,7 @@
 
 <img width="1148" alt="Jellyfin Media Player screenshot" src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" />
 
-**[→ Install from marketplace](https://openwebui.com/u/ichrist)**
+**[→ Install from marketplace](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)**
 
 ### ✨ What it does
 
@@ -82,7 +82,7 @@ what was recently added
 
 <img width="1301" alt="Ask User screenshot" src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" />
 
-**[→ Install from marketplace](https://openwebui.com/u/ichrist)**
+**[→ Install from marketplace](https://openwebui.com/posts/ask_user_14182520)**
 
 ### ✨ What it does
 
@@ -115,7 +115,7 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 <img width="1250" alt="Persona Studio screenshot" src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" />
 
-**[→ Install from marketplace](https://openwebui.com/u/ichrist)**
+**[→ Install from marketplace](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)**
 
 ### ✨ What it does
 
@@ -145,7 +145,7 @@ Set a custom persona: you are a brutally honest editor
 
 <img width="1109" alt="Wikipedia tool screenshot" src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" />
 
-**[→ Install from marketplace](https://openwebui.com/u/ichrist)**
+**[→ Install from marketplace](https://openwebui.com/posts/wikipedia_tool_00b03142)**
 
 ### ✨ What it does
 
@@ -181,7 +181,7 @@ Search Wikipedia for quantum entanglement
 
 > **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
 
-**[→ Install from marketplace](https://openwebui.com/u/ichrist)**
+**[→ Install from marketplace](https://openwebui.com/posts/orchestrator_0f269681)**
 
 ### ✨ What it does
 
@@ -215,7 +215,7 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 <img width="1630" alt="Joke Tool screenshot" src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" />
 
-**[→ Install from marketplace](https://openwebui.com/u/ichrist)**
+**[→ Install from marketplace](https://openwebui.com/posts/jokes_tool_14d95010)**
 
 ### ✨ What it does
 
