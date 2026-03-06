@@ -1,17 +1,22 @@
 <div align="center">
 
-# 🧰 Open WebUI Custom Tools
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=6%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
 
-**6 powerful tools that supercharge your Open WebUI experience** — from cinematic media streaming to structured AI workflows, smart encyclopedias, and dynamic personality switching.
+<p>
+  <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7C3AED?style=for-the-badge&labelColor=1a1a2e" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1a1a2e" /></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8+-3b82f6?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e" /></a>
+  <a href="https://claude.ai"><img src="https://img.shields.io/badge/Built%20with-Claude%20%E2%9D%A4-f97316?style=for-the-badge&labelColor=1a1a2e" /></a>
+</p>
 
-[![Open WebUI Compatible](https://img.shields.io/badge/Open%20WebUI-Compatible-4A90D9?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0tMiAxNWwtNS01IDEuNDEtMS40MUwxMCAxNC4xN2w3LjU5LTcuNTlMMTkgOGwtOSA5eiIvPjwvc3ZnPg==)](https://openwebui.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
-[![Tools](https://img.shields.io/badge/tools-6-blueviolet?style=flat-square)](https://openwebui.com/u/ichrist)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat-square)](https://github.com)
-[![Made with Claude](https://img.shields.io/badge/made%20with-Claude%20%E2%9D%A4-FF6B35?style=flat-square)](https://claude.ai)
-
-> 🛒 **One-click install → [openwebui.com/u/ichrist](https://openwebui.com/u/ichrist)**
+<p>
+  <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-6366f1?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/🧩_Ask_User-Input-8b5cf6?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/🎭_Personas-Switch-a855f7?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-c084fc?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-d946ef?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/😂_Jokes-Laugh-ec4899?style=flat-square&labelColor=0f0f23" />
+</p>
 
 </div>
 
@@ -22,7 +27,7 @@
 | # | Tool | Best for |
 |---|------|----------|
 | 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV & music from your own server |
-| 2 | [🧩 Ask User](#-ask-user) | Gather structured input before your AI starts writing |
+| 2 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
 | 3 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
 | 4 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
 | 5 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
@@ -258,7 +263,7 @@ All tools are released under the **MIT License** — free to use, fork, modify, 
 
 This project wouldn't exist without **[Haervwe's open-webui-tools](https://github.com/Haervwe/open-webui-tools)**.
 
-Haervwe's collection is what got me building my own tools in the first place — seeing what was possible sparked the whole thing. We've also collaborated directly, which shaped several ideas here. If you're looking for even more great Open WebUI tools, his repo is absolutely worth a visit.
+Haervwe's collection is what got me building my own tools in the first place — seeing what was possible sparked the whole thing. We've also collaborated directly, which shaped several ideas here. If you're looking for even more great Open WebUI tools, their repo is absolutely worth a visit.
 
 > 🙏 Big thanks to [@Haervwe](https://github.com/Haervwe) for the inspiration and the collaboration.
 
@@ -266,8 +271,10 @@ Haervwe's collection is what got me building my own tools in the first place —
 
 <div align="center">
 
-Made with ☕ by [ichrist](https://openwebui.com/u/ichrist) · with help from [Claude](https://claude.ai)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" />
 
-⭐ If these tools save you time, a star goes a long way!
+Made with ☕ by [ichrist](https://openwebui.com/u/ichrist) · powered by [Claude](https://claude.ai)
+
+⭐ **If these tools save you time, a star goes a long way!**
 
 </div>
