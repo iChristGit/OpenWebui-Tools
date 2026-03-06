@@ -39,16 +39,31 @@
 
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, and album art.
 
-<img width="1148" alt="Jellyfin Media Player screenshot" src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" />
-
-<img width="1185" height="1171" alt="Screenshot 2026-03-06 223456" src="https://github.com/user-attachments/assets/1494ebe0-26ca-4dae-ad45-29b4b81735b8" />
-
-<img width="1128" height="979" alt="Screenshot 2026-03-06 223246" src="https://github.com/user-attachments/assets/fe272f89-c5c6-482b-95f1-9e0e66f62641" />
-
-
-
-
 **[→ Install from marketplace](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)**
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <b>🎬 Movies</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" width="100%" alt="Jellyfin movie player" />
+    </td>
+    <td width="50%" align="center">
+      <b>📺 TV Shows</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/1494ebe0-26ca-4dae-ad45-29b4b81735b8" width="100%" alt="Jellyfin TV player" />
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary><b>🎵 Music Player — click to expand</b></summary>
+<br/>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fe272f89-c5c6-482b-95f1-9e0e66f62641" width="80%" alt="Jellyfin music player with waveform" />
+  <p><i>Full music player with waveform visualiser, album art & EQ animation</i></p>
+</div>
+</details>
+
+<br/>
 
 ### ✨ What it does
 
@@ -64,13 +79,17 @@ Your Jellyfin library, right inside the chat. Ask for any movie, show, or track 
 | ⬇️ Download | Download button on every player |
 | 🔎 Info mode | Get rich media details without opening a player |
 
-### ⚙️ Setup (3 steps)
+<details>
+<summary><b>⚙️ Setup (3 steps)</b></summary>
 
 1. Create a **restricted Jellyfin user** (playback-only, no admin or delete permissions)
 2. Generate an API key: **Dashboard → API Keys → +**
 3. Paste both into the tool valves: `JELLYFIN_HOST` and `JELLYFIN_API_KEY`
 
-### 🗣️ Example prompts
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
 
 ```
 play Inception
@@ -81,19 +100,25 @@ tell me about Interstellar
 what was recently added
 ```
 
+</details>
+
 ---
 
 ## 🧩 Ask User
 
 > **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
 
-<img width="1301" alt="Ask User screenshot" src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" />
-
 **[→ Install from marketplace](https://openwebui.com/posts/ask_user_14182520)**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" width="80%" alt="Ask User screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
-Ever notice how Claude pauses, asks you a few targeted questions, then produces something far more on-point? This tool brings that exact behaviour to Open WebUI. The LLM can ask 1–5 structured questions upfront — each in its own popup with a progress indicator — before committing to a response. No more back-and-forth re-prompting.
+Ever notice how Claude pauses, asks you a few targeted questions, then produces something far more on-point? This tool brings that exact behaviour to Open WebUI. The LLM can ask 1–5 structured questions upfront — each in its own popup with a progress indicator — before committing to a response.
 
 | Feature | Detail |
 |---------|--------|
@@ -103,7 +128,8 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 | 🔒 Bounded & predictable | The LLM cannot keep asking — it must proceed |
 | 🔑 No dependencies | Standard library only |
 
-### 🗣️ Best for
+<details>
+<summary><b>🗣️ Best for</b></summary>
 
 ```
 "Write me a cover letter"    → gathers: role, company, tone, key achievements
@@ -114,15 +140,21 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 > ⚠️ **Requires** Open WebUI with interactive input modal support. Won't work in headless or API-only environments.
 
+</details>
+
 ---
 
 ## 🎭 Persona Studio
 
 > **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
 
-<img width="1250" alt="Persona Studio screenshot" src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" />
-
 **[→ Install from marketplace](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" width="80%" alt="Persona Studio screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -135,7 +167,8 @@ Stop editing system prompts manually. Persona Studio gives you an interactive po
 | ✍️ Custom option | Define any personality from scratch |
 | 🚀 Instant switch | No re-prompting, no manual system prompt editing |
 
-### 🗣️ Example prompts
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
 
 ```
 Switch to a different persona
@@ -144,15 +177,21 @@ Change your communication style to casual and funny
 Set a custom persona: you are a brutally honest editor
 ```
 
+</details>
+
 ---
 
 ## 📖 Wikipedia
 
 > **Instant encyclopedia lookups** — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.
 
-<img width="1109" alt="Wikipedia tool screenshot" src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" />
-
 **[→ Install from marketplace](https://openwebui.com/posts/wikipedia_tool_00b03142)**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" width="80%" alt="Wikipedia tool screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -168,7 +207,8 @@ Your LLM gets live access to Wikipedia without any API key or setup. It automati
 | 🔗 Always cited | Every response includes the Wikipedia source URL |
 | 🔑 Zero config | Uses the free public MediaWiki API |
 
-### 🗣️ Example prompts
+<details>
+<summary><b>🗣️ Example prompts & supported languages</b></summary>
 
 ```
 Who is Ada Lovelace?
@@ -178,9 +218,9 @@ Search Wikipedia for quantum entanglement
 ¿Quién es Simón Bolívar?
 ```
 
-### 🌍 Supported languages
+**Supported languages:** `en` `fr` `de` `es` `it` `pt` `nl` `sv` `uk` `fa` `ja` `zh` `ar` `ko` `ru` `pl` `tr` `he` `vi` `id`
 
-`en` `fr` `de` `es` `it` `pt` `nl` `sv` `uk` `fa` `ja` `zh` `ar` `ko` `ru` `pl` `tr` `he` `vi` `id`
+</details>
 
 ---
 
@@ -192,7 +232,7 @@ Search Wikipedia for quantum entanglement
 
 ### ✨ What it does
 
-Most LLMs dive straight into an answer, missing context that would have changed everything. The Orchestrator forces a structured 4-phase workflow: understand → clarify → strategise → execute. The result is dramatically more useful output, especially for complex or open-ended tasks.
+Most LLMs dive straight into an answer, missing context that would have changed everything. The Orchestrator forces a structured 4-phase workflow: understand → clarify → strategise → execute.
 
 | Phase | What happens |
 |-------|-------------|
@@ -201,9 +241,10 @@ Most LLMs dive straight into an answer, missing context that would have changed 
 | 🔹 Phase 3 — Strategise | Presents 3 distinct execution approaches to choose from |
 | 🔹 Phase 4 — Execute | Generates output with all context locked in |
 
-**Built-in guardrails:** max 3 questions, always skippable, always moves forward — no infinite loops.
+> **Built-in guardrails:** max 3 questions, always skippable, always moves forward — no infinite loops.
 
-### 🗣️ Best for
+<details>
+<summary><b>🗣️ Best for</b></summary>
 
 ```
 Writing long-form content (articles, landing pages, scripts, reports)
@@ -214,19 +255,25 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 > ⚠️ **Requires** Open WebUI with interactive input modal support. Won't work in headless or API-only environments.
 
+</details>
+
 ---
 
 ## 😂 Joke Tool
 
 > **Give your AI a sense of humour** — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.
 
-<img width="1630" alt="Joke Tool screenshot" src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" />
-
 **[→ Install from marketplace](https://openwebui.com/posts/jokes_tool_14d95010)**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" width="80%" alt="Joke Tool screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
-Because sometimes you need a break. A carefully curated vault of programmer humor — Git puns, deep-cut coding jokes, and classic one-liners — plus live fetching from `jokeapi.dev` when you want something fresh.
+A carefully curated vault of programmer humor — Git puns, deep-cut coding jokes, and classic one-liners — plus live fetching from `jokeapi.dev` when you want something fresh.
 
 | Feature | Detail |
 |---------|--------|
@@ -235,7 +282,8 @@ Because sometimes you need a break. A carefully curated vault of programmer humo
 | 🔢 Batch support | Ask for 1 joke or a specific number |
 | 🛡️ Offline-safe | Always falls back to internal library if API is down |
 
-### 🗣️ Example prompts
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
 
 ```
 Tell me a joke
@@ -244,17 +292,21 @@ Hit me with a random Git pun
 Tell me 5 programming jokes
 ```
 
+</details>
+
 ---
 
 ## 🛠️ Installation
 
 All tools install the same way — takes about 30 seconds.
 
-1. Open **Workspace → Tools** in Open WebUI
-2. Click **➕ Add Tool**
-3. Paste the script, **or** use one-click import from the marketplace
-4. Click **Save**
-5. Enable it in any chat via the **🔧 Tools** toggle
+```
+1. Open Workspace → Tools in Open WebUI
+2. Click ➕ Add Tool
+3. Paste the script, or use one-click import from the marketplace
+4. Click Save
+5. Enable it in any chat via the 🔧 Tools toggle
+```
 
 > 💡 **Tip:** Enable only the tools you need in each chat — keeping the tool list focused helps the LLM pick the right one every time.
 
