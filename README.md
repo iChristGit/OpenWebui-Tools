@@ -41,7 +41,11 @@
 
 <img width="1148" alt="Jellyfin Media Player screenshot" src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" />
 
+<img width="1185" height="1171" alt="Screenshot 2026-03-06 223456" src="https://github.com/user-attachments/assets/1494ebe0-26ca-4dae-ad45-29b4b81735b8" />
+
 <img width="1128" height="979" alt="Screenshot 2026-03-06 223246" src="https://github.com/user-attachments/assets/fe272f89-c5c6-482b-95f1-9e0e66f62641" />
+
+
 
 
 **[→ Install from marketplace](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)**
