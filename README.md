@@ -1,4 +1,4 @@
-# 🧰 Open WebUI Tools by ichrist
+# 🧰 Open WebUI Custom Tools
 
 A collection of 6 tools for [Open WebUI](https://openwebui.com) — from media streaming to structured AI workflows. All tools are free, open source, and available on the marketplace with one-click import.
 
