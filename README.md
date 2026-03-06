@@ -23,6 +23,8 @@ A collection of 6 tools for [Open WebUI](https://openwebui.com) — from media s
 
 > Stream your entire Jellyfin library inside Open WebUI with a cinematic embedded player.
 
+<img width="1148" height="1174" alt="Screenshot 2026-03-06 223634" src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" />
+
 **[→ Install from marketplace](https://openwebui.com/u/ichrist)**
 
 #### ✨ Features
@@ -191,4 +193,4 @@ All tools are released under the **MIT License** — free to use, fork, and publ
 
 ---
 
-> Made with ☕ by [ichrist](https://openwebui.com/u/ichrist)
+> Made with ☕ by [ichrist](https://openwebui.com/u/ichrist) with help from Claude.
