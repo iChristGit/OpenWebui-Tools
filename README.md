@@ -26,7 +26,7 @@
 
 | # | Tool | Best for |
 |---|------|----------|
-| 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV & music from your own server |
+| 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
 | 2 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
 | 3 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
 | 4 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
@@ -37,7 +37,7 @@
 
 ## 🎬 Jellyfin Media Player
 
-> **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, and album art.
+> **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
 
 **[→ Install from marketplace](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)**
 
@@ -67,13 +67,14 @@
 
 ### ✨ What it does
 
-Your Jellyfin library, right inside the chat. Ask for any movie, show, or track in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
+Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or live channel in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
 
 | Feature | Detail |
 |---------|--------|
 | 🎬 Movies & TV | Stream any item, use `S01E01` or `1x01` episode notation |
 | 🎵 Music | Full player with waveform visualiser, album art & EQ animation |
-| 🎲 Random picks | Ask for a random film, optionally filter by genre |
+| 📡 Live TV | Tune to any channel with a pulsing LIVE badge and EPG now-playing info |
+| 🎲 Random picks | Ask for a random film, episode, or song — optionally filter by genre |
 | 💬 Subtitles | Dropdown with every available language track |
 | 📐 Quality | Original · 4K · 1080p · 720p · 480p · 360p |
 | ⬇️ Download | Download button on every player |
@@ -85,6 +86,8 @@ Your Jellyfin library, right inside the chat. Ask for any movie, show, or track 
 1. Create a **restricted Jellyfin user** (playback-only, no admin or delete permissions)
 2. Generate an API key: **Dashboard → API Keys → +**
 3. Paste both into the tool valves: `JELLYFIN_HOST` and `JELLYFIN_API_KEY`
+
+> For Live TV, you'll also need a tuner or IPTV source configured under **Dashboard → Live TV**.
 
 </details>
 
@@ -98,6 +101,9 @@ play music Bohemian Rhapsody
 random comedy movie
 tell me about Interstellar
 what was recently added
+watch live CNN
+watch live ערוץ 13
+list live channels
 ```
 
 </details>
