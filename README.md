@@ -52,6 +52,13 @@
       <img src="https://github.com/user-attachments/assets/1494ebe0-26ca-4dae-ad45-29b4b81735b8" width="100%" alt="Jellyfin TV player" />
     </td>
   </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>📡 Live TV</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/aa2b8509-cbf0-4e67-b698-c8338bfb08b6" width="100%" alt="Jellyfin live TV player" />
+    </td>
+    <td width="50%"></td>
+  </tr>
 </table>
 
 <details>
@@ -102,7 +109,6 @@ random comedy movie
 tell me about Interstellar
 what was recently added
 watch live CNN
-watch live ערוץ 13
 list live channels
 ```
 
