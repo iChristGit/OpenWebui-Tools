@@ -57,20 +57,15 @@
       <b>📡 Live TV</b><br/><br/>
       <img src="https://github.com/user-attachments/assets/aa2b8509-cbf0-4e67-b698-c8338bfb08b6" width="100%" alt="Jellyfin live TV player" />
     </td>
-    <td width="50%"></td>
+    <td width="50%" align="center">
+      <b>🎵 Music</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/6950300f-f413-4a4f-a1f5-7990461efb77" width="100%" alt="Jellyfin music player" />
+    </td>
   </tr>
 </table>
 
-<details>
-<summary><b>🎵 Music Player — click to expand</b></summary>
-<br/>
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/fe272f89-c5c6-482b-95f1-9e0e66f62641" width="80%" alt="Jellyfin music player with waveform" />
-  <p><i>Full music player with waveform visualiser, album art & EQ animation</i></p>
-</div>
-</details>
 
-<br/>
+
 
 ### ✨ What it does
 
