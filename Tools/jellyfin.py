@@ -2,7 +2,8 @@
 title: Jellyfin Media Player
 description: >
   Cinematic Jellyfin media player for Open WebUI.
-  Supports movies, TV shows (SxxExx), music, subtitles, quality selection, and download.
+  Supports movies, TV shows (SxxExx), music, subtitles, quality selection, download,
+  and Live TV channel streaming.
 
   Setup:
     1. Set JELLYFIN_HOST to your server URL (e.g. http://192.168.1.100:8096)
@@ -10,14 +11,17 @@ description: >
        OR set JELLYFIN_USERNAME + JELLYFIN_PASSWORD
 
   Commands:
-    - "play Shrek"               → plays the movie
-    - "play Breaking Bad S02E05" → plays that episode
-    - "play music Bohemian Rhapsody" → music player
-    - "random movie"             → random film
-    - "search [query]"           → search library
+    - "play Shrek"                          → plays the movie
+    - "play Breaking Bad S02E05"            → plays that episode
+    - "play music Bohemian Rhapsody"        → music player
+    - "random movie"                        → random film
+    - "search [query]"                      → search library
+    - "watch live CNN"                      → live TV channel player
+    - "watch live channel BBC News"         → live TV channel player
+    - "list live channels"                  → browse all available live TV channels
 
 author: ichrist
-version: 6.3.0
+version: 7.0.1
 license: MIT
 """
 
@@ -113,13 +117,11 @@ class Tools:
         # ── Option 1: Direct API key (preferred) ──────────────────────────────
         if self.valves.JELLYFIN_API_KEY.strip():
             api_key = self.valves.JELLYFIN_API_KEY.strip()
-            # Resolve the user ID for the API key owner
             headers = {"Authorization": f'MediaBrowser Token="{api_key}"'}
             async with session.get(f"{host}/Users/Me", headers=headers) as resp:
                 if resp.status == 200:
                     d = await resp.json()
                     return api_key, d["Id"]
-                # Fallback: list users and pick first admin/active user
             async with session.get(f"{host}/Users", headers=headers) as resp:
                 if resp.status != 200:
                     raise RuntimeError(f"API key validation failed: HTTP {resp.status}")
@@ -137,7 +139,7 @@ class Tools:
         headers = {
             "Authorization": (
                 'MediaBrowser Client="OpenWebUI", Device="OpenWebUI-Tool", '
-                'DeviceId="openwebui-jellyfin-tool", Version="6.2.0"'
+                'DeviceId="openwebui-jellyfin-tool", Version="7.0.1"'
             ),
             "Content-Type": "application/json",
         }
@@ -155,7 +157,7 @@ class Tools:
             return d["AccessToken"], d["User"]["Id"]
 
     async def _get_playback_data(
-        self, session, host, item_id, user_id, token, max_bitrate=None
+        self, session, host, item_id, user_id, token, max_bitrate=None, is_live=False
     ):
         if max_bitrate is None:
             max_bitrate = self.valves.MAX_STREAMING_BITRATE
@@ -165,6 +167,9 @@ class Tools:
             f"?UserId={user_id}&StartTimeTicks=0&IsPlayback=true"
             f"&AutoOpenLiveStream=true&MaxStreamingBitrate={max_bitrate}"
         )
+        if is_live:
+            url += "&IsLiveStream=true"
+
         auth = {
             "Authorization": f'MediaBrowser Token="{token}"',
             "Content-Type": "application/json",
@@ -266,26 +271,23 @@ class Tools:
             or video_codec not in BROWSER_SAFE_VIDEO
             or audio_codec not in BROWSER_SAFE_AUDIO
             or channels > 2
+            or is_live  # live streams always go through HLS
         )
 
-        # Use the server-provided transcode URL if available (most reliable)
         if transcode_url:
             hls_server = (
                 f"{host}{transcode_url}"
                 if transcode_url.startswith("/")
                 else transcode_url
             )
-            # Ensure api_key is in the URL (not just a header) for iframe use
             if "api_key" not in hls_server:
                 sep = "&" if "?" in hls_server else "?"
                 hls_server += f"{sep}api_key={token}"
         else:
             hls_server = ""
 
-        # Generate a stable PlaySessionId so Jellyfin keeps the transcode alive
         play_session_id = re.sub(r"[^a-zA-Z0-9]", "", item_id)[:24] + "jftool"
 
-        # Fallback HLS URL with all required params including PlaySessionId
         hls_base = (
             f"{host}/Videos/{item_id}/master.m3u8"
             f"?MediaSourceId={media_source_id}"
@@ -295,6 +297,8 @@ class Tools:
             f"&PlaySessionId={play_session_id}"
             f"&api_key={token}"
         )
+        if is_live:
+            hls_base += "&IsLiveStream=true"
 
         direct_url = (
             f"{host}/Videos/{item_id}/stream.mp4"
@@ -464,9 +468,7 @@ class Tools:
 
         ch_str = f" {ch}ch" if ch and ch > 2 else ""
         strategy = "HLS" if needs_tc else "Direct"
-        # Build badge_text as a plain Python string (not injected into JS template)
         badge_text = f"{strategy} · {ct} · {vc}/{ac}{ch_str}"
-        # Store these for JS use as JSON strings to avoid f-string/JS collision
         badge_text_js = _json.dumps(badge_text)
 
         pid = "jfp" + re.sub(r"[^a-zA-Z0-9]", "", item_id)[:12]
@@ -564,7 +566,6 @@ class Tools:
             for i in range(5)
         )
 
-        # FIX: needs_tc as JS bool, avoid Python True/False
         needs_tc_js = "true" if needs_tc else "false"
 
         html = f"""<!DOCTYPE html>
@@ -791,7 +792,6 @@ select.sel option{{background:#111318;}}
   </div>
 </div>
 
-<!-- FIX: hls.js loaded synchronously BEFORE the inline script runs -->
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
 <script>
 (function() {{
@@ -805,13 +805,12 @@ select.sel option{{background:#111318;}}
   var PID          = {_json.dumps(pid)};
   var BADGE_BASE   = {badge_text_js};
 
-  var vid    = document.getElementById("vid_"          + PID);
-  var badge  = document.getElementById("badge_"        + PID);
-  var resSel = document.getElementById("res_"          + PID);
-  var subSel = document.getElementById("sub_"          + PID);
-  var tcChk  = document.getElementById("tc_"           + PID);
+  var vid    = document.getElementById("vid_"    + PID);
+  var badge  = document.getElementById("badge_"  + PID);
+  var resSel = document.getElementById("res_"    + PID);
+  var subSel = document.getElementById("sub_"    + PID);
+  var tcChk  = document.getElementById("tc_"     + PID);
 
-  // FIX: start with transcode ON by default for maximum compatibility
   var currentRes   = "1080p";
   var forceTC      = true;
   var activeSubIdx = -1;
@@ -832,8 +831,6 @@ select.sel option{{background:#111318;}}
     badge.className = err ? "badge err" : "badge";
   }}
 
-  // FIX: auth is baked into HLS_BASE and HLS_SERVER URLs server-side now.
-  // This function is only needed for direct MP4 URLs and subtitle VTT fetches.
   function addAuth(url) {{
     if (!url) return url;
     if (url.indexOf("api_key") !== -1) return url;
@@ -841,20 +838,13 @@ select.sel option{{background:#111318;}}
     return url + sep + "api_key=" + TOKEN;
   }}
 
-  // FIX: Build HLS URL — prefer HLS_SERVER (server-provided) always, fallback to HLS_BASE
   function hlsUrl(res) {{
     var bits = RES_BITS[res] || RES_BITS["1080p"];
-    // Always prefer the server-provided transcode URL — it's the most reliable
     if (HLS_SERVER) {{
-      // Swap bitrate if user changed resolution
       var url = HLS_SERVER.replace(/MaxStreamingBitrate=\\d+/, "MaxStreamingBitrate=" + bits);
-      if (url === HLS_SERVER) {{
-        // param wasn't present, append it
-        url += "&MaxStreamingBitrate=" + bits;
-      }}
+      if (url === HLS_SERVER) url += "&MaxStreamingBitrate=" + bits;
       return url;
     }}
-    // Fallback: HLS_BASE already has api_key + PlaySessionId; just add bitrate
     var base = HLS_BASE;
     base = base.replace(/MaxStreamingBitrate=\\d+/, "MaxStreamingBitrate=" + bits);
     if (base === HLS_BASE) base += "&MaxStreamingBitrate=" + bits;
@@ -868,15 +858,10 @@ select.sel option{{background:#111318;}}
     }}
   }}
 
-  // ── Subtitle system — native <track> via Blob URL ──
-  // We fetch VTT with api_key auth, convert to a Blob URL (same-origin),
-  // then inject a <track default> element. Blob URL bypasses CORS/iframe sandbox.
   function clearSubTracks() {{
-    // Remove all existing text tracks
     var tracks = vid.querySelectorAll('track');
     tracks.forEach(function(t) {{ vid.removeChild(t); }});
     if (activeBlobUrl) {{ URL.revokeObjectURL(activeBlobUrl); activeBlobUrl = null; }}
-    // Also disable any lingering TextTrack
     for (var i = 0; i < vid.textTracks.length; i++) {{
       vid.textTracks[i].mode = 'disabled';
     }}
@@ -894,10 +879,7 @@ select.sel option{{background:#111318;}}
         return r.text();
       }})
       .then(function(vttText) {{
-        // Ensure it starts with WEBVTT header (Jellyfin sometimes omits it)
-        if (vttText.trim().indexOf('WEBVTT') !== 0) {{
-          vttText = 'WEBVTT\\n\\n' + vttText;
-        }}
+        if (vttText.trim().indexOf('WEBVTT') !== 0) vttText = 'WEBVTT\\n\\n' + vttText;
         var blob = new Blob([vttText], {{type: 'text/vtt'}});
         activeBlobUrl = URL.createObjectURL(blob);
         var track = document.createElement('track');
@@ -907,19 +889,15 @@ select.sel option{{background:#111318;}}
         track.src = activeBlobUrl;
         track.default = true;
         vid.appendChild(track);
-        // Force the track to showing mode after a short delay
         setTimeout(function() {{
           for (var i = 0; i < vid.textTracks.length; i++) {{
-            if (vid.textTracks[i].label === track.label) {{
-              vid.textTracks[i].mode = 'showing';
-            }}
+            if (vid.textTracks[i].label === track.label) vid.textTracks[i].mode = 'showing';
           }}
         }}, 200);
       }})
       .catch(function(e) {{ console.warn('Subtitle load error:', e); }});
   }}
 
-  // ── Core playback ──
   function loadUrl(url, useHls) {{
     var wasPlaying = !vid.paused;
     var pos = vid.currentTime || 0;
@@ -937,7 +915,6 @@ select.sel option{{background:#111318;}}
       return;
     }}
 
-    // FIX: Check Hls is actually available (cdn may be blocked in some envs)
     if (typeof Hls === 'undefined') {{
       setBadge("⚠ hls.js failed to load — trying direct", true);
       if (vid.canPlayType("application/vnd.apple.mpegurl")) {{
@@ -950,7 +927,6 @@ select.sel option{{background:#111318;}}
 
     if (!Hls.isSupported()) {{
       if (vid.canPlayType("application/vnd.apple.mpegurl")) {{
-        // Safari native HLS
         vid.src = url;
         if (pos > 1) vid.currentTime = pos;
         if (wasPlaying) vid.play().catch(function() {{}});
@@ -961,8 +937,6 @@ select.sel option{{background:#111318;}}
       return;
     }}
 
-    // FIX: No xhrSetup/fetchSetup — auth is already in the URL.
-    // xhrSetup was being stripped by OpenWebUI's CSP/DOMPurify sandbox.
     hlsInst = new Hls({{
       maxBufferLength: 30,
       maxMaxBufferLength: 90,
@@ -1003,23 +977,13 @@ select.sel option{{background:#111318;}}
     loadUrl(url, useHls);
   }}
 
-  // ── Controls ──
-  resSel.addEventListener("change", function() {{
-    currentRes = this.value;
-    refresh();
-  }});
-
+  resSel.addEventListener("change", function() {{ currentRes = this.value; refresh(); }});
   subSel.addEventListener("change", function() {{
     activeSubIdx = this.value === "-1" ? -1 : parseInt(this.value, 10);
     loadSubTrack();
   }});
+  tcChk.addEventListener("change", function() {{ forceTC = this.checked; refresh(); }});
 
-  tcChk.addEventListener("change", function() {{
-    forceTC = this.checked;
-    refresh();
-  }});
-
-  // Populate subtitle dropdown
   SUB_TRACKS.forEach(function(t) {{
     var o = document.createElement("option");
     o.value = t.index;
@@ -1027,9 +991,380 @@ select.sel option{{background:#111318;}}
     subSel.appendChild(o);
   }});
 
-  // Boot — hls.js is already loaded synchronously above
   refresh();
   vid.addEventListener("loadedmetadata", postHeight);
+  window.addEventListener("load", function() {{ setTimeout(postHeight, 300); }});
+}})();
+</script>
+</body>
+</html>""".strip()
+
+        return HTMLResponse(content=html, headers={"content-disposition": "inline"})
+
+    async def _build_live_tv_player(
+        self, host, channel, token, user_id, now_program=None
+    ):
+        """Build a live TV player UI with channel info and EPG now/next."""
+        channel_id = channel["Id"]
+        channel_name = channel.get("Name", "Unknown Channel")
+        channel_number = channel.get("ChannelNumber", "")
+        channel_type = channel.get("ChannelType", "TV")  # TV or Radio
+
+        # Channel logo
+        logo_url = (
+            f"{host}/Items/{channel_id}/Images/Primary?api_key={token}&maxHeight=200"
+        )
+        backdrop_url = (
+            f"{host}/Items/{channel_id}/Images/Backdrop?api_key={token}&maxWidth=1280"
+        )
+
+        # Now-playing programme info
+        now_title = ""
+        now_overview = ""
+        now_start = ""
+        now_end = ""
+        next_title = ""
+        now_progress_pct = 0
+
+        if now_program:
+            now_title = now_program.get("Name", "")
+            now_overview = now_program.get("Overview", "")
+            start_str = now_program.get("StartDate", "")
+            end_str = now_program.get("EndDate", "")
+            if start_str:
+                now_start = start_str[11:16]  # HH:MM from ISO
+            if end_str:
+                now_end = end_str[11:16]
+
+            # Calculate progress through programme
+            try:
+                import datetime
+
+                def _parse(s):
+                    for f in (
+                        "%Y-%m-%dT%H:%M:%S.%f0000Z",
+                        "%Y-%m-%dT%H:%M:%SZ",
+                        "%Y-%m-%dT%H:%M:%S.%fZ",
+                    ):
+                        try:
+                            return datetime.datetime.strptime(s, f)
+                        except ValueError:
+                            pass
+                    return None
+
+                t_start = _parse(start_str)
+                t_end = _parse(end_str)
+                t_now = datetime.datetime.utcnow()
+                if t_start and t_end and t_end > t_start:
+                    elapsed = (t_now - t_start).total_seconds()
+                    total = (t_end - t_start).total_seconds()
+                    now_progress_pct = max(0, min(100, int(elapsed / total * 100)))
+            except Exception:
+                pass
+
+        p, pa, pm, pg = _vivid_palette()
+        pid = "jflv" + re.sub(r"[^a-zA-Z0-9]", "", channel_id)[:12]
+
+        # Playback via HLS (live streams always transcode through Jellyfin)
+        play_session_id = re.sub(r"[^a-zA-Z0-9]", "", channel_id)[:24] + "jflive"
+        hls_url = (
+            f"{host}/Videos/{channel_id}/master.m3u8"
+            f"?MediaSourceId={channel_id}"
+            f"&VideoCodec=h264&AudioCodec=aac&AudioStreamIndex=1"
+            f"&TranscodingMaxAudioChannels=2&SegmentContainer=ts"
+            f"&MinSegments=1&RequireAvc=true&IsLiveStream=true"
+            f"&PlaySessionId={play_session_id}"
+            f"&api_key={token}"
+        )
+        # Try to get a proper transcode URL via PlaybackInfo
+        async with aiohttp.ClientSession() as session:
+            try:
+                pb = await self._get_playback_data(
+                    session, host, channel_id, user_id, token, is_live=True
+                )
+                if pb.get("hls_server"):
+                    hls_url = pb["hls_server"]
+                elif pb.get("hls_base"):
+                    hls_url = pb["hls_base"]
+            except Exception as exc:
+                logger.warning(f"Live PlaybackInfo fallback for {channel_name}: {exc}")
+
+        hls_url_js = _json.dumps(hls_url)
+        channel_name_js = _json.dumps(channel_name)
+        live_badge = f"● LIVE · {channel_type}"
+
+        # Build now-playing bar HTML
+        epg_html = ""
+        if now_title:
+            bar_style = (
+                f"height:3px;border-radius:2px;"
+                f"background:linear-gradient(90deg,{p[0]},{p[2]});"
+                f"width:{now_progress_pct}%;transition:width 1s linear;"
+            )
+            time_range = f"{now_start}–{now_end}" if now_start else ""
+            epg_html = f"""
+<div style="padding:10px 16px 12px;background:#0a0a0e;border-top:1px solid {pa[0]};">
+  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px;">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="font-size:8px;font-weight:900;letter-spacing:2px;text-transform:uppercase;
+                   color:{p[0]};text-shadow:0 0 14px {pg[0]};">Now Playing</span>
+      <span style="font-size:13px;font-weight:700;color:#eee;">{now_title}</span>
+    </div>
+    <span style="font-size:11px;color:#445;font-family:'SF Mono',monospace;">{time_range}</span>
+  </div>
+  <div style="background:#161618;border-radius:3px;overflow:hidden;height:3px;margin-bottom:8px;">
+    <div style="{bar_style}"></div>
+  </div>
+  {"" if not now_overview else f'<p style="font-size:11px;color:#666;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{now_overview}</p>'}
+</div>"""
+
+        css_vars = "\n".join(
+            f"  --c{i}:{p[i]};--ca{i}:{pa[i]};--cm{i}:{pm[i]};--cg{i}:{pg[i]};"
+            for i in range(5)
+        )
+
+        html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{{{css_vars}}}
+*,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
+html,body{{
+  background:linear-gradient(135deg,#060608 0%,#0c0810 40%,#080c10 100%);
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  height:auto;overflow:hidden;padding:6px;
+}}
+.card{{
+  border-radius:16px;overflow:hidden;
+  background:linear-gradient(160deg,#0d0d12 0%,#0a0a0e 100%);
+  border:1px solid {pm[0]};
+  box-shadow:0 0 0 1px {pa[0]},0 0 60px {pa[1]},0 0 120px {pa[3]},
+             inset 0 1px 0 {pm[0]},0 24px 60px rgba(0,0,0,.98);
+}}
+.stripe{{
+  height:3px;
+  background:linear-gradient(90deg,{p[0]},{p[1]},{p[2]},{p[3]},{p[4]},{p[0]});
+  background-size:300% 100%;animation:ss 3s linear infinite;
+}}
+@keyframes ss{{0%{{background-position:0%}}100%{{background-position:300%}}}}
+
+.vid-wrap{{
+  position:relative;background:#000;line-height:0;
+  background:radial-gradient(ellipse at 50% 0%,{pa[0]} 0%,#000 70%);
+}}
+.vid-wrap video{{width:100%;display:block;max-height:420px;background:#000;border-bottom:1px solid {pa[0]};}}
+
+/* LIVE badge — pulsing red dot */
+.live-badge{{
+  position:absolute;top:12px;left:12px;z-index:30;
+  font-family:'SF Mono','Fira Code',monospace;font-size:9.5px;letter-spacing:.5px;
+  color:#fff;background:rgba(6,6,8,.93);
+  border:1px solid #ff3b3b88;border-radius:8px;padding:5px 12px;
+  box-shadow:0 0 20px #ff3b3b44;backdrop-filter:blur(16px);
+  display:flex;align-items:center;gap:6px;white-space:nowrap;
+}}
+.live-dot{{
+  width:7px;height:7px;border-radius:50%;background:#ff3b3b;
+  box-shadow:0 0 8px #ff3b3b;
+  animation:pulse 1.4s ease-in-out infinite;
+}}
+@keyframes pulse{{
+  0%,100%{{opacity:1;transform:scale(1);}}
+  50%{{opacity:.5;transform:scale(.85);}}
+}}
+
+/* Tech badge top-right */
+.tech-badge{{
+  position:absolute;top:12px;right:12px;z-index:30;
+  font-family:'SF Mono','Fira Code',monospace;font-size:9.5px;letter-spacing:.3px;
+  color:{p[2]};background:rgba(6,6,8,.93);
+  border:1px solid {pm[2]};border-radius:8px;padding:5px 11px;
+  box-shadow:0 0 20px {pa[2]};backdrop-filter:blur(16px);
+  pointer-events:none;white-space:nowrap;
+}}
+.tech-badge.err{{color:#ff4444;border-color:#ff444455;}}
+
+.channel-bar{{
+  display:flex;align-items:center;gap:14px;
+  padding:12px 16px;
+  background:linear-gradient(180deg,{pa[0]} 0%,transparent 100%),
+             linear-gradient(180deg,#0e0e14 0%,#0c0c10 100%);
+  border-top:1px solid {pm[0]};
+  border-bottom:1px solid {pa[1]};
+}}
+.ch-logo{{
+  width:48px;height:48px;border-radius:10px;object-fit:contain;
+  background:#111;border:1px solid {pa[0]};flex-shrink:0;
+}}
+.ch-name{{font-size:20px;font-weight:900;color:#fff;text-shadow:0 2px 16px {pa[0]};}}
+.ch-num{{font-size:11px;color:{p[1]};font-weight:700;margin-top:2px;}}
+.ch-spacer{{flex:1;}}
+
+/* Quality selector */
+.cg{{display:flex;align-items:center;gap:6px;}}
+.cl{{font-size:9px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;
+     color:{p[1]};text-shadow:0 0 14px {pg[1]};white-space:nowrap;}}
+select.sel{{
+  -webkit-appearance:none;appearance:none;
+  background:#111318 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23888' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E") no-repeat right 9px center;
+  color:#f0f0f0;border:1.5px solid {pm[0]};border-radius:20px;
+  font-size:11px;font-weight:700;padding:5px 26px 5px 12px;cursor:pointer;outline:none;
+  box-shadow:0 0 14px {pa[0]};min-width:78px;
+  transition:border-color .15s,box-shadow .15s;
+}}
+select.sel:hover,select.sel:focus{{border-color:{p[0]};box-shadow:0 0 22px {pm[0]};}}
+select.sel option{{background:#111318;}}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="stripe"></div>
+  <div class="vid-wrap">
+    <div class="live-badge"><div class="live-dot"></div>LIVE</div>
+    <div id="tbadge_{pid}" class="tech-badge">HLS · Loading…</div>
+    <video id="vid_{pid}" controls autoplay playsinline
+           poster="{backdrop_url}"
+           style="width:100%;display:block;max-height:420px;background:#000;"></video>
+  </div>
+
+  <!-- Channel bar with logo, name, quality picker -->
+  <div class="channel-bar">
+    <img class="ch-logo" src="{logo_url}" alt=""
+         onerror="this.style.visibility='hidden'">
+    <div>
+      <div class="ch-name">{channel_name}</div>
+      {"" if not channel_number else f'<div class="ch-num">Ch. {channel_number}</div>'}
+    </div>
+    <div class="ch-spacer"></div>
+    <div class="cg">
+      <span class="cl">Quality</span>
+      <select class="sel" id="res_{pid}">
+        <option value="20000000">1080p</option>
+        <option value="8000000">720p</option>
+        <option value="3000000">480p</option>
+        <option value="1500000">360p</option>
+      </select>
+    </div>
+  </div>
+
+  {epg_html}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+<script>
+(function() {{
+  var HLS_URL  = {hls_url_js};
+  var TOKEN    = {_json.dumps(token)};
+  var PID      = {_json.dumps(pid)};
+  var CH_NAME  = {channel_name_js};
+
+  var vid    = document.getElementById("vid_"    + PID);
+  var tbadge = document.getElementById("tbadge_" + PID);
+  var resSel = document.getElementById("res_"    + PID);
+  var hlsInst = null;
+  var currentBitrate = 20000000;
+
+  function postHeight() {{
+    try {{
+      window.parent.postMessage(
+        {{type:"iframe-resize", id:PID, height:document.documentElement.scrollHeight}},
+        "*"
+      );
+    }} catch(e) {{}}
+  }}
+
+  function setBadge(msg, err) {{
+    tbadge.textContent = msg;
+    tbadge.className = err ? "tech-badge err" : "tech-badge";
+  }}
+
+  function buildHlsUrl(bitrate) {{
+    var url = HLS_URL.replace(/MaxStreamingBitrate=\\d+/, "MaxStreamingBitrate=" + bitrate);
+    if (url === HLS_URL && HLS_URL.indexOf("MaxStreamingBitrate") === -1) {{
+      url += (url.indexOf("?") === -1 ? "?" : "&") + "MaxStreamingBitrate=" + bitrate;
+    }}
+    return url;
+  }}
+
+  function killHls() {{
+    if (hlsInst) {{
+      try {{ hlsInst.destroy(); }} catch(e) {{}}
+      hlsInst = null;
+    }}
+  }}
+
+  function startStream(bitrate) {{
+    killHls();
+    var url = buildHlsUrl(bitrate);
+    setBadge("HLS · Connecting…");
+
+    if (typeof Hls === 'undefined') {{
+      setBadge("⚠ hls.js failed to load", true);
+      if (vid.canPlayType("application/vnd.apple.mpegurl")) {{
+        vid.src = url; vid.play().catch(function(){{}});
+      }}
+      return;
+    }}
+
+    if (!Hls.isSupported()) {{
+      if (vid.canPlayType("application/vnd.apple.mpegurl")) {{
+        vid.src = url; vid.play().catch(function(){{}});
+        setBadge("HLS · Native");
+      }} else {{
+        setBadge("⚠ HLS not supported", true);
+      }}
+      return;
+    }}
+
+    hlsInst = new Hls({{
+      maxBufferLength: 8,
+      maxMaxBufferLength: 30,
+      startLevel: -1,
+      autoStartLoad: true,
+      enableWorker: true,
+      lowLatencyMode: true,
+      liveSyncDurationCount: 3,
+      liveMaxLatencyDurationCount: 10,
+    }});
+
+    hlsInst.loadSource(url);
+    hlsInst.attachMedia(vid);
+
+    hlsInst.on(Hls.Events.MANIFEST_PARSED, function(e, data) {{
+      setBadge("HLS · Live · " + CH_NAME);
+      vid.play().catch(function(){{}});
+      postHeight();
+    }});
+
+    hlsInst.on(Hls.Events.LEVEL_SWITCHED, function(e, data) {{
+      var lvl = hlsInst.levels[data.level];
+      if (lvl && lvl.height) {{
+        setBadge("HLS · Live · " + lvl.height + "p");
+      }}
+    }});
+
+    var mRec = false, nRec = false;
+    hlsInst.on(Hls.Events.ERROR, function(e, d) {{
+      if (!d.fatal) return;
+      if (d.type === Hls.ErrorTypes.MEDIA_ERROR && !mRec) {{
+        mRec = true; hlsInst.recoverMediaError(); return;
+      }}
+      if (d.type === Hls.ErrorTypes.NETWORK_ERROR && !nRec) {{
+        nRec = true; hlsInst.startLoad(); return;
+      }}
+      setBadge("⚠ " + (d.details || "stream error"), true);
+    }});
+  }}
+
+  resSel.addEventListener("change", function() {{
+    currentBitrate = parseInt(this.value, 10);
+    startStream(currentBitrate);
+  }});
+
+  // Boot
+  startStream(currentBitrate);
   window.addEventListener("load", function() {{ setTimeout(postHeight, 300); }});
 }})();
 </script>
@@ -1467,6 +1802,249 @@ input[type=range].vol-slider::-webkit-slider-thumb{{
         return HTMLResponse(content=html, headers={"content-disposition": "inline"})
 
     # ══ Public tools ══════════════════════════════════════════════════════════
+
+    async def watch_live_tv(
+        self,
+        channel_name: str,
+        __event_emitter__: Optional[Callable[[Any], Awaitable[None]]] = None,
+    ) -> "HTMLResponse | str":
+        """
+        Find a live TV channel in Jellyfin and embed a live stream player with EPG info.
+        Requires a Live TV tuner or IPTV source configured in Jellyfin.
+        :param channel_name: Channel name to tune to, e.g. "CNN", "BBC News", "ערוץ 13"
+        """
+        host = self.valves.JELLYFIN_HOST.rstrip("/")
+        await _emit(
+            __event_emitter__, f"📡 Searching live channels for '{channel_name}'…"
+        )
+
+        async with aiohttp.ClientSession() as session:
+            try:
+                token, user_id = await self._get_token(session)
+            except Exception as exc:
+                await _emit(__event_emitter__, "❌ Auth failed", done=True)
+                return f"❌ Jellyfin auth failed: {exc}"
+
+            auth_h = {"Authorization": f'MediaBrowser Token="{token}"'}
+
+            # ── Use the relevance-ranked Items search (same endpoint as the Jellyfin UI)
+            # instead of /LiveTv/Channels which sorts alphabetically and buries real matches.
+            async with session.get(
+                f"{host}/Users/{user_id}/Items"
+                f"?searchTerm={channel_name}"
+                f"&IncludeItemTypes=LiveTvChannel"
+                f"&Recursive=true"
+                f"&Limit=5"
+                f"&Fields=ChannelNumber,ChannelType",
+                headers=auth_h,
+            ) as resp:
+                if resp.status == 404:
+                    await _emit(
+                        __event_emitter__, "❌ Live TV not available", done=True
+                    )
+                    return (
+                        "❌ Live TV is not available on this Jellyfin server. "
+                        "Please configure a TV tuner or IPTV source in the Jellyfin dashboard "
+                        "(Dashboard → Live TV → Add Tuner)."
+                    )
+                if resp.status != 200:
+                    await _emit(
+                        __event_emitter__, "❌ Channel search failed", done=True
+                    )
+                    return f"❌ Live TV channel search failed: HTTP {resp.status}"
+                d = await resp.json()
+
+        channels = d.get("Items", [])
+        if not channels:
+            await _emit(__event_emitter__, "❌ Channel not found", done=True)
+            return (
+                f"❌ No live TV channel found matching '{channel_name}'. "
+                "Try 'list live channels' to see what's available."
+            )
+
+        # First result from the relevance-ranked search is the best match
+        channel = channels[0]
+        found_name = channel.get("Name", "Unknown")
+        channel_id = channel["Id"]
+
+        await _emit(__event_emitter__, f"📺 Tuning to {found_name}…")
+
+        # Fetch current EPG programme for this channel
+        now_program = None
+        async with aiohttp.ClientSession() as session:
+            try:
+                import datetime
+
+                now_iso = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+                end_iso = (
+                    datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+                ).strftime("%Y-%m-%dT%H:%M:%SZ")
+                auth_h = {"Authorization": f'MediaBrowser Token="{token}"'}
+                async with session.get(
+                    f"{host}/LiveTv/Programs"
+                    f"?ChannelIds={channel_id}"
+                    f"&MaxStartDate={end_iso}&MinEndDate={now_iso}"
+                    f"&Limit=1&Fields=Overview,StartDate,EndDate"
+                    f"&EnableTotalRecordCount=false",
+                    headers=auth_h,
+                ) as r:
+                    if r.status == 200:
+                        epg = await r.json()
+                        progs = epg.get("Items", [])
+                        if progs:
+                            now_program = progs[0]
+            except Exception as exc:
+                logger.warning(f"EPG fetch error: {exc}")
+
+        player = await self._build_live_tv_player(
+            host, channel, token, user_id, now_program
+        )
+        await _emit(__event_emitter__, f"📡 Live: {found_name}", done=True)
+        return player
+
+    async def list_live_channels(
+        self,
+        search: str = "",
+        __event_emitter__: Optional[Callable[[Any], Awaitable[None]]] = None,
+    ) -> "HTMLResponse | str":
+        """
+        List all available live TV channels from Jellyfin with current programme info.
+        :param search: Optional filter string, e.g. "news", "sports". Leave blank for all.
+        """
+        host = self.valves.JELLYFIN_HOST.rstrip("/")
+        await _emit(
+            __event_emitter__,
+            f"📋 Fetching live channels{' matching ' + repr(search) if search else ''}…",
+        )
+
+        async with aiohttp.ClientSession() as session:
+            try:
+                token, user_id = await self._get_token(session)
+            except Exception as exc:
+                await _emit(__event_emitter__, "❌ Auth failed", done=True)
+                return f"❌ {exc}"
+
+            auth_h = {"Authorization": f'MediaBrowser Token="{token}"'}
+            params = (
+                f"?UserId={user_id}&SortBy=SortName&SortOrder=Ascending&Limit=100"
+                f"&EnableImageTypes=Primary&Fields=ChannelNumber,ChannelType"
+            )
+            if search:
+                params += f"&SearchTerm={search}"
+
+            async with session.get(
+                f"{host}/LiveTv/Channels{params}", headers=auth_h
+            ) as resp:
+                if resp.status == 404:
+                    await _emit(__event_emitter__, "❌ Live TV unavailable", done=True)
+                    return (
+                        "❌ Live TV is not configured on this Jellyfin server. "
+                        "Add a tuner under Dashboard → Live TV."
+                    )
+                if resp.status != 200:
+                    await _emit(__event_emitter__, "❌ Failed", done=True)
+                    return f"❌ HTTP {resp.status}"
+                d = await resp.json()
+
+        channels = d.get("Items", [])
+        total = d.get("TotalRecordCount", len(channels))
+
+        if not channels:
+            await _emit(__event_emitter__, "No channels found", done=True)
+            return f"❌ No live TV channels found{' matching ' + repr(search) if search else ''}."
+
+        # Fetch current EPG for all channel IDs (batched)
+        epg_map = {}
+        async with aiohttp.ClientSession() as session:
+            try:
+                import datetime
+
+                ch_ids = ",".join(c["Id"] for c in channels)
+                now_iso = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+                end_iso = (
+                    datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+                ).strftime("%Y-%m-%dT%H:%M:%SZ")
+                auth_h2 = {"Authorization": f'MediaBrowser Token="{token}"'}
+                async with session.get(
+                    f"{host}/LiveTv/Programs"
+                    f"?ChannelIds={ch_ids}"
+                    f"&MaxStartDate={end_iso}&MinEndDate={now_iso}"
+                    f"&Limit=200&Fields=ChannelId,StartDate,EndDate"
+                    f"&EnableTotalRecordCount=false",
+                    headers=auth_h2,
+                ) as r:
+                    if r.status == 200:
+                        epg_data = await r.json()
+                        for prog in epg_data.get("Items", []):
+                            cid = prog.get("ChannelId", "")
+                            if cid and cid not in epg_map:
+                                epg_map[cid] = prog.get("Name", "")
+            except Exception as exc:
+                logger.warning(f"EPG batch fetch error: {exc}")
+
+        p, pa, pm, pg = _vivid_palette()
+
+        def _ch_row(ch, idx):
+            cid = ch.get("Id", "")
+            name = ch.get("Name", "?")
+            num = ch.get("ChannelNumber", "")
+            ctype = ch.get("ChannelType", "TV")
+            logo = f"{host}/Items/{cid}/Images/Primary?api_key={token}&maxHeight=48"
+            now_on = epg_map.get(cid, "")
+            ci = idx % 5
+            type_icon = "📻" if ctype == "Radio" else "📺"
+            return (
+                f"<tr>"
+                f"<td style='padding:8px 10px;border-bottom:1px solid #161618;width:48px;'>"
+                f"<img src='{logo}' style='width:36px;height:36px;object-fit:contain;"
+                f"border-radius:6px;background:#111;' onerror=\"this.style.display='none'\">"
+                f"</td>"
+                f"<td style='padding:8px 10px;border-bottom:1px solid #161618;"
+                f"font-size:9px;color:#444;width:36px;'>{num}</td>"
+                f"<td style='padding:8px 10px;border-bottom:1px solid #161618;"
+                f"color:#e0e0e0;font-weight:700;'>{type_icon} {name}</td>"
+                f"<td style='padding:8px 10px;border-bottom:1px solid #161618;"
+                f"font-size:11px;color:#555;font-style:italic;'>{now_on}</td>"
+                f"<td style='padding:8px 10px;border-bottom:1px solid #161618;'>"
+                f"<span style='font-size:9px;font-weight:900;background:{pa[ci]};"
+                f"color:{p[ci]};padding:2px 9px;border-radius:20px;"
+                f"border:1px solid {pm[ci]};'>{ctype}</span></td>"
+                f"</tr>"
+            )
+
+        rows = "".join(_ch_row(ch, i) for i, ch in enumerate(channels))
+        search_label = f" &ldquo;{search}&rdquo;" if search else ""
+        html = (
+            f'<!DOCTYPE html><html><head><meta charset="utf-8">'
+            f"<style>*{{box-sizing:border-box;margin:0;padding:0}}"
+            f"body{{background:transparent;font-family:-apple-system,sans-serif;padding:4px;}}"
+            f".hd{{font-size:13px;font-weight:900;color:#fff;margin-bottom:8px;"
+            f"display:flex;align-items:center;gap:8px;}}"
+            f".dot{{width:8px;height:8px;border-radius:50%;background:#ff3b3b;"
+            f"box-shadow:0 0 8px #ff3b3b;animation:pulse 1.4s infinite;}}"
+            f"@keyframes pulse{{0%,100%{{opacity:1}}50%{{opacity:.4}}}}"
+            f".ct{{font-size:11px;color:#444;font-weight:400;}}"
+            f"table{{width:100%;border-collapse:collapse;background:#0a0a0d;"
+            f"border-radius:12px;overflow:hidden;"
+            f"box-shadow:0 0 0 1px {pa[0]},0 0 40px {pa[1]};}}"
+            f"th{{padding:10px 10px;text-align:left;color:{p[0]};font-weight:900;"
+            f"font-size:9px;letter-spacing:1px;text-transform:uppercase;"
+            f"border-bottom:2px solid {pm[0]};background:#0e0e12;"
+            f"text-shadow:0 0 14px {pa[0]};}}"
+            f"tr:last-child td{{border-bottom:none!important;}}"
+            f".foot{{font-size:11px;color:#333;margin-top:8px;text-align:center;}}"
+            f"</style></head>"
+            f'<body><div class="hd"><div class="dot"></div>'
+            f"Live TV{search_label}"
+            f' <span class="ct">({total} channels)</span></div>'
+            f"<table><thead><tr>"
+            f"<th>Logo</th><th>Ch.</th><th>Channel</th><th>Now On</th><th>Type</th>"
+            f"</tr></thead><tbody>{rows}</tbody></table>"
+            f'<p class="foot">Say "watch live [channel name]" to tune in.</p>'
+            f"</body></html>"
+        )
+        await _emit(__event_emitter__, f"✅ {len(channels)} channels", done=True)
+        return HTMLResponse(content=html, headers={"content-disposition": "inline"})
 
     async def search_and_play(
         self,
