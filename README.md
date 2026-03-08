@@ -453,7 +453,7 @@ Running llama.cpp in router mode means models stay resident in VRAM until you ex
 Set `LLAMACPP_BASE_URL` in the action valves to your llama.cpp router server:
 
 ```
-http://127.0.0.1:8082
+http://127.0.0.1:8080
 ```
 
 That's it. The action button appears in the chat toolbar — click it any time to free VRAM.
