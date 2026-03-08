@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=6%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=7%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
 
 <p>
   <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7C3AED?style=for-the-badge&labelColor=1a1a2e" /></a>
@@ -16,6 +16,7 @@
   <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-c084fc?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-d946ef?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/😂_Jokes-Laugh-ec4899?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/🧠_Thinking-Reason-06b6d4?style=flat-square&labelColor=0f0f23" />
 </p>
 
 </div>
@@ -27,14 +28,14 @@
 | # | Tool | Best for |
 |---|------|----------|
 | 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 2 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
-| 3 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
-| 4 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
-| 5 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
-| 6 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
+| 2 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
+| 3 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
+| 4 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
+| 5 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
+| 6 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
+| 7 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
 
 ---
-
 ## 🎬 Jellyfin Media Player
 
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
@@ -63,9 +64,6 @@
     </td>
   </tr>
 </table>
-
-
-
 
 ### ✨ What it does
 
@@ -111,6 +109,123 @@ list live channels
 
 ---
 
+---
+
+## 🧠 Thinking Filter
+
+> **The missing thinking toggle for llama.cpp + Qwen3.** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
+
+**[→ Install from marketplace](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)**
+
+<img width="1101" height="330" alt="Screenshot 2026-03-08 195138" src="https://github.com/user-attachments/assets/ddc6b145-818c-4f54-af61-ca5a7db4998d" />
+
+### ✨ What it does
+
+llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing the basic checkbox with a proper one-click brain button and a full suite of reasoning controls.
+
+| Feature | Detail |
+|---------|--------|
+| 🧠 One-click toggle | Brain button in the ✦ panel — ON thinks, OFF is instant vanilla |
+| 📊 5 depth levels | Unlimited · MAX (16k) · Deep (8k) · Normal (3k) · Quick (512 tokens) |
+| 🔬 13 reasoning presets | From Step by Step to Bayesian to MAX Thinking — shape *how* it thinks |
+| 🎨 11 presentation presets | ELI5, Expert Tone, TL;DR First — shape *how* it answers |
+| 👤 Per-user control | Every user sets their own defaults independently |
+| 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
+
+<details>
+<summary><b>⚡ Setup (2 steps)</b></summary>
+
+**Step 1 — Disable Open WebUI's built-in thinking toggle**
+
+Go to your model settings and turn OFF the "Enable Thinking" checkbox. This filter takes over completely and does it better.
+
+> ⚠️ If both are active they conflict — disable the built-in one first.
+
+**Step 2 — Start llama-server with:**
+
+```bash
+llama-server --jinja --reasoning-budget 0
+```
+
+The `--reasoning-budget 0` flag lets the filter set the budget dynamically per request. That's it — done forever.
+
+Now every chat has a 🧠 button in the ✦ panel. **Click to think. Click again to stop.**
+
+</details>
+
+<details>
+<summary><b>📊 Thinking Depth</b></summary>
+
+| Depth | Token Budget | Best for |
+|-------|-------------|----------|
+| **Unlimited** | No cap | Default — model thinks as long as it needs |
+| **MAX** | 16 000 tokens | Hardest problems, exhaustive analysis |
+| **Deep** | 8 000 tokens | Complex reasoning, careful step-by-step |
+| **Normal** | 3 000 tokens | Everyday use, balanced |
+| **Quick** | 512 tokens | Fast answers with just a hint of thought |
+
+</details>
+
+<details>
+<summary><b>🔬 Reasoning Presets — <i>how</i> the model thinks</b></summary>
+
+| Preset | What it does |
+|--------|-------------|
+| **None** | Vanilla — pure thinking, no style instruction |
+| **Think Less** | Skip over-analysis, reach conclusions fast |
+| **Think More** | Explore multiple angles before settling |
+| **Extended Thinking** | Deep deliberation: edge cases, counterargs, stress-tests every conclusion |
+| **MAX Thinking** | 🔥 Exhaustive — never stops early, challenges everything, asks "what have I missed?" Pair with MAX depth |
+| **Step by Step** | Numbered structured reasoning, nothing skipped |
+| **Devil's Advocate** | Steelmans the opposing view before answering |
+| **First Principles** | Strips to fundamentals, rebuilds from scratch |
+| **10x Hypotheses** | Generates 10 distinct approaches, evaluates all, picks the best |
+| **Socratic** | Interrogates the question's own assumptions before answering |
+| **Rubber Duck** | Narrates every logical move out loud — catches its own mistakes |
+| **Pre-Mortem** | Assumes the answer will fail, fixes it before giving it |
+| **Bayesian** | Probabilistic reasoning with honest calibrated confidence |
+| **Contrarian** | Default skepticism — challenges obvious answers, demands proof |
+
+</details>
+
+<details>
+<summary><b>🎨 Presentation Presets — <i>how</i> the answer looks</b></summary>
+
+| Preset | What it does |
+|--------|-------------|
+| **None** | Vanilla output |
+| **ELI5** | Explain like I'm five — strip all complexity |
+| **Be Concise** | Shortest complete answer, zero padding |
+| **Bullet Points** | Clean bulleted list |
+| **TL;DR First** | One-sentence summary up top, then full detail |
+| **Teach Me** | Concept → examples → memorable takeaway |
+| **Expert Tone** | Graduate-level, precise vocabulary |
+| **Casual Chat** | Relaxed, no jargon, like texting a smart friend |
+| **Debate Format** | Strongest FOR → strongest AGAINST → verdict |
+| **Analogies Only** | Everything through metaphors, zero technical terms |
+| **Action Items** | Numbered steps to execute immediately |
+| **Socratic Reply** | Guides you to the answer through probing questions |
+
+</details>
+
+<details>
+<summary><b>🎛️ Mix & Match Examples</b></summary>
+
+| Depth | Reasoning | Presentation | Result |
+|-------|-----------|-------------|--------|
+| MAX | MAX Thinking | Expert Tone | 🔥 Deepest possible analysis, grad-level output |
+| Normal | Bayesian | TL;DR First | Calibrated probabilistic answer, summary first |
+| Quick | None | Be Concise | Lightning-fast minimal answer |
+| Deep | First Principles | Teach Me | Rebuilds from scratch, explains like a lesson |
+| Deep | Devil's Advocate | Debate Format | Full steelman treatment, structured verdict |
+| Unlimited | Contrarian | ELI5 | Challenges every assumption, explains simply |
+
+</details>
+
+---
+
+---
+
 ## 🧩 Ask User
 
 > **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
@@ -151,6 +266,8 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 ---
 
+---
+
 ## 🎭 Persona Studio
 
 > **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
@@ -185,6 +302,8 @@ Set a custom persona: you are a brutally honest editor
 ```
 
 </details>
+
+---
 
 ---
 
@@ -231,6 +350,8 @@ Search Wikipedia for quantum entanglement
 
 ---
 
+---
+
 ## 🌌 Omniscient Orchestrator
 
 > **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
@@ -263,6 +384,8 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 > ⚠️ **Requires** Open WebUI with interactive input modal support. Won't work in headless or API-only environments.
 
 </details>
+
+---
 
 ---
 
@@ -302,6 +425,9 @@ Tell me 5 programming jokes
 </details>
 
 ---
+
+---
+
 
 ## 🛠️ Installation
 
