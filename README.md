@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=7%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=8%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
 
 <p>
   <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7C3AED?style=for-the-badge&labelColor=1a1a2e" /></a>
@@ -17,6 +17,7 @@
   <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-d946ef?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/😂_Jokes-Laugh-ec4899?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/🧠_Thinking-Reason-06b6d4?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/💾_VRAM-Unload-ef4444?style=flat-square&labelColor=0f0f23" />
 </p>
 
 </div>
@@ -28,12 +29,13 @@
 | # | Tool | Best for |
 |---|------|----------|
 | 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 2 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle for llamacpp and Qwen3.5 |
+| 2 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
 | 3 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
 | 4 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
 | 5 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
 | 6 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
 | 7 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
+| 8 | [💾 VRAM Unload](#-vram-unload) | Free GPU memory instantly from the chat |
 
 ---
 ## 🎬 Jellyfin Media Player
@@ -113,16 +115,13 @@ list live channels
 
 ## 🧠 Thinking Filter
 
-> **The missing thinking toggle for llama.cpp + Qwen3.5.** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
+> **The missing thinking toggle for llama.cpp + Qwen3.** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
 
-**[→ Install from marketplace](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)**
-
-<img width="1101" height="330" alt="Screenshot 2026-03-08 195138" src="https://github.com/user-attachments/assets/ddc6b145-818c-4f54-af61-ca5a7db4998d" />
+**[→ Install from marketplace](https://openwebui.com/)**
 
 ### ✨ What it does
 
-llama.cpp supports Qwen3.5's reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing manual tweaking of the starting arguments with a proper one-click thinking button and a full suite of reasoning controls.
-Supports any of the Qwen3.5 models.
+llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing the basic checkbox with a proper one-click brain button and a full suite of reasoning controls.
 
 | Feature | Detail |
 |---------|--------|
@@ -133,7 +132,16 @@ Supports any of the Qwen3.5 models.
 | 👤 Per-user control | Every user sets their own defaults independently |
 | 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
 
-**Start llama-server with:**
+<details>
+<summary><b>⚡ Setup (2 steps)</b></summary>
+
+**Step 1 — Disable Open WebUI's built-in thinking toggle**
+
+Go to your model settings and turn OFF the "Enable Thinking" checkbox. This filter takes over completely and does it better.
+
+> ⚠️ If both are active they conflict — disable the built-in one first.
+
+**Step 2 — Start llama-server with:**
 
 ```bash
 llama-server --jinja --reasoning-budget 0
@@ -143,6 +151,7 @@ The `--reasoning-budget 0` flag lets the filter set the budget dynamically per r
 
 Now every chat has a 🧠 button in the ✦ panel. **Click to think. Click again to stop.**
 
+</details>
 
 <details>
 <summary><b>📊 Thinking Depth</b></summary>
@@ -416,6 +425,54 @@ Tell me 5 programming jokes
 </details>
 
 ---
+
+## 💾 VRAM Unload
+
+> **Free your GPU memory without leaving the chat** — one action button that detects loaded models and unloads them from VRAM instantly via the llama.cpp router API.
+
+**[→ Install from marketplace](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)**
+
+<img width="968" height="703" alt="Screenshot 2026-03-08 204032" src="https://github.com/user-attachments/assets/0c896fde-142c-472c-8811-463bbd3596d4" />
+
+
+### ✨ What it does
+
+Running llama.cpp in router mode means models stay resident in VRAM until you explicitly unload them. This action button insantly clean the model from VRAM.
+
+| Feature | Detail |
+|---------|--------|
+| 🔍 Auto-detects loaded models | Queries `/v1/models` and filters to currently loaded ones |
+| ✅ Confirm before unload | Shows a confirmation dialog with model name(s) — no accidental unloads |
+| 🔁 Multi-model support | Unloads every loaded model in one click if multiple are resident |
+| 📡 Live status updates | Status messages as each model unloads, success/error per model |
+| 🔑 Zero dependencies | Pure `aiohttp` — nothing extra to install |
+
+<details>
+<summary><b>⚙️ Setup (1 step)</b></summary>
+
+Set `LLAMACPP_BASE_URL` in the action valves to your llama.cpp router server:
+
+```
+http://127.0.0.1:8082
+```
+
+That's it. The action button appears in the chat toolbar — click it any time to free VRAM.
+
+> **Requires llama.cpp running in router mode** (`--router` flag) with the REST API exposed.
+
+</details>
+
+<details>
+<summary><b>🛠️ Troubleshooting</b></summary>
+
+| Symptom | Fix |
+|---------|-----|
+| ❌ "Cannot reach llama.cpp" | Check `LLAMACPP_BASE_URL` is correct and the server is running |
+| ℹ️ "No models currently loaded" | No models are resident in VRAM — nothing to unload |
+| ❌ HTTP 404 on unload | Make sure llama.cpp is started in router mode, not single-model mode |
+| ❌ HTTP 4xx/5xx | Check llama.cpp logs for the specific error |
+
+</details>
 
 ---
 
