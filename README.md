@@ -117,7 +117,10 @@ list live channels
 
 > **The missing thinking toggle for llama.cpp + Qwen3.** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
 
-**[→ Install from marketplace](https://openwebui.com/)**
+**[→ Install from marketplace](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)**
+
+<img width="1101" height="330" alt="8bed8be1-8d6a-42b1-bb0d-f2929fe1cb9e" src="https://github.com/user-attachments/assets/e77d688b-ba3a-47a9-b49f-f331c1158949" />
+
 
 ### ✨ What it does
 
@@ -357,6 +360,8 @@ Search Wikipedia for quantum entanglement
 > **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
 
 **[→ Install from marketplace](https://openwebui.com/posts/orchestrator_0f269681)**
+
+<img width="1630" height="792" alt="89c819c3-e753-4999-b387-c0b060b8e0f7" src="https://github.com/user-attachments/assets/deece0b0-3c55-4840-8f61-7dfbc5b34aa8" />
 
 ### ✨ What it does
 
