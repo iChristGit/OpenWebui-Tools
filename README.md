@@ -38,6 +38,15 @@
 | 8 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 
 ---
+
+🛒 Install from the Open WebUI Marketplace
+
+The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
+
+<div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7C3AED?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2Zy8+&labelColor=1a1a2e"/> </a> </div>
+
+---
+
 ## 🎬 Jellyfin Media Player
 
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
