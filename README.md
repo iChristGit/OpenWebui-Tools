@@ -28,7 +28,7 @@
 | # | Tool | Best for |
 |---|------|----------|
 | 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 2 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
+| 2 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle for llamacpp and Qwen3.5 |
 | 3 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
 | 4 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
 | 5 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
