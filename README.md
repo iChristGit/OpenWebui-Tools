@@ -35,7 +35,7 @@
 | 5 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
 | 6 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
 | 7 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
-| 8 | [💾 VRAM Unload](#-vram-unload) | Free GPU memory instantly from the chat |
+| 8 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 
 ---
 ## 🎬 Jellyfin Media Player
