@@ -121,7 +121,8 @@ list live channels
 
 ### ✨ What it does
 
-llama.cpp supports Qwen3.5's extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing the basic checkbox with a proper one-click brain button and a full suite of reasoning controls.
+llama.cpp supports Qwen3.5's reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing the basic checkbox with a proper one-click brain button and a full suite of reasoning controls.
+Supports any of the Qwen3.5 models.
 
 | Feature | Detail |
 |---------|--------|
