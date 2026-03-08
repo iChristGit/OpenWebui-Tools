@@ -132,16 +132,7 @@ llama.cpp supports Qwen3.5's extended `<think>` reasoning mode natively — but 
 | 👤 Per-user control | Every user sets their own defaults independently |
 | 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
 
-<details>
-<summary><b>⚡ Setup (2 steps)</b></summary>
-
-**Step 1 — Disable Open WebUI's built-in thinking toggle**
-
-Go to your model settings and turn OFF the "Enable Thinking" checkbox. This filter takes over completely and does it better.
-
-> ⚠️ If both are active they conflict — disable the built-in one first.
-
-**Step 2 — Start llama-server with:**
+**Start llama-server with:**
 
 ```bash
 llama-server --jinja --reasoning-budget 0
@@ -151,7 +142,6 @@ The `--reasoning-budget 0` flag lets the filter set the budget dynamically per r
 
 Now every chat has a 🧠 button in the ✦ panel. **Click to think. Click again to stop.**
 
-</details>
 
 <details>
 <summary><b>📊 Thinking Depth</b></summary>
