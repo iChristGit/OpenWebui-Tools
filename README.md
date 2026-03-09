@@ -370,7 +370,7 @@ Search Wikipedia for quantum entanglement
 
 **[→ Install from marketplace](https://openwebui.com/posts/orchestrator_0f269681)**
 
-![e263b231-d724-4266-bc95-3b7c277d4393](https://github.com/user-attachments/assets/7f453a38-8376-48e0-a44d-c33f36e93936)
+<img width="393" height="746" alt="e263b231-d724-4266-bc95-3b7c277d4393" src="https://github.com/user-attachments/assets/7f453a38-8376-48e0-a44d-c33f36e93936" />
 
 ### ✨ What it does
 
