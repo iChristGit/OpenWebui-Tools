@@ -136,6 +136,7 @@ list live channels
 llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing the basic checkbox with a proper one-click brain button and a full suite of reasoning controls.
 
 ⚡ NEW — 4 sampling presets with Qwen3.5's official recommended parameters, force-injected at llama.cpp API level:
+
 **Instruct General · Instruct Reasoning · Thinking General · Thinking Precise**
 
 | Feature | Detail |
