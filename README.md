@@ -139,6 +139,7 @@ llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Op
 
 **Instruct General · Instruct Reasoning · Thinking General · Thinking Precise**
 
+
 | Feature | Detail |
 |---------|--------|
 | 🧠 One-click toggle | Brain button in the ✦ panel — ON thinks, OFF is instant vanilla |
