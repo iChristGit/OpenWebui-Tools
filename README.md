@@ -135,18 +135,15 @@ list live channels
 
 llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing the basic checkbox with a proper one-click brain button and a full suite of reasoning controls.
 
-⚡ NEW — 4 sampling presets with Qwen3.5's official recommended parameters, force-injected at llama.cpp API level:
-
-**Instruct General · Instruct Reasoning · Thinking General · Thinking Precise**
-
-
 | Feature | Detail |
 |---------|--------|
 | 🧠 One-click toggle | Brain button in the ✦ panel — ON thinks, OFF is instant vanilla |
+| 🔀 enable_thinking valve | Toggle thinking on/off per-user without disabling the filter — sampling & presentation stay active either way |
+| 🎛️ 4 sampling presets | Force Qwen3.5's official parameters at llama.cpp API level — Instruct General · Instruct Reasoning · Thinking General · Thinking Precise |
 | 📊 5 depth levels | Unlimited · MAX (16k) · Deep (8k) · Normal (3k) · Quick (512 tokens) |
-| 🔬 13 reasoning presets | From Step by Step to Bayesian to MAX Thinking — shape *how* it thinks |
+| 🔬 13 reasoning presets | Shape *how* it thinks |
 | 🎨 11 presentation presets | ELI5, Expert Tone, TL;DR First — shape *how* it answers |
-| 👤 Per-user control | Every user sets their own defaults independently |
+| 👤 Per-user control | Every user sets their own depth, style, and sampling independently |
 | 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
 
 <details>
