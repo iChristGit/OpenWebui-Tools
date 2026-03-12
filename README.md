@@ -220,7 +220,7 @@ list live channels
 **[→ Install from marketplace](https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e)**
 
 <div align="center">
-<img width="1241" height="1090" alt="Screenshot 2026-03-12 171553" src="https://github.com/user-attachments/assets/7dcec5ed-a753-441a-89bd-181d0c3742f1" />
+<img width="1124" height="1225" alt="Screenshot 2026-03-12 173619" src="https://github.com/user-attachments/assets/bce3d2f4-291a-4dd5-923b-3b3bd6766bb6" />
 </div>
 
 <br/>
