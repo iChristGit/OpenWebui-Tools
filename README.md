@@ -53,7 +53,7 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 > **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
 
-**[→ Install from marketplace](https://openwebui.com/posts/PLACEHOLDER_LTX_TOOL_LINK)**
+**[→ Install from marketplace](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)**
 
 > 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
 
