@@ -65,17 +65,18 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 ### ✨ What it does
 
-Two tools in one: **Text-to-Video** and **Image-to-Video**, both driven by the LTX-Video 2.3 22B model running locally in ComfyUI. Ask for a video in plain English, get a fully embedded player back in chat — with a download button, open button, and a creative title the LLM names itself.
+Two tools in one: **Text-to-Video** and **Image-to-Video**, both driven by the LTX-Video 2.3 22B model running locally in ComfyUI. Ask for a video in plain English — or upload an image and say "animate this" — and get a fully embedded cinematic player back in chat with a download button, open button, and a creative title the LLM names itself. For Image-to-Video the output resolution is automatically set to match your input image. Running on a single GPU? Both Ollama and llama.cpp models can be auto-evicted from VRAM before each generation so the video model gets all the headroom it needs.
 
 | Feature | Detail |
 |---------|--------|
-| ✍️ Text-to-Video | Generate from any prompt at 1280×720, configurable up to 30 s |
-| 🖼️ Image-to-Video | Animate any uploaded image at its native resolution |
+| ✍️ Text-to-Video | Generate from any prompt at configurable resolution, up to 30 s |
+| 🖼️ Image-to-Video | Upload any image — output resolution automatically matches it, no guessing |
+| 🖥️ Embedded player | Cinematic dark player rendered directly in chat — watch, open, or download without leaving the conversation |
+| ⏱️ Configurable duration | Pick `5s` · `10s` · `15s` · `20s` · `25s` · `30s` per-user — no admin needed |
+| 🧹 VRAM unload (GPU poor friendly) | Auto-evicts **Ollama** and/or **llama.cpp** models before each generation — reclaim every MB for the video model |
 | 📱 Mobile-compatible | ffmpeg post-encode to H.264 `yuv420p` + `faststart` — shareable on iOS & WhatsApp |
 | 🎲 Random seeds | Both noise seeds randomised every generation — never duplicate outputs |
 | 🎬 Creative filenames | LLM picks a unique 2–4 word title per video (e.g. `Dragon_Awakens_Dawn_i2v`) |
-| 🔋 Auto VRAM unload | Unloads Ollama models from VRAM before generating to free headroom |
-| ⏱️ Configurable duration | 5 s · 10 s · 15 s · 20 s · 25 s · 30 s — set per user |
 | 🔑 Optional API key | Bearer token support for secured ComfyUI setups |
 
 <details>
@@ -95,10 +96,12 @@ Then configure the tool valves:
 | `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL for file serving |
 | `video_length_frames` | `241` | Default frame count (241 = 10 s at 24 fps) |
 | `frame_rate` | `24` | Output fps |
-| `t2v_width` / `t2v_height` | `1280` / `720` | Text-to-Video output resolution |
+| `t2v_width` / `t2v_height` | `1280` / `720` | Text-to-Video resolution (I2V uses the input image size automatically) |
 | `max_wait_time` | `600` | Seconds before timeout (generation takes 3–10 min) |
 | `unload_ollama_models` | `true` | Auto-free Ollama VRAM before each generation |
 | `ollama_api_url` | `http://localhost:11434` | Your Ollama server address |
+| `unload_llamacpp_models` | `false` | Auto-free llama.cpp router models before each generation |
+| `llamacpp_api_url` | `http://localhost:8082` | Your llama.cpp router address |
 
 </details>
 
@@ -121,11 +124,11 @@ timelapse of storm clouds rolling over a mountain range
 
 Each user can override the admin defaults independently:
 
-| Setting | Options |
-|---------|---------|
-| `video_duration` | `5s` `10s` `15s` `20s` `25s` `30s` |
-| `frame_rate` | Any integer (default `24`) |
-| `t2v_width` / `t2v_height` | Any resolution (default `1280×720`) |
+| Setting | Options | Note |
+|---------|---------|------|
+| `video_duration` | `5s` `10s` `15s` `20s` `25s` `30s` | Applies to both T2V and I2V |
+| `frame_rate` | Any integer (default `24`) | |
+| `t2v_width` / `t2v_height` | Any resolution (default `1280×720`) | T2V only — I2V always matches the uploaded image automatically |
 
 </details>
 
