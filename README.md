@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=9%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=10%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
 
 <p>
   <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7C3AED?style=for-the-badge&labelColor=1a1a2e" /></a>
@@ -19,6 +19,7 @@
   <img src="https://img.shields.io/badge/😂_Jokes-Laugh-ec4899?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/🧠_Thinking-Reason-06b6d4?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/💾_VRAM-Unload-ef4444?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/🔴_Reddit-Explorer-ff4500?style=flat-square&labelColor=0f0f23" />
 </p>
 
 </div>
@@ -31,13 +32,14 @@
 |---|------|----------|
 | 1 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
 | 2 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 3 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
-| 4 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
-| 5 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
-| 6 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
-| 7 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
-| 8 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
-| 9 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
+| 3 | [🔴 Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, user profiles — no API key |
+| 4 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
+| 5 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
+| 6 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
+| 7 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
+| 8 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
+| 9 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
+| 10 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 
 ---
 
@@ -208,6 +210,92 @@ list live channels
 </details>
 
 ---
+
+---
+
+## 🌐 Reddit Explorer
+
+> **Browse Reddit directly in chat** — hot, new, top & rising posts from any subreddit, full comment threads, rich media (images, video, galleries), user profiles, and smart subreddit suggestions. Zero API key, zero sign-in.
+
+**[→ Install from marketplace](https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e)**
+
+<div align="center">
+<img width="1241" height="1090" alt="Screenshot 2026-03-12 171553" src="https://github.com/user-attachments/assets/7dcec5ed-a753-441a-89bd-181d0c3742f1" />
+</div>
+
+<br/>
+
+### ✨ What it does
+
+Nine purpose-built functions let the LLM intelligently navigate Reddit on your behalf. Ask "what's hot on r/worldnews", "show me the top posts of the week in r/science", or just "what's happening on Reddit" — the tool picks the right function, picks a sensible subreddit if you didn't specify one, fetches live data via Reddit's public JSON API, and returns fully-rendered markdown with inline images, video links, upvote scores, and direct comment links.
+
+| Feature | Detail |
+|---------|--------|
+| 🔥 Hot / 🆕 New / 🏆 Top posts | Browse any subreddit by sort — Top supports `hour · day · week · month · year · all` time filters |
+| 🌐 Reddit front page | Global `popular`, `all`, or `best` feeds — no subreddit needed |
+| 🔍 Search | Full-text search within a specific subreddit or across all of Reddit |
+| 💬 Comment threads | Fetches a post's top comments with nested first-level replies (depth 3), sorted by `top · best · new · controversial · old` |
+| 🖼️ Inline images | Direct image posts render inline with `![post image](url)` — JPEG, PNG, GIF, WebP |
+| 🎬 Video links | Reddit-hosted videos get a ▶ Watch link; embedded videos (YouTube, Twitch, etc.) include provider name and a thumbnail |
+| 🖼️🖼️ Galleries | Multi-image gallery posts show up to 4 preview images inline |
+| 🔗 External links | Link posts surface the external URL alongside the Reddit thread link |
+| ⬆️ Upvote scores & ratio | Every post shows score (formatted as `1.2k` / `3.4M`) and upvote percentage |
+| 🏠 Subreddit info | Full community profile: icon, banner, member count, active users, language, NSFW flag, and top rules |
+| 👤 User profiles | Karma breakdown (post / comment / total), badges (mod, gold, verified), avatar, and recent post history |
+| 🗺️ Subreddit suggestions | Topic → subreddit map covering 20+ categories (news, AI, gaming, finance, food, travel, crypto, etc.) plus live Reddit search |
+| 🔞 / 🙈 Content tags | NSFW and spoiler posts are flagged automatically |
+| 🔑 No API key required | Uses Reddit's public `.json` endpoints — no OAuth, no account, no rate-limit keys |
+
+<details>
+<summary><b>📚 All 9 functions at a glance</b></summary>
+
+| Function | Trigger phrase examples |
+|----------|------------------------|
+| `get_hot_posts(subreddit, limit)` | "what's trending on r/gaming", "hot posts in worldnews" |
+| `get_new_posts(subreddit, limit)` | "latest posts on r/OpenWebUI", "newest in r/technology" |
+| `get_top_posts(subreddit, time_filter, limit)` | "top posts this week in r/science", "best of all time on r/AskReddit" |
+| `search_reddit(query, subreddit, limit)` | "search Reddit for llama.cpp", "find posts about ComfyUI in r/stablediffusion" |
+| `get_post_comments(post_id, subreddit, limit, sort)` | "show me the comments on that post", "read the discussion" |
+| `get_subreddit_info(subreddit)` | "what is r/LocalLLaMA", "tell me about r/homelab" |
+| `suggest_subreddits(topic)` | "where can I find AI news on Reddit?", "best subreddit for cooking" |
+| `get_reddit_frontpage(feed, limit)` | "what's popular on Reddit", "show me Reddit", "what's happening today" |
+| `get_user_profile(username, limit)` | "look up u/spez", "show me that user's post history" |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+What's hot on r/LocalLLaMA today?
+Show me the top posts of the week in r/worldnews
+What's the latest on r/OpenWebUI?
+Search Reddit for "open-webui tools"
+What's the best subreddit for home automation?
+Tell me about r/MachineLearning
+Show me the Reddit front page
+Read the comments on that post
+Look up the profile for u/GallowBoob
+What's trending on Reddit right now?
+Find me the top AI news from this month
+```
+
+</details>
+
+<details>
+<summary><b>⚙️ Requirements</b></summary>
+
+Only one Python package is needed:
+
+```
+requirements: requests
+```
+
+No valves, no API keys, no configuration — install and ask away.
+
+> ℹ️ Uses Reddit's public `reddit.com/r/<subreddit>.json` endpoints with a descriptive `User-Agent` header. Respects Reddit's public API fair-use guidelines.
+
+</details>
 
 ---
 
@@ -576,7 +664,6 @@ That's it. The action button appears in the chat toolbar — click it any time t
 </details>
 
 ---
-
 
 ## 🛠️ Installation
 
