@@ -332,7 +332,8 @@ llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Op
 llama-server --jinja --chat-template-kwargs "{\"enable_thinking\":false}" 
 ```
 
-The `--chat-template-kwargs "{\"enable_thinking\":false}"` flag lets the filter set the budget dynamically per request. That's it — done forever.
+The `--chat-template-kwargs "{\"enable_thinking\":false}"` flag lets the filter set the budget dynamically per request.
+
 The `--jinja` flat enables Jinja chat template processing, required for Qwen3.5's think block
 
 Enable the function and set it as default for your qwen3.5 models if you want the default to be thinking enabled.
