@@ -32,7 +32,7 @@
 |---|------|----------|
 | 1 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
 | 2 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 3 | [🔴 Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, user profiles — no API key |
+| 3 | [🌐 Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, user profiles — no API key |
 | 4 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
 | 5 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
 | 6 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
