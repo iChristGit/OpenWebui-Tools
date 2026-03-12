@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=8%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=9%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
 
 <p>
   <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7C3AED?style=for-the-badge&labelColor=1a1a2e" /></a>
@@ -10,6 +10,7 @@
 </p>
 
 <p>
+  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-6366f1?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-6366f1?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/🧩_Ask_User-Input-8b5cf6?style=flat-square&labelColor=0f0f23" />
   <img src="https://img.shields.io/badge/🎭_Personas-Switch-a855f7?style=flat-square&labelColor=0f0f23" />
@@ -28,14 +29,15 @@
 
 | # | Tool | Best for |
 |---|------|----------|
-| 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 2 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
-| 3 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
-| 4 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
-| 5 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
-| 6 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
-| 7 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
-| 8 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
+| 1 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
+| 2 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
+| 3 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
+| 4 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
+| 5 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
+| 6 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
+| 7 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
+| 8 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
+| 9 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 
 ---
 
@@ -44,6 +46,139 @@
 The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
 
 <div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7C3AED?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2Zy8+&labelColor=1a1a2e"/> </a> </div>
+
+---
+
+## 🎥 LTX-2.3 Video Generator
+
+> **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <b>✍️ Text-to-Video</b><br/><br/>
+      Describe anything — the model writes, directs, and renders it.
+    </td>
+    <td width="50%" align="center">
+      <b>🖼️ Image-to-Video</b><br/><br/>
+      Upload any image and ask for it to be animated — the model brings it to life.
+    </td>
+  </tr>
+</table>
+
+### ✨ What it does
+
+Two tools in one: **Text-to-Video** and **Image-to-Video**, both driven by the LTX-Video 2.3 22B model running locally in ComfyUI. Ask for a video in plain English, get a fully embedded player back in chat — with a download button, open button, and a creative title the LLM names itself.
+
+| Feature | Detail |
+|---------|--------|
+| ✍️ Text-to-Video | Generate from any prompt at 1280×720, configurable up to 30 s |
+| 🖼️ Image-to-Video | Animate any uploaded image at its native resolution |
+| 📱 Mobile-compatible | ffmpeg post-encode to H.264 `yuv420p` + `faststart` — shareable on iOS & WhatsApp |
+| 🎲 Random seeds | Both noise seeds randomised every generation — never duplicate outputs |
+| 🎬 Creative filenames | LLM picks a unique 2–4 word title per video (e.g. `Dragon_Awakens_Dawn_i2v`) |
+| 🔋 Auto VRAM unload | Unloads Ollama models from VRAM before generating to free headroom |
+| ⏱️ Configurable duration | 5 s · 10 s · 15 s · 20 s · 25 s · 30 s — set per user |
+| 🔑 Optional API key | Bearer token support for secured ComfyUI setups |
+
+<details>
+<summary><b>⚙️ Full Setup — Step by Step</b></summary>
+
+### Step 1 — Install ComfyUI
+
+If you don't have ComfyUI yet:
+
+```bash
+git clone https://github.com/comfyanonymous/ComfyUI.git
+cd ComfyUI
+pip install -r requirements.txt
+```
+
+### Step 2 — Install the UnloadAllModels custom node
+
+The workflow uses `UnloadAllModels` to free VRAM between pipeline stages (after text encoding, after upscaling, and at the end). Install via ComfyUI Manager, or manually:
+
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/SeanScripts/ComfyUI-Unload-Model.git
+```
+
+Restart ComfyUI. This adds two passthrough nodes — **Unload Model** and **Unload All Models** — that flush GPU memory at any chosen step without breaking the pipeline graph.
+
+> **Why is this required?** LTX-2.3 loads a 22B diffusion model, a 12B text encoder (Gemma 3), a spatial upscaler, and an audio VAE in sequence. On a single 24 GB GPU, keeping all of them resident simultaneously is not possible — `UnloadAllModels` is what makes the full pipeline fit in VRAM.
+
+### Step 3 — Download the LTX-Video 2.3 models
+
+You need **5 files** total. Place them exactly as shown:
+
+| File | Destination folder | Approx. size |
+|------|--------------------|--------------|
+| `ltx-2.3-22b-dev-fp8.safetensors` | `ComfyUI/models/checkpoints/` | ~22 GB |
+| `ltx-2.3-22b-distilled-lora-384.safetensors` | `ComfyUI/models/loras/` | ~1 GB |
+| `ltx-2.3-spatial-upscaler-x2-1.0.safetensors` | `ComfyUI/models/upscale_models/` | ~200 MB |
+| `gemma_3_12B_it_fp4_mixed.safetensors` | `ComfyUI/models/text_encoders/` | ~7 GB |
+| `gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors` | `ComfyUI/models/loras/` | ~300 MB |
+
+> 💡 **Why FP8?** The 22B model at FP8 fits in ~24 GB VRAM (RTX 3090 / 4090 class) while retaining near-full quality. The full BF16 weights require ~44 GB. FP8 is the recommended format for single-GPU setups.
+
+All files are on Hugging Face — search [`LightricksAI/LTX-Video`](https://huggingface.co/Lightricks/LTX-Video).
+
+### Step 4 — Start ComfyUI
+
+```bash
+cd ComfyUI
+python main.py --listen 0.0.0.0
+```
+
+Confirm ComfyUI is accessible at `http://localhost:8188` before proceeding.
+
+### Step 5 — Install & configure the Open WebUI tool
+
+1. Open **Workspace → Tools → ➕ Add Tool** and paste the script
+2. Configure the valves:
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `comfyui_api_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
+| `comfyui_api_key` | *(empty)* | Bearer token if ComfyUI is behind auth |
+| `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL for file serving |
+| `video_length_frames` | `241` | Default frame count (241 = 10 s at 24 fps) |
+| `frame_rate` | `24` | Output fps |
+| `t2v_width` / `t2v_height` | `1280` / `720` | Text-to-Video output resolution |
+| `max_wait_time` | `600` | Seconds before timeout (generation takes 3–10 min) |
+| `unload_ollama_models` | `true` | Auto-free Ollama VRAM before each generation |
+| `ollama_api_url` | `http://localhost:11434` | Your Ollama server address |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+make a video of a samurai walking through cherry blossoms at sunset
+generate a 15 second clip of ocean waves crashing at night
+animate this image [upload any photo]
+create a video of a neon-lit city street in heavy rain
+a slow-motion shot of a red fox jumping through snow
+timelapse of storm clouds rolling over a mountain range
+```
+
+</details>
+
+<details>
+<summary><b>⚡ Per-user settings</b></summary>
+
+Each user can override the admin defaults independently:
+
+| Setting | Options |
+|---------|---------|
+| `video_duration` | `5s` `10s` `15s` `20s` `25s` `30s` |
+| `frame_rate` | Any integer (default `24`) |
+| `t2v_width` / `t2v_height` | Any resolution (default `1280×720`) |
+
+</details>
+
+---
 
 ---
 
@@ -470,7 +605,7 @@ http://127.0.0.1:8080
 
 That's it. The action button appears in the chat toolbar — click it any time to free VRAM.
 
-> **Requires llama.cpp running in router mode (llama-server)..
+> **Requires llama.cpp running in router mode (llama-server).
 
 </details>
 
