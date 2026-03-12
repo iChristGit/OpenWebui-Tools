@@ -470,7 +470,7 @@ http://127.0.0.1:8080
 
 That's it. The action button appears in the chat toolbar — click it any time to free VRAM.
 
-> **Requires llama.cpp running in router mode** (`--router` flag) with the REST API exposed.
+> **Requires llama.cpp running in router mode (llama-server)..
 
 </details>
 
