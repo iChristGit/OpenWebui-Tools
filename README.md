@@ -156,8 +156,10 @@ llama-server --jinja --reasoning-budget 0
 ```
 
 The `--reasoning-budget 0` flag lets the filter set the budget dynamically per request. That's it — done forever.
+
 Enable the function and set it as default for your qwen3.5 models if you want the default to be thinkinh enabled.
-Now every chat has a 🧠 button in the ✦ panel. **Click to think. Click again to stop.**
+
+Now every chat has a 🧠 button that can be diabled in one click and enabled back in two clicks.
 
 </details>
 
