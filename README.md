@@ -455,7 +455,6 @@ Running llama.cpp in router mode means models stay resident in VRAM until you ex
 | Feature | Detail |
 |---------|--------|
 | 🔍 Auto-detects loaded models | Queries `/v1/models` and filters to currently loaded ones |
-| ✅ Confirm before unload | Shows a confirmation dialog with model name(s) — no accidental unloads |
 | 🔁 Multi-model support | Unloads every loaded model in one click if multiple are resident |
 | 📡 Live status updates | Status messages as each model unloads, success/error per model |
 | 🔑 Zero dependencies | Pure `aiohttp` — nothing extra to install |
