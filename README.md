@@ -329,10 +329,10 @@ llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Op
 **Step 1 — Start llama-server with:**
 
 ```bash
-llama-server --jinja --reasoning-budget 0
+llama-server --jinja --chat-template-kwargs "{\"enable_thinking\":false}" 
 ```
 
-The `--reasoning-budget 0` flag lets the filter set the budget dynamically per request. That's it — done forever.
+The `--chat-template-kwargs "{\"enable_thinking\":false}"` flag lets the filter set the budget dynamically per request. That's it — done forever.
 
 Enable the function and set it as default for your qwen3.5 models if you want the default to be thinking enabled.
 (If you rather have thinking disabled by default do not set the function as default!)
