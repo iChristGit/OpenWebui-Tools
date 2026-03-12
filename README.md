@@ -53,18 +53,15 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 > **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <b>✍️ Text-to-Video</b><br/><br/>
-      Describe anything — the model writes, directs, and renders it.
-    </td>
-    <td width="50%" align="center">
-      <b>🖼️ Image-to-Video</b><br/><br/>
-      Upload any image and ask for it to be animated — the model brings it to life.
-    </td>
-  </tr>
-</table>
+**[→ Install from marketplace](https://openwebui.com/posts/PLACEHOLDER_LTX_TOOL_LINK)**
+
+> 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
+
+<div align="center">
+  <img src="PLACEHOLDER_LTX_SCREENSHOT_URL" width="80%" alt="LTX-2.3 Video Generator screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -82,60 +79,14 @@ Two tools in one: **Text-to-Video** and **Image-to-Video**, both driven by the L
 | 🔑 Optional API key | Bearer token support for secured ComfyUI setups |
 
 <details>
-<summary><b>⚙️ Full Setup — Step by Step</b></summary>
+<summary><b>⚙️ Prerequisites</b></summary>
 
-### Step 1 — Install ComfyUI
+This tool connects to a running ComfyUI instance with LTX-Video 2.3 already set up. You'll need:
 
-If you don't have ComfyUI yet:
+1. **ComfyUI** running with an LTX-2.3 workflow loaded — see [LightricksAI/LTX-Video](https://huggingface.co/Lightricks/LTX-Video) for models
+2. **[ComfyUI-Unload-Model](https://github.com/SeanScripts/ComfyUI-Unload-Model)** custom node installed — required by the workflow to free VRAM between pipeline stages
 
-```bash
-git clone https://github.com/comfyanonymous/ComfyUI.git
-cd ComfyUI
-pip install -r requirements.txt
-```
-
-### Step 2 — Install the UnloadAllModels custom node
-
-The workflow uses `UnloadAllModels` to free VRAM between pipeline stages (after text encoding, after upscaling, and at the end). Install via ComfyUI Manager, or manually:
-
-```bash
-cd ComfyUI/custom_nodes
-git clone https://github.com/SeanScripts/ComfyUI-Unload-Model.git
-```
-
-Restart ComfyUI. This adds two passthrough nodes — **Unload Model** and **Unload All Models** — that flush GPU memory at any chosen step without breaking the pipeline graph.
-
-> **Why is this required?** LTX-2.3 loads a 22B diffusion model, a 12B text encoder (Gemma 3), a spatial upscaler, and an audio VAE in sequence. On a single 24 GB GPU, keeping all of them resident simultaneously is not possible — `UnloadAllModels` is what makes the full pipeline fit in VRAM.
-
-### Step 3 — Download the LTX-Video 2.3 models
-
-You need **5 files** total. Place them exactly as shown:
-
-| File | Destination folder | Approx. size |
-|------|--------------------|--------------|
-| `ltx-2.3-22b-dev-fp8.safetensors` | `ComfyUI/models/checkpoints/` | ~22 GB |
-| `ltx-2.3-22b-distilled-lora-384.safetensors` | `ComfyUI/models/loras/` | ~1 GB |
-| `ltx-2.3-spatial-upscaler-x2-1.0.safetensors` | `ComfyUI/models/upscale_models/` | ~200 MB |
-| `gemma_3_12B_it_fp4_mixed.safetensors` | `ComfyUI/models/text_encoders/` | ~7 GB |
-| `gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors` | `ComfyUI/models/loras/` | ~300 MB |
-
-> 💡 **Why FP8?** The 22B model at FP8 fits in ~24 GB VRAM (RTX 3090 / 4090 class) while retaining near-full quality. The full BF16 weights require ~44 GB. FP8 is the recommended format for single-GPU setups.
-
-All files are on Hugging Face — search [`LightricksAI/LTX-Video`](https://huggingface.co/Lightricks/LTX-Video).
-
-### Step 4 — Start ComfyUI
-
-```bash
-cd ComfyUI
-python main.py --listen 0.0.0.0
-```
-
-Confirm ComfyUI is accessible at `http://localhost:8188` before proceeding.
-
-### Step 5 — Install & configure the Open WebUI tool
-
-1. Open **Workspace → Tools → ➕ Add Tool** and paste the script
-2. Configure the valves:
+Then configure the tool valves:
 
 | Valve | Default | What it does |
 |-------|---------|--------------|
