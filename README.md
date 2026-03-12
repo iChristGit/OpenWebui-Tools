@@ -147,15 +147,9 @@ llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Op
 | 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
 
 <details>
-<summary><b>⚡ Setup (2 steps)</b></summary>
+<summary><b>⚡ Setup (1 step)</b></summary>
 
-**Step 1 — Disable Open WebUI's built-in thinking toggle**
-
-Go to your model settings and turn OFF the "Enable Thinking" checkbox. This filter takes over completely and does it better.
-
-> ⚠️ If both are active they conflict — disable the built-in one first.
-
-**Step 2 — Start llama-server with:**
+**Step 1 — Start llama-server with:**
 
 ```bash
 llama-server --jinja --reasoning-budget 0
