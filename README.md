@@ -301,7 +301,7 @@ No valves, no API keys, no configuration — install and ask away.
 
 ## 🧠 Thinking Filter
 
-> **The missing thinking toggle for llama.cpp + Qwen3.** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
+> **The missing thinking toggle for llama.cpp + Qwen3.5** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
 
 **[→ Install from marketplace](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)**
 
@@ -310,7 +310,7 @@ No valves, no API keys, no configuration — install and ask away.
 
 ### ✨ What it does
 
-llama.cpp supports Qwen3's extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing manual tweaking with a proper one-click think button and a full suite of reasoning controls.
+llama.cpp supports Qwen3.5 extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing manual tweaking with a proper one-click think button and a full suite of reasoning controls.
 
 | Feature | Detail |
 |---------|--------|
