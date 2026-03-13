@@ -43,7 +43,7 @@
 
 ---
 
-🛒 Install from the Open WebUI Marketplace
+## 🛒 Install from the Open WebUI Marketplace
 
 The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
 
@@ -136,8 +136,6 @@ Each user can override the admin defaults independently:
 
 ---
 
----
-
 ## 🎬 Jellyfin Media Player
 
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
@@ -208,8 +206,6 @@ list live channels
 ```
 
 </details>
-
----
 
 ---
 
@@ -414,8 +410,6 @@ Now every chat has a 🧠 button that can be diabled in one click and enabled ba
 
 ---
 
----
-
 ## 🧩 Ask User
 
 > **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
@@ -456,8 +450,6 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 ---
 
----
-
 ## 🎭 Persona Studio
 
 > **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
@@ -492,8 +484,6 @@ Set a custom persona: you are a brutally honest editor
 ```
 
 </details>
-
----
 
 ---
 
@@ -540,8 +530,6 @@ Search Wikipedia for quantum entanglement
 
 ---
 
----
-
 ## 🌌 Omniscient Orchestrator
 
 > **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
@@ -576,8 +564,6 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 > ⚠️ **Requires** Open WebUI with interactive input modal support. Won't work in headless or API-only environments.
 
 </details>
-
----
 
 ---
 
@@ -686,6 +672,18 @@ All tools install the same way — takes about 30 seconds.
 ## 📜 License
 
 All tools are released under the **MIT License** — free to use, fork, modify, and publish.
+
+<details>
+<summary><b>⚠️ Disclaimer</b></summary>
+
+These tools are interfaces that connect to services you host and operate yourself. By using them you agree that:
+
+- **Jellyfin tool** — connects only to your own self-hosted Jellyfin server. You are solely responsible for the content on your server and for complying with all applicable copyright laws and terms of service.
+- **Reddit tool** — uses Reddit's public API endpoints. You are responsible for complying with Reddit's terms of service and API usage policies.
+- **LTX Video tool** — connects to your own local ComfyUI instance. You are responsible for any content you generate and for compliance with the terms of any models you use.
+- **All tools** — provided as-is under the MIT License, with no warranties of any kind. The author is not liable for how these tools are used or for any content accessed through them.
+
+</details>
 
 ---
 
