@@ -699,6 +699,8 @@ Just a guy obsessed with AI — LLMs, image gen, music gen, all of it. Learning 
 
 I've been using Open WebUI daily for a while now. At some point I stopped just using it and started asking *what if it could do more?* What started as scratching my own itch — adding features I personally wanted — turned into this collection. If I'm building it anyway, might as well share it with everyone else who wants to jump in and push their setup further.
 
+I'll be honest — I'm not an amazing coder. These tools are built with Claude doing the heavy lifting on the code, while I handle the ideas, the direction, the debugging, and making sure everything actually works the way I want it to. It's a collaboration, and honestly it's the most fitting thing in the world: AI tools, built with AI. If that's not proof that this stuff is genuinely useful, I don't know what is.
+
 Everything here is open source, built in the open, and made with genuine love for the community. If a tool saves you time or sparks an idea, that's exactly why it exists.
 
 ---
