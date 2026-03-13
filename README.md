@@ -6,27 +6,35 @@
 
 <p>
   <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92_Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=2e1065" /></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-334155?style=for-the-badge&labelColor=0f172a" /></a>
-  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8%2B-334155?style=for-the-badge&logo=python&logoColor=white&labelColor=0f172a" /></a>
-  <a href="https://claude.ai"><img src="https://img.shields.io/badge/Built%20with-Claude%20%E2%9D%A4-334155?style=for-the-badge&labelColor=0f172a" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-5563e5?style=for-the-badge&labelColor=232368" /></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8%2B-2d8ddc?style=for-the-badge&logo=python&logoColor=white&labelColor=17376b" /></a>
+  <a href="https://claude.ai"><img src="https://img.shields.io/badge/Built%20with-Claude%20%E2%9D%A4-06b6d4?style=for-the-badge&labelColor=0c4a6e" /></a>
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/13_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=3b0764" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-7c3aed?style=flat-square&labelColor=3b0764" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/No_API_Keys-for%20most%20tools-7c3aed?style=flat-square&labelColor=3b0764" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-7c3aed?style=flat-square&labelColor=3b0764" />
+  <img src="https://img.shields.io/badge/13_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
+  <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
+  <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
 </p>
 
 <br/>
 
 <p>
-  <a href="https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e"><img src="https://img.shields.io/badge/-🎬_Jellyfin_Stream-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/youtube_tool_embedded_player_ai_summaries_full_tra_38201a9a"><img src="https://img.shields.io/badge/-📺_YouTube_Player-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572"><img src="https://img.shields.io/badge/-🎥_LTX_2.3_Video_Gen-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/news_reader_live_headlines_ai_summaries_45_rss_fee_3caf647a"><img src="https://img.shields.io/badge/-📰_News_Reader-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e"><img src="https://img.shields.io/badge/-🌐_Reddit_Explorer-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/podcasts_tool_play_search_discover_podcasts_direct_7f83da54"><img src="https://img.shields.io/badge/-🎙_Podcast_Player-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-6d28d9?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e"><img src="https://img.shields.io/badge/-🎬_Jellyfin_Stream-7c3aed?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/youtube_tool_embedded_player_ai_summaries_full_tra_38201a9a"><img src="https://img.shields.io/badge/-📺_YouTube_Player-7244eb?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572"><img src="https://img.shields.io/badge/-🎥_LTX_2.3_Video_Gen-684fe9?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/news_reader_live_headlines_ai_summaries_45_rss_fee_3caf647a"><img src="https://img.shields.io/badge/-📰_News_Reader-5e59e7?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e"><img src="https://img.shields.io/badge/-🌐_Reddit_Explorer-5563e5?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/podcasts_tool_play_search_discover_podcasts_direct_7f83da54"><img src="https://img.shields.io/badge/-🎙_Podcast_Player-4b6ee3?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-4178e0?style=flat-square" /></a>
   <br/>
-  <a href="https://openwebui.com/posts/ask_user_14182520"><img src="https://img.shields.io/badge/-🧩_Ask_User-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010"><img src="https://img.shields.io/badge/-🎭_Persona_Studio-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/wikipedia_tool_00b03142"><img src="https://img.shields.io/badge/-📖_Wikipedia_Lookup-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/orchestrator_0f269681"><img src="https://img.shields.io/badge/-🌌_Orchestrator_Plan-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/jokes_tool_14d95010"><img src="https://img.shields.io/badge/-😂_Joke_Tool-6d28d9?style=flat-square" /></a>&nbsp;<a href="https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-6d28d9?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/ask_user_14182520"><img src="https://img.shields.io/badge/-🧩_Ask_User-3782de?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010"><img src="https://img.shields.io/badge/-🎭_Persona_Studio-2d8ddc?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/wikipedia_tool_00b03142"><img src="https://img.shields.io/badge/-📖_Wikipedia_Lookup-2497da?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/orchestrator_0f269681"><img src="https://img.shields.io/badge/-🌌_Orchestrator_Plan-1aa1d8?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/jokes_tool_14d95010"><img src="https://img.shields.io/badge/-😂_Joke_Tool-10acd6?style=flat-square" /></a>
+  <a href="https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-06b6d4?style=flat-square" /></a>
 </p>
 
 </div>
