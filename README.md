@@ -1,25 +1,36 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Open%20WebUI%20Tools&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=10%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=58&descSize=16" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=10%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+
+<br/>
 
 <p>
-  <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7C3AED?style=for-the-badge&labelColor=1a1a2e" /></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1a1a2e" /></a>
-  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8+-3b82f6?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e" /></a>
-  <a href="https://claude.ai"><img src="https://img.shields.io/badge/Built%20with-Claude%20%E2%9D%A4-f97316?style=for-the-badge&labelColor=1a1a2e" /></a>
+  <a href="https://openwebui.com/u/ichrist"><img src="https://img.shields.io/badge/%F0%9F%9B%92%20Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=0d1117" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=0d1117" /></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8+-3b82f6?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" /></a>
+  <a href="https://claude.ai"><img src="https://img.shields.io/badge/Built%20with-Claude%20%E2%9D%A4-f97316?style=for-the-badge&labelColor=0d1117" /></a>
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-6366f1?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-6366f1?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/🧩_Ask_User-Input-8b5cf6?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/🎭_Personas-Switch-a855f7?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-c084fc?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-d946ef?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/😂_Jokes-Laugh-ec4899?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/🧠_Thinking-Reason-06b6d4?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/💾_VRAM-Unload-ef4444?style=flat-square&labelColor=0f0f23" />
-  <img src="https://img.shields.io/badge/🔴_Reddit-Explorer-ff4500?style=flat-square&labelColor=0f0f23" />
+  <img src="https://img.shields.io/badge/10%20Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/30%20seconds-to%20set%20up-a855f7?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/No%20API%20keys-for%20most%20tools-06b6d4?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/Self%20hosted-privacy%20first-22c55e?style=flat-square&labelColor=0d1117" />
+</p>
+
+<br/>
+
+<p>
+  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-6d28d9?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-7c3aed?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🌐_Reddit-Explorer-8b5cf6?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🧠_Thinking-Filter-a855f7?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🧩_Ask-User-c026d3?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🎭_Persona-Studio-0891b2?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-0e7490?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-06b6d4?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/😂_Joke-Tool-22d3ee?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/💾_VRAM-Unload-67e8f9?style=flat-square&labelColor=0d1117" />
 </p>
 
 </div>
@@ -47,7 +58,7 @@
 
 The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
 
-<div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7C3AED?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2Zy8+&labelColor=1a1a2e"/> </a> </div>
+<div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=0d1117"/> </a> </div>
 
 ---
 
@@ -55,7 +66,7 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 > **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
 
-**[→ Install from marketplace](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)
 
 > 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
 
@@ -140,7 +151,7 @@ Each user can override the admin defaults independently:
 
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
 
-**[→ Install from marketplace](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
 
 <table>
   <tr>
@@ -207,13 +218,20 @@ list live channels
 
 </details>
 
+<details>
+<summary><b>⚠️ Disclaimer</b></summary>
+
+This tool connects to your own self-hosted Jellyfin server — it doesn't host, stream, or distribute any content itself. What's on your server is your business. Use responsibly and make sure you have the rights to anything you're streaming.
+
+</details>
+
 ---
 
 ## 🌐 Reddit Explorer
 
 > **Browse Reddit directly in chat** — hot, new, top & rising posts from any subreddit, full comment threads, rich media (images, video, galleries), user profiles, and smart subreddit suggestions. Zero API key, zero sign-in.
 
-**[→ Install from marketplace](https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e)
 
 <div align="center">
 <img width="1124" height="1225" alt="Screenshot 2026-03-12 173619" src="https://github.com/user-attachments/assets/bce3d2f4-291a-4dd5-923b-3b3bd6766bb6" />
@@ -299,7 +317,7 @@ No valves, no API keys, no configuration — install and ask away.
 
 > **The missing thinking toggle for llama.cpp + Qwen3.5** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
 
-**[→ Install from marketplace](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)
 
 <img width="1101" height="330" alt="8bed8be1-8d6a-42b1-bb0d-f2929fe1cb9e" src="https://github.com/user-attachments/assets/e77d688b-ba3a-47a9-b49f-f331c1158949" />
 
@@ -414,7 +432,7 @@ Now every chat has a 🧠 button that can be diabled in one click and enabled ba
 
 > **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
 
-**[→ Install from marketplace](https://openwebui.com/posts/ask_user_14182520)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/ask_user_14182520)
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" width="80%" alt="Ask User screenshot" />
@@ -454,7 +472,7 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 > **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
 
-**[→ Install from marketplace](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" width="80%" alt="Persona Studio screenshot" />
@@ -491,7 +509,7 @@ Set a custom persona: you are a brutally honest editor
 
 > **Instant encyclopedia lookups** — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.
 
-**[→ Install from marketplace](https://openwebui.com/posts/wikipedia_tool_00b03142)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/wikipedia_tool_00b03142)
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" width="80%" alt="Wikipedia tool screenshot" />
@@ -534,7 +552,7 @@ Search Wikipedia for quantum entanglement
 
 > **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
 
-**[→ Install from marketplace](https://openwebui.com/posts/orchestrator_0f269681)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/orchestrator_0f269681)
 
 <img width="1543" height="1080" alt="Screenshot 2026-03-13 092540" src="https://github.com/user-attachments/assets/e3826d40-a49f-4d11-b8b5-67d89d031939" />
 
@@ -571,7 +589,7 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 > **Give your AI a sense of humour** — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.
 
-**[→ Install from marketplace](https://openwebui.com/posts/jokes_tool_14d95010)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jokes_tool_14d95010)
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" width="80%" alt="Joke Tool screenshot" />
@@ -608,7 +626,7 @@ Tell me 5 programming jokes
 
 > **Free your GPU memory without leaving the chat** — one action button that detects loaded models and unloads them from VRAM instantly via the llama.cpp router API.
 
-**[→ Install from marketplace](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)**
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)
 
 <img width="968" height="703" alt="Screenshot 2026-03-08 204032" src="https://github.com/user-attachments/assets/0c896fde-142c-472c-8811-463bbd3596d4" />
 
@@ -673,18 +691,6 @@ All tools install the same way — takes about 30 seconds.
 
 All tools are released under the **MIT License** — free to use, fork, modify, and publish.
 
-<details>
-<summary><b>⚠️ Disclaimer</b></summary>
-
-These tools are interfaces that connect to services you host and operate yourself. By using them you agree that:
-
-- **Jellyfin tool** — connects only to your own self-hosted Jellyfin server. You are solely responsible for the content on your server and for complying with all applicable copyright laws and terms of service.
-- **Reddit tool** — uses Reddit's public API endpoints. You are responsible for complying with Reddit's terms of service and API usage policies.
-- **LTX Video tool** — connects to your own local ComfyUI instance. You are responsible for any content you generate and for compliance with the terms of any models you use.
-- **All tools** — provided as-is under the MIT License, with no warranties of any kind. The author is not liable for how these tools are used or for any content accessed through them.
-
-</details>
-
 ---
 
 ## 💡 Inspiration & Credits
@@ -699,7 +705,7 @@ Haervwe's collection is what got me building my own tools in the first place —
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,50:7c3aed,100:0d0221&height=130&section=footer" />
 
 Made with ☕ by [ichrist](https://openwebui.com/u/ichrist) · powered by [Claude](https://claude.ai)
 
