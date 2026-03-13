@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=10%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=13%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/10%20Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/13%20Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/30%20seconds-to%20set%20up-a855f7?style=flat-square&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/No%20API%20keys-for%20most%20tools-06b6d4?style=flat-square&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/Self%20hosted-privacy%20first-22c55e?style=flat-square&labelColor=0d1117" />
@@ -21,16 +21,19 @@
 <br/>
 
 <p>
-  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-6d28d9?style=flat-square&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-7c3aed?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🌐_Reddit-Explorer-8b5cf6?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🧠_Thinking-Filter-a855f7?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🧩_Ask-User-c026d3?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🎭_Persona-Studio-0891b2?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-0e7490?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-06b6d4?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/😂_Joke-Tool-22d3ee?style=flat-square&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/💾_VRAM-Unload-67e8f9?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/📺_YouTube-Player-8b5cf6?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-6d28d9?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/📰_News-Reader-9333ea?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🌐_Reddit-Explorer-a855f7?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🎙_Podcast-Player-c026d3?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🧠_Thinking-Filter-0891b2?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🧩_Ask-User-0e7490?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🎭_Persona-Studio-06b6d4?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-22d3ee?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-67e8f9?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/😂_Joke-Tool-22c55e?style=flat-square&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/💾_VRAM-Unload-4ade80?style=flat-square&labelColor=0d1117" />
 </p>
 
 </div>
@@ -41,16 +44,19 @@
 
 | # | Tool | Best for |
 |---|------|----------|
-| 1 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
-| 2 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 3 | [🌐 Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, user profiles — no API key |
-| 4 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
-| 5 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
-| 6 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
-| 7 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
-| 8 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
-| 9 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
-| 10 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
+| 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
+| 2 | [📺 YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos directly in chat |
+| 3 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
+| 4 | [📰 News Reader](#-news-reader) | Live headlines from 45 feeds across 11 categories — with AI summaries |
+| 5 | [🌐 Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, user profiles — no API key |
+| 6 | [🎙 Podcast Player](#-podcast-player) | Stream any podcast episode directly in chat — no API key |
+| 7 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
+| 8 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
+| 9 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
+| 10 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
+| 11 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
+| 12 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
+| 13 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 
 ---
 
@@ -59,6 +65,146 @@
 The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
 
 <div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=0d1117"/> </a> </div>
+
+---
+
+## 🎬 Jellyfin Media Player
+
+> **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <b>🎬 Movies</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" width="100%" alt="Jellyfin movie player" />
+    </td>
+    <td width="50%" align="center">
+      <b>📺 TV Shows</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/1494ebe0-26ca-4dae-ad45-29b4b81735b8" width="100%" alt="Jellyfin TV player" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>📡 Live TV</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/aa2b8509-cbf0-4e67-b698-c8338bfb08b6" width="100%" alt="Jellyfin live TV player" />
+    </td>
+    <td width="50%" align="center">
+      <b>🎵 Music</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/6950300f-f413-4a4f-a1f5-7990461efb77" width="100%" alt="Jellyfin music player" />
+    </td>
+  </tr>
+</table>
+
+### ✨ What it does
+
+Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or live channel in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
+
+| Feature | Detail |
+|---------|--------|
+| 🎬 Movies & TV | Stream any item, use `S01E01` or `1x01` episode notation |
+| 🎵 Music | Full player with waveform visualiser, album art & EQ animation |
+| 📡 Live TV | Tune to any channel with a pulsing LIVE badge and EPG now-playing info |
+| 🎲 Random picks | Ask for a random film, episode, or song — optionally filter by genre |
+| 💬 Subtitles | Dropdown with every available language track |
+| 📐 Quality | Original · 4K · 1080p · 720p · 480p · 360p |
+| ⬇️ Download | Download button on every player |
+| 🔎 Info mode | Get rich media details without opening a player |
+
+<details>
+<summary><b>⚙️ Setup (3 steps)</b></summary>
+
+1. Create a **restricted Jellyfin user** (playback-only, no admin or delete permissions)
+2. Generate an API key: **Dashboard → API Keys → +**
+3. Paste both into the tool valves: `JELLYFIN_HOST` and `JELLYFIN_API_KEY`
+
+> For Live TV, you'll also need a tuner or IPTV source configured under **Dashboard → Live TV**.
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+play Inception
+play Breaking Bad S03E10
+play music Bohemian Rhapsody
+random comedy movie
+tell me about Interstellar
+what was recently added
+watch live CNN
+list live channels
+```
+
+</details>
+
+<details>
+<summary><b>⚠️ Disclaimer</b></summary>
+
+This tool connects to your own self-hosted Jellyfin server — it doesn't host, stream, or distribute any content itself. What's on your server is your business. Use responsibly and make sure you have the rights to anything you're streaming.
+
+</details>
+
+---
+
+## 📺 YouTube Player
+
+> **Watch YouTube videos, browse search results, and get AI-powered summaries — directly in chat.** No API key required. Powered by YouTube's own InnerTube API, with likes/dislikes from Return YouTube Dislike and transcripts via youtube-transcript-api.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](PLACEHOLDER_YOUTUBE_LINK)
+
+<div align="center">
+  <img src="PLACEHOLDER_YOUTUBE_SCREENSHOT" width="80%" alt="YouTube Player screenshot" />
+</div>
+
+<br/>
+
+### ✨ What it does
+
+YouTube, embedded right in your chat window. Ask for a tutorial, share a URL, or say "search YouTube for X" — the tool picks the right action automatically. The embedded player loads instantly with view counts, likes/dislikes, and channel info. If a transcript is available, the LLM silently reads it so you can ask follow-up questions about the video without ever leaving the conversation.
+
+| Feature | Detail |
+|---------|--------|
+| ▶️ Watch instantly | Paste a URL or describe what you want — the best match embeds immediately |
+| 🔎 Browse grid | Ask to "search YouTube for X" to get a scrollable results grid and pick your own |
+| 🧠 AI summaries | "Summarize this video" fetches the full transcript and writes a structured recap |
+| 📜 Full transcripts | Get the raw transcript text of any video on demand |
+| 👍👎 Likes & dislikes | Dislike counts restored client-side via Return YouTube Dislike API |
+| 📊 Rich metadata | View count, channel name, publish date, and duration shown on every player |
+| 🔑 No API key needed | Search via YouTube's own InnerTube API — fast, reliable, no setup |
+| 🔑 Optional API key | Set `YOUTUBE_API_KEY` in valves for improved search accuracy via Data API v3 |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+show me a video about how transformers work
+I need a tutorial on Docker networking
+search YouTube for lo-fi hip hop study beats
+play https://www.youtube.com/watch?v=dQw4w9WgXcQ
+summarize this YouTube video: [url]
+get the transcript of [url]
+what are some videos on RLHF?
+```
+
+</details>
+
+<details>
+<summary><b>⚙️ Setup</b></summary>
+
+Works out of the box — no configuration needed.
+
+**Optional valves:**
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `YOUTUBE_API_KEY` | *(empty)* | YouTube Data API v3 key for improved search accuracy |
+| `INVIDIOUS_INSTANCE` | *(auto)* | Preferred Invidious instance for transcript fallback |
+
+> **Requires** `youtube-transcript-api` Python package (listed in tool requirements — installs automatically).
+
+</details>
 
 ---
 
@@ -147,58 +293,45 @@ Each user can override the admin defaults independently:
 
 ---
 
-## 🎬 Jellyfin Media Player
+## 📰 News Reader
 
-> **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
+> **Live news from 45 hand-picked RSS feeds across 11 categories — rendered as an interactive card feed in chat.** Cards are expandable, category routing is automatic, and the LLM can fetch and summarize full article content — not just RSS snippets.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](PLACEHOLDER_NEWS_READER_LINK)
 
-<table>
-  <tr>
-    <td width="50%" align="center">
-      <b>🎬 Movies</b><br/><br/>
-      <img src="https://github.com/user-attachments/assets/eaf06d46-7659-4cb4-9d47-e6754d935b19" width="100%" alt="Jellyfin movie player" />
-    </td>
-    <td width="50%" align="center">
-      <b>📺 TV Shows</b><br/><br/>
-      <img src="https://github.com/user-attachments/assets/1494ebe0-26ca-4dae-ad45-29b4b81735b8" width="100%" alt="Jellyfin TV player" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <b>📡 Live TV</b><br/><br/>
-      <img src="https://github.com/user-attachments/assets/aa2b8509-cbf0-4e67-b698-c8338bfb08b6" width="100%" alt="Jellyfin live TV player" />
-    </td>
-    <td width="50%" align="center">
-      <b>🎵 Music</b><br/><br/>
-      <img src="https://github.com/user-attachments/assets/6950300f-f413-4a4f-a1f5-7990461efb77" width="100%" alt="Jellyfin music player" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="PLACEHOLDER_NEWS_READER_SCREENSHOT" width="80%" alt="News Reader screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
-Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or live channel in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
+Say "tech news" or "what's happening with AI" and get a live, beautifully rendered card feed from the best sources in that category — Ars Technica, Reuters, BBC, Hacker News, MIT Tech Review, and more. Each card shows the headline and a preview that expands to the full summary on click. Ask to "summarize the latest climate news" and the tool actually fetches and reads up to 6 full articles, then hands them to the LLM to write a real briefing — not a headline list.
 
 | Feature | Detail |
 |---------|--------|
-| 🎬 Movies & TV | Stream any item, use `S01E01` or `1x01` episode notation |
-| 🎵 Music | Full player with waveform visualiser, album art & EQ animation |
-| 📡 Live TV | Tune to any channel with a pulsing LIVE badge and EPG now-playing info |
-| 🎲 Random picks | Ask for a random film, episode, or song — optionally filter by genre |
-| 💬 Subtitles | Dropdown with every available language track |
-| 📐 Quality | Original · 4K · 1080p · 720p · 480p · 360p |
-| ⬇️ Download | Download button on every player |
-| 🔎 Info mode | Get rich media details without opening a player |
+| 📡 45 RSS feeds | Hand-picked sources across 11 categories: World, Tech, AI, Science, Business, Sports, Gaming, Health, Politics, Entertainment, Climate |
+| 🃏 Expandable cards | Click any card to expand the full summary inline — no new tabs |
+| 🔍 Keyword search | Search across all 45 feeds simultaneously for any topic or name |
+| 🗞️ Front page | "Top headlines" builds a curated cross-category briefing from the best sources |
+| 🧠 AI summaries | "Summarize [topic] news" fetches real article text and gives it to the LLM to write proper paragraphs |
+| 🔑 Zero config | No API keys, no setup — works out of the box |
+| ⚙️ Configurable limit | `MAX_ARTICLES` valve controls how many articles to fetch (default 15, max 40) |
 
 <details>
-<summary><b>⚙️ Setup (3 steps)</b></summary>
+<summary><b>📚 Included sources (sample)</b></summary>
 
-1. Create a **restricted Jellyfin user** (playback-only, no admin or delete permissions)
-2. Generate an API key: **Dashboard → API Keys → +**
-3. Paste both into the tool valves: `JELLYFIN_HOST` and `JELLYFIN_API_KEY`
-
-> For Live TV, you'll also need a tuner or IPTV source configured under **Dashboard → Live TV**.
+| Category | Sources |
+|----------|---------|
+| 🌐 World | Reuters, AP News, BBC World, Al Jazeera |
+| 💻 Tech | Ars Technica, The Verge, Wired, TechCrunch, Hacker News |
+| 🤖 AI | MIT Tech Review, VentureBeat AI, The Decoder |
+| 🔬 Science | NASA, New Scientist, Science Daily, Phys.org |
+| 💼 Business | Financial Times, Bloomberg, CNBC, Forbes |
+| 🎮 Gaming | IGN, Kotaku, PC Gamer, Eurogamer |
+| 🏥 Health | NHS UK, MedicalNewsToday, WHO, WebMD |
+| 🌱 Climate | The Guardian Env, Carbon Brief, Inside Climate News |
 
 </details>
 
@@ -206,22 +339,17 @@ Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
-play Inception
-play Breaking Bad S03E10
-play music Bohemian Rhapsody
-random comedy movie
-tell me about Interstellar
-what was recently added
-watch live CNN
-list live channels
+latest news
+top headlines
+tech news
+AI news
+news about SpaceX
+what's happening with Bitcoin
+summarize the latest science news
+brief me on tech news today
+gaming news
+what's going on in politics?
 ```
-
-</details>
-
-<details>
-<summary><b>⚠️ Disclaimer</b></summary>
-
-This tool connects to your own self-hosted Jellyfin server — it doesn't host, stream, or distribute any content itself. What's on your server is your business. Use responsibly and make sure you have the rights to anything you're streaming.
 
 </details>
 
@@ -308,6 +436,65 @@ requirements: requests
 No valves, no API keys, no configuration — install and ask away.
 
 > ℹ️ Uses Reddit's public `reddit.com/r/<subreddit>.json` endpoints with a descriptive `User-Agent` header. Respects Reddit's public API fair-use guidelines.
+
+</details>
+
+---
+
+## 🎙 Podcast Player
+
+> **Stream any podcast directly in chat** — powered by the free iTunes Search API and RSS feeds, with a cinematic animated-waveform audio player, playback speed control, 30-second skip, and episode browsing. No API key required.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](PLACEHOLDER_PODCAST_LINK)
+
+<div align="center">
+  <img src="PLACEHOLDER_PODCAST_SCREENSHOT" width="80%" alt="Podcast Player screenshot" />
+</div>
+
+<br/>
+
+### ✨ What it does
+
+The entire iTunes podcast directory — millions of shows — accessible by name, topic, or host. Ask for the latest episode of any show, jump to a specific episode by number or title keyword, discover today's Apple top 25, or let the tool roll a random episode from a show's back catalogue. An embedded cinematic player with animated waveform, album art, speed control, and 30-second skip renders right in chat — podcast-standard controls without leaving the conversation.
+
+| Feature | Detail |
+|---------|--------|
+| 🎙 Play any podcast | Latest episode, specific episode number, or episode title keyword |
+| 🎲 Random episode | Surprise pick from a show's entire back catalogue — great for rediscovering classics |
+| 🔎 Directory search | Search millions of podcasts by name, host, topic, or genre |
+| 📊 Top 25 charts | Apple Podcasts top charts, localised by country code |
+| 🎚️ Speed control | 0.5× · 0.75× · 1× · 1.25× · 1.5× · 2× playback speed |
+| ⏩ 30-second skip | Podcast-standard forward/back skip buttons |
+| 🎨 Animated waveform | Vivid per-show colour palette with animated EQ visualiser |
+| 🌍 Localised charts | Set `COUNTRY_CODE` valve to get top charts for your country (default: `us`) |
+| 🔑 Zero config | Uses the free iTunes Search API + RSS — no keys, no account needed |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+play podcast Joe Rogan
+play podcast Serial episode 5
+play podcast Hardcore History Blitzkrieg
+search podcast true crime
+top podcasts
+random podcast episode Lex Fridman
+play the latest Darknet Diaries
+what podcasts are trending?
+```
+
+</details>
+
+<details>
+<summary><b>⚙️ Setup</b></summary>
+
+Works out of the box — no configuration needed.
+
+**Optional valve:**
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `COUNTRY_CODE` | `us` | 2-letter ISO country code for Apple top-chart rankings (e.g. `gb`, `ca`, `au`, `de`) |
 
 </details>
 
@@ -462,8 +649,6 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 "Create a workout plan"      → gathers: goal, equipment, days per week
 ```
 
-> ⚠️ **Requires** Open WebUI with interactive input modal support. Won't work in headless or API-only environments.
-
 </details>
 
 ---
@@ -578,8 +763,6 @@ Brainstorming with structured creative options
 Planning projects or technical roadmaps
 Any prompt where you'd normally need 3 rounds of re-prompting
 ```
-
-> ⚠️ **Requires** Open WebUI with interactive input modal support. Won't work in headless or API-only environments.
 
 </details>
 
