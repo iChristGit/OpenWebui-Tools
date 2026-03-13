@@ -152,11 +152,9 @@ This tool connects to your own self-hosted Jellyfin server — it doesn't host, 
 
 > **Watch YouTube videos, browse search results, and get AI-powered summaries — directly in chat.** No API key required. Powered by YouTube's own InnerTube API, with likes/dislikes from Return YouTube Dislike and transcripts via youtube-transcript-api.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](PLACEHOLDER_YOUTUBE_LINK)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/youtube_tool_embedded_player_ai_summaries_full_tra_38201a9a)
 
-<div align="center">
-  <img src="PLACEHOLDER_YOUTUBE_SCREENSHOT" width="80%" alt="YouTube Player screenshot" />
-</div>
+<img width="1337" height="1160" alt="Screenshot 20262-03-13 134323" src="https://github.com/user-attachments/assets/cb36e2f2-710c-465c-a14f-a2f2dda1aff1" />
 
 <br/>
 
@@ -297,11 +295,9 @@ Each user can override the admin defaults independently:
 
 > **Live news from 45 hand-picked RSS feeds across 11 categories — rendered as an interactive card feed in chat.** Cards are expandable, category routing is automatic, and the LLM can fetch and summarize full article content — not just RSS snippets.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](PLACEHOLDER_NEWS_READER_LINK)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/news_reader_live_headlines_ai_summaries_45_rss_fee_3caf647a)
 
-<div align="center">
-  <img src="PLACEHOLDER_NEWS_READER_SCREENSHOT" width="80%" alt="News Reader screenshot" />
-</div>
+<img width="1388" height="1227" alt="Screenshot 2026-03-13 152012" src="https://github.com/user-attachments/assets/e054bb74-9142-45db-8f6e-5ff4da2e815f" />
 
 <br/>
 
@@ -445,11 +441,9 @@ No valves, no API keys, no configuration — install and ask away.
 
 > **Stream any podcast directly in chat** — powered by the free iTunes Search API and RSS feeds, with a cinematic animated-waveform audio player, playback speed control, 30-second skip, and episode browsing. No API key required.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](PLACEHOLDER_PODCAST_LINK)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/podcasts_tool_play_search_discover_podcasts_direct_7f83da54)
 
-<div align="center">
-  <img src="PLACEHOLDER_PODCAST_SCREENSHOT" width="80%" alt="Podcast Player screenshot" />
-</div>
+<img width="1299" height="836" alt="Screenshot 2026-03-13 151711" src="https://github.com/user-attachments/assets/a23caab4-7256-4048-b7fc-12e21bcb6647" />
 
 <br/>
 
