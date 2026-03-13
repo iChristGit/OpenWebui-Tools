@@ -60,7 +60,7 @@ The fastest way to get these tools running. No copy-paste required — install d
 > 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/0882ac31-6863-4351-b26d-c8b9f5267b69" width="80%" alt="LTX-2.3 Video Generator screenshot" />
+  <img width="1402" height="1183" alt="Screenshot 2026-03-13 091121" src="https://github.com/user-attachments/assets/24ffcebf-e92a-4458-bc73-4563ad238296" />
 </div>
 
 <br/>
