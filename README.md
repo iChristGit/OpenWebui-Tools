@@ -12,28 +12,28 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/13%20Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/30%20seconds-to%20set%20up-a855f7?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/No%20API%20keys-for%20most%20tools-06b6d4?style=flat-square&labelColor=0c4a6e" />
-  <img src="https://img.shields.io/badge/Self%20hosted-privacy%20first-22c55e?style=flat-square&labelColor=14532d" />
+  <img src="https://img.shields.io/badge/13%20Tools-ready%20to%20install-a855f7?style=flat-square&labelColor=581c87" />
+  <img src="https://img.shields.io/badge/30%20seconds-to%20set%20up-4f46e5?style=flat-square&labelColor=1e1b4b" />
+  <img src="https://img.shields.io/badge/No%20API%20keys-for%20most%20tools-0ea5e9?style=flat-square&labelColor=0c4a6e" />
+  <img src="https://img.shields.io/badge/Self%20hosted-privacy%20first-10b981?style=flat-square&labelColor=022c22" />
 </p>
 
 <br/>
 
 <p>
-  <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-7c3aed?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/📺_YouTube-Player-8b5cf6?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-6d28d9?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/📰_News-Reader-9333ea?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/🌐_Reddit-Explorer-a855f7?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/🎙_Podcast-Player-c026d3?style=flat-square&labelColor=2e1065" />
-  <img src="https://img.shields.io/badge/🧠_Thinking-Filter-0891b2?style=flat-square&labelColor=0c4a6e" />
-  <img src="https://img.shields.io/badge/🧩_Ask-User-0e7490?style=flat-square&labelColor=0c4a6e" />
-  <img src="https://img.shields.io/badge/🎭_Persona-Studio-06b6d4?style=flat-square&labelColor=0c4a6e" />
-  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-22d3ee?style=flat-square&labelColor=0c4a6e" />
-  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-67e8f9?style=flat-square&labelColor=0c4a6e" />
-  <img src="https://img.shields.io/badge/😂_Joke-Tool-22c55e?style=flat-square&labelColor=14532d" />
-  <img src="https://img.shields.io/badge/💾_VRAM-Unload-4ade80?style=flat-square&labelColor=14532d" />
+  <img src="https://img.shields.io/badge/🎬_Jellyfin-Stream-a855f7?style=flat-square&labelColor=581c87" />
+  <img src="https://img.shields.io/badge/📺_YouTube-Player-9333ea?style=flat-square&labelColor=3b0764" />
+  <img src="https://img.shields.io/badge/🎥_LTX_2.3-Video_Gen-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/📰_News-Reader-6366f1?style=flat-square&labelColor=1e1b4b" />
+  <img src="https://img.shields.io/badge/🌐_Reddit-Explorer-4f46e5?style=flat-square&labelColor=1e1b4b" />
+  <img src="https://img.shields.io/badge/🎙_Podcast-Player-3b82f6?style=flat-square&labelColor=1e3a8a" />
+  <img src="https://img.shields.io/badge/🧠_Thinking-Filter-0ea5e9?style=flat-square&labelColor=0c4a6e" />
+  <img src="https://img.shields.io/badge/🧩_Ask-User-06b6d4?style=flat-square&labelColor=083344" />
+  <img src="https://img.shields.io/badge/🎭_Persona-Studio-0891b2?style=flat-square&labelColor=0c4a6e" />
+  <img src="https://img.shields.io/badge/📖_Wikipedia-Lookup-14b8a6?style=flat-square&labelColor=042f2e" />
+  <img src="https://img.shields.io/badge/🌌_Orchestrator-Plan-0d9488?style=flat-square&labelColor=042f2e" />
+  <img src="https://img.shields.io/badge/😂_Joke-Tool-10b981?style=flat-square&labelColor=022c22" />
+  <img src="https://img.shields.io/badge/💾_VRAM-Unload-22c55e?style=flat-square&labelColor=14532d" />
 </p>
 
 </div>
