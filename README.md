@@ -693,6 +693,16 @@ All tools are released under the **MIT License** — free to use, fork, modify, 
 
 ---
 
+## 👤 About Me
+
+Just a guy obsessed with AI — LLMs, image gen, music gen, all of it. Learning something new every day and loving every second of it.
+
+I've been using Open WebUI daily for a while now. At some point I stopped just using it and started asking *what if it could do more?* What started as scratching my own itch — adding features I personally wanted — turned into this collection. If I'm building it anyway, might as well share it with everyone else who wants to jump in and push their setup further.
+
+Everything here is open source, built in the open, and made with genuine love for the community. If a tool saves you time or sparks an idea, that's exactly why it exists.
+
+---
+
 ## 💡 Inspiration & Credits
 
 This project wouldn't exist without **[Haervwe's open-webui-tools](https://github.com/Haervwe/open-webui-tools)**.
