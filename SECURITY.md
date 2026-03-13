@@ -1,7 +1,12 @@
 🔒 Security Policy
+
 🐛 Reporting a Vulnerability
+
 Found something sketchy? A bug that shouldn't exist, an exploit, or anything that feels off — open a GitHub issue and let me know.
+
+
 👉 Open a Security Issue
+
 Please include:
 
 🔍 What you found — a clear description of the vulnerability
