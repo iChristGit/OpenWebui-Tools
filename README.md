@@ -42,10 +42,8 @@
 
 ## 🗺️ Quick Navigation
 
-> **Click any tool name to expand its full details** — or use the links below to jump directly.
-
-| # | Tool | What it does |
-|---|------|--------------|
+| # | Tool | Best for |
+|---|------|----------|
 | 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
 | 2 | [📺 YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos directly in chat |
 | 3 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
@@ -66,42 +64,15 @@
 
 The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
 
-<div align="center">
-  <a href="https://openwebui.com/u/ichrist">
-    <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=0d1117"/>
-  </a>
-</div>
+<div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=0d1117"/> </a> </div>
 
 ---
 
 ## 🎬 Jellyfin Media Player
 
-<details>
-<summary><b>Stream movies, TV, music & live TV from your own Jellyfin server — embedded player, subtitles, quality presets, live EPG</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
-
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
 
-### ✨ What it does
-
-Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or live channel in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
-
-| Feature | Detail |
-|---------|--------|
-| 🎬 Movies & TV | Stream any item, use `S01E01` or `1x01` episode notation |
-| 🎵 Music | Full player with waveform visualiser, album art & EQ animation |
-| 📡 Live TV | Tune to any channel with a pulsing LIVE badge and EPG now-playing info |
-| 🎲 Random picks | Ask for a random film, episode, or song — optionally filter by genre |
-| 💬 Subtitles | Dropdown with every available language track |
-| 📐 Quality | Original · 4K · 1080p · 720p · 480p · 360p |
-| ⬇️ Download | Download button on every player |
-| 🔎 Info mode | Get rich media details without opening a player |
-
-<details>
-<summary><b>📸 Screenshots</b></summary>
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
 
 <table>
   <tr>
@@ -126,7 +97,20 @@ Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or
   </tr>
 </table>
 
-</details>
+### ✨ What it does
+
+Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or live channel in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
+
+| Feature | Detail |
+|---------|--------|
+| 🎬 Movies & TV | Stream any item, use `S01E01` or `1x01` episode notation |
+| 🎵 Music | Full player with waveform visualiser, album art & EQ animation |
+| 📡 Live TV | Tune to any channel with a pulsing LIVE badge and EPG now-playing info |
+| 🎲 Random picks | Ask for a random film, episode, or song — optionally filter by genre |
+| 💬 Subtitles | Dropdown with every available language track |
+| 📐 Quality | Original · 4K · 1080p · 720p · 480p · 360p |
+| ⬇️ Download | Download button on every player |
+| 🔎 Info mode | Get rich media details without opening a player |
 
 <details>
 <summary><b>⚙️ Setup (3 steps)</b></summary>
@@ -162,20 +146,17 @@ This tool connects to your own self-hosted Jellyfin server — it doesn't host, 
 
 </details>
 
-</details>
-
 ---
 
 ## 📺 YouTube Player
 
-<details>
-<summary><b>Watch, search & summarize YouTube videos directly in chat — no API key required, likes/dislikes restored, full transcripts</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Watch YouTube videos, browse search results, and get AI-powered summaries — directly in chat.** No API key required. Powered by YouTube's own InnerTube API, with likes/dislikes from Return YouTube Dislike and transcripts via youtube-transcript-api.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/youtube_tool_embedded_player_ai_summaries_full_tra_38201a9a)
 
-> **Watch YouTube videos, browse search results, and get AI-powered summaries — directly in chat.** No API key required. Powered by YouTube's own InnerTube API, with likes/dislikes from Return YouTube Dislike and transcripts via youtube-transcript-api.
+<img width="1337" height="1160" alt="Screenshot 20262-03-13 134323" src="https://github.com/user-attachments/assets/cb36e2f2-710c-465c-a14f-a2f2dda1aff1" />
+
+<br/>
 
 ### ✨ What it does
 
@@ -193,9 +174,17 @@ YouTube, embedded right in your chat window. Ask for a tutorial, share a URL, or
 | 🔑 Optional API key | Set `YOUTUBE_API_KEY` in valves for improved search accuracy via Data API v3 |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
+<summary><b>🗣️ Example prompts</b></summary>
 
-<img width="1337" height="1160" alt="YouTube Player" src="https://github.com/user-attachments/assets/cb36e2f2-710c-465c-a14f-a2f2dda1aff1" />
+```
+show me a video about how transformers work
+I need a tutorial on Docker networking
+search YouTube for lo-fi hip hop study beats
+play https://www.youtube.com/watch?v=dQw4w9WgXcQ
+summarize this YouTube video: [url]
+get the transcript of [url]
+what are some videos on RLHF?
+```
 
 </details>
 
@@ -215,37 +204,21 @@ Works out of the box — no configuration needed.
 
 </details>
 
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-show me a video about how transformers work
-I need a tutorial on Docker networking
-search YouTube for lo-fi hip hop study beats
-play https://www.youtube.com/watch?v=dQw4w9WgXcQ
-summarize this YouTube video: [url]
-get the transcript of [url]
-what are some videos on RLHF?
-```
-
-</details>
-
-</details>
-
 ---
 
 ## 🎥 LTX-2.3 Video Generator
 
-<details>
-<summary><b>Generate cinematic AI videos from text or images — powered by LTX-Video 2.3 (22B FP8) in ComfyUI, with VRAM auto-eviction and mobile-compatible output</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)
 
-> **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
-
 > 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
+
+<div align="center">
+  <img width="1402" height="1183" alt="Screenshot 2026-03-13 091121" src="https://github.com/user-attachments/assets/24ffcebf-e92a-4458-bc73-4563ad238296" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -264,16 +237,7 @@ Two tools in one: **Text-to-Video** and **Image-to-Video**, both driven by the L
 | 🔑 Optional API key | Bearer token support for secured ComfyUI setups |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<div align="center">
-  <img width="1402" height="1183" alt="LTX Video Generator" src="https://github.com/user-attachments/assets/24ffcebf-e92a-4458-bc73-4563ad238296" />
-</div>
-
-</details>
-
-<details>
-<summary><b>⚙️ Prerequisites & Valves</b></summary>
+<summary><b>⚙️ Prerequisites</b></summary>
 
 This tool connects to a running ComfyUI instance with LTX-Video 2.3 already set up. You'll need:
 
@@ -299,19 +263,6 @@ Then configure the tool valves:
 </details>
 
 <details>
-<summary><b>⚡ Per-user settings</b></summary>
-
-Each user can override the admin defaults independently:
-
-| Setting | Options | Note |
-|---------|---------|------|
-| `video_duration` | `5s` `10s` `15s` `20s` `25s` `30s` | Applies to both T2V and I2V |
-| `frame_rate` | Any integer (default `24`) | |
-| `t2v_width` / `t2v_height` | Any resolution (default `1280×720`) | T2V only — I2V always matches the uploaded image automatically |
-
-</details>
-
-<details>
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
@@ -325,20 +276,30 @@ timelapse of storm clouds rolling over a mountain range
 
 </details>
 
+<details>
+<summary><b>⚡ Per-user settings</b></summary>
+
+Each user can override the admin defaults independently:
+
+| Setting | Options | Note |
+|---------|---------|------|
+| `video_duration` | `5s` `10s` `15s` `20s` `25s` `30s` | Applies to both T2V and I2V |
+| `frame_rate` | Any integer (default `24`) | |
+| `t2v_width` / `t2v_height` | Any resolution (default `1280×720`) | T2V only — I2V always matches the uploaded image automatically |
+
 </details>
 
 ---
 
 ## 📰 News Reader
 
-<details>
-<summary><b>Live headlines from 45 hand-picked RSS feeds across 11 categories — expandable cards, AI summaries, zero config</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Live news from 45 hand-picked RSS feeds across 11 categories — rendered as an interactive card feed in chat.** Cards are expandable, category routing is automatic, and the LLM can fetch and summarize full article content — not just RSS snippets.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/news_reader_live_headlines_ai_summaries_45_rss_fee_3caf647a)
 
-> **Live news from 45 hand-picked RSS feeds across 11 categories — rendered as an interactive card feed in chat.** Cards are expandable, category routing is automatic, and the LLM can fetch and summarize full article content — not just RSS snippets.
+<img width="1388" height="1227" alt="Screenshot 2026-03-13 152012" src="https://github.com/user-attachments/assets/e054bb74-9142-45db-8f6e-5ff4da2e815f" />
+
+<br/>
 
 ### ✨ What it does
 
@@ -353,13 +314,6 @@ Say "tech news" or "what's happening with AI" and get a live, beautifully render
 | 🧠 AI summaries | "Summarize [topic] news" fetches real article text and gives it to the LLM to write proper paragraphs |
 | 🔑 Zero config | No API keys, no setup — works out of the box |
 | ⚙️ Configurable limit | `MAX_ARTICLES` valve controls how many articles to fetch (default 15, max 40) |
-
-<details>
-<summary><b>📸 Screenshot</b></summary>
-
-<img width="1388" height="1227" alt="News Reader" src="https://github.com/user-attachments/assets/e054bb74-9142-45db-8f6e-5ff4da2e815f" />
-
-</details>
 
 <details>
 <summary><b>📚 Included sources (sample)</b></summary>
@@ -395,20 +349,19 @@ what's going on in politics?
 
 </details>
 
-</details>
-
 ---
 
 ## 🌐 Reddit Explorer
 
-<details>
-<summary><b>Browse Reddit in chat — hot/new/top posts, comment threads, inline media, user profiles — zero API key or sign-in</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Browse Reddit directly in chat** — hot, new, top & rising posts from any subreddit, full comment threads, rich media (images, video, galleries), user profiles, and smart subreddit suggestions. Zero API key, zero sign-in.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e)
 
-> **Browse Reddit directly in chat** — hot, new, top & rising posts from any subreddit, full comment threads, rich media (images, video, galleries), user profiles, and smart subreddit suggestions. Zero API key, zero sign-in.
+<div align="center">
+<img width="1124" height="1225" alt="Screenshot 2026-03-12 173619" src="https://github.com/user-attachments/assets/bce3d2f4-291a-4dd5-923b-3b3bd6766bb6" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -430,15 +383,6 @@ Nine purpose-built functions let the LLM intelligently navigate Reddit on your b
 | 🗺️ Subreddit suggestions | Topic → subreddit map covering 20+ categories (news, AI, gaming, finance, food, travel, crypto, etc.) plus live Reddit search |
 | 🔞 / 🙈 Content tags | NSFW and spoiler posts are flagged automatically |
 | 🔑 No API key required | Uses Reddit's public `.json` endpoints — no OAuth, no account, no rate-limit keys |
-
-<details>
-<summary><b>📸 Screenshot</b></summary>
-
-<div align="center">
-  <img width="1124" height="1225" alt="Reddit Explorer" src="https://github.com/user-attachments/assets/bce3d2f4-291a-4dd5-923b-3b3bd6766bb6" />
-</div>
-
-</details>
 
 <details>
 <summary><b>📚 All 9 functions at a glance</b></summary>
@@ -491,20 +435,17 @@ No valves, no API keys, no configuration — install and ask away.
 
 </details>
 
-</details>
-
 ---
 
 ## 🎙 Podcast Player
 
-<details>
-<summary><b>Stream any podcast directly in chat — millions of shows via iTunes API, animated waveform player, speed control, 30s skip — no API key</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Stream any podcast directly in chat** — powered by the free iTunes Search API and RSS feeds, with a cinematic animated-waveform audio player, playback speed control, 30-second skip, and episode browsing. No API key required.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/podcasts_tool_play_search_discover_podcasts_direct_7f83da54)
 
-> **Stream any podcast directly in chat** — powered by the free iTunes Search API and RSS feeds, with a cinematic animated-waveform audio player, playback speed control, 30-second skip, and episode browsing. No API key required.
+<img width="1299" height="836" alt="Screenshot 2026-03-13 151711" src="https://github.com/user-attachments/assets/a23caab4-7256-4048-b7fc-12e21bcb6647" />
+
+<br/>
 
 ### ✨ What it does
 
@@ -523,9 +464,18 @@ The entire iTunes podcast directory — millions of shows — accessible by name
 | 🔑 Zero config | Uses the free iTunes Search API + RSS — no keys, no account needed |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
+<summary><b>🗣️ Example prompts</b></summary>
 
-<img width="1299" height="836" alt="Podcast Player" src="https://github.com/user-attachments/assets/a23caab4-7256-4048-b7fc-12e21bcb6647" />
+```
+play podcast Joe Rogan
+play podcast Serial episode 5
+play podcast Hardcore History Blitzkrieg
+search podcast true crime
+top podcasts
+random podcast episode Lex Fridman
+play the latest Darknet Diaries
+what podcasts are trending?
+```
 
 </details>
 
@@ -542,36 +492,16 @@ Works out of the box — no configuration needed.
 
 </details>
 
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-play podcast Joe Rogan
-play podcast Serial episode 5
-play podcast Hardcore History Blitzkrieg
-search podcast true crime
-top podcasts
-random podcast episode Lex Fridman
-play the latest Darknet Diaries
-what podcasts are trending?
-```
-
-</details>
-
-</details>
-
 ---
 
 ## 🧠 Thinking Filter
 
-<details>
-<summary><b>One-click thinking toggle for llama.cpp + Qwen3.5 — 5 depth levels, 13 reasoning presets, 11 presentation presets, per-user control</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **The missing thinking toggle for llama.cpp + Qwen3.5** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)
 
-> **The missing thinking toggle for llama.cpp + Qwen3.5** — One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
+<img width="1101" height="330" alt="8bed8be1-8d6a-42b1-bb0d-f2929fe1cb9e" src="https://github.com/user-attachments/assets/e77d688b-ba3a-47a9-b49f-f331c1158949" />
+
 
 ### ✨ What it does
 
@@ -589,34 +519,27 @@ llama.cpp supports Qwen3.5 extended `<think>` reasoning mode natively — but Op
 | 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<img width="1101" height="330" alt="Thinking Filter" src="https://github.com/user-attachments/assets/e77d688b-ba3a-47a9-b49f-f331c1158949" />
-
-</details>
-
-<details>
 <summary><b>⚡ Setup (1 step)</b></summary>
 
 **Step 1 — Start llama-server with:**
 
 ```bash
-llama-server --jinja --chat-template-kwargs "{\"enable_thinking\":false}"
+llama-server --jinja --chat-template-kwargs "{\"enable_thinking\":false}" 
 ```
 
 The `--chat-template-kwargs "{\"enable_thinking\":false}"` flag lets the filter set the budget dynamically per request.
 
-The `--jinja` flag enables Jinja chat template processing, required for Qwen3.5's think block.
+The `--jinja` flat enables Jinja chat template processing, required for Qwen3.5's think block
 
-Enable the function and set it as default for your Qwen3.5 models if you want thinking enabled by default.
-(If you prefer thinking disabled by default, do not set the function as default!)
+Enable the function and set it as default for your qwen3.5 models if you want the default to be thinking enabled.
+(If you rather have thinking disabled by default do not set the function as default!)
 
-Now every chat has a 🧠 button that can be disabled in one click and re-enabled in two clicks.
+Now every chat has a 🧠 button that can be diabled in one click and enabled back in two clicks.
 
 </details>
 
 <details>
-<summary><b>📊 Thinking Depth levels</b></summary>
+<summary><b>📊 Thinking Depth</b></summary>
 
 | Depth | Token Budget | Best for |
 |-------|-------------|----------|
@@ -684,20 +607,19 @@ Now every chat has a 🧠 button that can be disabled in one click and re-enable
 
 </details>
 
-</details>
-
 ---
 
 ## 🧩 Ask User
 
-<details>
-<summary><b>Collect structured multi-step input via sequential popups before your AI writes a single word — up to 5 questions, no dependencies</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/ask_user_14182520)
 
-> **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" width="80%" alt="Ask User screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -712,15 +634,6 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 | 🔑 No dependencies | Standard library only |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" width="80%" alt="Ask User screenshot" />
-</div>
-
-</details>
-
-<details>
 <summary><b>🗣️ Best for</b></summary>
 
 ```
@@ -732,20 +645,19 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 </details>
 
-</details>
-
 ---
 
 ## 🎭 Persona Studio
 
-<details>
-<summary><b>Instantly reshape how your AI thinks and communicates — dozens of personas across multiple categories, plus full custom option</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)
 
-> **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" width="80%" alt="Persona Studio screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -759,15 +671,6 @@ Stop editing system prompts manually. Persona Studio gives you an interactive po
 | 🚀 Instant switch | No re-prompting, no manual system prompt editing |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" width="80%" alt="Persona Studio screenshot" />
-</div>
-
-</details>
-
-<details>
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
@@ -779,20 +682,19 @@ Set a custom persona: you are a brutally honest editor
 
 </details>
 
-</details>
-
 ---
 
 ## 📖 Wikipedia
 
-<details>
-<summary><b>Instant encyclopedia lookups — smart search, section-aware summaries, disambiguation, 20+ languages — zero config</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Instant encyclopedia lookups** — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/wikipedia_tool_00b03142)
 
-> **Instant encyclopedia lookups** — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" width="80%" alt="Wikipedia tool screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -809,15 +711,6 @@ Your LLM gets live access to Wikipedia without any API key or setup. It automati
 | 🔑 Zero config | Uses the free public MediaWiki API |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" width="80%" alt="Wikipedia tool screenshot" />
-</div>
-
-</details>
-
-<details>
 <summary><b>🗣️ Example prompts & supported languages</b></summary>
 
 ```
@@ -832,20 +725,15 @@ Search Wikipedia for quantum entanglement
 
 </details>
 
-</details>
-
 ---
 
 ## 🌌 Omniscient Orchestrator
 
-<details>
-<summary><b>Stop getting generic answers — 4-phase structured workflow: analyse → clarify → strategise → execute, with guardrails against infinite loops</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/orchestrator_0f269681)
 
-> **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
+<img width="1543" height="1080" alt="Screenshot 2026-03-13 092540" src="https://github.com/user-attachments/assets/e3826d40-a49f-4d11-b8b5-67d89d031939" />
 
 ### ✨ What it does
 
@@ -861,13 +749,6 @@ Most LLMs dive straight into an answer, missing context that would have changed 
 > **Built-in guardrails:** max 3 questions, always skippable, always moves forward — no infinite loops.
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<img width="1543" height="1080" alt="Omniscient Orchestrator" src="https://github.com/user-attachments/assets/e3826d40-a49f-4d11-b8b5-67d89d031939" />
-
-</details>
-
-<details>
 <summary><b>🗣️ Best for</b></summary>
 
 ```
@@ -879,20 +760,19 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 </details>
 
-</details>
-
 ---
 
 ## 😂 Joke Tool
 
-<details>
-<summary><b>300+ curated programmer jokes on demand — Git puns, coding classics, live API fetching, batch delivery</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Give your AI a sense of humour** — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/jokes_tool_14d95010)
 
-> **Give your AI a sense of humour** — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" width="80%" alt="Joke Tool screenshot" />
+</div>
+
+<br/>
 
 ### ✨ What it does
 
@@ -906,15 +786,6 @@ A carefully curated vault of programmer humor — Git puns, deep-cut coding joke
 | 🛡️ Offline-safe | Always falls back to internal library if API is down |
 
 <details>
-<summary><b>📸 Screenshot</b></summary>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" width="80%" alt="Joke Tool screenshot" />
-</div>
-
-</details>
-
-<details>
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
@@ -926,24 +797,20 @@ Tell me 5 programming jokes
 
 </details>
 
-</details>
-
 ---
 
 ## 💾 VRAM Unload
 
-<details>
-<summary><b>Free your GPU memory without leaving the chat — one action button, auto-detects all loaded llama.cpp models and unloads instantly</b> &nbsp;·&nbsp; <i>click to expand</i></summary>
-
-<br/>
+> **Free your GPU memory without leaving the chat** — one action button that detects loaded models and unloads them from VRAM instantly via the llama.cpp router API.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=0d1117)](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)
 
-> **Free your GPU memory without leaving the chat** — one action button that detects loaded models and unloads them from VRAM instantly via the llama.cpp router API.
+<img width="968" height="703" alt="Screenshot 2026-03-08 204032" src="https://github.com/user-attachments/assets/0c896fde-142c-472c-8811-463bbd3596d4" />
+
 
 ### ✨ What it does
 
-Running llama.cpp in router mode means models stay resident in VRAM until you explicitly unload them. This action button instantly cleans the model from VRAM.
+Running llama.cpp in router mode means models stay resident in VRAM until you explicitly unload them. This action button insantly clean the model from VRAM.
 
 | Feature | Detail |
 |---------|--------|
@@ -951,13 +818,6 @@ Running llama.cpp in router mode means models stay resident in VRAM until you ex
 | 🔁 Multi-model support | Unloads every loaded model in one click if multiple are resident |
 | 📡 Live status updates | Status messages as each model unloads, success/error per model |
 | 🔑 Zero dependencies | Pure `aiohttp` — nothing extra to install |
-
-<details>
-<summary><b>📸 Screenshot</b></summary>
-
-<img width="968" height="703" alt="VRAM Unload" src="https://github.com/user-attachments/assets/0c896fde-142c-472c-8811-463bbd3596d4" />
-
-</details>
 
 <details>
 <summary><b>⚙️ Setup (1 step)</b></summary>
@@ -970,7 +830,7 @@ http://127.0.0.1:8080
 
 That's it. The action button appears in the chat toolbar — click it any time to free VRAM.
 
-> **Requires llama.cpp running in router mode (llama-server).**
+> **Requires llama.cpp running in router mode (llama-server).
 
 </details>
 
@@ -983,8 +843,6 @@ That's it. The action button appears in the chat toolbar — click it any time t
 | ℹ️ "No models currently loaded" | No models are resident in VRAM — nothing to unload |
 | ❌ HTTP 404 on unload | Make sure llama.cpp is started in router mode, not single-model mode |
 | ❌ HTTP 4xx/5xx | Check llama.cpp logs for the specific error |
-
-</details>
 
 </details>
 
