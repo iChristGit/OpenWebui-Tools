@@ -4,7 +4,7 @@
 
 Found something sketchy? A bug that shouldn't exist, an exploit, or anything that feels off — open a GitHub issue and let me know.
 
-👉 **[Open a Security Issue](https://github.com/iChristGit/OpenWebui-Tools/issues/new)**
+👉 **[Open An Issue](https://github.com/iChristGit/OpenWebui-Tools/issues/new)**
 
 Please include:
 - 🔍 **What you found** — a clear description of the vulnerability
