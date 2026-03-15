@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/13_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/14_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
   <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
   <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
   <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
@@ -35,6 +35,7 @@
   <a href="https://openwebui.com/posts/orchestrator_0f269681"><img src="https://img.shields.io/badge/-🌌_Orchestrator_Plan-1aa1d8?style=flat-square" /></a>
   <a href="https://openwebui.com/posts/jokes_tool_14d95010"><img src="https://img.shields.io/badge/-😂_Joke_Tool-10acd6?style=flat-square" /></a>
   <a href="https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-06b6d4?style=flat-square" /></a>
+  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Image_Upscaler-03a9c7?style=flat-square" /></a>
 </p>
 
 </div>
@@ -58,6 +59,7 @@
 | 11 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
 | 12 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
 | 13 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
+| 14 | [🔍 RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX Video Super Resolution via ComfyUI |
 
 ---
 
@@ -844,6 +846,76 @@ That's it. The action button appears in the chat toolbar — click it any time t
 | ℹ️ "No models currently loaded" | No models are resident in VRAM — nothing to unload |
 | ❌ HTTP 404 on unload | Make sure llama.cpp is started in router mode, not single-model mode |
 | ❌ HTTP 4xx/5xx | Check llama.cpp logs for the specific error |
+
+</details>
+
+---
+
+## 🔍 RTX Image Upscaler
+
+> **Upscale any image up to 4× using NVIDIA RTX Video Super Resolution** — hardware-accelerated AI upscaling running locally in ComfyUI, with the result embedded directly in chat. NVIDIA GPU required.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
+
+### ✨ What it does
+
+Drop any image into the chat, ask to upscale it, and get a sharpened high-resolution version back as an attachment — all without leaving the conversation. Powered by NVIDIA's RTX Video Super Resolution running inside ComfyUI, the tool handles image upload, workflow execution, result retrieval, and chat embedding automatically. Choose 1×, 2×, 3×, or 4× — default is always 4× ULTRA for maximum quality.
+
+| Feature | Detail |
+|---------|--------|
+| 🔍 Up to 4× upscale | 1×, 2×, 3×, or 4× multiplier — defaults to 4× ULTRA if not specified |
+| ⚡ RTX hardware acceleration | Uses NVIDIA's native VSR tensor cores — on a 3090 Ti the full round-trip (input → LLM → upscaled output) takes ~1 second |
+| 📎 Persistent attachment | Result embedded as a file attachment — survives in chat history, never flashes and disappears |
+| 🧹 VRAM cleanup | Optional `UnloadAllModels` node after each run to free GPU memory |
+| 🔁 Fallback resilience | Tries OWUI file store first, falls back to base64 data URI if upload fails |
+| 🔑 Zero API keys | Fully local — no cloud, no accounts, no cost per image |
+
+<details>
+<summary><b>⚙️ Prerequisites</b></summary>
+
+**This tool requires a ComfyUI workflow to be set up before use.**
+
+1. **NVIDIA GPU with RTX** — RTX Video Super Resolution is an NVIDIA-only feature (RTX 20 series or newer). AMD and Intel GPUs are not supported.
+2. **ComfyUI** running locally with the **RTXVideoSuperResolution** custom node installed.
+3. **Download and run the RTX upscale workflow** in ComfyUI at least once before using this tool — this ensures the node is loaded and the workflow is validated on your hardware.
+
+Then configure the tool valves:
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `comfyui_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
+| `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL for file serving |
+| `unload_models_after_run` | `true` | Free VRAM after each upscale |
+| `max_wait_seconds` | `300` | Timeout before giving up on a slow job |
+
+**Per-user overrides (UserValves):**
+
+| Setting | Default | Note |
+|---------|---------|------|
+| `default_scale` | `4` | Fallback multiplier if the LLM doesn't specify one |
+| `unload_models_after_run` | `true` | Override the admin VRAM setting per user |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+upscale this image
+make this photo sharper
+enhance the resolution
+upscale 2x
+make it bigger — use scale 3
+```
+
+</details>
+
+<details>
+<summary><b>⚠️ Requirements & limitations</b></summary>
+
+- **NVIDIA RTX GPU only** — this uses NVIDIA's proprietary RTX Video Super Resolution. It will not work on AMD, Intel, or non-RTX NVIDIA cards.
+- **ComfyUI must be running** with the RTXVideoSuperResolution custom node installed and the upscale workflow loaded at least once.
+- Large images at 4× can produce very large output files — allow extra time on lower-end RTX cards.
 
 </details>
 
