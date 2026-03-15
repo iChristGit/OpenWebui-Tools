@@ -857,7 +857,7 @@ That's it. The action button appears in the chat toolbar — click it any time t
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
 
-
+<img width="1492" height="1237" alt="Image" src="https://github.com/user-attachments/assets/e198d6b9-05dd-4ff8-bfac-09c7b352780e" />
 
 ### ✨ What it does
 
