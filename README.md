@@ -857,6 +857,8 @@ That's it. The action button appears in the chat toolbar — click it any time t
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
 
+
+
 ### ✨ What it does
 
 Drop any image into the chat, ask to upscale it, and get a sharpened high-resolution version back as an attachment — all without leaving the conversation. Powered by NVIDIA's RTX Video Super Resolution running inside ComfyUI, the tool handles image upload, workflow execution, result retrieval, and chat embedding automatically. Choose 1×, 2×, 3×, or 4× — default is always 4× ULTRA for maximum quality.
