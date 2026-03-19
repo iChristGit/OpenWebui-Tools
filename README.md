@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=14%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=18%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -36,6 +36,10 @@
   <a href="https://openwebui.com/posts/jokes_tool_14d95010"><img src="https://img.shields.io/badge/-😂_Joke_Tool-10acd6?style=flat-square" /></a>
   <a href="https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-06b6d4?style=flat-square" /></a>
   <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Image_Upscaler-03a9c7?style=flat-square" /></a>
+  <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-02b8c4?style=flat-square" /></a>
+  <a href="#-sports-hub-pro"><img src="https://img.shields.io/badge/-🏟️_Sports_Hub_Pro-01c3c1?style=flat-square" /></a>
+  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Image_Edit-00cebd?style=flat-square" /></a>
+  <a href="#-hltv-cs2-hub"><img src="https://img.shields.io/badge/-🎮_HLTV_CS2_Hub-00d9ba?style=flat-square" /></a>
 </p>
 
 </div>
@@ -60,10 +64,10 @@
 | 12 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
 | 13 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 | 14 | [🔍 RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX Video Super Resolution via ComfyUI |
-| 15 | [🏆 HLTV CS2 Hub](#-hltv-cs2-hub) | Live scores, team schedules, rankings & news from HLTV.org — the #1 Counter-Strike stats platform |
-| 16 | [⚽ Sports Hub Pro](#-sports-hub-pro) | Live scores, standings & schedules for 60+ sports leagues worldwide — zero API keys |
-| 17 | [🌤️ Weather](#-weather) | Real-time weather cards with hourly & 7-day forecasts — powered by Open-Meteo |
-| 18 | [🎨 Qwen Image Edit](#-qwen-image-edit) | Edit & composite images with AI — dynamically supports 1, 2, or 3 reference images |
+| 15 | [🌤️ Weather](#-weather) | Beautiful real-time weather cards with current conditions, hourly & 7-day forecast |
+| 16 | [🏟️ Sports Hub Pro](#-sports-hub-pro) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
+| 17 | [🎨 Qwen Image Edit](#-qwen-image-edit) | Edit and composite images with the Qwen Image Edit 2511 model via ComfyUI — up to 3 reference images |
+| 18 | [🎮 HLTV CS2 Hub](#-hltv-cs2-hub) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
 
 ---
 
@@ -927,152 +931,35 @@ make it bigger — use scale 3
 
 ---
 
-## 🏆 HLTV CS2 Hub
-
-> **Live Counter-Strike 2 scores, upcoming matches, team rankings, news and tournament info** — all from HLTV.org, the #1 esports stats platform. Track your favorite CS2 teams instantly.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com)
-
-### ✨ What it does
-
-Ask about Counter-Strike 2 scores, match schedules, team stats, and esports news without leaving the chat. The tool fetches real-time data from HLTV.org — the definitive source for competitive CS2 information.
-
-| Feature | Detail |
-|---------|--------|
-| 🎮 Live matches | See score, team names, match time (UTC), tournament, and venue |
-| 📅 Upcoming fixtures | Browse scheduled CS2 matches with dates and tournament info |
-| 🏅 Team rankings | Get the current HLTV world team rankings |
-| 📰 Latest news | Breaking news, transfers, roster changes, tournament announcements |
-| 🔎 Team search | Search any CS2 team by name — shows upcoming and recent results |
-| 🏆 Events | Upcoming tournaments and majors |
-
-<details>
-<summary><b>⚙️ Setup</b></summary>
-
-No API keys required — fetches data directly from HLTV.org. Just install and use:
-
-```
-show upcoming CS2 matches
-who is number 1
-FaZe vs Vitality
-latest CS2 news
-```
-
-</details>
-
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-upcoming CS2 matches today
-show HLTV rankings
-FaZe team schedule
-when is the next Major
-latest Counter-Strike news
-is Vitality playing
-CS2 tournament results
-```
-
-</details>
-
----
-
-## ⚽ Sports Hub Pro
-
-> **Live scores, standings and schedules for 60+ sports leagues worldwide** — from Premier League and La Liga to NBA, NFL, NHL, MLB, MLS, F1, tennis, cricket, and esports. Multi-source cascade (ESPN, official league APIs, TheSportsDB). Zero API keys.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com)
-
-### ✨ What it does
-
-Ask about any team, league or sport and get live scores, upcoming schedules, final results, and standings — all with vivid sport-specific color themes. The tool intelligently cascades through ESPN (site + core + soccer APIs), official NHL/MLB APIs, and TheSportsDB for maximum coverage.
-
-| Feature | Detail |
-|---------|--------|
-| 🏟️ 60+ leagues | Soccer (EPL, La Liga, Ligue 1, Serie A, Bundesliga, UCL, etc.), NBA, NFL, NHL, MLB, MLS, F1, tennis, golf, MMA, esports (LoL, CS2, Dota2, Valorant), rugby, cricket, AFL |
-| ⚡ Live scores | Real-time match data with clock/period, scores, team records |
-| 📅 Team schedules | Full upcoming and recent results for any team (past 45 days + next 30 days) |
-| 🥇 Standings | Full league tables with W-L records, points, games behind |
-| 📰 News | Latest league and team news directly in the card |
-| 🎨 Vivid themes | Each sport gets its own color palette (NBA=blue/orange, NFL=gold/navy, etc.) |
-
-<details>
-<summary><b>⚙️ Setup</b></summary>
-
-Zero API keys required. Automatically detects team/league from your query. Just ask:
-
-```
-Lakers schedule
-Premier League standings
-Manchester United next game
-MLB scores today
-F1 latest
-```
-
-</details>
-
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-show NBA scores
-Lakers vs Warriors
-Premier League table
-upcoming Champions League matches
-NFL scores today
-FaZe CS2 rankings
-Manchester City schedule
-when is the next World Cup
-tennis rankings
-golf leaderboard
-MMA fights this weekend
-Valorant esports news
-```
-
-</details>
-
-<details>
-<summary><b>⚠️ Notes</b></summary>
-
-- **Multi-source:** Falls back gracefully — if ESPN is unavailable, tries official NHL/MLB APIs, then TheSportsDB.
-- **Smart filtering:** Knows you mean a specific team even if you just say the city name (e.g., "Lakers" not "Los Angeles").
-- **Live games only show 🔴 LIVE badge:** Matches in progress are marked; finished games show final scores and highlights.
-- **60+ leagues covered:** From major American sports to international soccer, esports, and niche sports like rugby and cricket.
-
-</details>
-
----
-
 ## 🌤️ Weather
 
-> **Beautiful real-time weather cards for any city on Earth** — shows current conditions, hourly forecast, and 7-day outlook. Powered by Open-Meteo (zero API key required).
+> **Beautiful real-time weather cards with current conditions, hourly forecast, and 7-day outlook** — powered by Open-Meteo. Zero API key required.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
 
 ### ✨ What it does
 
-Ask about weather anywhere in the world and get an inline card with current conditions, today's hourly breakdown, and a full week forecast. The tool auto-detects location from your message and renders beautifully with live data.
+Ask about the weather anywhere in the world and get back a rich, fully rendered weather card — right in the chat. Current temperature, feels-like, humidity, wind, UV index, pressure, visibility, hourly today, and a full 7-day outlook are all packed into a single adaptive card that changes colour based on conditions (sunny blue, overcast grey, rainy dark, night-mode).
 
 | Feature | Detail |
 |---------|--------|
-| 🌍 Global coverage | Works for any city on Earth — powered by geocoding + Open-Meteo |
-| 🌡️ Current conditions | Temp, feels-like, humidity, wind speed/direction, pressure, precipitation, visibility, UV index |
-| ☀️/🌙 Smart colors | Card background changes based on time of day and weather (sunny = bright blue, rain = cool blue, night = deep purple) |
-| ⏰ Hourly today | Next 8 hours of hourly breakdown with temp, rain chance, and weather icon |
-| 📅 7-day forecast | Daily high/low temps, rain probability, and weather condition for the week ahead |
-| 🌅 Sunrise/sunset | Exact times for the location |
+| 🌡️ Current conditions | Temp, feels-like, humidity, wind speed & direction, pressure, precipitation |
+| ☀️ UV Index | Colour-coded UV label: Low → Extreme |
+| 👁️ Visibility | Displayed in km |
+| 🕐 Hourly forecast | Up to 8 upcoming hours for today with temp & rain probability |
+| 📅 7-Day outlook | Daily high/low, weather icon, and max rain chance |
+| 🌅 Sunrise / Sunset | Shown on every card |
+| 🌍 Global geocoding | City names resolved via Open-Meteo's geocoding API |
+| 🌡️ °C / °F | `celsius` or `fahrenheit` via valve — switchable per request |
+| 🔑 Zero API keys | Fully powered by Open-Meteo — completely free, no sign-up |
 
 <details>
-<summary><b>⚙️ Setup</b></summary>
-
-Zero API keys — uses the free Open-Meteo API. Configure optional defaults in tool valves:
+<summary><b>⚙️ Valves</b></summary>
 
 | Valve | Default | What it does |
 |-------|---------|--------------|
-| `default_unit` | `celsius` | Temperature unit ('celsius' or 'fahrenheit') |
-| `default_location` | `` | Default location if user doesn't specify one (e.g., 'London') |
-
-**IMPORTANT:** Only set `location` in the tool call if the user EXPLICITLY mentions a city (e.g., "weather in Paris"). If they just say "weather" with no place, the tool uses the configured default_location. Do NOT infer location from system context or IP.
+| `default_unit` | `celsius` | Temperature unit: `celsius` or `fahrenheit` |
+| `default_location` | *(empty)* | Fallback location if the user doesn't name one |
 
 </details>
 
@@ -1080,25 +967,68 @@ Zero API keys — uses the free Open-Meteo API. Configure optional defaults in t
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
-weather in London
-what's the weather in Tokyo
-temperature in New York
-is it going to rain in Barcelona
-weather forecast for Rome
-climate in Sydney
-weather in my city (if default_location is set)
-how hot is it in Dubai
+weather
+what's the weather in Tokyo?
+weather in New York in Fahrenheit
+is it raining in London right now?
+forecast for Paris
+temperature in Berlin
 ```
 
 </details>
 
-<details>
-<summary><b>⚠️ Notes</b></summary>
+---
 
-- **Celsius by default** — change to Fahrenheit in valves if needed, or pass `unit="fahrenheit"` per-call.
-- **Geo-accurate:** Resolves any city name on Earth (e.g., "Paris" → France, USA version handled automatically).
-- **Beautiful rendering:** Background color shifts based on weather conditions and time of day — sunny days are bright, rainy days are moody, nights are dark.
-- **No login required:** Uses free public APIs — no keys, no registration, no rate limits.
+## 🏟️ Sports Hub Pro
+
+> **Ultimate multi-sport hub — live scores, team schedules, standings and news rendered as a beautiful inline HTML card.** Covers 60+ leagues across soccer, NBA, NFL, NHL, MLB, tennis, golf, F1, MMA, esports and more. Zero API key required.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+
+### ✨ What it does
+
+One tool, every sport. Ask about any team, league, or sport in plain English and get a fully rendered broadcast-style card back in chat. Multi-source cascade: ESPN (site + core + soccer/all), official NHL API, official MLB API, and TheSportsDB as a universal fallback. Each sport gets its own vivid colour theme — NBA orange, NFL navy/gold, NHL glacier blue, soccer green, and so on.
+
+| Feature | Detail |
+|---------|--------|
+| 🔴 Live scores | Real-time in-game scores with period/clock display and pulsing LIVE badge |
+| ✅ Results | Recent match results with winner highlights and linescore breakdowns |
+| 📅 Upcoming fixtures | Next games for any team with time, venue, TV broadcast, and odds |
+| 📊 Standings | Full league table for any sport — NHL from official API, all others from ESPN |
+| 📰 Sports news | Latest headlines and articles per league |
+| 🏒 NHL Official API | Scores and standings via `api-web.nhle.com` for maximum accuracy |
+| ⚾ MLB Official API | Schedule and scores via `statsapi.mlb.com` |
+| ⚽ Soccer | EPL, La Liga, Bundesliga, Serie A, Ligue 1, Champions League, MLS and more |
+| 🏀🏈🥊🎾⛳🏎️ 60+ leagues | NBA, WNBA, NFL, NHL, MLB, F1, NASCAR, MMA/UFC, tennis, golf, esports, rugby, cricket, AFL, wrestling |
+| 🎨 Sport-specific themes | Each sport gets its own vivid CSS palette — no generic grey cards |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `max_games` | `20` | Max games shown per team/league |
+| `recent_games` | `5` | Recent results shown for a team |
+| `upcoming_games` | `8` | Upcoming fixtures shown for a team |
+| `default_leagues` | `nba,epl,nfl` | Leagues shown when no sport is specified |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+NBA scores today
+Lakers schedule
+Real Madrid upcoming fixtures
+Premier League standings
+NHL scores
+Yankees last 5 games
+NBA standings
+Barcelona news
+F1 schedule
+UFC results
+```
 
 </details>
 
@@ -1106,114 +1036,120 @@ how hot is it in Dubai
 
 ## 🎨 Qwen Image Edit
 
-> **Edit and composite images using the Qwen Image Edit 2511 model via ComfyUI** — automatically handles 1, 2, or 3 reference images. Prompt the LLM first, it extracts images from chat and routes them.
+> **Edit and composite images using the Qwen Image Edit 2511 model via ComfyUI** — accepts 1, 2, or 3 reference images, auto-selects the right workflow, and returns the result directly in chat. Supports optional VRAM offloading of Ollama and llama.cpp before inference.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com)
-
-<img width="1000" alt="Qwen Image Edit Demo" src="https://via.placeholder.com/1000x600?text=Qwen+Image+Edit+Demo" />
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
 
 ### ✨ What it does
 
-Upload 1, 2, or 3 images to the chat, describe your edit, and the LLM extracts the images and calls Qwen Image Edit automatically. The tool selects the correct workflow (1-image, 2-image, or 3-image) based on how many images you provide, then returns the edited result.
-
-**Perfect for:**
-- Editing a single image (remove objects, change style, enhance, etc.)
-- Compositing two images (combine characters, backgrounds, objects)
-- Advanced compositing with three reference images (outfit from one image, person from another, style from a third)
+Upload one, two, or three images and describe what you want done — the tool picks the correct ComfyUI workflow automatically. Use it to swap outfits across images, composite a subject from one photo into another scene, apply a style from a third reference, or just edit a single image with a text instruction. Before generation, loaded Ollama and llama.cpp models are optionally evicted from VRAM so the diffusion model gets the full GPU budget. An `UnloadAllModels` node at the end frees diffusion weights immediately after.
 
 | Feature | Detail |
 |---------|--------|
-| 📷 Dynamic workflow selection | 1 image → 1-image workflow; 2 images → 2-image workflow; 3 images → 3-image workflow |
-| 🎯 Reference images | Pass up to 3 reference images — use `image1`, `image2`, `image3` in your prompt |
-| ⚡ VRAM optimization | Automatically unloads Ollama/llama.cpp before the heavy diffusion run |
-| 💾 Automatic model unload | Frees VRAM after each edit with built-in UnloadAllModels node |
-| 🔄 Persistent results | Output attaches to chat as a file — never lost or flashed away |
+| 🖼️ 1, 2 or 3 reference images | Workflow auto-selected based on how many images are present — no manual switching |
+| ✍️ Natural language editing | Describe edits referencing `image1`, `image2`, `image3` in your prompt |
+| ⬇️ VRAM offload — Ollama | Evicts all loaded Ollama models before generation |
+| ⬇️ VRAM offload — llama.cpp | Evicts all loaded llama.cpp router models before generation |
+| 🧹 Auto-cleanup | `UnloadAllModels` node frees diffusion weights immediately after each run |
+| 🎲 Random / fixed seed | `-1` picks a random seed; set any integer for reproducible results |
+| 🔁 URL-format fallback | Resolves `data:` URIs, `/api/v1/files/` OWUI paths, and external `https://` URLs |
+| 💾 Persistent attachment | Result stored via OWUI file REST API — survives chat history |
 
 <details>
-<summary><b>⚙️ Prerequisites (CRITICAL!)</b></summary>
+<summary><b>⚙️ Prerequisites</b></summary>
 
-**Step 1: Install ComfyUI and Qwen Image Edit model**
+This tool requires ComfyUI running locally with:
+- `qwen_image_edit_2511_fp8mixed.safetensors` (UNet)
+- `qwen_2.5_vl_7b_fp8_scaled.safetensors` (CLIP)
+- `qwen_image_vae.safetensors` (VAE)
+- `Qwen-Image-Lightning-4steps-V2.0.safetensors` (LoRA)
+- `TextEncodeQwenImageEditPlus` and `FluxKontextImageScale` custom nodes
 
-1. Download and run ComfyUI from https://github.com/comfyorg/ComfyUI
-2. Install the required custom nodes:
-   - `qwen-image-edit` node
-   - `flux-kontexst` (FluxKontextImageScale)
-3. Download the Qwen Image Edit 2511 models:
-   - `qwen_image_edit_2511_fp8mixed.safetensors`
-   - `qwen_2.5_vl_7b_fp8_scaled.safetensors` (CLIP)
-   - `qwen_image_vae.safetensors` (VAE)
-   - `Qwen-Image-Lightning-4steps-V2.0.safetensors` (LoRA)
-
-**Step 2: Download and run the official workflow**
-
-1. Go to https://huggingface.co/Qwen/Qwen-Image-Edit-2511 and download the official ComfyUI workflow JSON (for 1-image, 2-image, and 3-image variants)
-2. Load the workflow in ComfyUI and run it at least once — this validates the node setup and model loading on your hardware
-3. Confirm the nodes load without errors before using the tool
-
-**Step 3: Configure the tool valves**
+**Valves:**
 
 | Valve | Default | What it does |
 |-------|---------|--------------|
-| `comfyui_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
-| `owui_internal_base` | `http://localhost:8080` | Internal Open WebUI URL for file serving |
-| `ollama_url` | `http://localhost:11434` | Ollama endpoint (optional, for VRAM offloading) |
-| `llama_cpp_url` | `http://127.0.0.1:8080` | llama.cpp endpoint (optional, for VRAM offloading) |
-| `max_wait_seconds` | `300` | Timeout before giving up on a slow job |
-
-**Per-user overrides (UserValves):**
-
-| Setting | Default | Note |
-|---------|---------|------|
-| `seed` | `0` | Random seed for reproducibility (0 = random each time) |
-| `unload_ollama` | `true` | Unload Ollama before running edit |
-| `unload_llama_cpp` | `true` | Unload llama.cpp before running edit |
+| `comfyui_url` | `http://localhost:8188` | ComfyUI endpoint |
+| `owui_internal_base` | `http://localhost:8080` | OWUI internal URL for file storage |
+| `ollama_url` | `http://localhost:11434` | Ollama server for VRAM offload |
+| `llama_cpp_url` | `http://localhost:8082` | llama.cpp router for VRAM offload |
+| `unload_ollama` | `true` | Auto-evict Ollama before generation |
+| `unload_llama_cpp` | `true` | Auto-evict llama.cpp before generation |
+| `max_wait_seconds` | `600` | Generation timeout |
+| `seed` | `-1` | `-1` = random; any integer = fixed |
 
 </details>
 
 <details>
-<summary><b>🗣️ How to use</b></summary>
-
-**Step 1: Upload images to chat**
-
-Paste or upload 1–3 images into the conversation.
-
-**Step 2: Describe the edit**
-
-Use `image1`, `image2`, `image3` to refer to the images. Examples:
+<summary><b>🗣️ Example prompts</b></summary>
 
 ```
-the person from image1 is wearing the outfit from image2
-
-place the object from image2 into the scene from image1
-
-image1 background, image2 subject, image3 style
-
-remove the background from image1 and place it on image2
-
-blend the faces from image1 and image2 with the style of image3
+[upload one image] make the background a sunset beach
+[upload two images] the person from image1 wearing the outfit from image2
+[upload two images] place the object from image2 into the scene from image1
+[upload three images] image1 background, image2 subject, image3 art style
+[upload one image] remove the background and replace with a white studio
 ```
-
-**Step 3: Wait for the result**
-
-The LLM extracts the images, calls Qwen Edit with the correct workflow, and returns the edited image as an attachment.
-
-</details>
-
-<details>
-<summary><b>⚠️ Requirements & limitations</b></summary>
-
-- **ComfyUI must be running** with the Qwen Image Edit model and custom nodes installed.
-- **Official workflow required:** Download and run the workflow JSON from HuggingFace at least once before using this tool.
-- **GPU memory:** Expect ~20–24 GB VRAM for the full workflow. The tool offloads Ollama/llama.cpp first to free up space.
-- **Workflow variants:** The tool automatically selects the 1-image, 2-image, or 3-image workflow based on how many images you provide.
-- **Processing time:** ~10–30 seconds depending on GPU and model optimization (4-step Lightning LoRA is fast).
-- **VRAM cleanup:** Automatic UnloadAllModels node at the end frees GPU memory after each edit.
 
 </details>
 
 ---
 
+## 🎮 HLTV CS2 Hub
 
+> **Live CS2 match scores, upcoming fixtures, recent results, team rankings, latest news and tournaments — scraped directly from HLTV.org** in a broadcast-style dark card. No API key required.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+
+### ✨ What it does
+
+HLTV in your chat. Ask about live CS2 matches, check the current world rankings, look up a specific team's schedule, or get the latest news — all rendered in a tactical dark-theme card with Rajdhani display font, JetBrains Mono scores, and an HLTV orange accent palette. Six purpose-built functions cover every angle of the competitive CS2 scene.
+
+| Feature | Detail |
+|---------|--------|
+| 📅 Upcoming & live matches | Browse all scheduled matches — filter by team name (e.g. "is Vitality playing today") |
+| 🏆 Recent results | Latest completed match scores — filterable by team |
+| 📰 Latest news | News articles, transfers and announcements scraped from the HLTV front page |
+| 🥇 World rankings | Current HLTV CS2 team rankings with position, points, and gold/orange tier styling |
+| 🏟️ Events & tournaments | Upcoming and ongoing CS2 events with dates |
+| 🎯 Team hub | Combined upcoming + recent results for any specific team in one card |
+| 🎨 CS2 broadcast theme | Tactical dark UI — HLTV orange + cold blue, Rajdhani + JetBrains Mono |
+| 🔑 Zero API key | Uses `curl-cffi` with Chrome impersonation to scrape HLTV — no account needed |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `timeout` | `20` | HTTP timeout in seconds |
+| `max_items` | `15` | Max items per query |
+| `debug` | `false` | Append raw page class names to empty results for debugging |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+show upcoming CS2 matches
+is Vitality playing today?
+latest CS2 results
+CS2 rankings
+who is #1 in CS2?
+HLTV news
+latest CS2 news
+upcoming CS2 events
+when is the next major?
+tell me about NaVi
+FaZe schedule
+how is G2 doing?
+```
+
+</details>
+
+---
+
+## 🛠️ Installation
 
 All tools install the same way — takes about 30 seconds.
 
