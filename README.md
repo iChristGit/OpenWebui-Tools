@@ -944,6 +944,7 @@ make it bigger — use scale 3
 ### ✨ What it does
 
 Ask about the weather anywhere in the world and get back a rich, fully rendered weather card — right in the chat. Current temperature, feels-like, humidity, wind, UV index, pressure, visibility, hourly today, and a full 7-day outlook are all packed into a single adaptive card that changes colour based on conditions (sunny blue, overcast grey, rainy dark, night-mode).
+Set the default location in user valves to always get needed weather in your location!
 
 | Feature | Detail |
 |---------|--------|
