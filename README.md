@@ -65,9 +65,9 @@
 | 13 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 | 14 | [🔍 RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX Video Super Resolution via ComfyUI |
 | 15 | [🌤️ Weather](#-weather) | Beautiful real-time weather cards with current conditions, hourly & 7-day forecast |
-| 16 | [🏟️ Sports Hub Pro](#-sports-hub-pro) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
+| 16 | [🏟️ Sports Tool](#-sports-hub-pro) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
 | 17 | [🎨 Qwen Image Edit](#-qwen-image-edit) | Edit and composite images with the Qwen Image Edit 2511 model via ComfyUI — up to 3 reference images |
-| 18 | [🎮 HLTV CS2 Hub](#-hltv-cs2-hub) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
+| 18 | [🎮 HLTV Tool](#-hltv-cs2-hub) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
 
 ---
 
@@ -979,7 +979,7 @@ temperature in Berlin
 
 ---
 
-## 🏟️ Sports Hub Pro
+## 🏟️ Sports Tool
 
 > **Ultimate multi-sport hub — live scores, team schedules, standings and news rendered as a beautiful inline HTML card.** Covers 60+ leagues across soccer, NBA, NFL, NHL, MLB, tennis, golf, F1, MMA, esports and more. Zero API key required.
 
@@ -1095,7 +1095,7 @@ This tool requires ComfyUI running locally with:
 
 ---
 
-## 🎮 HLTV CS2 Hub
+## 🎮 HLTV Tool
 
 > **Live CS2 match scores, upcoming fixtures, recent results, team rankings, latest news and tournaments — scraped directly from HLTV.org** in a broadcast-style dark card. No API key required.
 
