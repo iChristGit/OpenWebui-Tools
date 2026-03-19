@@ -931,6 +931,8 @@ make it bigger — use scale 3
 
 ---
 
+<a name="-weather"></a>
+
 ## 🌤️ Weather
 
 > **Beautiful real-time weather cards with current conditions, hourly forecast, and 7-day outlook** — powered by Open-Meteo. Zero API key required.
@@ -978,6 +980,8 @@ temperature in Berlin
 </details>
 
 ---
+
+<a name="-sports-tool"></a>
 
 ## 🏟️ Sports Tool
 
