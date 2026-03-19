@@ -37,9 +37,9 @@
   <a href="https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-06b6d4?style=flat-square" /></a>
   <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Image_Upscaler-03a9c7?style=flat-square" /></a>
   <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-02b8c4?style=flat-square" /></a>
-  <a href="#-sports-hub-pro"><img src="https://img.shields.io/badge/-🏟️_Sports_Hub_Pro-01c3c1?style=flat-square" /></a>
+  <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports_Tool-01c3c1?style=flat-square" /></a>
   <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Image_Edit-00cebd?style=flat-square" /></a>
-  <a href="#-hltv-cs2-hub"><img src="https://img.shields.io/badge/-🎮_HLTV_CS2_Hub-00d9ba?style=flat-square" /></a>
+  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎮_HLTV_Tool-00d9ba?style=flat-square" /></a>
 </p>
 
 </div>
@@ -65,9 +65,9 @@
 | 13 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
 | 14 | [🔍 RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX Video Super Resolution via ComfyUI |
 | 15 | [🌤️ Weather](#-weather) | Beautiful real-time weather cards with current conditions, hourly & 7-day forecast |
-| 16 | [🏟️ Sports Tool](#-sports-hub-pro) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
+| 16 | [🏟️ Sports Tool](#-sports-tool) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
 | 17 | [🎨 Qwen Image Edit](#-qwen-image-edit) | Edit and composite images with the Qwen Image Edit 2511 model via ComfyUI — up to 3 reference images |
-| 18 | [🎮 HLTV Tool](#-hltv-cs2-hub) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
+| 18 | [🎮 HLTV Tool](#-hltv-tool) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
 
 ---
 
@@ -981,7 +981,7 @@ temperature in Berlin
 
 ## 🏟️ Sports Tool
 
-> **Ultimate multi-sport hub — live scores, team schedules, standings and news rendered as a beautiful inline HTML card.** Covers 60+ leagues across soccer, NBA, NFL, NHL, MLB, tennis, golf, F1, MMA, esports and more. Zero API key required.
+> **Ultimate multi-sport coverage — live scores, team schedules, standings and news rendered as a beautiful inline HTML card.** Covers 60+ leagues across soccer, NBA, NFL, NHL, MLB, tennis, golf, F1, MMA, esports and more. Zero API key required.
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
 
@@ -1112,7 +1112,7 @@ HLTV in your chat. Ask about live CS2 matches, check the current world rankings,
 | 📰 Latest news | News articles, transfers and announcements scraped from the HLTV front page |
 | 🥇 World rankings | Current HLTV CS2 team rankings with position, points, and gold/orange tier styling |
 | 🏟️ Events & tournaments | Upcoming and ongoing CS2 events with dates |
-| 🎯 Team hub | Combined upcoming + recent results for any specific team in one card |
+| 🎯 Team lookup | Combined upcoming + recent results for any specific team in one card |
 | 🎨 CS2 broadcast theme | Tactical dark UI — HLTV orange + cold blue, Rajdhani + JetBrains Mono |
 | 🔑 Zero API key | Uses `curl-cffi` with Chrome impersonation to scrape HLTV — no account needed |
 
