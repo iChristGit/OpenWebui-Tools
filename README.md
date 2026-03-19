@@ -937,7 +937,9 @@ make it bigger — use scale 3
 
 > **Beautiful real-time weather cards with current conditions, hourly forecast, and 7-day outlook** — powered by Open-Meteo. Zero API key required.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/weather_tool_fa9d870e)
+
+<img width="1061" height="1107" alt="Image" src="https://github.com/user-attachments/assets/192bf4bf-7217-4408-b38d-bf925a6bfc14" />
 
 ### ✨ What it does
 
@@ -987,7 +989,9 @@ temperature in Berlin
 
 > **Ultimate multi-sport coverage — live scores, team schedules, standings and news rendered as a beautiful inline HTML card.** Covers 60+ leagues across soccer, NBA, NFL, NHL, MLB, tennis, golf, F1, MMA, esports and more. Zero API key required.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/sports_tool_for_open_webui_d917524b)
+
+<img width="1005" height="1201" alt="Image" src="https://github.com/user-attachments/assets/77c5b6a8-9009-44e5-b668-3bbc42ecbbcc" />
 
 ### ✨ What it does
 
@@ -1042,7 +1046,9 @@ UFC results
 
 > **Edit and composite images using the Qwen Image Edit 2511 model via ComfyUI** — accepts 1, 2, or 3 reference images, auto-selects the right workflow, and returns the result directly in chat. Supports optional VRAM offloading of Ollama and llama.cpp before inference.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qwen_image_edit_for_open_webui_56ca9eca)
+
+<img width="1056" height="1249" alt="Image" src="https://github.com/user-attachments/assets/db405575-76fb-44c3-b475-9d4b01c8c39b" />
 
 ### ✨ What it does
 
@@ -1103,7 +1109,9 @@ This tool requires ComfyUI running locally with:
 
 > **Live CS2 match scores, upcoming fixtures, recent results, team rankings, latest news and tournaments — scraped directly from HLTV.org** in a broadcast-style dark card. No API key required.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/hltv_tool_for_open_webui_b3fe146a)
+
+<img width="1191" height="517" alt="Image" src="https://github.com/user-attachments/assets/2be82bed-c64a-4124-bea5-e5896de798f4" />
 
 ### ✨ What it does
 
