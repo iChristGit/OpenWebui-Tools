@@ -535,10 +535,10 @@ llama.cpp supports Qwen3.5 extended `<think>` reasoning mode natively — but Op
 **Step 1 — Start llama-server with:**
 
 ```bash
-llama-server --jinja --chat-template-kwargs "{\"enable_thinking\":false}" 
+llama-server --jinja --reasoning off 
 ```
 
-The `--chat-template-kwargs "{\"enable_thinking\":false}"` flag lets the filter set the budget dynamically per request.
+The `--reasoning off` flag lets the filter set the budget dynamically per request.
 
 The `--jinja` flat enables Jinja chat template processing, required for Qwen3.5's think block
 
