@@ -83,7 +83,7 @@ The fastest way to get these tools running. No copy-paste required — install d
 <summary><b>🚀 First time using a tool? Read this</b></summary>
 
 1. **Enable the tool** — click the 🔧 icon in the chat input bar and toggle the tool on
-2. **Use a strong model** — small models often ignore tool calls; GPT-4o, Claude Sonnet, Llama 3.1 70B+, Qwen2.5 72B or similar work best
+2. **Use a strong model** — small models often ignore tool calls; Gemma4, Qwen3.5, GLM4.7-Flash or similar work best
 3. **Set tool calling to Native** — in your model settings, make sure Tool Calling is set to `Native`
 4. **Just ask in chat** — there are no buttons or slash commands; the LLM triggers the tool automatically when relevant
 
