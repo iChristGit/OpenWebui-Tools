@@ -79,6 +79,20 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 ---
 
+<details>
+<summary><b>🚀 First time using a tool? Read this</b></summary>
+
+1. **Enable the tool** — click the 🔧 icon in the chat input bar and toggle the tool on
+2. **Use a strong model** — small models often ignore tool calls; GPT-4o, Claude Sonnet, Llama 3.1 70B+, Qwen2.5 72B or similar work best
+3. **Set tool calling to Native** — in your model settings, make sure Tool Calling is set to `Native`
+4. **Just ask in chat** — there are no buttons or slash commands; the LLM triggers the tool automatically when relevant
+
+> ⚠️ If nothing happens, the most common cause is a weak model or tool calling not set to `Native`.
+
+</details>
+
+---
+
 ## 🎬 Jellyfin Media Player
 
 > **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
