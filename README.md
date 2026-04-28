@@ -1277,7 +1277,9 @@ get lyrics: "Anti-Hero" Taylor Swift
 
 > **Generate QR codes for any URL, text, or data and embed them directly in chat** — styled, auto-sized, and instantly scannable. Zero setup, zero API keys.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qr_code_generator_8a7c6d9e)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qr_code_generator_for_open_webui_fb931955)
+
+<img width="1215" height="928" alt="image" src="https://github.com/user-attachments/assets/dcfa3972-e682-47e8-a926-0fa450baff51" />
 
 ### ✨ What it does
 
@@ -1309,7 +1311,9 @@ create a QR code for "Hello, World!"
 
 > **Swiss Army knife for everyday chat tasks** — 11 zero-dependency utilities in a single tool. UUIDs, Base64 encoding, color conversion, password generation, QR codes, number base conversion, a safe calculator, Unix timestamp converter, text statistics, text transforms, and random picker.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/quick_utils_2100001e)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/quick_utils_11_zero_dependency_tools_in_one_swiss_f0d0517b)
+
+<img width="1573" height="1235" alt="image" src="https://github.com/user-attachments/assets/79647cf8-401c-49d3-bd12-6cf557cebbf3" />
 
 ### ✨ What it does
 
