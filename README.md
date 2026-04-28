@@ -1238,7 +1238,9 @@ pronunciation guide for こんにちは
 
 > **Fetch the full lyrics of any song by title and artist** — scraped directly from Genius.com with fuzzy title/artist matching so aliases and featured artists still resolve. No user API key required.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/genius_song_lyrics_for_open_webui_3970001f)
+
+<img width="1577" height="1117" alt="Screenshot 2026-04-28 174631" src="https://github.com/user-attachments/assets/59047a0e-a517-4630-8122-bea144fe1641" />
 
 ### ✨ What it does
 
