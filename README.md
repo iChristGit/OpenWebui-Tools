@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=18%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=20%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/18_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/20_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
   <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
   <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
   <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
@@ -40,6 +40,8 @@
   <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports_Tool-01c3c1?style=flat-square" /></a>
   <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Image_Edit-00cebd?style=flat-square" /></a>
   <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎮_HLTV_Tool-00d9ba?style=flat-square" /></a>
+  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation_Guide-00e4b7?style=flat-square" /></a>
+  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Song_Lyrics-00efb3?style=flat-square" /></a>
 </p>
 
 </div>
@@ -68,6 +70,8 @@
 | 16 | [🏟️ Sports Tool](#-sports-tool) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
 | 17 | [🎨 Qwen Image Edit](#-qwen-image-edit) | Edit and composite images with the Qwen Image Edit 2511 model via ComfyUI — up to 3 reference images |
 | 18 | [🎮 HLTV Tool](#-hltv-tool) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
+| 19 | [🔤 Language Pronunciation Guide](#-language-pronunciation-guide) | Interactive pronunciation player with audio, IPA, flip-cards & travel navigator for 35+ languages |
+| 20 | [🎵 Genius Song Lyrics](#-genius-song-lyrics) | Fetch full song lyrics from Genius by title and artist — no manual searching |
 
 ---
 
@@ -1171,6 +1175,89 @@ when is the next major?
 tell me about NaVi
 FaZe schedule
 how is G2 doing?
+```
+
+</details>
+
+---
+
+## 🔤 Language Pronunciation Guide
+
+> **Interactive pronunciation player for any word or phrase in 35+ languages** — IPA, syllable flip-cards, audio playback (normal & slow), travel navigator mode, and a compact quick-banner for single-word lookups. Powered by gTTS, zero API key needed.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+
+### ✨ What it does
+
+Three purpose-built tools cover every pronunciation use case — from a quick "how do I say that?" to a full language study session.
+
+| Feature | Detail |
+|---------|--------|
+| 🔤 Quick banner | Compact single-word banner: syllable pills with English phonetics, IPA, normal + slow audio, memory mnemonic — no tabs, instant render |
+| 📚 Learn tab | Flip-card word chips with IPA, translation, POS, syllables, difficulty rating, mnemonic, and example sentences |
+| 🧭 Navigate tab | Giant phrase display for showing to locals — one-tap autoplay, loop & repeat controls, word-by-word breakdown |
+| 🔊 Audio | gTTS full-phrase MP3 + browser Web Speech API per-word chips (zero bandwidth by default) |
+| 🐢 Slow mode | Browser speed control (0.65×) by default; optional gTTS slow file via valve |
+| 🌍 35+ languages | French, Spanish, Japanese, Arabic, Hebrew, Chinese, Korean, Hindi, and many more |
+| 🎨 Themed UI | Country-flag gradients, cultural emoji particles, per-language phonetic tips |
+| ✈️ Travel mode | `translate_and_play` opens directly on the Navigator tab — ideal for showing phrases to locals |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `max_words` | `14` | Maximum word flip-cards to render |
+| `word_audio_mode` | `speech_api` | `speech_api` = browser Web Speech (zero bandwidth); `gtts` = high-quality gTTS per word |
+| `generate_slow_audio` | `false` | If `true`, generates a separate gTTS slow audio file for the full phrase |
+
+**Requirements:** `gtts`
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+how do you pronounce "schadenfreude"?
+how do I say "where is the nearest pharmacy?" in Japanese?
+pronounce "merci beaucoup" in French
+teach me "¿Cómo estás?" in Spanish
+how do I say "thank you" in Arabic?
+pronunciation guide for こんにちは
+```
+
+</details>
+
+---
+
+## 🎵 Genius Song Lyrics
+
+> **Fetch the full lyrics of any song by title and artist** — scraped directly from Genius.com with fuzzy title/artist matching so aliases and featured artists still resolve. No user API key required.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+
+### ✨ What it does
+
+Ask for any song's lyrics in plain English and get the full text back in chat — complete with the matched title and artist so you always know exactly what was found.
+
+| Feature | Detail |
+|---------|--------|
+| 🔍 Smart search | Tries three query variants (title+artist, title only, artist+title) for the best Genius match |
+| 🤝 Fuzzy matching | Similarity scoring on both title and artist handles aliases, features, and alternate spellings |
+| 📄 Full lyrics | Scrapes the Genius page directly — modern and legacy markup both supported |
+| 🏷️ Match transparency | Shows the exact title and artist that was matched, plus your original search if they differ |
+| 🔑 No setup | Built-in token — just install and ask |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+get the lyrics for "Bohemian Rhapsody" by Queen
+show me the lyrics to "Blinding Lights" by The Weeknd
+lyrics for "Hotel California" Eagles
+what are the lyrics to Lose Yourself by Eminem?
+get lyrics: "Anti-Hero" Taylor Swift
 ```
 
 </details>
