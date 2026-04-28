@@ -1185,7 +1185,10 @@ how is G2 doing?
 
 > **Interactive pronunciation player for any word or phrase in 35+ languages** — IPA, syllable flip-cards, audio playback (normal & slow), travel navigator mode, and a compact quick-banner for single-word lookups. Powered by gTTS, zero API key needed.
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/u/ichrist)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)]([https://openwebui.com/u/ichrist](https://openwebui.com/posts/pronunciation_and_translation_tool_d8a83bca))
+
+<img width="1632" height="1155" alt="image" src="https://github.com/user-attachments/assets/c57e7d09-0452-4098-bc6a-2d3f0cf95ee6" />
+
 
 ### ✨ What it does
 
