@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=20%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=22%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/20_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/22_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
   <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
   <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
   <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
@@ -42,6 +42,8 @@
   <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎮_HLTV_Tool-00d9ba?style=flat-square" /></a>
   <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation_Guide-00e4b7?style=flat-square" /></a>
   <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Song_Lyrics-00efb3?style=flat-square" /></a>
+  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Code_Generator-00f0b0?style=flat-square" /></a>
+  <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-00f5ad?style=flat-square" /></a>
 </p>
 
 </div>
@@ -72,6 +74,8 @@
 | 18 | [🎮 HLTV Tool](#-hltv-tool) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
 | 19 | [🔤 Language Pronunciation Guide](#-language-pronunciation-guide) | Interactive pronunciation player with audio, IPA, flip-cards & travel navigator for 35+ languages |
 | 20 | [🎵 Genius Song Lyrics](#-genius-song-lyrics) | Fetch full song lyrics from Genius by title and artist — no manual searching |
+| 21 | [📱 QR Code Generator](#-qr-code-generator) | Generate QR codes for any URL, text, or Wi-Fi credential and embed them in chat |
+| 22 | [🛠️ Quick Utils](#-quick-utils) | 11 zero-dependency utilities — UUIDs, Base64, color picker, password generator, calculator, and more |
 
 ---
 
@@ -961,7 +965,7 @@ make it bigger — use scale 3
 
 ### ✨ What it does
 
-Ask about the weather anywhere in the world and get a rich, fully rendered weather card right in the chat. It includes current temperature, feels-like, humidity, wind, UV index, pressure, visibility, today’s hourly forecast, and a full 7-day outlook—all packed into a single adaptive card that changes color based on conditions (sunny blue, overcast gray, rainy dark, night mode).
+Ask about the weather anywhere in the world and get a rich, fully rendered weather card right in the chat. It includes current temperature, feels-like, humidity, wind, UV index, pressure, visibility, today's hourly forecast, and a full 7-day outlook—all packed into a single adaptive card that changes color based on conditions (sunny blue, overcast gray, rainy dark, night mode).
 
 Set your default location in user settings to always receive accurate weather information for your preferred location.
 
@@ -1263,6 +1267,94 @@ show me the lyrics to "Blinding Lights" by The Weeknd
 lyrics for "Hotel California" Eagles
 what are the lyrics to Lose Yourself by Eminem?
 get lyrics: "Anti-Hero" Taylor Swift
+```
+
+</details>
+
+---
+
+## 📱 QR Code Generator
+
+> **Generate QR codes for any URL, text, or data and embed them directly in chat** — styled, auto-sized, and instantly scannable. Zero setup, zero API keys.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qr_code_generator_8a7c6d9e)
+
+### ✨ What it does
+
+Drop any URL, text, contact card, or Wi-Fi credential into this tool and get a beautifully rendered QR code embedded right in the chat. No external services, no rate limits, no sign-up — it runs entirely locally using `qrcode[pil]`. The embedded HTML card auto-sizes to fit the image, includes a styled label with the encoded content, and renders with a clean shadow and rounded border.
+
+| Feature | Detail |
+|---------|--------|
+| 📱 Any content | URLs, text, Wi-Fi credentials, vCards, phone numbers — anything that fits in a QR code |
+| 🖼️ Styled embed | Clean card with shadow, rounded border, and content label — renders directly in chat |
+| ⚡ Instant generation | High-error-correction QR codes that work reliably even if partially obscured |
+| 🔑 Zero config | No API keys, no external services — fully local with `qrcode[pil]` |
+| 🐢 Error resilience | Uses ERROR_CORRECT_H (30% damage tolerance) by default |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+generate a QR code for https://example.com
+make a QR code for my Wi-Fi
+QR code for tel:+15551234567
+create a QR code for "Hello, World!"
+```
+
+</details>
+
+---
+
+## 🛠️ Quick Utils
+
+> **Swiss Army knife for everyday chat tasks** — 11 zero-dependency utilities in a single tool. UUIDs, Base64 encoding, color conversion, password generation, QR codes, number base conversion, a safe calculator, Unix timestamp converter, text statistics, text transforms, and random picker.
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/quick_utils_2100001e)
+
+### ✨ What it does
+
+A single tool that replaces a dozen browser bookmarklets. Each utility renders a polished, copy-ready card with one-click copy buttons — no tab-switching, no external websites. Built entirely with Python's standard library plus `qrcode[pil]` and `pillow`.
+
+| Feature | Sub-feature | What it does |
+|---------|-------------|-------------|
+| 🆔 **UUID Generator** | v1 (time-based) / v4 (random) | Generate 1–20 UUIDs with one-click copy |
+| 📦 **Base64 Tool** | Encode & decode | Convert plain text ↔ Base64 with character count |
+| 🎨 **Color Converter** | HEX ↔ RGB ↔ HSL | Live colour swatch card with all three formats |
+| 🔐 **Password Generator** | Fully customisable | Cryptographically secure passwords via `secrets` module — adjustable length, character sets, ambiguous char exclusion |
+| 📱 **QR Code** | Inline PNG | Generate QR codes for URLs, text, Wi-Fi strings — no external service |
+| 🔢 **Number Base** | Decimal / Hex / Binary / Octal | Convert between bases, with nibble-formatted binary display |
+| 🧮 **Calculator** | Safe math evaluation | Full expression evaluator with `+ − × ÷ ** // %`, `sqrt`, `sin`, `cos`, `tan`, `log`, `abs`, `round`, `pi`, `e` — AST-based, no `eval()` |
+| ⏱️ **Unix Timestamp** | ↔ human dates | Current time, decode timestamp, encode date string — displays UTC, ISO 8601, RFC 2822 |
+| 📝 **Text Stats** | Word count, reading time | Words, chars (with/without spaces), sentences, paragraphs, reading time, top-5 word frequency |
+| 🔤 **Text Transform** | upper, lower, snake, kebab, camel, pascal, slug, reverse | Single or all formats at once — perfect for coding conventions |
+| 🎲 **Random Pick** | List picker / number generator | Pick random items from a comma-separated list or generate random numbers in a range |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `default_uuid_version` | `4` | Default UUID version (1 or 4) |
+| `default_password_length` | `20` | Default generated password length (8–128) |
+
+**Requirements:** `qrcode[pil]`, `pillow`
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+generate a UUID
+give me a secure password
+what is rgb(255, 107, 53) in hex?
+convert 255 to binary and hex
+calculate sqrt(2) * pi
+what is the current Unix timestamp?
+how many words is "The quick brown fox..."
+convert "my_file_name" to snake_case and kebab-case
+pick a random number between 1 and 100
+pick randomly from Alice, Bob, Charlie, Dave
 ```
 
 </details>
