@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=22%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=23%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/22_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/23_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
   <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
   <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
   <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
@@ -20,30 +20,33 @@
 
 <br/>
 
+<!-- Quick-jump badge strip -->
 <p>
-  <a href="https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e"><img src="https://img.shields.io/badge/-🎬_Jellyfin_Stream-7c3aed?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/youtube_tool_embedded_player_ai_summaries_full_tra_38201a9a"><img src="https://img.shields.io/badge/-📺_YouTube_Player-7244eb?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572"><img src="https://img.shields.io/badge/-🎥_LTX_2.3_Video_Gen-684fe9?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/news_reader_live_headlines_ai_summaries_45_rss_fee_3caf647a"><img src="https://img.shields.io/badge/-📰_News_Reader-5e59e7?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e"><img src="https://img.shields.io/badge/-🌐_Reddit_Explorer-5563e5?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/podcasts_tool_play_search_discover_podcasts_direct_7f83da54"><img src="https://img.shields.io/badge/-🎙_Podcast_Player-4b6ee3?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-4178e0?style=flat-square" /></a>
+  <a href="#-jellyfin-media-player"><img src="https://img.shields.io/badge/-🎬_Jellyfin-7c3aed?style=flat-square" /></a>
+  <a href="#-youtube-player"><img src="https://img.shields.io/badge/-📺_YouTube-7244eb?style=flat-square" /></a>
+  <a href="#-news-reader"><img src="https://img.shields.io/badge/-📰_News_Reader-5e59e7?style=flat-square" /></a>
+  <a href="#-reddit-explorer"><img src="https://img.shields.io/badge/-🌐_Reddit-5563e5?style=flat-square" /></a>
+  <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-4b6ee3?style=flat-square" /></a>
+  <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports-4178e0?style=flat-square" /></a>
+  <a href="#-thinking-filter"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-3782de?style=flat-square" /></a>
+  <a href="#-steam-game-info"><img src="https://img.shields.io/badge/-🎮_Steam_Info-2d8ddc?style=flat-square" /></a>
   <br/>
-  <a href="https://openwebui.com/posts/ask_user_14182520"><img src="https://img.shields.io/badge/-🧩_Ask_User-3782de?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010"><img src="https://img.shields.io/badge/-🎭_Persona_Studio-2d8ddc?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/wikipedia_tool_00b03142"><img src="https://img.shields.io/badge/-📖_Wikipedia_Lookup-2497da?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/orchestrator_0f269681"><img src="https://img.shields.io/badge/-🌌_Orchestrator_Plan-1aa1d8?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/jokes_tool_14d95010"><img src="https://img.shields.io/badge/-😂_Joke_Tool-10acd6?style=flat-square" /></a>
-  <a href="https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-06b6d4?style=flat-square" /></a>
-  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Image_Upscaler-03a9c7?style=flat-square" /></a>
-  <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-02b8c4?style=flat-square" /></a>
-  <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports_Tool-01c3c1?style=flat-square" /></a>
-  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Image_Edit-00cebd?style=flat-square" /></a>
-  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎮_HLTV_Tool-00d9ba?style=flat-square" /></a>
-  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation_Guide-00e4b7?style=flat-square" /></a>
-  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Song_Lyrics-00efb3?style=flat-square" /></a>
-  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Code_Generator-00f0b0?style=flat-square" /></a>
+  <a href="#-ltx-23-video-generator"><img src="https://img.shields.io/badge/-🎥_LTX_Video-2497da?style=flat-square" /></a>
+  <a href="#-podcast-player"><img src="https://img.shields.io/badge/-🎙_Podcasts-1aa1d8?style=flat-square" /></a>
+  <a href="#-wikipedia"><img src="https://img.shields.io/badge/-📖_Wikipedia-10acd6?style=flat-square" /></a>
+  <a href="#-ask-user"><img src="https://img.shields.io/badge/-🧩_Ask_User-06b6d4?style=flat-square" /></a>
+  <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-03a9c7?style=flat-square" /></a>
+  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-02b8c4?style=flat-square" /></a>
+  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-01c3c1?style=flat-square" /></a>
+  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-00cebd?style=flat-square" /></a>
+  <br/>
+  <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-00d9ba?style=flat-square" /></a>
+  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-00e4b7?style=flat-square" /></a>
+  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Lyrics-00efb3?style=flat-square" /></a>
+  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Codes-00f0b0?style=flat-square" /></a>
   <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-00f5ad?style=flat-square" /></a>
+  <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-68ef9f?style=flat-square" /></a>
+  <a href="#-vram-unload"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-a3f0a0?style=flat-square" /></a>
 </p>
 
 </div>
@@ -52,30 +55,52 @@
 
 ## 🗺️ Quick Navigation
 
-| # | Tool | Best for |
+### 📡 Media & Entertainment
+| | Tool | Best for |
 |---|------|----------|
-| 1 | [🎬 Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 2 | [📺 YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos directly in chat |
-| 3 | [🎥 LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
-| 4 | [📰 News Reader](#-news-reader) | Live headlines from 45 feeds across 11 categories — with AI summaries |
-| 5 | [🌐 Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, user profiles — no API key |
-| 6 | [🎙 Podcast Player](#-podcast-player) | Stream any podcast episode directly in chat — no API key |
-| 7 | [🧠 Thinking Filter](#-thinking-filter) | One-click thinking toggle + full reasoning control for llama.cpp |
-| 8 | [🧩 Ask User](#-ask-user) | The right questions before the right answer |
-| 9 | [🎭 Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
-| 10 | [📖 Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
-| 11 | [🌌 Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
-| 12 | [😂 Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
-| 13 | [💾 VRAM Unload](#-vram-unload) | Unload llamacpp models with one click |
-| 14 | [🔍 RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX Video Super Resolution via ComfyUI |
-| 15 | [🌤️ Weather](#-weather) | Beautiful real-time weather cards with current conditions, hourly & 7-day forecast |
-| 16 | [🏟️ Sports Tool](#-sports-tool) | Live scores, standings, schedules & news for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
-| 17 | [🎨 Qwen Image Edit](#-qwen-image-edit) | Edit and composite images with the Qwen Image Edit 2511 model via ComfyUI — up to 3 reference images |
-| 18 | [🎮 HLTV Tool](#-hltv-tool) | Live CS2 scores, results, rankings, news and tournament data from HLTV.org |
-| 19 | [🔤 Language Pronunciation Guide](#-language-pronunciation-guide) | Interactive pronunciation player with audio, IPA, flip-cards & travel navigator for 35+ languages |
-| 20 | [🎵 Genius Song Lyrics](#-genius-song-lyrics) | Fetch full song lyrics from Genius by title and artist — no manual searching |
-| 21 | [📱 QR Code Generator](#-qr-code-generator) | Generate QR codes for any URL, text, or Wi-Fi credential and embed them in chat |
-| 22 | [🛠️ Quick Utils](#-quick-utils) | 11 zero-dependency utilities — UUIDs, Base64, color picker, password generator, calculator, and more |
+| 🎬 | [Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
+| 📺 | [YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos in chat |
+| 📰 | [News Reader](#-news-reader) | Live headlines from 45 feeds across 11 categories with AI summaries |
+| 🌐 | [Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, profiles — no API key |
+| 🎙 | [Podcast Player](#-podcast-player) | Stream any podcast episode directly in chat |
+| 🎵 | [Genius Song Lyrics](#-genius-song-lyrics) | Full song lyrics from Genius — no manual searching |
+
+### 🏆 Sports & Gaming
+| | Tool | Best for |
+|---|------|----------|
+| 🏟️ | [Sports Tool](#-sports-tool) | Live scores & standings for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
+| 🎮 | [Steam Game Info](#-steam-game-info) | Prices, reviews, screenshots & artwork for any Steam game |
+| 🎯 | [HLTV Tool](#-hltv-tool) | Live CS2 scores, rankings, news and tournament data |
+
+### 🤖 AI & Workflow
+| | Tool | Best for |
+|---|------|----------|
+| 🧠 | [Thinking Filter](#-thinking-filter) | One-click deep reasoning toggle + full control for llama.cpp + Qwen3.5 |
+| 🧩 | [Ask User](#-ask-user) | Collect structured input before the AI responds |
+| 🎭 | [Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
+| 🌌 | [Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
+
+### 🌍 Information & Reference
+| | Tool | Best for |
+|---|------|----------|
+| 🌤️ | [Weather](#-weather) | Beautiful real-time weather cards with hourly & 7-day forecast |
+| 📖 | [Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
+| 🔤 | [Language Pronunciation Guide](#-language-pronunciation-guide) | Interactive pronunciation with audio, IPA & travel navigator |
+
+### 🎨 Image & Video Generation
+| | Tool | Best for |
+|---|------|----------|
+| 🎥 | [LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
+| 🎨 | [Qwen Image Edit](#-qwen-image-edit) | Edit & composite images with up to 3 reference images |
+| 🔍 | [RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX hardware |
+
+### 🛠️ Utilities
+| | Tool | Best for |
+|---|------|----------|
+| 📱 | [QR Code Generator](#-qr-code-generator) | Generate QR codes for any URL, text, or Wi-Fi credential |
+| 🛠️ | [Quick Utils](#-quick-utils) | 11 zero-dependency utilities — UUID, Base64, calculator, and more |
+| 😂 | [Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
+| 💾 | [VRAM Unload](#-vram-unload) | Free GPU memory from llama.cpp with one click |
 
 ---
 
@@ -101,11 +126,16 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 ---
 
-## 🎬 Jellyfin Media Player
+## 📡 Media & Entertainment
 
-> **Stream your entire Jellyfin library inside Open WebUI** — with a cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.
+---
+
+<details>
+<summary><h2>🎬 Jellyfin Media Player</h2>
+<blockquote>Stream your entire Jellyfin library inside Open WebUI — cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
+</summary>
 
 <table>
   <tr>
@@ -129,10 +159,6 @@ The fastest way to get these tools running. No copy-paste required — install d
     </td>
   </tr>
 </table>
-
-### ✨ What it does
-
-Your Jellyfin library, right inside the chat. Ask for any movie, show, track, or live channel in plain English and get an embedded player back — no tab-switching, no searching, no fuss.
 
 | Feature | Detail |
 |---------|--------|
@@ -179,32 +205,28 @@ This tool connects to your own self-hosted Jellyfin server — it doesn't host, 
 
 </details>
 
+</details>
+
 ---
 
-## 📺 YouTube Player
-
-> **Watch YouTube videos, browse search results, and get AI-powered summaries — directly in chat.** No API key required. Powered by YouTube's own InnerTube API, with likes/dislikes from Return YouTube Dislike and transcripts via youtube-transcript-api.
+<details>
+<summary><h2>📺 YouTube Player</h2>
+<blockquote>Watch YouTube videos, browse search results, and get AI-powered summaries — directly in chat. No API key required.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/youtube_tool_embedded_player_ai_summaries_full_tra_38201a9a)
+</summary>
 
-<img width="1337" height="1160" alt="Screenshot 20262-03-13 134323" src="https://github.com/user-attachments/assets/cb36e2f2-710c-465c-a14f-a2f2dda1aff1" />
-
-<br/>
-
-### ✨ What it does
-
-YouTube, embedded right in your chat window. Ask for a tutorial, share a URL, or say "search YouTube for X" — the tool picks the right action automatically. The embedded player loads instantly with view counts, likes/dislikes, and channel info. If a transcript is available, the LLM silently reads it so you can ask follow-up questions about the video without ever leaving the conversation.
+<img width="1337" height="1160" alt="YouTube Player screenshot" src="https://github.com/user-attachments/assets/cb36e2f2-710c-465c-a14f-a2f2dda1aff1" />
 
 | Feature | Detail |
 |---------|--------|
 | ▶️ Watch instantly | Paste a URL or describe what you want — the best match embeds immediately |
-| 🔎 Browse grid | Ask to "search YouTube for X" to get a scrollable results grid and pick your own |
+| 🔎 Browse grid | Ask to "search YouTube for X" to get a scrollable results grid |
 | 🧠 AI summaries | "Summarize this video" fetches the full transcript and writes a structured recap |
 | 📜 Full transcripts | Get the raw transcript text of any video on demand |
-| 👍👎 Likes & dislikes | Dislike counts restored client-side via Return YouTube Dislike API |
-| 📊 Rich metadata | View count, channel name, publish date, and duration shown on every player |
+| 👍👎 Likes & dislikes | Dislike counts restored via Return YouTube Dislike API |
+| 📊 Rich metadata | View count, channel name, publish date, and duration on every player |
 | 🔑 No API key needed | Search via YouTube's own InnerTube API — fast, reliable, no setup |
-| 🔑 Optional API key | Set `YOUTUBE_API_KEY` in valves for improved search accuracy via Data API v3 |
 
 <details>
 <summary><b>🗣️ Example prompts</b></summary>
@@ -216,7 +238,6 @@ search YouTube for lo-fi hip hop study beats
 play https://www.youtube.com/watch?v=dQw4w9WgXcQ
 summarize this YouTube video: [url]
 get the transcript of [url]
-what are some videos on RLHF?
 ```
 
 </details>
@@ -226,127 +247,36 @@ what are some videos on RLHF?
 
 Works out of the box — no configuration needed.
 
-**Optional valves:**
-
 | Valve | Default | What it does |
 |-------|---------|--------------|
 | `YOUTUBE_API_KEY` | *(empty)* | YouTube Data API v3 key for improved search accuracy |
 | `INVIDIOUS_INSTANCE` | *(auto)* | Preferred Invidious instance for transcript fallback |
 
-> **Requires** `youtube-transcript-api` Python package (listed in tool requirements — installs automatically).
+> **Requires** `youtube-transcript-api` (auto-installs from tool requirements).
+
+</details>
 
 </details>
 
 ---
 
-## 🎥 LTX-2.3 Video Generator
-
-> **Generate cinematic AI videos from a text prompt or an uploaded image** — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player, mobile-compatible output, and creative filenames chosen by the LLM.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)
-
-> 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
-
-<div align="center">
-  <img width="1402" height="1183" alt="Screenshot 2026-03-13 091121" src="https://github.com/user-attachments/assets/24ffcebf-e92a-4458-bc73-4563ad238296" />
-</div>
-
-<br/>
-
-### ✨ What it does
-
-Two tools in one: **Text-to-Video** and **Image-to-Video**, both driven by the LTX-Video 2.3 22B model running locally in ComfyUI. Ask for a video in plain English — or upload an image and say "animate this" — and get a fully embedded cinematic player back in chat with a download button, open button, and a creative title the LLM names itself. For Image-to-Video the output resolution is automatically set to match your input image. Running on a single GPU? Both Ollama and llama.cpp models can be auto-evicted from VRAM before each generation so the video model gets all the headroom it needs.
-
-| Feature | Detail |
-|---------|--------|
-| ✍️ Text-to-Video | Generate from any prompt at configurable resolution, up to 30 s |
-| 🖼️ Image-to-Video | Upload any image — output resolution automatically matches it, no guessing |
-| 🖥️ Embedded player | Cinematic dark player rendered directly in chat — watch, open, or download without leaving the conversation |
-| ⏱️ Configurable duration | Pick `5s` · `10s` · `15s` · `20s` · `25s` · `30s` per-user — no admin needed |
-| 🧹 VRAM unload (GPU poor friendly) | Auto-evicts **Ollama** and/or **llama.cpp** models before each generation — reclaim every MB for the video model |
-| 📱 Mobile-compatible | ffmpeg post-encode to H.264 `yuv420p` + `faststart` — shareable on iOS & WhatsApp |
-| 🎲 Random seeds | Both noise seeds randomised every generation — never duplicate outputs |
-| 🎬 Creative filenames | LLM picks a unique 2–4 word title per video (e.g. `Dragon_Awakens_Dawn_i2v`) |
-| 🔑 Optional API key | Bearer token support for secured ComfyUI setups |
-
 <details>
-<summary><b>⚙️ Prerequisites</b></summary>
-
-This tool connects to a running ComfyUI instance with LTX-Video 2.3 already set up. You'll need:
-
-1. **ComfyUI** running with an LTX-2.3 workflow loaded — see [LightricksAI/LTX-Video](https://huggingface.co/Lightricks/LTX-Video) for models
-2. **[ComfyUI-Unload-Model](https://github.com/SeanScripts/ComfyUI-Unload-Model)** custom node installed — required by the workflow to free VRAM between pipeline stages
-
-Then configure the tool valves:
-
-| Valve | Default | What it does |
-|-------|---------|--------------|
-| `comfyui_api_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
-| `comfyui_api_key` | *(empty)* | Bearer token if ComfyUI is behind auth |
-| `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL for file serving |
-| `video_length_frames` | `241` | Default frame count (241 = 10 s at 24 fps) |
-| `frame_rate` | `24` | Output fps |
-| `t2v_width` / `t2v_height` | `1280` / `720` | Text-to-Video resolution (I2V uses the input image size automatically) |
-| `max_wait_time` | `600` | Seconds before timeout (generation takes 3–10 min) |
-| `unload_ollama_models` | `true` | Auto-free Ollama VRAM before each generation |
-| `ollama_api_url` | `http://localhost:11434` | Your Ollama server address |
-| `unload_llamacpp_models` | `false` | Auto-free llama.cpp router models before each generation |
-| `llamacpp_api_url` | `http://localhost:8082` | Your llama.cpp router address |
-
-</details>
-
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-make a video of a samurai walking through cherry blossoms at sunset
-generate a 15 second clip of ocean waves crashing at night
-animate this image [upload any photo]
-create a video of a neon-lit city street in heavy rain
-a slow-motion shot of a red fox jumping through snow
-timelapse of storm clouds rolling over a mountain range
-```
-
-</details>
-
-<details>
-<summary><b>⚡ Per-user settings</b></summary>
-
-Each user can override the admin defaults independently:
-
-| Setting | Options | Note |
-|---------|---------|------|
-| `video_duration` | `5s` `10s` `15s` `20s` `25s` `30s` | Applies to both T2V and I2V |
-| `frame_rate` | Any integer (default `24`) | |
-| `t2v_width` / `t2v_height` | Any resolution (default `1280×720`) | T2V only — I2V always matches the uploaded image automatically |
-
-</details>
-
----
-
-## 📰 News Reader
-
-> **Live news from 45 hand-picked RSS feeds across 11 categories — rendered as an interactive card feed in chat.** Cards are expandable, category routing is automatic, and the LLM can fetch and summarize full article content — not just RSS snippets.
+<summary><h2>📰 News Reader</h2>
+<blockquote>Live news from 45 hand-picked RSS feeds across 11 categories — rendered as an interactive card feed. Expandable cards, automatic category routing, and full AI article summaries.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/news_reader_live_headlines_ai_summaries_45_rss_fee_3caf647a)
+</summary>
 
-<img width="1388" height="1227" alt="Screenshot 2026-03-13 152012" src="https://github.com/user-attachments/assets/e054bb74-9142-45db-8f6e-5ff4da2e815f" />
-
-<br/>
-
-### ✨ What it does
-
-Say "tech news" or "what's happening with AI" and get a live, beautifully rendered card feed from the best sources in that category — Ars Technica, Reuters, BBC, Hacker News, MIT Tech Review, and more. Each card shows the headline and a preview that expands to the full summary on click. Ask to "summarize the latest climate news" and the tool actually fetches and reads up to 6 full articles, then hands them to the LLM to write a real briefing — not a headline list.
+<img width="1388" height="1227" alt="News Reader screenshot" src="https://github.com/user-attachments/assets/e054bb74-9142-45db-8f6e-5ff4da2e815f" />
 
 | Feature | Detail |
 |---------|--------|
 | 📡 45 RSS feeds | Hand-picked sources across 11 categories: World, Tech, AI, Science, Business, Sports, Gaming, Health, Politics, Entertainment, Climate |
-| 🃏 Expandable cards | Click any card to expand the full summary inline — no new tabs |
-| 🔍 Keyword search | Search across all 45 feeds simultaneously for any topic or name |
-| 🗞️ Front page | "Top headlines" builds a curated cross-category briefing from the best sources |
-| 🧠 AI summaries | "Summarize [topic] news" fetches real article text and gives it to the LLM to write proper paragraphs |
-| 🔑 Zero config | No API keys, no setup — works out of the box |
-| ⚙️ Configurable limit | `MAX_ARTICLES` valve controls how many articles to fetch (default 15, max 40) |
+| 🃏 Expandable cards | Click any card to expand the full summary inline |
+| 🔍 Keyword search | Search across all 45 feeds simultaneously |
+| 🗞️ Front page | "Top headlines" builds a curated cross-category briefing |
+| 🧠 AI summaries | Fetches full article text — not just RSS snippets |
+| 🔑 Zero config | No API keys, no setup |
 
 <details>
 <summary><b>📚 Included sources (sample)</b></summary>
@@ -373,64 +303,53 @@ top headlines
 tech news
 AI news
 news about SpaceX
-what's happening with Bitcoin
 summarize the latest science news
-brief me on tech news today
 gaming news
 what's going on in politics?
 ```
 
 </details>
 
+</details>
+
 ---
 
-## 🌐 Reddit Explorer
-
-> **Browse Reddit directly in chat** — hot, new, top & rising posts from any subreddit, full comment threads, rich media (images, video, galleries), user profiles, and smart subreddit suggestions. Zero API key, zero sign-in.
+<details>
+<summary><h2>🌐 Reddit Explorer</h2>
+<blockquote>Browse Reddit directly in chat — hot/new/top posts, full comment threads, rich media, user profiles, and smart subreddit suggestions. Zero API key, zero sign-in.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/reddit_tool_browse_the_entire_reddit_website_throu_82e55a3e)
+</summary>
 
 <div align="center">
-<img width="1124" height="1225" alt="Screenshot 2026-03-12 173619" src="https://github.com/user-attachments/assets/bce3d2f4-291a-4dd5-923b-3b3bd6766bb6" />
+<img width="1124" height="1225" alt="Reddit Explorer screenshot" src="https://github.com/user-attachments/assets/bce3d2f4-291a-4dd5-923b-3b3bd6766bb6" />
 </div>
-
-<br/>
-
-### ✨ What it does
-
-Nine purpose-built functions let the LLM intelligently navigate Reddit on your behalf. Ask "what's hot on r/worldnews", "show me the top posts of the week in r/science", or just "what's happening on Reddit" — the tool picks the right function, picks a sensible subreddit if you didn't specify one, fetches live data via Reddit's public JSON API, and returns fully-rendered markdown with inline images, video links, upvote scores, and direct comment links.
 
 | Feature | Detail |
 |---------|--------|
-| 🔥 Hot / 🆕 New / 🏆 Top posts | Browse any subreddit by sort — Top supports `hour · day · week · month · year · all` time filters |
-| 🌐 Reddit front page | Global `popular`, `all`, or `best` feeds — no subreddit needed |
-| 🔍 Search | Full-text search within a specific subreddit or across all of Reddit |
-| 💬 Comment threads | Fetches a post's top comments with nested first-level replies (depth 3), sorted by `top · best · new · controversial · old` |
-| 🖼️ Inline images | Direct image posts render inline with `![post image](url)` — JPEG, PNG, GIF, WebP |
-| 🎬 Video links | Reddit-hosted videos get a ▶ Watch link; embedded videos (YouTube, Twitch, etc.) include provider name and a thumbnail |
-| 🖼️🖼️ Galleries | Multi-image gallery posts show up to 4 preview images inline |
-| 🔗 External links | Link posts surface the external URL alongside the Reddit thread link |
-| ⬆️ Upvote scores & ratio | Every post shows score (formatted as `1.2k` / `3.4M`) and upvote percentage |
-| 🏠 Subreddit info | Full community profile: icon, banner, member count, active users, language, NSFW flag, and top rules |
-| 👤 User profiles | Karma breakdown (post / comment / total), badges (mod, gold, verified), avatar, and recent post history |
-| 🗺️ Subreddit suggestions | Topic → subreddit map covering 20+ categories (news, AI, gaming, finance, food, travel, crypto, etc.) plus live Reddit search |
-| 🔞 / 🙈 Content tags | NSFW and spoiler posts are flagged automatically |
-| 🔑 No API key required | Uses Reddit's public `.json` endpoints — no OAuth, no account, no rate-limit keys |
+| 🔥 Hot / 🆕 New / 🏆 Top | Browse any subreddit by sort with full time filters |
+| 🌐 Front page | Global `popular`, `all`, or `best` feeds |
+| 🔍 Search | Full-text across a subreddit or all of Reddit |
+| 💬 Comments | Top comments with nested replies, sorted by top/best/new/controversial |
+| 🖼️ Inline images & galleries | Direct image posts and up to 4 gallery images rendered inline |
+| 🎬 Video links | Reddit-hosted videos get a ▶ Watch link |
+| 👤 User profiles | Karma breakdown, badges, avatar, and recent post history |
+| 🔑 No API key | Uses Reddit's public `.json` endpoints |
 
 <details>
-<summary><b>📚 All 9 functions at a glance</b></summary>
+<summary><b>📚 All 9 functions</b></summary>
 
-| Function | Trigger phrase examples |
-|----------|------------------------|
-| `get_hot_posts(subreddit, limit)` | "what's trending on r/gaming", "hot posts in worldnews" |
-| `get_new_posts(subreddit, limit)` | "latest posts on r/OpenWebUI", "newest in r/technology" |
-| `get_top_posts(subreddit, time_filter, limit)` | "top posts this week in r/science", "best of all time on r/AskReddit" |
-| `search_reddit(query, subreddit, limit)` | "search Reddit for llama.cpp", "find posts about ComfyUI in r/stablediffusion" |
-| `get_post_comments(post_id, subreddit, limit, sort)` | "show me the comments on that post", "read the discussion" |
-| `get_subreddit_info(subreddit)` | "what is r/LocalLLaMA", "tell me about r/homelab" |
-| `suggest_subreddits(topic)` | "where can I find AI news on Reddit?", "best subreddit for cooking" |
-| `get_reddit_frontpage(feed, limit)` | "what's popular on Reddit", "show me Reddit", "what's happening today" |
-| `get_user_profile(username, limit)` | "look up u/spez", "show me that user's post history" |
+| Function | Trigger examples |
+|----------|-----------------|
+| `get_hot_posts` | "what's trending on r/gaming" |
+| `get_new_posts` | "latest posts on r/OpenWebUI" |
+| `get_top_posts` | "top posts this week in r/science" |
+| `search_reddit` | "search Reddit for llama.cpp" |
+| `get_post_comments` | "show me the comments on that post" |
+| `get_subreddit_info` | "what is r/LocalLLaMA" |
+| `suggest_subreddits` | "best subreddit for cooking" |
+| `get_reddit_frontpage` | "what's popular on Reddit" |
+| `get_user_profile` | "look up u/spez" |
 
 </details>
 
@@ -440,61 +359,37 @@ Nine purpose-built functions let the LLM intelligently navigate Reddit on your b
 ```
 What's hot on r/LocalLLaMA today?
 Show me the top posts of the week in r/worldnews
-What's the latest on r/OpenWebUI?
 Search Reddit for "open-webui tools"
 What's the best subreddit for home automation?
-Tell me about r/MachineLearning
 Show me the Reddit front page
-Read the comments on that post
-Look up the profile for u/GallowBoob
-What's trending on Reddit right now?
 Find me the top AI news from this month
 ```
 
 </details>
 
-<details>
-<summary><b>⚙️ Requirements</b></summary>
-
-Only one Python package is needed:
-
-```
-requirements: requests
-```
-
-No valves, no API keys, no configuration — install and ask away.
-
-> ℹ️ Uses Reddit's public `reddit.com/r/<subreddit>.json` endpoints with a descriptive `User-Agent` header. Respects Reddit's public API fair-use guidelines.
-
 </details>
 
 ---
 
-## 🎙 Podcast Player
-
-> **Stream any podcast directly in chat** — powered by the free iTunes Search API and RSS feeds, with a cinematic animated-waveform audio player, playback speed control, 30-second skip, and episode browsing. No API key required.
+<details>
+<summary><h2>🎙 Podcast Player</h2>
+<blockquote>Stream any podcast directly in chat — powered by iTunes Search API and RSS feeds, with an animated-waveform player, speed control, and episode browsing. No API key required.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/podcasts_tool_play_search_discover_podcasts_direct_7f83da54)
+</summary>
 
-<img width="1299" height="836" alt="Screenshot 2026-03-13 151711" src="https://github.com/user-attachments/assets/a23caab4-7256-4048-b7fc-12e21bcb6647" />
-
-<br/>
-
-### ✨ What it does
-
-The entire iTunes podcast directory — millions of shows — accessible by name, topic, or host. Ask for the latest episode of any show, jump to a specific episode by number or title keyword, discover today's Apple top 25, or let the tool roll a random episode from a show's back catalogue. An embedded cinematic player with animated waveform, album art, speed control, and 30-second skip renders right in chat — podcast-standard controls without leaving the conversation.
+<img width="1299" height="836" alt="Podcast Player screenshot" src="https://github.com/user-attachments/assets/a23caab4-7256-4048-b7fc-12e21bcb6647" />
 
 | Feature | Detail |
 |---------|--------|
-| 🎙 Play any podcast | Latest episode, specific episode number, or episode title keyword |
-| 🎲 Random episode | Surprise pick from a show's entire back catalogue — great for rediscovering classics |
-| 🔎 Directory search | Search millions of podcasts by name, host, topic, or genre |
+| 🎙 Play any podcast | Latest episode, specific episode number, or title keyword |
+| 🎲 Random episode | Surprise pick from a show's entire back catalogue |
+| 🔎 Directory search | Millions of podcasts by name, host, topic, or genre |
 | 📊 Top 25 charts | Apple Podcasts top charts, localised by country code |
-| 🎚️ Speed control | 0.5× · 0.75× · 1× · 1.25× · 1.5× · 2× playback speed |
+| 🎚️ Speed control | 0.5× · 0.75× · 1× · 1.25× · 1.5× · 2× |
 | ⏩ 30-second skip | Podcast-standard forward/back skip buttons |
 | 🎨 Animated waveform | Vivid per-show colour palette with animated EQ visualiser |
-| 🌍 Localised charts | Set `COUNTRY_CODE` valve to get top charts for your country (default: `us`) |
-| 🔑 Zero config | Uses the free iTunes Search API + RSS — no keys, no account needed |
+| 🔑 Zero config | Free iTunes Search API + RSS — no keys, no account |
 
 <details>
 <summary><b>🗣️ Example prompts</b></summary>
@@ -507,7 +402,6 @@ search podcast true crime
 top podcasts
 random podcast episode Lex Fridman
 play the latest Darknet Diaries
-what podcasts are trending?
 ```
 
 </details>
@@ -515,59 +409,237 @@ what podcasts are trending?
 <details>
 <summary><b>⚙️ Setup</b></summary>
 
-Works out of the box — no configuration needed.
-
-**Optional valve:**
+Works out of the box. Optional valve:
 
 | Valve | Default | What it does |
 |-------|---------|--------------|
-| `COUNTRY_CODE` | `us` | 2-letter ISO country code for Apple top-chart rankings (e.g. `gb`, `ca`, `au`, `de`) |
+| `COUNTRY_CODE` | `us` | 2-letter ISO country code for Apple top-chart rankings |
+
+</details>
 
 </details>
 
 ---
 
-## 🧠 Thinking Filter
+<details>
+<summary><h2>🎵 Genius Song Lyrics</h2>
+<blockquote>Fetch the full lyrics of any song by title and artist — scraped from Genius.com with fuzzy matching. No user API key required.</blockquote>
 
-> **The missing thinking toggle for llama.cpp + Qwen3.5** One click to unleash deep reasoning. One click to turn it off. And when you want more — full control over depth, style, and how answers are presented.
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/genius_song_lyrics_for_open_webui_3970001f)
+</summary>
+
+<img width="1577" height="1117" alt="Genius Lyrics screenshot" src="https://github.com/user-attachments/assets/59047a0e-a517-4630-8122-bea144fe1641" />
+
+| Feature | Detail |
+|---------|--------|
+| 🔍 Smart search | Tries three query variants for the best Genius match |
+| 🤝 Fuzzy matching | Handles aliases, featured artists, and alternate spellings |
+| 📄 Full lyrics | Scrapes Genius directly — modern and legacy markup both supported |
+| 🏷️ Match transparency | Shows the exact title and artist matched |
+| 🔑 No setup | Built-in token — just install and ask |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+get the lyrics for "Bohemian Rhapsody" by Queen
+show me the lyrics to "Blinding Lights" by The Weeknd
+lyrics for "Hotel California" Eagles
+what are the lyrics to Lose Yourself by Eminem?
+```
+
+</details>
+
+</details>
+
+---
+
+## 🏆 Sports & Gaming
+
+---
+
+<details>
+<summary><h2>🏟️ Sports Tool</h2>
+<blockquote>Live scores, standings, schedules & news rendered as a broadcast-style inline card. Covers 60+ leagues — NBA, NFL, EPL, NHL, MLB, F1, MMA, tennis, golf and more. Zero API key required.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/sports_tool_for_open_webui_d917524b)
+</summary>
+
+<img width="1005" height="1201" alt="Sports Tool screenshot" src="https://github.com/user-attachments/assets/77c5b6a8-9009-44e5-b668-3bbc42ecbbcc" />
+
+| Feature | Detail |
+|---------|--------|
+| 🔴 Live scores | Real-time in-game scores with period/clock and pulsing LIVE badge |
+| ✅ Results | Recent match results with winner highlights and linescore breakdowns |
+| 📅 Upcoming fixtures | Next games with time, venue, TV broadcast, and odds |
+| 📊 Standings | Full league table for any sport |
+| 📰 Sports news | Latest headlines per league |
+| 🏒 NHL / ⚾ MLB | Official APIs for maximum accuracy |
+| ⚽ Soccer | EPL, La Liga, Bundesliga, Serie A, Ligue 1, Champions League, MLS and more |
+| 🎨 Sport themes | Each sport gets its own vivid CSS palette |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `max_games` | `20` | Max games shown per team/league |
+| `recent_games` | `5` | Recent results shown for a team |
+| `upcoming_games` | `8` | Upcoming fixtures shown |
+| `default_leagues` | `nba,epl,nfl` | Leagues shown when no sport is specified |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+NBA scores today
+Lakers schedule
+Real Madrid upcoming fixtures
+Premier League standings
+NHL scores
+Yankees last 5 games
+F1 schedule
+UFC results
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>🎮 Steam Game Info</h2>
+<blockquote>Fetch Steam game prices, reviews, and screenshots — rendered as a beautiful interactive card directly in chat. Shows artwork, screenshot gallery, review score, tags, and a store link. No API key required.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](#)
+</summary>
+
+| Feature | Detail |
+|---------|--------|
+| 🎨 Hero artwork | Blurred background art with the game's header logo overlaid |
+| 🖼️ Screenshot gallery | Up to 8 screenshots — click thumbnails or main image to browse |
+| 💰 Live price | Shows discount badge + strikethrough original price when on sale |
+| ⭐ Review score | Colour-coded pill — blue for Very Positive, green for Positive, amber for Mixed |
+| 🏷️ Tags | Genre and category tags from the Steam store |
+| 📝 Description | Short description in Steam's own text |
+| 🔗 Store link | Direct "View on Steam" button |
+| 🔑 No API key | Uses Steam's public search and `appdetails` API |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+how much does Elden Ring cost on Steam?
+show me screenshots for Baldur's Gate 3
+what's the Steam review score for Cyberpunk 2077?
+is Hades on sale?
+tell me about Black Myth: Wukong on Steam
+```
+
+</details>
+
+<details>
+<summary><b>⚙️ Requirements</b></summary>
+
+```
+requirements: requests, beautifulsoup4
+```
+
+No API keys. No valves. Install and ask.
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>🎯 HLTV Tool</h2>
+<blockquote>Live CS2 match scores, results, world rankings, news and tournaments — scraped directly from HLTV.org in a broadcast-style dark card. No API key required.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/hltv_tool_for_open_webui_b3fe146a)
+</summary>
+
+<img width="1191" height="517" alt="HLTV Tool screenshot" src="https://github.com/user-attachments/assets/2be82bed-c64a-4124-bea5-e5896de798f4" />
+
+| Feature | Detail |
+|---------|--------|
+| 📅 Upcoming & live matches | All scheduled matches — filterable by team |
+| 🏆 Recent results | Latest completed match scores |
+| 📰 Latest news | News, transfers and announcements from the HLTV front page |
+| 🥇 World rankings | Current CS2 team rankings with position and points |
+| 🏟️ Events & tournaments | Upcoming and ongoing CS2 events with dates |
+| 🎯 Team lookup | Combined upcoming + recent results for any team in one card |
+| 🔑 Zero API key | `curl-cffi` Chrome impersonation — no account needed |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `timeout` | `20` | HTTP timeout in seconds |
+| `max_items` | `15` | Max items per query |
+| `debug` | `false` | Append raw class names to empty results for debugging |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+show upcoming CS2 matches
+is Vitality playing today?
+CS2 rankings
+who is #1 in CS2?
+HLTV news
+when is the next major?
+tell me about NaVi
+FaZe schedule
+```
+
+</details>
+
+</details>
+
+---
+
+## 🤖 AI & Workflow
+
+---
+
+<details>
+<summary><h2>🧠 Thinking Filter</h2>
+<blockquote>The missing thinking toggle for llama.cpp + Qwen3.5. One click to unleash deep reasoning — full control over depth, reasoning style, and how answers are presented.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)
+</summary>
 
-<img width="1101" height="330" alt="8bed8be1-8d6a-42b1-bb0d-f2929fe1cb9e" src="https://github.com/user-attachments/assets/e77d688b-ba3a-47a9-b49f-f331c1158949" />
-
-
-### ✨ What it does
-
-llama.cpp supports Qwen3.5 extended `<think>` reasoning mode natively — but Open WebUI has no built-in toggle for it. This filter fixes that completely, replacing manual tweaking with a proper one-click think button and a full suite of reasoning controls.
+<img width="1101" height="330" alt="Thinking Filter screenshot" src="https://github.com/user-attachments/assets/e77d688b-ba3a-47a9-b49f-f331c1158949" />
 
 | Feature | Detail |
 |---------|--------|
 | 🧠 One-click toggle | Brain button in the ✦ panel — ON thinks, OFF is instant vanilla |
-| 🔀 enable_thinking valve | Toggle thinking on/off per-user without disabling the filter — sampling & presentation stay active either way |
-| 🎛️ 4 sampling presets | Force Qwen3.5's official parameters at llama.cpp API level — Instruct General · Instruct Reasoning · Thinking General · Thinking Precise |
+| 🎛️ 4 sampling presets | Instruct General · Instruct Reasoning · Thinking General · Thinking Precise |
 | 📊 5 depth levels | Unlimited · MAX (16k) · Deep (8k) · Normal (3k) · Quick (512 tokens) |
-| 🔬 13 reasoning presets | Shape *how* it thinks |
+| 🔬 13 reasoning presets | Shape *how* the model thinks |
 | 🎨 11 presentation presets | ELI5, Expert Tone, TL;DR First — shape *how* it answers |
 | 👤 Per-user control | Every user sets their own depth, style, and sampling independently |
-| 🔒 Bulletproof injection | Dual-path injection (system + user message) works around Open WebUI's pipeline bug |
 
 <details>
 <summary><b>⚡ Setup (1 step)</b></summary>
 
-**Step 1 — Start llama-server with:**
+Start llama-server with:
 
 ```bash
-llama-server --jinja --reasoning off 
+llama-server --jinja --reasoning off
 ```
 
-The `--reasoning off` flag lets the filter set the budget dynamically per request.
+The `--reasoning off` flag lets the filter set the budget dynamically. The `--jinja` flag enables Jinja chat template processing required for Qwen3.5's think block.
 
-The `--jinja` flat enables Jinja chat template processing, required for Qwen3.5's think block
-
-Enable the function and set it as default for your qwen3.5 models if you want the default to be thinking enabled.
-(If you rather have thinking disabled by default do not set the function as default!)
-
-Now every chat has a 🧠 button that can be diabled in one click and enabled back in two clicks.
+Enable the function and set it as default for your Qwen3.5 models if you want thinking enabled by default.
 
 </details>
 
@@ -585,7 +657,7 @@ Now every chat has a 🧠 button that can be diabled in one click and enabled ba
 </details>
 
 <details>
-<summary><b>🔬 Reasoning Presets — <i>how</i> the model thinks</b></summary>
+<summary><b>🔬 Reasoning Presets</b></summary>
 
 | Preset | What it does |
 |--------|-------------|
@@ -593,36 +665,36 @@ Now every chat has a 🧠 button that can be diabled in one click and enabled ba
 | **Think Less** | Skip over-analysis, reach conclusions fast |
 | **Think More** | Explore multiple angles before settling |
 | **Extended Thinking** | Deep deliberation: edge cases, counterargs, stress-tests every conclusion |
-| **MAX Thinking** | 🔥 Exhaustive — never stops early, challenges everything, asks "what have I missed?" Pair with MAX depth |
-| **Step by Step** | Numbered structured reasoning, nothing skipped |
+| **MAX Thinking** | 🔥 Exhaustive — never stops early, challenges everything |
+| **Step by Step** | Numbered structured reasoning |
 | **Devil's Advocate** | Steelmans the opposing view before answering |
 | **First Principles** | Strips to fundamentals, rebuilds from scratch |
-| **10x Hypotheses** | Generates 10 distinct approaches, evaluates all, picks the best |
-| **Socratic** | Interrogates the question's own assumptions before answering |
-| **Rubber Duck** | Narrates every logical move out loud — catches its own mistakes |
+| **10x Hypotheses** | 10 distinct approaches, evaluates all, picks the best |
+| **Socratic** | Interrogates the question's own assumptions |
+| **Rubber Duck** | Narrates every logical move out loud |
 | **Pre-Mortem** | Assumes the answer will fail, fixes it before giving it |
-| **Bayesian** | Probabilistic reasoning with honest calibrated confidence |
-| **Contrarian** | Default skepticism — challenges obvious answers, demands proof |
+| **Bayesian** | Probabilistic reasoning with calibrated confidence |
+| **Contrarian** | Default skepticism — challenges obvious answers |
 
 </details>
 
 <details>
-<summary><b>🎨 Presentation Presets — <i>how</i> the answer looks</b></summary>
+<summary><b>🎨 Presentation Presets</b></summary>
 
 | Preset | What it does |
 |--------|-------------|
 | **None** | Vanilla output |
-| **ELI5** | Explain like I'm five — strip all complexity |
+| **ELI5** | Explain like I'm five |
 | **Be Concise** | Shortest complete answer, zero padding |
 | **Bullet Points** | Clean bulleted list |
 | **TL;DR First** | One-sentence summary up top, then full detail |
 | **Teach Me** | Concept → examples → memorable takeaway |
 | **Expert Tone** | Graduate-level, precise vocabulary |
-| **Casual Chat** | Relaxed, no jargon, like texting a smart friend |
+| **Casual Chat** | Relaxed, no jargon |
 | **Debate Format** | Strongest FOR → strongest AGAINST → verdict |
-| **Analogies Only** | Everything through metaphors, zero technical terms |
+| **Analogies Only** | Everything through metaphors |
 | **Action Items** | Numbered steps to execute immediately |
-| **Socratic Reply** | Guides you to the answer through probing questions |
+| **Socratic Reply** | Guides you to the answer through questions |
 
 </details>
 
@@ -635,28 +707,24 @@ Now every chat has a 🧠 button that can be diabled in one click and enabled ba
 | Normal | Bayesian | TL;DR First | Calibrated probabilistic answer, summary first |
 | Quick | None | Be Concise | Lightning-fast minimal answer |
 | Deep | First Principles | Teach Me | Rebuilds from scratch, explains like a lesson |
-| Deep | Devil's Advocate | Debate Format | Full steelman treatment, structured verdict |
 | Unlimited | Contrarian | ELI5 | Challenges every assumption, explains simply |
+
+</details>
 
 </details>
 
 ---
 
-## 🧩 Ask User
-
-> **Replicate Claude's "ask follow-up questions before acting" behaviour** — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.
+<details>
+<summary><h2>🧩 Ask User</h2>
+<blockquote>Replicate Claude's "ask follow-up questions before acting" behaviour — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/ask_user_14182520)
+</summary>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/48ba79cb-38d4-4fe7-8845-0750d3409486" width="80%" alt="Ask User screenshot" />
 </div>
-
-<br/>
-
-### ✨ What it does
-
-Ever notice how Claude pauses, asks you a few targeted questions, then produces something far more on-point? This tool brings that exact behaviour to Open WebUI. The LLM can ask 1–5 structured questions upfront — each in its own popup with a progress indicator — before committing to a response.
 
 | Feature | Detail |
 |---------|--------|
@@ -678,23 +746,20 @@ Ever notice how Claude pauses, asks you a few targeted questions, then produces 
 
 </details>
 
+</details>
+
 ---
 
-## 🎭 Persona Studio
-
-> **Instantly reshape how your AI thinks and communicates** — dozens of crafted personas across multiple categories, plus a fully custom option.
+<details>
+<summary><h2>🎭 Persona Studio</h2>
+<blockquote>Instantly reshape how your AI thinks and communicates — dozens of crafted personas across multiple categories, plus a fully custom option.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)
+</summary>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/38035bc1-a629-44a3-8130-dd81275f8af9" width="80%" alt="Persona Studio screenshot" />
 </div>
-
-<br/>
-
-### ✨ What it does
-
-Stop editing system prompts manually. Persona Studio gives you an interactive popup browser with categorised personas — each with a distinct tone, voice, quirks, and style. Switch mid-conversation in one message.
 
 | Feature | Detail |
 |---------|--------|
@@ -715,62 +780,18 @@ Set a custom persona: you are a brutally honest editor
 
 </details>
 
----
-
-## 📖 Wikipedia
-
-> **Instant encyclopedia lookups** — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/wikipedia_tool_00b03142)
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" width="80%" alt="Wikipedia tool screenshot" />
-</div>
-
-<br/>
-
-### ✨ What it does
-
-Your LLM gets live access to Wikipedia without any API key or setup. It automatically picks the right detail level, handles ambiguous titles gracefully, and always cites the source URL.
-
-| Feature | Detail |
-|---------|--------|
-| 🔍 Smart search | Natural language queries work fine |
-| 📏 3 detail levels | `brief` (intro only) · `standard` (intro + sections) · `full` (entire article) |
-| 🗂️ Section-aware | Structured summaries per section — not a wall of text |
-| ⚠️ Disambiguation | Shows options when a title matches multiple articles |
-| 🌍 20+ languages | Just write in your language — it auto-detects |
-| 🔗 Always cited | Every response includes the Wikipedia source URL |
-| 🔑 Zero config | Uses the free public MediaWiki API |
-
-<details>
-<summary><b>🗣️ Example prompts & supported languages</b></summary>
-
-```
-Who is Ada Lovelace?
-Explain how black holes work
-Tell me everything about the Apollo program
-Search Wikipedia for quantum entanglement
-¿Quién es Simón Bolívar?
-```
-
-**Supported languages:** `en` `fr` `de` `es` `it` `pt` `nl` `sv` `uk` `fa` `ja` `zh` `ar` `ko` `ru` `pl` `tr` `he` `vi` `id`
-
 </details>
 
 ---
 
-## 🌌 Omniscient Orchestrator
-
-> **Stop getting generic answers.** Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.
+<details>
+<summary><h2>🌌 Omniscient Orchestrator</h2>
+<blockquote>Stop getting generic answers. Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/orchestrator_0f269681)
+</summary>
 
-<img width="1543" height="1080" alt="Screenshot 2026-03-13 092540" src="https://github.com/user-attachments/assets/e3826d40-a49f-4d11-b8b5-67d89d031939" />
-
-### ✨ What it does
-
-Most LLMs dive straight into an answer, missing context that would have changed everything. The Orchestrator forces a structured 4-phase workflow: understand → clarify → strategise → execute.
+<img width="1543" height="1080" alt="Orchestrator screenshot" src="https://github.com/user-attachments/assets/e3826d40-a49f-4d11-b8b5-67d89d031939" />
 
 | Phase | What happens |
 |-------|-------------|
@@ -793,193 +814,33 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 </details>
 
----
-
-## 😂 Joke Tool
-
-> **Give your AI a sense of humour** — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/jokes_tool_14d95010)
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" width="80%" alt="Joke Tool screenshot" />
-</div>
-
-<br/>
-
-### ✨ What it does
-
-A carefully curated vault of programmer humor — Git puns, deep-cut coding jokes, and classic one-liners — plus live fetching from `jokeapi.dev` when you want something fresh.
-
-| Feature | Detail |
-|---------|--------|
-| 🃏 300+ jokes | Curated vault: Git puns, coding humor, dev classics |
-| 🌐 Live mode | Fetches fresh jokes from `jokeapi.dev` on request |
-| 🔢 Batch support | Ask for 1 joke or a specific number |
-| 🛡️ Offline-safe | Always falls back to internal library if API is down |
-
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-Tell me a joke
-Give me 3 fresh jokes from the internet
-Hit me with a random Git pun
-Tell me 5 programming jokes
-```
-
 </details>
 
 ---
 
-## 💾 VRAM Unload
-
-> **Free your GPU memory without leaving the chat** — one action button that detects loaded models and unloads them from VRAM instantly via the llama.cpp router API.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)
-
-<img width="968" height="703" alt="Screenshot 2026-03-08 204032" src="https://github.com/user-attachments/assets/0c896fde-142c-472c-8811-463bbd3596d4" />
-
-
-### ✨ What it does
-
-Running llama.cpp in router mode means models stay resident in VRAM until you explicitly unload them. This action button insantly clean the model from VRAM.
-
-| Feature | Detail |
-|---------|--------|
-| 🔍 Auto-detects loaded models | Queries `/v1/models` and filters to currently loaded ones |
-| 🔁 Multi-model support | Unloads every loaded model in one click if multiple are resident |
-| 📡 Live status updates | Status messages as each model unloads, success/error per model |
-| 🔑 Zero dependencies | Pure `aiohttp` — nothing extra to install |
-
-<details>
-<summary><b>⚙️ Setup (1 step)</b></summary>
-
-Set `LLAMACPP_BASE_URL` in the action valves to your llama.cpp router server:
-
-```
-http://127.0.0.1:8080
-```
-
-That's it. The action button appears in the chat toolbar — click it any time to free VRAM.
-
-> **Requires llama.cpp running in router mode (llama-server).
-
-</details>
-
-<details>
-<summary><b>🛠️ Troubleshooting</b></summary>
-
-| Symptom | Fix |
-|---------|-----|
-| ❌ "Cannot reach llama.cpp" | Check `LLAMACPP_BASE_URL` is correct and the server is running |
-| ℹ️ "No models currently loaded" | No models are resident in VRAM — nothing to unload |
-| ❌ HTTP 404 on unload | Make sure llama.cpp is started in router mode, not single-model mode |
-| ❌ HTTP 4xx/5xx | Check llama.cpp logs for the specific error |
-
-</details>
+## 🌍 Information & Reference
 
 ---
 
-## 🔍 RTX Image Upscaler
-
-> **Upscale any image up to 4× using NVIDIA RTX Video Super Resolution** — hardware-accelerated AI upscaling running locally in ComfyUI, with the result embedded directly in chat. NVIDIA GPU required.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
-
-<img width="1492" height="1237" alt="Image" src="https://github.com/user-attachments/assets/e198d6b9-05dd-4ff8-bfac-09c7b352780e" />
-
-### ✨ What it does
-
-Drop any image into the chat, ask to upscale it, and get a sharpened high-resolution version back as an attachment — all without leaving the conversation. Powered by NVIDIA's RTX Video Super Resolution running inside ComfyUI, the tool handles image upload, workflow execution, result retrieval, and chat embedding automatically. Choose 1×, 2×, 3×, or 4× — default is always 4× ULTRA for maximum quality.
-
-| Feature | Detail |
-|---------|--------|
-| 🔍 Up to 4× upscale | 1×, 2×, 3×, or 4× multiplier — defaults to 4× ULTRA if not specified |
-| ⚡ RTX hardware acceleration | Uses NVIDIA's native VSR tensor cores — on a 3090 Ti the full round-trip (input → LLM → upscaled output) takes ~1 second |
-| 📎 Persistent attachment | Result embedded as a file attachment — survives in chat history, never flashes and disappears |
-| 🧹 VRAM cleanup | Optional `UnloadAllModels` node after each run to free GPU memory |
-| 🔁 Fallback resilience | Tries OWUI file store first, falls back to base64 data URI if upload fails |
-| 🔑 Zero API keys | Fully local — no cloud, no accounts, no cost per image |
-
 <details>
-<summary><b>⚙️ Prerequisites</b></summary>
-
-**This tool requires a ComfyUI workflow to be set up before use.**
-
-1. **NVIDIA GPU with RTX** — RTX Video Super Resolution is an NVIDIA-only feature (RTX 20 series or newer). AMD and Intel GPUs are not supported.
-2. **ComfyUI** running locally with the **RTXVideoSuperResolution** custom node installed.
-3. **Download and run the RTX upscale workflow** in ComfyUI at least once before using this tool — this ensures the node is loaded and the workflow is validated on your hardware.
-
-Then configure the tool valves:
-
-| Valve | Default | What it does |
-|-------|---------|--------------|
-| `comfyui_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
-| `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL for file serving |
-| `unload_models_after_run` | `true` | Free VRAM after each upscale |
-| `max_wait_seconds` | `300` | Timeout before giving up on a slow job |
-
-**Per-user overrides (UserValves):**
-
-| Setting | Default | Note |
-|---------|---------|------|
-| `default_scale` | `4` | Fallback multiplier if the LLM doesn't specify one |
-| `unload_models_after_run` | `true` | Override the admin VRAM setting per user |
-
-</details>
-
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-upscale this image
-make this photo sharper
-enhance the resolution
-upscale 2x
-make it bigger — use scale 3
-```
-
-</details>
-
-<details>
-<summary><b>⚠️ Requirements & limitations</b></summary>
-
-- **NVIDIA RTX GPU only** — this uses NVIDIA's proprietary RTX Video Super Resolution. It will not work on AMD, Intel, or non-RTX NVIDIA cards.
-- **ComfyUI must be running** with the RTXVideoSuperResolution custom node installed and the upscale workflow loaded at least once.
-- Large images at 4× can produce very large output files — allow extra time on lower-end RTX cards.
-
-</details>
-
----
-
-<a name="-weather"></a>
-
-## 🌤️ Weather
-
-> **Beautiful real-time weather cards with current conditions, hourly forecast, and 7-day outlook** — powered by Open-Meteo. Zero API key required.
+<summary><h2>🌤️ Weather</h2>
+<blockquote>Beautiful real-time weather cards with current conditions, hourly forecast, and 7-day outlook — powered by Open-Meteo. Zero API key required.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/weather_tool_fa9d870e)
+</summary>
 
-<img width="1061" height="1107" alt="Image" src="https://github.com/user-attachments/assets/192bf4bf-7217-4408-b38d-bf925a6bfc14" />
-
-### ✨ What it does
-
-Ask about the weather anywhere in the world and get a rich, fully rendered weather card right in the chat. It includes current temperature, feels-like, humidity, wind, UV index, pressure, visibility, today's hourly forecast, and a full 7-day outlook—all packed into a single adaptive card that changes color based on conditions (sunny blue, overcast gray, rainy dark, night mode).
-
-Set your default location in user settings to always receive accurate weather information for your preferred location.
+<img width="1061" height="1107" alt="Weather tool screenshot" src="https://github.com/user-attachments/assets/192bf4bf-7217-4408-b38d-bf925a6bfc14" />
 
 | Feature | Detail |
 |---------|--------|
-| 🌡️ Current conditions | Temp, feels-like, humidity, wind speed & direction, pressure, precipitation |
-| ☀️ UV Index | Colour-coded UV label: Low → Extreme |
-| 👁️ Visibility | Displayed in km |
-| 🕐 Hourly forecast | Up to 8 upcoming hours for today with temp & rain probability |
+| 🌡️ Current conditions | Temp, feels-like, humidity, wind, pressure, precipitation |
+| ☀️ UV Index | Colour-coded: Low → Extreme |
+| 🕐 Hourly forecast | Up to 8 hours for today with temp & rain probability |
 | 📅 7-Day outlook | Daily high/low, weather icon, and max rain chance |
 | 🌅 Sunrise / Sunset | Shown on every card |
 | 🌍 Global geocoding | City names resolved via Open-Meteo's geocoding API |
-| 🌡️ °C / °F | `celsius` or `fahrenheit` via valve — switchable per request |
-| 🔑 Zero API keys | Fully powered by Open-Meteo — completely free, no sign-up |
+| 🌡️ °C / °F | Switchable per request or via valve |
+| 🔑 Zero API keys | Fully powered by Open-Meteo — completely free |
 
 <details>
 <summary><b>⚙️ Valves</b></summary>
@@ -1000,49 +861,81 @@ what's the weather in Tokyo?
 weather in New York in Fahrenheit
 is it raining in London right now?
 forecast for Paris
-temperature in Berlin
 ```
+
+</details>
 
 </details>
 
 ---
 
-<a name="-sports-tool"></a>
+<details>
+<summary><h2>📖 Wikipedia</h2>
+<blockquote>Instant encyclopedia lookups — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.</blockquote>
 
-## 🏟️ Sports Tool
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/wikipedia_tool_00b03142)
+</summary>
 
-> **Ultimate multi-sport coverage — live scores, team schedules, standings and news rendered as a beautiful inline HTML card.** Covers 60+ leagues across soccer, NBA, NFL, NHL, MLB, tennis, golf, F1, MMA, esports and more. Zero API key required.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/sports_tool_for_open_webui_d917524b)
-
-<img width="1005" height="1201" alt="Image" src="https://github.com/user-attachments/assets/77c5b6a8-9009-44e5-b668-3bbc42ecbbcc" />
-
-### ✨ What it does
-
-One tool, every sport. Ask about any team, league, or sport in plain English and get a fully rendered broadcast-style card back in chat. Multi-source cascade: ESPN (site + core + soccer/all), official NHL API, official MLB API, and TheSportsDB as a universal fallback. Each sport gets its own vivid colour theme — NBA orange, NFL navy/gold, NHL glacier blue, soccer green, and so on.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6e88aac8-15b1-4d18-b04d-383cfeaf936b" width="80%" alt="Wikipedia tool screenshot" />
+</div>
 
 | Feature | Detail |
 |---------|--------|
-| 🔴 Live scores | Real-time in-game scores with period/clock display and pulsing LIVE badge |
-| ✅ Results | Recent match results with winner highlights and linescore breakdowns |
-| 📅 Upcoming fixtures | Next games for any team with time, venue, TV broadcast, and odds |
-| 📊 Standings | Full league table for any sport — NHL from official API, all others from ESPN |
-| 📰 Sports news | Latest headlines and articles per league |
-| 🏒 NHL Official API | Scores and standings via `api-web.nhle.com` for maximum accuracy |
-| ⚾ MLB Official API | Schedule and scores via `statsapi.mlb.com` |
-| ⚽ Soccer | EPL, La Liga, Bundesliga, Serie A, Ligue 1, Champions League, MLS and more |
-| 🏀🏈🥊🎾⛳🏎️ 60+ leagues | NBA, WNBA, NFL, NHL, MLB, F1, NASCAR, MMA/UFC, tennis, golf, esports, rugby, cricket, AFL, wrestling |
-| 🎨 Sport-specific themes | Each sport gets its own vivid CSS palette — no generic grey cards |
+| 🔍 Smart search | Natural language queries work fine |
+| 📏 3 detail levels | `brief` · `standard` · `full` |
+| 🗂️ Section-aware | Structured summaries per section |
+| ⚠️ Disambiguation | Shows options when a title matches multiple articles |
+| 🌍 20+ languages | Auto-detects from your query |
+| 🔗 Always cited | Every response includes the Wikipedia source URL |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+Who is Ada Lovelace?
+Explain how black holes work
+Tell me everything about the Apollo program
+Search Wikipedia for quantum entanglement
+¿Quién es Simón Bolívar?
+```
+
+**Supported languages:** `en` `fr` `de` `es` `it` `pt` `nl` `sv` `uk` `fa` `ja` `zh` `ar` `ko` `ru` `pl` `tr` `he` `vi` `id`
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>🔤 Language Pronunciation Guide</h2>
+<blockquote>Interactive pronunciation player for any word or phrase in 35+ languages — IPA, syllable flip-cards, audio playback (normal & slow), and travel navigator mode. Powered by gTTS.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/pronunciation_and_translation_tool_d8a83bca)
+</summary>
+
+<img width="1632" height="1155" alt="Pronunciation Guide screenshot" src="https://github.com/user-attachments/assets/c57e7d09-0452-4098-bc6a-2d3f0cf95ee6" />
+
+| Feature | Detail |
+|---------|--------|
+| 🔤 Quick banner | Compact single-word banner: syllables, IPA, normal + slow audio, mnemonic |
+| 📚 Learn tab | Flip-card word chips with IPA, translation, POS, difficulty rating, and examples |
+| 🧭 Navigate tab | Giant phrase display for showing to locals — autoplay, loop & word-by-word breakdown |
+| 🔊 Audio | gTTS full-phrase MP3 + browser Web Speech API per-word chips |
+| 🌍 35+ languages | French, Spanish, Japanese, Arabic, Hebrew, Chinese, Korean, Hindi, and more |
+| ✈️ Travel mode | `translate_and_play` opens directly on the Navigator tab |
 
 <details>
 <summary><b>⚙️ Valves</b></summary>
 
 | Valve | Default | What it does |
 |-------|---------|--------------|
-| `max_games` | `20` | Max games shown per team/league |
-| `recent_games` | `5` | Recent results shown for a team |
-| `upcoming_games` | `8` | Upcoming fixtures shown for a team |
-| `default_leagues` | `nba,epl,nfl` | Leagues shown when no sport is specified |
+| `max_words` | `14` | Maximum word flip-cards to render |
+| `word_audio_mode` | `speech_api` | `speech_api` = browser Web Speech; `gtts` = high-quality gTTS per word |
+| `generate_slow_audio` | `false` | Generates a separate gTTS slow audio file for the full phrase |
+
+**Requirements:** `gtts`
 
 </details>
 
@@ -1050,63 +943,113 @@ One tool, every sport. Ask about any team, league, or sport in plain English and
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
-NBA scores today
-Lakers schedule
-Real Madrid upcoming fixtures
-Premier League standings
-NHL scores
-Yankees last 5 games
-NBA standings
-Barcelona news
-F1 schedule
-UFC results
+how do you pronounce "schadenfreude"?
+how do I say "where is the nearest pharmacy?" in Japanese?
+pronounce "merci beaucoup" in French
+how do I say "thank you" in Arabic?
 ```
+
+</details>
 
 </details>
 
 ---
 
-## 🎨 Qwen Image Edit
+## 🎨 Image & Video Generation
 
-> **Edit and composite images using the Qwen Image Edit 2511 model via ComfyUI** — accepts 1, 2, or 3 reference images, auto-selects the right workflow, and returns the result directly in chat. Supports optional VRAM offloading of Ollama and llama.cpp before inference.
+---
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qwen_image_edit_for_open_webui_56ca9eca)
+<details>
+<summary><h2>🎥 LTX-2.3 Video Generator</h2>
+<blockquote>Generate cinematic AI videos from a text prompt or uploaded image — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player and mobile-compatible output.</blockquote>
 
-<img width="1056" height="1249" alt="Image" src="https://github.com/user-attachments/assets/db405575-76fb-44c3-b475-9d4b01c8c39b" />
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)
+</summary>
 
-### ✨ What it does
+> 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
 
-Upload one, two, or three images and describe what you want done — the tool picks the correct ComfyUI workflow automatically. Use it to swap outfits across images, composite a subject from one photo into another scene, apply a style from a third reference, or just edit a single image with a text instruction. Before generation, loaded Ollama and llama.cpp models are optionally evicted from VRAM so the diffusion model gets the full GPU budget. An `UnloadAllModels` node at the end frees diffusion weights immediately after.
+<div align="center">
+  <img width="1402" height="1183" alt="LTX Video Generator screenshot" src="https://github.com/user-attachments/assets/24ffcebf-e92a-4458-bc73-4563ad238296" />
+</div>
 
 | Feature | Detail |
 |---------|--------|
-| 🖼️ 1, 2 or 3 reference images | Workflow auto-selected based on how many images are present — no manual switching |
-| ✍️ Natural language editing | Describe edits referencing `image1`, `image2`, `image3` in your prompt |
-| ⬇️ VRAM offload — Ollama | Evicts all loaded Ollama models before generation |
-| ⬇️ VRAM offload — llama.cpp | Evicts all loaded llama.cpp router models before generation |
-| 🧹 Auto-cleanup | `UnloadAllModels` node frees diffusion weights immediately after each run |
-| 🎲 Random / fixed seed | `-1` picks a random seed; set any integer for reproducible results |
-| 🔁 URL-format fallback | Resolves `data:` URIs, `/api/v1/files/` OWUI paths, and external `https://` URLs |
+| ✍️ Text-to-Video | Generate from any prompt at configurable resolution, up to 30 s |
+| 🖼️ Image-to-Video | Upload any image — output resolution automatically matches it |
+| 🖥️ Embedded player | Cinematic dark player rendered in chat — watch, open, or download |
+| ⏱️ Configurable duration | `5s` · `10s` · `15s` · `20s` · `25s` · `30s` per-user |
+| 🧹 VRAM unload | Auto-evicts Ollama and/or llama.cpp before each generation |
+| 📱 Mobile-compatible | ffmpeg H.264 `yuv420p` + `faststart` — shareable on iOS & WhatsApp |
+| 🎬 Creative filenames | LLM picks a unique 2–4 word title per video |
+
+<details>
+<summary><b>⚙️ Prerequisites</b></summary>
+
+1. **ComfyUI** running with an LTX-2.3 workflow loaded
+2. **[ComfyUI-Unload-Model](https://github.com/SeanScripts/ComfyUI-Unload-Model)** custom node installed
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `comfyui_api_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
+| `comfyui_api_key` | *(empty)* | Bearer token if ComfyUI is behind auth |
+| `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL for file serving |
+| `video_length_frames` | `241` | Default frame count (241 = 10 s at 24 fps) |
+| `t2v_width` / `t2v_height` | `1280` / `720` | Text-to-Video resolution |
+| `max_wait_time` | `600` | Seconds before timeout |
+| `unload_ollama_models` | `true` | Auto-free Ollama VRAM before each generation |
+| `unload_llamacpp_models` | `false` | Auto-free llama.cpp models before each generation |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+make a video of a samurai walking through cherry blossoms at sunset
+generate a 15 second clip of ocean waves crashing at night
+animate this image [upload any photo]
+a slow-motion shot of a red fox jumping through snow
+timelapse of storm clouds rolling over a mountain range
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>🎨 Qwen Image Edit</h2>
+<blockquote>Edit and composite images using Qwen Image Edit 2511 via ComfyUI — accepts 1, 2, or 3 reference images, auto-selects the right workflow, and returns the result in chat.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qwen_image_edit_for_open_webui_56ca9eca)
+</summary>
+
+<img width="1056" height="1249" alt="Qwen Image Edit screenshot" src="https://github.com/user-attachments/assets/db405575-76fb-44c3-b475-9d4b01c8c39b" />
+
+| Feature | Detail |
+|---------|--------|
+| 🖼️ 1, 2 or 3 reference images | Workflow auto-selected based on image count |
+| ✍️ Natural language editing | Reference `image1`, `image2`, `image3` in your prompt |
+| ⬇️ VRAM offload | Evicts Ollama and llama.cpp models before generation |
+| 🧹 Auto-cleanup | `UnloadAllModels` frees diffusion weights immediately after each run |
+| 🎲 Random / fixed seed | `-1` = random; any integer = reproducible results |
 | 💾 Persistent attachment | Result stored via OWUI file REST API — survives chat history |
 
 <details>
 <summary><b>⚙️ Prerequisites</b></summary>
 
-This tool requires ComfyUI running locally with:
+Requires ComfyUI with:
 - `qwen_image_edit_2511_fp8mixed.safetensors` (UNet)
 - `qwen_2.5_vl_7b_fp8_scaled.safetensors` (CLIP)
 - `qwen_image_vae.safetensors` (VAE)
 - `Qwen-Image-Lightning-4steps-V2.0.safetensors` (LoRA)
 - `TextEncodeQwenImageEditPlus` and `FluxKontextImageScale` custom nodes
 
-**Valves:**
-
 | Valve | Default | What it does |
 |-------|---------|--------------|
 | `comfyui_url` | `http://localhost:8188` | ComfyUI endpoint |
-| `owui_internal_base` | `http://localhost:8080` | OWUI internal URL for file storage |
-| `ollama_url` | `http://localhost:11434` | Ollama server for VRAM offload |
-| `llama_cpp_url` | `http://localhost:8082` | llama.cpp router for VRAM offload |
+| `owui_internal_base` | `http://localhost:8080` | OWUI internal URL |
 | `unload_ollama` | `true` | Auto-evict Ollama before generation |
 | `unload_llama_cpp` | `true` | Auto-evict llama.cpp before generation |
 | `max_wait_seconds` | `600` | Generation timeout |
@@ -1122,44 +1065,44 @@ This tool requires ComfyUI running locally with:
 [upload two images] the person from image1 wearing the outfit from image2
 [upload two images] place the object from image2 into the scene from image1
 [upload three images] image1 background, image2 subject, image3 art style
-[upload one image] remove the background and replace with a white studio
 ```
+
+</details>
 
 </details>
 
 ---
 
-## 🎮 HLTV Tool
+<details>
+<summary><h2>🔍 RTX Image Upscaler</h2>
+<blockquote>Upscale any image up to 4× using NVIDIA RTX Video Super Resolution — hardware-accelerated AI upscaling running locally in ComfyUI. NVIDIA GPU required.</blockquote>
 
-> **Live CS2 match scores, upcoming fixtures, recent results, team rankings, latest news and tournaments — scraped directly from HLTV.org** in a broadcast-style dark card. No API key required.
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
+</summary>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/hltv_tool_for_open_webui_b3fe146a)
-
-<img width="1191" height="517" alt="Image" src="https://github.com/user-attachments/assets/2be82bed-c64a-4124-bea5-e5896de798f4" />
-
-### ✨ What it does
-
-HLTV in your chat. Ask about live CS2 matches, check the current world rankings, look up a specific team's schedule, or get the latest news — all rendered in a tactical dark-theme card with Rajdhani display font, JetBrains Mono scores, and an HLTV orange accent palette. Six purpose-built functions cover every angle of the competitive CS2 scene.
+<img width="1492" height="1237" alt="RTX Upscaler screenshot" src="https://github.com/user-attachments/assets/e198d6b9-05dd-4ff8-bfac-09c7b352780e" />
 
 | Feature | Detail |
 |---------|--------|
-| 📅 Upcoming & live matches | Browse all scheduled matches — filter by team name (e.g. "is Vitality playing today") |
-| 🏆 Recent results | Latest completed match scores — filterable by team |
-| 📰 Latest news | News articles, transfers and announcements scraped from the HLTV front page |
-| 🥇 World rankings | Current HLTV CS2 team rankings with position, points, and gold/orange tier styling |
-| 🏟️ Events & tournaments | Upcoming and ongoing CS2 events with dates |
-| 🎯 Team lookup | Combined upcoming + recent results for any specific team in one card |
-| 🎨 CS2 broadcast theme | Tactical dark UI — HLTV orange + cold blue, Rajdhani + JetBrains Mono |
-| 🔑 Zero API key | Uses `curl-cffi` with Chrome impersonation to scrape HLTV — no account needed |
+| 🔍 Up to 4× upscale | 1×, 2×, 3×, or 4× multiplier — defaults to 4× ULTRA |
+| ⚡ RTX acceleration | NVIDIA's native VSR tensor cores — ~1 second round-trip on a 3090 Ti |
+| 📎 Persistent attachment | Result embedded as a file attachment — survives in chat history |
+| 🧹 VRAM cleanup | Optional `UnloadAllModels` node after each run |
+| 🔑 Zero API keys | Fully local — no cloud, no accounts |
 
 <details>
-<summary><b>⚙️ Valves</b></summary>
+<summary><b>⚙️ Prerequisites</b></summary>
+
+1. **NVIDIA RTX GPU** (RTX 20 series or newer) — AMD and Intel are not supported
+2. **ComfyUI** with the **RTXVideoSuperResolution** custom node installed
+3. Run the RTX upscale workflow in ComfyUI at least once before using the tool
 
 | Valve | Default | What it does |
 |-------|---------|--------------|
-| `timeout` | `20` | HTTP timeout in seconds |
-| `max_items` | `15` | Max items per query |
-| `debug` | `false` | Append raw page class names to empty results for debugging |
+| `comfyui_url` | `http://localhost:8188` | ComfyUI HTTP endpoint |
+| `owui_internal_base` | `http://localhost:8080` | Internal OWUI URL |
+| `unload_models_after_run` | `true` | Free VRAM after each upscale |
+| `max_wait_seconds` | `300` | Timeout |
 
 </details>
 
@@ -1167,131 +1110,38 @@ HLTV in your chat. Ask about live CS2 matches, check the current world rankings,
 <summary><b>🗣️ Example prompts</b></summary>
 
 ```
-show upcoming CS2 matches
-is Vitality playing today?
-latest CS2 results
-CS2 rankings
-who is #1 in CS2?
-HLTV news
-latest CS2 news
-upcoming CS2 events
-when is the next major?
-tell me about NaVi
-FaZe schedule
-how is G2 doing?
+upscale this image
+make this photo sharper
+enhance the resolution
+upscale 2x
 ```
+
+</details>
 
 </details>
 
 ---
 
-## 🔤 Language Pronunciation Guide
-
-> **Interactive pronunciation player for any word or phrase in 35+ languages** — IPA, syllable flip-cards, audio playback (normal & slow), travel navigator mode, and a compact quick-banner for single-word lookups. Powered by gTTS, zero API key needed.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/pronunciation_and_translation_tool_d8a83bca)
-
-<img width="1632" height="1155" alt="image" src="https://github.com/user-attachments/assets/c57e7d09-0452-4098-bc6a-2d3f0cf95ee6" />
-
-
-### ✨ What it does
-
-Three purpose-built tools cover every pronunciation use case — from a quick "how do I say that?" to a full language study session.
-
-| Feature | Detail |
-|---------|--------|
-| 🔤 Quick banner | Compact single-word banner: syllable pills with English phonetics, IPA, normal + slow audio, memory mnemonic — no tabs, instant render |
-| 📚 Learn tab | Flip-card word chips with IPA, translation, POS, syllables, difficulty rating, mnemonic, and example sentences |
-| 🧭 Navigate tab | Giant phrase display for showing to locals — one-tap autoplay, loop & repeat controls, word-by-word breakdown |
-| 🔊 Audio | gTTS full-phrase MP3 + browser Web Speech API per-word chips (zero bandwidth by default) |
-| 🐢 Slow mode | Browser speed control (0.65×) by default; optional gTTS slow file via valve |
-| 🌍 35+ languages | French, Spanish, Japanese, Arabic, Hebrew, Chinese, Korean, Hindi, and many more |
-| 🎨 Themed UI | Country-flag gradients, cultural emoji particles, per-language phonetic tips |
-| ✈️ Travel mode | `translate_and_play` opens directly on the Navigator tab — ideal for showing phrases to locals |
-
-<details>
-<summary><b>⚙️ Valves</b></summary>
-
-| Valve | Default | What it does |
-|-------|---------|--------------|
-| `max_words` | `14` | Maximum word flip-cards to render |
-| `word_audio_mode` | `speech_api` | `speech_api` = browser Web Speech (zero bandwidth); `gtts` = high-quality gTTS per word |
-| `generate_slow_audio` | `false` | If `true`, generates a separate gTTS slow audio file for the full phrase |
-
-**Requirements:** `gtts`
-
-</details>
-
-<details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-how do you pronounce "schadenfreude"?
-how do I say "where is the nearest pharmacy?" in Japanese?
-pronounce "merci beaucoup" in French
-teach me "¿Cómo estás?" in Spanish
-how do I say "thank you" in Arabic?
-pronunciation guide for こんにちは
-```
-
-</details>
+## 🛠️ Utilities
 
 ---
 
-## 🎵 Genius Song Lyrics
-
-> **Fetch the full lyrics of any song by title and artist** — scraped directly from Genius.com with fuzzy title/artist matching so aliases and featured artists still resolve. No user API key required.
-
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/genius_song_lyrics_for_open_webui_3970001f)
-
-<img width="1577" height="1117" alt="Screenshot 2026-04-28 174631" src="https://github.com/user-attachments/assets/59047a0e-a517-4630-8122-bea144fe1641" />
-
-### ✨ What it does
-
-Ask for any song's lyrics in plain English and get the full text back in chat — complete with the matched title and artist so you always know exactly what was found.
-
-| Feature | Detail |
-|---------|--------|
-| 🔍 Smart search | Tries three query variants (title+artist, title only, artist+title) for the best Genius match |
-| 🤝 Fuzzy matching | Similarity scoring on both title and artist handles aliases, features, and alternate spellings |
-| 📄 Full lyrics | Scrapes the Genius page directly — modern and legacy markup both supported |
-| 🏷️ Match transparency | Shows the exact title and artist that was matched, plus your original search if they differ |
-| 🔑 No setup | Built-in token — just install and ask |
-
 <details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-get the lyrics for "Bohemian Rhapsody" by Queen
-show me the lyrics to "Blinding Lights" by The Weeknd
-lyrics for "Hotel California" Eagles
-what are the lyrics to Lose Yourself by Eminem?
-get lyrics: "Anti-Hero" Taylor Swift
-```
-
-</details>
-
----
-
-## 📱 QR Code Generator
-
-> **Generate QR codes for any URL, text, or data and embed them directly in chat** — styled, auto-sized, and instantly scannable. Zero setup, zero API keys.
+<summary><h2>📱 QR Code Generator</h2>
+<blockquote>Generate QR codes for any URL, text, or data and embed them directly in chat — styled, auto-sized, and instantly scannable. Zero setup, zero API keys.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qr_code_generator_for_open_webui_fb931955)
+</summary>
 
-<img width="1215" height="928" alt="image" src="https://github.com/user-attachments/assets/dcfa3972-e682-47e8-a926-0fa450baff51" />
-
-### ✨ What it does
-
-Drop any URL, text, contact card, or Wi-Fi credential into this tool and get a beautifully rendered QR code embedded right in the chat. No external services, no rate limits, no sign-up — it runs entirely locally using `qrcode[pil]`. The embedded HTML card auto-sizes to fit the image, includes a styled label with the encoded content, and renders with a clean shadow and rounded border.
+<img width="1215" height="928" alt="QR Code Generator screenshot" src="https://github.com/user-attachments/assets/dcfa3972-e682-47e8-a926-0fa450baff51" />
 
 | Feature | Detail |
 |---------|--------|
-| 📱 Any content | URLs, text, Wi-Fi credentials, vCards, phone numbers — anything that fits in a QR code |
-| 🖼️ Styled embed | Clean card with shadow, rounded border, and content label — renders directly in chat |
-| ⚡ Instant generation | High-error-correction QR codes that work reliably even if partially obscured |
-| 🔑 Zero config | No API keys, no external services — fully local with `qrcode[pil]` |
-| 🐢 Error resilience | Uses ERROR_CORRECT_H (30% damage tolerance) by default |
+| 📱 Any content | URLs, text, Wi-Fi credentials, vCards, phone numbers |
+| 🖼️ Styled embed | Clean card with shadow, rounded border, and content label |
+| ⚡ Instant generation | High-error-correction QR codes that work even if partially obscured |
+| 🔑 Zero config | Fully local with `qrcode[pil]` |
+| 🐢 Error resilience | ERROR_CORRECT_H (30% damage tolerance) by default |
 
 <details>
 <summary><b>🗣️ Example prompts</b></summary>
@@ -1305,33 +1155,32 @@ create a QR code for "Hello, World!"
 
 </details>
 
+</details>
+
 ---
 
-## 🛠️ Quick Utils
-
-> **Swiss Army knife for everyday chat tasks** — 11 zero-dependency utilities in a single tool. UUIDs, Base64 encoding, color conversion, password generation, QR codes, number base conversion, a safe calculator, Unix timestamp converter, text statistics, text transforms, and random picker.
+<details>
+<summary><h2>🛠️ Quick Utils</h2>
+<blockquote>Swiss Army knife for everyday chat tasks — 11 zero-dependency utilities in a single tool.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/quick_utils_11_zero_dependency_tools_in_one_swiss_f0d0517b)
+</summary>
 
-<img width="1573" height="1235" alt="image" src="https://github.com/user-attachments/assets/79647cf8-401c-49d3-bd12-6cf557cebbf3" />
-
-### ✨ What it does
-
-A single tool that replaces a dozen browser bookmarklets. Each utility renders a polished, copy-ready card with one-click copy buttons — no tab-switching, no external websites. Built entirely with Python's standard library plus `qrcode[pil]` and `pillow`.
+<img width="1573" height="1235" alt="Quick Utils screenshot" src="https://github.com/user-attachments/assets/79647cf8-401c-49d3-bd12-6cf557cebbf3" />
 
 | Feature | Sub-feature | What it does |
 |---------|-------------|-------------|
-| 🆔 **UUID Generator** | v1 (time-based) / v4 (random) | Generate 1–20 UUIDs with one-click copy |
-| 📦 **Base64 Tool** | Encode & decode | Convert plain text ↔ Base64 with character count |
-| 🎨 **Color Converter** | HEX ↔ RGB ↔ HSL | Live colour swatch card with all three formats |
-| 🔐 **Password Generator** | Fully customisable | Cryptographically secure passwords via `secrets` module — adjustable length, character sets, ambiguous char exclusion |
-| 📱 **QR Code** | Inline PNG | Generate QR codes for URLs, text, Wi-Fi strings — no external service |
-| 🔢 **Number Base** | Decimal / Hex / Binary / Octal | Convert between bases, with nibble-formatted binary display |
-| 🧮 **Calculator** | Safe math evaluation | Full expression evaluator with `+ − × ÷ ** // %`, `sqrt`, `sin`, `cos`, `tan`, `log`, `abs`, `round`, `pi`, `e` — AST-based, no `eval()` |
-| ⏱️ **Unix Timestamp** | ↔ human dates | Current time, decode timestamp, encode date string — displays UTC, ISO 8601, RFC 2822 |
-| 📝 **Text Stats** | Word count, reading time | Words, chars (with/without spaces), sentences, paragraphs, reading time, top-5 word frequency |
-| 🔤 **Text Transform** | upper, lower, snake, kebab, camel, pascal, slug, reverse | Single or all formats at once — perfect for coding conventions |
-| 🎲 **Random Pick** | List picker / number generator | Pick random items from a comma-separated list or generate random numbers in a range |
+| 🆔 **UUID Generator** | v1 / v4 | Generate 1–20 UUIDs with one-click copy |
+| 📦 **Base64 Tool** | Encode & decode | Convert plain text ↔ Base64 |
+| 🎨 **Color Converter** | HEX ↔ RGB ↔ HSL | Live colour swatch with all three formats |
+| 🔐 **Password Generator** | Fully customisable | Cryptographically secure via `secrets` module |
+| 📱 **QR Code** | Inline PNG | Generate QR codes locally — no external service |
+| 🔢 **Number Base** | Dec / Hex / Bin / Oct | Convert between bases |
+| 🧮 **Calculator** | Safe math | AST-based evaluator — no `eval()` |
+| ⏱️ **Unix Timestamp** | ↔ human dates | Current time, decode, encode — UTC + ISO 8601 |
+| 📝 **Text Stats** | Word count, reading time | Words, chars, sentences, paragraphs, top words |
+| 🔤 **Text Transform** | 8 formats | snake, kebab, camel, pascal, slug, reverse, and more |
+| 🎲 **Random Pick** | List / number | Random items from a list or numbers in a range |
 
 <details>
 <summary><b>⚙️ Valves</b></summary>
@@ -1355,11 +1204,89 @@ what is rgb(255, 107, 53) in hex?
 convert 255 to binary and hex
 calculate sqrt(2) * pi
 what is the current Unix timestamp?
-how many words is "The quick brown fox..."
 convert "my_file_name" to snake_case and kebab-case
 pick a random number between 1 and 100
-pick randomly from Alice, Bob, Charlie, Dave
 ```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>😂 Joke Tool</h2>
+<blockquote>Give your AI a sense of humour — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/jokes_tool_14d95010)
+</summary>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7ea6a8c9-0ca7-469d-a456-53c71ca26472" width="80%" alt="Joke Tool screenshot" />
+</div>
+
+| Feature | Detail |
+|---------|--------|
+| 🃏 300+ jokes | Curated vault: Git puns, coding humor, dev classics |
+| 🌐 Live mode | Fetches fresh jokes from `jokeapi.dev` on request |
+| 🔢 Batch support | Ask for 1 joke or a specific number |
+| 🛡️ Offline-safe | Always falls back to internal library if API is down |
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+Tell me a joke
+Give me 3 fresh jokes from the internet
+Hit me with a random Git pun
+Tell me 5 programming jokes
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>💾 VRAM Unload</h2>
+<blockquote>Free your GPU memory without leaving the chat — one action button that detects loaded llama.cpp models and unloads them from VRAM instantly.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)
+</summary>
+
+<img width="968" height="703" alt="VRAM Unload screenshot" src="https://github.com/user-attachments/assets/0c896fde-142c-472c-8811-463bbd3596d4" />
+
+| Feature | Detail |
+|---------|--------|
+| 🔍 Auto-detects loaded models | Queries `/v1/models` and filters to currently loaded ones |
+| 🔁 Multi-model support | Unloads every loaded model in one click |
+| 📡 Live status updates | Success/error message per model |
+| 🔑 Zero dependencies | Pure `aiohttp` — nothing extra to install |
+
+<details>
+<summary><b>⚙️ Setup (1 step)</b></summary>
+
+Set `LLAMACPP_BASE_URL` in the action valves to your llama.cpp router server:
+
+```
+http://127.0.0.1:8080
+```
+
+> **Requires llama.cpp running in router mode (llama-server).**
+
+</details>
+
+<details>
+<summary><b>🛠️ Troubleshooting</b></summary>
+
+| Symptom | Fix |
+|---------|-----|
+| ❌ "Cannot reach llama.cpp" | Check `LLAMACPP_BASE_URL` is correct and the server is running |
+| ℹ️ "No models currently loaded" | No models are resident in VRAM — nothing to unload |
+| ❌ HTTP 404 on unload | Make sure llama.cpp is in router mode, not single-model mode |
+
+</details>
 
 </details>
 
