@@ -103,7 +103,7 @@
 **🌍 Information & Reference** `3 tools`
 [🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide)
 
-**🎨 Image & Video Generation** `3 tools` *(requires local GPU + ComfyUI)*
+**🎨 Image & Video Generation** `3 tools` *(requires ComfyUI)*
 [🎥 LTX Video](#-ltx-23-video-generator) · [🎨 Qwen Edit](#-qwen-image-edit) · [🔍 RTX Upscale](#-rtx-image-upscaler)
 
 **🛠️ Utilities** `4 tools`
