@@ -1,6 +1,6 @@
 """
 title: Language Pronunciation Guide — v5 Quick Edition
-author: Enhanced Edition
+author: ichrist
 description: >
   Ultimate travel language companion. Three tools:
   🔤 quick_pronounce_word (NEW — compact single-word banner, syllable pills with
