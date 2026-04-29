@@ -81,35 +81,29 @@
 
 ## 🗺️ What's Inside
 
-| | Tool | What it does | API key? |
-|---|------|--------------|----------|
-| 🎬 | [Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own Jellyfin server | Self-hosted |
-| 📺 | [YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos in chat | ❌ Free |
-| 📰 | [News Reader](#-news-reader) | Live headlines from 45 RSS feeds, 11 categories, AI summaries | ❌ Free |
-| 🌐 | [Reddit Explorer](#-reddit-explorer) | Browse posts, comments, media & profiles — no sign-in | ❌ Free |
-| 🎙 | [Podcast Player](#-podcast-player) | Stream any podcast episode with animated waveform player | ❌ Free |
-| 🎵 | [Genius Song Lyrics](#-genius-song-lyrics) | Full lyrics from Genius.com with fuzzy matching | ❌ Free |
-| 🏟️ | [Sports Tool](#-sports-tool) | Live scores & standings for 60+ leagues | ❌ Free |
-| 🎮 | [Steam Game Info](#-steam-game-info) | Prices, reviews & screenshot gallery for any Steam game | ❌ Free |
-| 🎯 | [HLTV Tool](#-hltv-tool) | Live CS2 scores, rankings, news & tournament data | ❌ Free |
-| 🧠 | [Thinking Filter](#-thinking-filter) | Deep reasoning toggle with 13 reasoning + 11 presentation presets | ❌ Free |
-| 🧩 | [Ask User](#-ask-user) | Collect structured input before the AI responds | ❌ Free |
-| 🎭 | [Persona Studio](#-persona-studio) | Switch your AI's personality with one click | ❌ Free |
-| 🌌 | [Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection | ❌ Free |
-| 🌤️ | [Weather](#-weather) | Real-time weather cards — current, hourly & 7-day | ❌ Free |
-| 📖 | [Wikipedia](#-wikipedia) | Encyclopedia lookups in 20+ languages | ❌ Free |
-| 🔤 | [Pronunciation Guide](#-language-pronunciation-guide) | IPA, audio & flip-cards for 35+ languages | ❌ Free |
-| 🎥 | [LTX-2.3 Video Generator](#-ltx-23-video-generator) | Text/image-to-video via local ComfyUI | Local GPU |
-| 🎨 | [Qwen Image Edit](#-qwen-image-edit) | Edit & composite images with up to 3 references | Local GPU |
-| 🔍 | [RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX hardware | Local GPU |
-| 📱 | [QR Code Generator](#-qr-code-generator) | QR codes for URLs, text, Wi-Fi & more | ❌ Free |
-| 🛠️ | [Quick Utils](#-quick-utils) | 11 utilities: UUID, Base64, calculator, colors & more | ❌ Free |
-| 😂 | [Joke Tool](#-joke-tool) | 300+ programmer jokes + live API fetching | ❌ Free |
-| 💾 | [VRAM Unload](#-vram-unload) | Free GPU memory from llama.cpp with one click | Local only |
+**📡 Media & Entertainment**
+[🎬 Jellyfin](#-jellyfin-media-player) · [📺 YouTube](#-youtube-player) · [📰 News Reader](#-news-reader) · [🌐 Reddit](#-reddit-explorer) · [🎙 Podcasts](#-podcast-player) · [🎵 Lyrics](#-genius-song-lyrics)
+
+**🏆 Sports & Gaming**
+[🏟️ Sports](#-sports-tool) · [🎮 Steam](#-steam-game-info) · [🎯 HLTV CS2](#-hltv-tool)
+
+**🤖 AI & Workflow**
+[🧠 Thinking Filter](#-thinking-filter) · [🧩 Ask User](#-ask-user) · [🎭 Personas](#-persona-studio) · [🌌 Orchestrator](#-omniscient-orchestrator)
+
+**🌍 Information & Reference**
+[🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide)
+
+**🎨 Image & Video Generation**
+[🎥 LTX Video](#-ltx-23-video-generator) · [🎨 Qwen Edit](#-qwen-image-edit) · [🔍 RTX Upscale](#-rtx-image-upscaler)
+
+**🛠️ Utilities**
+[📱 QR Codes](#-qr-code-generator) · [🛠️ Quick Utils](#-quick-utils) · [😂 Jokes](#-joke-tool) · [💾 VRAM Unload](#-vram-unload)
 
 ---
 
 ## 📡 Media & Entertainment
+
+> 👇 Click any tool name below to expand — screenshots, features, setup & example prompts inside.
 
 <details>
 <summary><h2>🎬 Jellyfin Media Player</h2>
@@ -437,6 +431,7 @@ what are the lyrics to Lose Yourself by Eminem?
 
 ## 🏆 Sports & Gaming
 
+
 <details>
 <summary><h2>🏟️ Sports Tool</h2>
 <blockquote>Live scores, standings, schedules & news rendered as a broadcast-style inline card. Covers 60+ leagues — NBA, NFL, EPL, NHL, MLB, F1, MMA, tennis, golf and more. Zero API key required.</blockquote>
@@ -496,7 +491,7 @@ UFC results
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/steam_game_lookup_rich_interactive_cards_for_any_g_a3879146)
 </summary>
 
-<img width="1617" height="1221" alt="Screenshot 2026-04-29 101852" src="https://github.com/user-attachments/assets/051654e4-07cb-43c7-9fb3-0fbaec24bd38" />
+<img width="1617" height="1221" alt="Screenshot 2026-04-29 101852" src="https://github.com/user-attachments/assets/b0cc8e79-62eb-4bc5-8002-510605a0f5b4" />
 
 | Feature | Detail |
 |---------|--------|
@@ -588,6 +583,7 @@ FaZe schedule
 ---
 
 ## 🤖 AI & Workflow
+
 
 <details>
 <summary><h2>🧠 Thinking Filter</h2>
@@ -796,6 +792,7 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 ---
 
 ## 🌍 Information & Reference
+
 
 <details>
 <summary><h2>🌤️ Weather</h2>
@@ -1098,6 +1095,7 @@ upscale 2x
 ---
 
 ## 🛠️ Utilities
+
 
 <details>
 <summary><h2>📱 QR Code Generator</h2>
