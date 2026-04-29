@@ -488,10 +488,8 @@ UFC results
 <summary><h2>🎮 Steam Game Info</h2>
 <blockquote>Fetch Steam game prices, reviews, and screenshots — rendered as a beautiful interactive card directly in chat. Shows artwork, screenshot gallery, review score, tags, and a store link. No API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/steam_game_lookup_rich_interactive_cards_for_any_g_a3879146)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](#)
 </summary>
-
-<img width="1617" height="1221" alt="Screenshot 2026-04-29 101852" src="https://github.com/user-attachments/assets/b0cc8e79-62eb-4bc5-8002-510605a0f5b4" />
 
 | Feature | Detail |
 |---------|--------|
