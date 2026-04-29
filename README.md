@@ -20,7 +20,7 @@
 
 <br/>
 
-<!-- Quick-jump badge strip -->
+<!-- Quick-jump badge strip — fixed gradient (stops at readable teal, never goes near-white) -->
 <p>
   <a href="#-jellyfin-media-player"><img src="https://img.shields.io/badge/-🎬_Jellyfin-7c3aed?style=flat-square" /></a>
   <a href="#-youtube-player"><img src="https://img.shields.io/badge/-📺_YouTube-7244eb?style=flat-square" /></a>
@@ -35,82 +35,35 @@
   <a href="#-podcast-player"><img src="https://img.shields.io/badge/-🎙_Podcasts-1aa1d8?style=flat-square" /></a>
   <a href="#-wikipedia"><img src="https://img.shields.io/badge/-📖_Wikipedia-10acd6?style=flat-square" /></a>
   <a href="#-ask-user"><img src="https://img.shields.io/badge/-🧩_Ask_User-06b6d4?style=flat-square" /></a>
-  <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-03a9c7?style=flat-square" /></a>
-  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-02b8c4?style=flat-square" /></a>
-  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-01c3c1?style=flat-square" /></a>
-  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-00cebd?style=flat-square" /></a>
+  <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-05a8bf?style=flat-square" /></a>
+  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-049aaa?style=flat-square" /></a>
+  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-038c96?style=flat-square" /></a>
+  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-027f82?style=flat-square" /></a>
   <br/>
-  <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-00d9ba?style=flat-square" /></a>
-  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-00e4b7?style=flat-square" /></a>
-  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Lyrics-00efb3?style=flat-square" /></a>
-  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Codes-00f0b0?style=flat-square" /></a>
-  <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-00f5ad?style=flat-square" /></a>
-  <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-68ef9f?style=flat-square" /></a>
-  <a href="#-vram-unload"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-a3f0a0?style=flat-square" /></a>
+  <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-02726e?style=flat-square" /></a>
+  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-01655a?style=flat-square" /></a>
+  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Lyrics-015847?style=flat-square" /></a>
+  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Codes-014b36?style=flat-square" /></a>
+  <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-014030?style=flat-square" /></a>
+  <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-01332a?style=flat-square" /></a>
+  <a href="#-vram-unload"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-012622?style=flat-square" /></a>
 </p>
 
 </div>
 
 ---
 
-## 🗺️ Quick Navigation
+## ⚡ Quick Start
 
-### 📡 Media & Entertainment
-| | Tool | Best for |
-|---|------|----------|
-| 🎬 | [Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own server |
-| 📺 | [YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos in chat |
-| 📰 | [News Reader](#-news-reader) | Live headlines from 45 feeds across 11 categories with AI summaries |
-| 🌐 | [Reddit Explorer](#-reddit-explorer) | Browse Reddit — posts, comments, media, profiles — no API key |
-| 🎙 | [Podcast Player](#-podcast-player) | Stream any podcast episode directly in chat |
-| 🎵 | [Genius Song Lyrics](#-genius-song-lyrics) | Full song lyrics from Genius — no manual searching |
+> Install any tool in 30 seconds — no copy-paste required.
 
-### 🏆 Sports & Gaming
-| | Tool | Best for |
-|---|------|----------|
-| 🏟️ | [Sports Tool](#-sports-tool) | Live scores & standings for 60+ leagues — NBA, NFL, EPL, NHL, MLB and more |
-| 🎮 | [Steam Game Info](#-steam-game-info) | Prices, reviews, screenshots & artwork for any Steam game |
-| 🎯 | [HLTV Tool](#-hltv-tool) | Live CS2 scores, rankings, news and tournament data |
+<div align="center">
+<a href="https://openwebui.com/u/ichrist">
+  <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-Browse_%26_Install-7c3aed?style=for-the-badge&labelColor=2e1065"/>
+</a>
+</div>
 
-### 🤖 AI & Workflow
-| | Tool | Best for |
-|---|------|----------|
-| 🧠 | [Thinking Filter](#-thinking-filter) | One-click deep reasoning toggle + full control for llama.cpp + Qwen3.5 |
-| 🧩 | [Ask User](#-ask-user) | Collect structured input before the AI responds |
-| 🎭 | [Persona Studio](#-persona-studio) | Instantly switch your AI's personality & tone |
-| 🌌 | [Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection |
-
-### 🌍 Information & Reference
-| | Tool | Best for |
-|---|------|----------|
-| 🌤️ | [Weather](#-weather) | Beautiful real-time weather cards with hourly & 7-day forecast |
-| 📖 | [Wikipedia](#-wikipedia) | Instant encyclopedia lookups in 20+ languages |
-| 🔤 | [Language Pronunciation Guide](#-language-pronunciation-guide) | Interactive pronunciation with audio, IPA & travel navigator |
-
-### 🎨 Image & Video Generation
-| | Tool | Best for |
-|---|------|----------|
-| 🎥 | [LTX-2.3 Video Generator](#-ltx-23-video-generator) | Generate AI videos from text or images via ComfyUI |
-| 🎨 | [Qwen Image Edit](#-qwen-image-edit) | Edit & composite images with up to 3 reference images |
-| 🔍 | [RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX hardware |
-
-### 🛠️ Utilities
-| | Tool | Best for |
-|---|------|----------|
-| 📱 | [QR Code Generator](#-qr-code-generator) | Generate QR codes for any URL, text, or Wi-Fi credential |
-| 🛠️ | [Quick Utils](#-quick-utils) | 11 zero-dependency utilities — UUID, Base64, calculator, and more |
-| 😂 | [Joke Tool](#-joke-tool) | 300+ programmer jokes on demand |
-| 💾 | [VRAM Unload](#-vram-unload) | Free GPU memory from llama.cpp with one click |
-
----
-
-## 🛒 Install from the Open WebUI Marketplace
-
-The fastest way to get these tools running. No copy-paste required — install directly from the Open WebUI marketplace in seconds.
-
-<div align="center"> <a href="https://openwebui.com/u/ichrist"> <img src="https://img.shields.io/badge/Open_WebUI_Marketplace-ichrist-7c3aed?style=for-the-badge&labelColor=2e1065"/> </a> </div>
-
----
+<br/>
 
 <details>
 <summary><b>🚀 First time using a tool? Read this</b></summary>
@@ -126,9 +79,37 @@ The fastest way to get these tools running. No copy-paste required — install d
 
 ---
 
-## 📡 Media & Entertainment
+## 🗺️ What's Inside
+
+| | Tool | What it does | API key? |
+|---|------|--------------|----------|
+| 🎬 | [Jellyfin Media Player](#-jellyfin-media-player) | Stream movies, TV, music & live TV from your own Jellyfin server | Self-hosted |
+| 📺 | [YouTube Player](#-youtube-player) | Watch, search & summarize YouTube videos in chat | ❌ Free |
+| 📰 | [News Reader](#-news-reader) | Live headlines from 45 RSS feeds, 11 categories, AI summaries | ❌ Free |
+| 🌐 | [Reddit Explorer](#-reddit-explorer) | Browse posts, comments, media & profiles — no sign-in | ❌ Free |
+| 🎙 | [Podcast Player](#-podcast-player) | Stream any podcast episode with animated waveform player | ❌ Free |
+| 🎵 | [Genius Song Lyrics](#-genius-song-lyrics) | Full lyrics from Genius.com with fuzzy matching | ❌ Free |
+| 🏟️ | [Sports Tool](#-sports-tool) | Live scores & standings for 60+ leagues | ❌ Free |
+| 🎮 | [Steam Game Info](#-steam-game-info) | Prices, reviews & screenshot gallery for any Steam game | ❌ Free |
+| 🎯 | [HLTV Tool](#-hltv-tool) | Live CS2 scores, rankings, news & tournament data | ❌ Free |
+| 🧠 | [Thinking Filter](#-thinking-filter) | Deep reasoning toggle with 13 reasoning + 11 presentation presets | ❌ Free |
+| 🧩 | [Ask User](#-ask-user) | Collect structured input before the AI responds | ❌ Free |
+| 🎭 | [Persona Studio](#-persona-studio) | Switch your AI's personality with one click | ❌ Free |
+| 🌌 | [Omniscient Orchestrator](#-omniscient-orchestrator) | Multi-stage AI workflow with strategy selection | ❌ Free |
+| 🌤️ | [Weather](#-weather) | Real-time weather cards — current, hourly & 7-day | ❌ Free |
+| 📖 | [Wikipedia](#-wikipedia) | Encyclopedia lookups in 20+ languages | ❌ Free |
+| 🔤 | [Pronunciation Guide](#-language-pronunciation-guide) | IPA, audio & flip-cards for 35+ languages | ❌ Free |
+| 🎥 | [LTX-2.3 Video Generator](#-ltx-23-video-generator) | Text/image-to-video via local ComfyUI | Local GPU |
+| 🎨 | [Qwen Image Edit](#-qwen-image-edit) | Edit & composite images with up to 3 references | Local GPU |
+| 🔍 | [RTX Image Upscaler](#-rtx-image-upscaler) | Upscale images up to 4× using NVIDIA RTX hardware | Local GPU |
+| 📱 | [QR Code Generator](#-qr-code-generator) | QR codes for URLs, text, Wi-Fi & more | ❌ Free |
+| 🛠️ | [Quick Utils](#-quick-utils) | 11 utilities: UUID, Base64, calculator, colors & more | ❌ Free |
+| 😂 | [Joke Tool](#-joke-tool) | 300+ programmer jokes + live API fetching | ❌ Free |
+| 💾 | [VRAM Unload](#-vram-unload) | Free GPU memory from llama.cpp with one click | Local only |
 
 ---
+
+## 📡 Media & Entertainment
 
 <details>
 <summary><h2>🎬 Jellyfin Media Player</h2>
@@ -229,20 +210,6 @@ This tool connects to your own self-hosted Jellyfin server — it doesn't host, 
 | 🔑 No API key needed | Search via YouTube's own InnerTube API — fast, reliable, no setup |
 
 <details>
-<summary><b>🗣️ Example prompts</b></summary>
-
-```
-show me a video about how transformers work
-I need a tutorial on Docker networking
-search YouTube for lo-fi hip hop study beats
-play https://www.youtube.com/watch?v=dQw4w9WgXcQ
-summarize this YouTube video: [url]
-get the transcript of [url]
-```
-
-</details>
-
-<details>
 <summary><b>⚙️ Setup</b></summary>
 
 Works out of the box — no configuration needed.
@@ -253,6 +220,20 @@ Works out of the box — no configuration needed.
 | `INVIDIOUS_INSTANCE` | *(auto)* | Preferred Invidious instance for transcript fallback |
 
 > **Requires** `youtube-transcript-api` (auto-installs from tool requirements).
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+show me a video about how transformers work
+I need a tutorial on Docker networking
+search YouTube for lo-fi hip hop study beats
+play https://www.youtube.com/watch?v=dQw4w9WgXcQ
+summarize this YouTube video: [url]
+get the transcript of [url]
+```
 
 </details>
 
@@ -456,8 +437,6 @@ what are the lyrics to Lose Yourself by Eminem?
 
 ## 🏆 Sports & Gaming
 
----
-
 <details>
 <summary><h2>🏟️ Sports Tool</h2>
 <blockquote>Live scores, standings, schedules & news rendered as a broadcast-style inline card. Covers 60+ leagues — NBA, NFL, EPL, NHL, MLB, F1, MMA, tennis, golf and more. Zero API key required.</blockquote>
@@ -514,8 +493,10 @@ UFC results
 <summary><h2>🎮 Steam Game Info</h2>
 <blockquote>Fetch Steam game prices, reviews, and screenshots — rendered as a beautiful interactive card directly in chat. Shows artwork, screenshot gallery, review score, tags, and a store link. No API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](#)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/steam_game_lookup_rich_interactive_cards_for_any_g_a3879146)
 </summary>
+
+<img width="1617" height="1221" alt="Screenshot 2026-04-29 101852" src="https://github.com/user-attachments/assets/051654e4-07cb-43c7-9fb3-0fbaec24bd38" />
 
 | Feature | Detail |
 |---------|--------|
@@ -607,8 +588,6 @@ FaZe schedule
 ---
 
 ## 🤖 AI & Workflow
-
----
 
 <details>
 <summary><h2>🧠 Thinking Filter</h2>
@@ -795,12 +774,10 @@ Set a custom persona: you are a brutally honest editor
 
 | Phase | What happens |
 |-------|-------------|
-| 🔹 Phase 1 — Analyse | Maps your request, identifies gaps and ambiguities |
-| 🔹 Phase 2 — Clarify | Asks up to 3 targeted questions via input modals |
-| 🔹 Phase 3 — Strategise | Presents 3 distinct execution approaches to choose from |
-| 🔹 Phase 4 — Execute | Generates output with all context locked in |
-
-> **Built-in guardrails:** max 3 questions, always skippable, always moves forward — no infinite loops.
+| 1️⃣ Clarify | Asks 2–4 targeted questions before doing anything |
+| 2️⃣ Strategise | Generates 3 distinct strategic options for you to choose |
+| 3️⃣ Execute | Produces the final output with your chosen strategy applied |
+| 4️⃣ Refine | Offers focused follow-up questions to sharpen the result |
 
 <details>
 <summary><b>🗣️ Best for</b></summary>
@@ -819,8 +796,6 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 ---
 
 ## 🌍 Information & Reference
-
----
 
 <details>
 <summary><h2>🌤️ Weather</h2>
@@ -957,7 +932,7 @@ how do I say "thank you" in Arabic?
 
 ## 🎨 Image & Video Generation
 
----
+> ⚠️ These tools require a local GPU and [ComfyUI](https://github.com/comfyanonymous/ComfyUI) running. See each tool's prerequisites for setup details.
 
 <details>
 <summary><h2>🎥 LTX-2.3 Video Generator</h2>
@@ -1123,8 +1098,6 @@ upscale 2x
 ---
 
 ## 🛠️ Utilities
-
----
 
 <details>
 <summary><h2>📱 QR Code Generator</h2>
@@ -1292,7 +1265,7 @@ http://127.0.0.1:8080
 
 ---
 
-## 🛠️ Installation
+## 🛒 Installation
 
 All tools install the same way — takes about 30 seconds.
 
