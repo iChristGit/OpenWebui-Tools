@@ -117,7 +117,7 @@
 
 <details>
 <summary><h2>🎬 Jellyfin Media Player</h2>
-<blockquote>Stream your entire Jellyfin library inside Open WebUI — cinematic embedded player, subtitle support, quality presets, album art, and live TV with EPG.</blockquote>
+<blockquote>Browse and stream your entire Jellyfin library — movies, TV shows, music, and live TV — without leaving Open WebUI. Cinematic embedded player with subtitle support, quality presets, album art, and a full EPG guide for live channels.</blockquote>
 
 [![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/jellyfin_tool_movies_tv_shows_and_music_in_your_op_92cc018e)
 </summary>
