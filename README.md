@@ -87,6 +87,19 @@
 
 </details>
 
+<details>
+<summary><b>⚠️ Tools showing cropped or broken results? Enable this setting</b></summary>
+
+Many tools render interactive UI (players, cards, viewers) inside an iframe. Without the setting below, Open WebUI's sandbox restrictions will **crop the output or prevent it from working correctly**.
+
+**Fix:** Go to **Settings → Interface**, scroll to the bottom, and enable:
+
+> ☑️ **iframe Sandbox Allow Same Origin**
+
+This allows embedded tool UIs to access local resources and render at full size. It is safe to enable for self-hosted instances.
+
+</details>
+
 ---
 
 ## 🗺️ What's Inside
