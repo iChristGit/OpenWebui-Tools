@@ -94,7 +94,7 @@ Many tools render interactive UI (players, cards, viewers) inside an iframe. Wit
 
 **Fix:** Go to **Settings → Interface**, scroll to the bottom, and enable:
 
-> ☑️ **iframe Sandbox Allow Same Origin**
+> ☑️ **Allow Iframe Sandbox Same-Origin Access**
 
 This allows embedded tool UIs to access local resources and render at full size. It is safe to enable for self-hosted instances.
 
