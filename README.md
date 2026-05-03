@@ -677,7 +677,7 @@ FaZe schedule
 </summary>
 
 <div align="center">
-<img width="987" height="1267" alt="Screenshot 2026-05-04 000952" src="https://github.com/user-attachments/assets/f7b54980-92be-4840-b4fe-d69a50665993" />
+<img width="1014" height="1156" alt="Screenshot 2026-05-04 013534" src="https://github.com/user-attachments/assets/0dae4566-740b-4b0f-9d8b-9838465c60d4" />
 </div>
 
 | Feature | Detail |
