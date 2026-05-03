@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=23%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=26%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/23_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/26_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
   <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
   <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
   <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
@@ -47,6 +47,10 @@
   <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-014030?style=flat-square" /></a>
   <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-01332a?style=flat-square" /></a>
   <a href="#-vram-unload"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-012622?style=flat-square" /></a>
+  <br/>
+  <a href="#-radio"><img src="https://img.shields.io/badge/-📻_Radio-011a1a?style=flat-square" /></a>
+  <a href="#-stock-info-tool"><img src="https://img.shields.io/badge/-📈_Stocks-011212?style=flat-square" /></a>
+  <a href="#-pokédex"><img src="https://img.shields.io/badge/-🎮_Pokédex-010c0c?style=flat-square" /></a>
 </p>
 
 </div>
@@ -104,17 +108,17 @@ This allows embedded tool UIs to access local resources and render at full size.
 
 ## 🗺️ What's Inside
 
-**📡 Media & Entertainment** `6 tools`
-[🎬 Jellyfin](#-jellyfin-media-player) · [📺 YouTube](#-youtube-player) · [📰 News Reader](#-news-reader) · [🌐 Reddit](#-reddit-explorer) · [🎙 Podcasts](#-podcast-player) · [🎵 Lyrics](#-genius-song-lyrics)
+**📡 Media & Entertainment** `7 tools`
+[🎬 Jellyfin](#-jellyfin-media-player) · [📺 YouTube](#-youtube-player) · [📰 News Reader](#-news-reader) · [🌐 Reddit](#-reddit-explorer) · [🎙 Podcasts](#-podcast-player) · [🎵 Lyrics](#-genius-song-lyrics) · [📻 Radio](#-radio)
 
-**🏆 Sports & Gaming** `3 tools`
-[🏟️ Sports](#-sports-tool) · [🎮 Steam](#-steam-game-info) · [🎯 HLTV CS2](#-hltv-tool)
+**🏆 Sports & Gaming** `4 tools`
+[🏟️ Sports](#-sports-tool) · [🎮 Steam](#-steam-game-info) · [🎯 HLTV CS2](#-hltv-tool) · [🎮 Pokédex](#-pokédex)
 
 **🤖 AI & Workflow** `4 tools`
 [🧠 Thinking Filter](#-thinking-filter) · [🧩 Ask User](#-ask-user) · [🎭 Personas](#-persona-studio) · [🌌 Orchestrator](#-omniscient-orchestrator)
 
-**🌍 Information & Reference** `3 tools`
-[🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide)
+**🌍 Information & Reference** `4 tools`
+[🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide) · [📈 Stocks](#-stock-info-tool)
 
 **🎨 Image & Video Generation** `3 tools` *(requires ComfyUI)*
 [🎥 LTX Video](#-ltx-23-video-generator) · [🎨 Qwen Edit](#-qwen-image-edit) · [🔍 RTX Upscale](#-rtx-image-upscaler)
@@ -460,6 +464,53 @@ what are the lyrics to Lose Yourself by Eminem?
 
 ---
 
+<details>
+<summary><h2>📻 Radio</h2>
+<blockquote>Stream any radio station worldwide — search by name, country, or genre with a polished dark-mode player and full scrollable station list. Full HLS/.m3u8 support, BBC stations fixed with verified worldwide URLs. Zero config, zero API keys.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/radio_tool_for_open_webui_7ab03e73)
+</summary>
+
+<div align="center">
+<img width="1219" height="1144" alt="Screenshot 2026-05-04 001401" src="https://github.com/user-attachments/assets/9a160e1d-ca65-4adf-82c1-2419bae3eeba" />
+</div>
+
+| Feature | Detail |
+|---------|--------|
+| 🔍 Search | Find stations by name, country, or genre — returns a full scrollable list with logos, flags, bitrate, and codec |
+| 🎚️ Dark-mode player | Polished embedded player with play/pause, volume, and live station metadata |
+| 📻 BBC Fix | All BBC stations (Radio 1–6, World Service, regional) use verified worldwide HLS URLs — no geo-blocks |
+| 🔊 HLS Support | Full `.m3u8` stream support via hls.js — modern stations play correctly every time |
+| 🌍 Worldwide | Millions of stations via the free Radio Browser API |
+| 🔑 Zero config | No API keys, no accounts — install and ask |
+
+<details>
+<summary><b>⚙️ Setup</b></summary>
+
+Works out of the box — no configuration needed.
+
+**Requirements:** `requests`
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+play BBC Radio 6 Music
+find jazz radio stations
+radio stations in France
+play lofi hip hop radio
+find classical music stations in Germany
+stream BBC World Service
+```
+
+</details>
+
+</details>
+
+---
+
 ## 🏆 Sports & Gaming
 
 <details>
@@ -610,6 +661,54 @@ HLTV news
 when is the next major?
 tell me about NaVi
 FaZe schedule
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>🎮 Pokédex</h2>
+<blockquote>A fully interactive Pokédex in your chat — animated sprites, base stat bars, type badges, abilities, evolution chains, and flavor text for all 1,025 Pokémon. Powered by the free PokéAPI. Zero API key required.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/pokedex_tool_for_open_webui_0cee0d5d)
+</summary>
+
+<div align="center">
+<img width="987" height="1267" alt="Screenshot 2026-05-04 000952" src="https://github.com/user-attachments/assets/f7b54980-92be-4840-b4fe-d69a50665993" />
+</div>
+
+| Feature | Detail |
+|---------|--------|
+| 🖼️ Sprites & Artwork | Animated sprite + official high-res artwork displayed side by side |
+| 🏷️ Type Badges | Color-coded type pills (Fire, Water, Psychic, etc.) with effectiveness info |
+| 📊 Base Stats | All six stats as visual progress bars — HP, Attack, Defense, Sp. Atk, Sp. Def, Speed |
+| 📖 Full Profile | Height, weight, generation, habitat, abilities, and the classic Pokédex flavor text entry |
+| 🔗 Evolution Chain | Full evolution line with clickable links to look up any stage instantly |
+| 🔢 Name or number | Search any of the 1,025 national Pokédex entries by name or number |
+| 🔑 Zero API key | Data fetched live from the free PokéAPI |
+
+<details>
+<summary><b>⚙️ Setup</b></summary>
+
+Works out of the box — no configuration needed.
+
+**Requirements:** `httpx`
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+show me Pikachu
+Pokédex #150
+tell me about Gengar
+look up Eevee
+what are Charizard's base stats?
+show me Garchomp
 ```
 
 </details>
@@ -961,6 +1060,55 @@ how do you pronounce "schadenfreude"?
 how do I say "where is the nearest pharmacy?" in Japanese?
 pronounce "merci beaucoup" in French
 how do I say "thank you" in Arabic?
+```
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>📈 Stock Info Tool</h2>
+<blockquote>Real-time stock market cards — live price, interactive charts, and company info for any publicly traded stock. Side-by-side comparisons, configurable currency, and adjustable chart history. Powered by Yahoo Finance. Zero API key required.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/stock_info_tool_for_open_webui_c6923bff)
+</summary>
+
+<div align="center">
+<img width="964" height="836" alt="Screenshot 2026-05-04 001116" src="https://github.com/user-attachments/assets/73bf39c4-bd7a-488c-8356-e340ccf43ae7" />
+</div>
+
+| Feature | Detail |
+|---------|--------|
+| 💹 Quote Card | Company name, current price, day change with color-coded ▲▼, day high/low, 52-week range, market cap, volume, and P/E ratio |
+| 📊 Price Chart | Full interactive price chart rendered inline — configurable from 7 days to all-time |
+| ⚖️ Side-by-side Compare | Compare two tickers at once with aligned metrics for quick head-to-head analysis |
+| 💱 Multi-currency | Configure your preferred display currency (USD, EUR, GBP, JPY, and more) via valve |
+| 🔑 Zero API key | Data pulled live from Yahoo Finance — no account needed |
+
+<details>
+<summary><b>⚙️ Valves</b></summary>
+
+| Valve | Default | What it does |
+|-------|---------|-------------|
+| `default_currency` | `USD` | Display currency for all prices |
+| `chart_days` | `30` | Days of history shown in the price chart (7, 30, 90, 180, 365, max) |
+
+**Requirements:** `httpx`
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+stock info AAPL
+how is Tesla doing?
+GOOGL 52-week range
+stock chart TSLA
+compare AAPL MSFT
+what's the price of NVDA?
 ```
 
 </details>
