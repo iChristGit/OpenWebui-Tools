@@ -32,28 +32,28 @@
   <a href="#-radio"><img src="https://img.shields.io/badge/-📻_Radio-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming--16a34a?style=flat-square&labelColor=14532d" /><br/>
+  <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming--16a34a?style=flat-square&labelColor=166534" /><br/>
   <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports-16a34a?style=flat-square&labelColor=166534" /></a>
   <a href="#-steam-game-info"><img src="https://img.shields.io/badge/-🎮_Steam_Info-16a34a?style=flat-square&labelColor=166534" /></a>
   <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-16a34a?style=flat-square&labelColor=166534" /></a>
   <a href="#-pokédex"><img src="https://img.shields.io/badge/-🎮_Pokédex-16a34a?style=flat-square&labelColor=166534" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow--06b6d4?style=flat-square&labelColor=0c4a6e" /><br/>
+  <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow--06b6d4?style=flat-square&labelColor=0e7490" /><br/>
   <a href="#-thinking-filter"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-ask-user"><img src="https://img.shields.io/badge/-🧩_Ask_User-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-06b6d4?style=flat-square&labelColor=0e7490" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🌍_Information_%26_Reference--f59e0b?style=flat-square&labelColor=78350f" /><br/>
+  <img src="https://img.shields.io/badge/🌍_Information_%26_Reference--f59e0b?style=flat-square&labelColor=92400e" /><br/>
   <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-f59e0b?style=flat-square&labelColor=92400e" /></a>
   <a href="#-wikipedia"><img src="https://img.shields.io/badge/-📖_Wikipedia-f59e0b?style=flat-square&labelColor=92400e" /></a>
   <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-f59e0b?style=flat-square&labelColor=92400e" /></a>
   <a href="#-stock-info-tool"><img src="https://img.shields.io/badge/-📈_Stocks-f59e0b?style=flat-square&labelColor=92400e" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🎨_Image_%26_Video_Generation--ec4899?style=flat-square&labelColor=831843" /><br/>
+  <img src="https://img.shields.io/badge/🎨_Image_%26_Video_Generation--ec4899?style=flat-square&labelColor=9d174d" /><br/>
   <a href="#-ltx-23-video-generator"><img src="https://img.shields.io/badge/-🎥_LTX_Video-ec4899?style=flat-square&labelColor=9d174d" /></a>
   <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-ec4899?style=flat-square&labelColor=9d174d" /></a>
   <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-ec4899?style=flat-square&labelColor=9d174d" /></a>
@@ -136,7 +136,7 @@ This allows embedded tool UIs to access local resources and render at full size.
 
 > 👇 Click any tool name below to expand — screenshots, features, setup & example prompts inside.
 
-## <img src="https://img.shields.io/badge/📡_Media_%26_Entertainment-7_tools-7c3aed?style=for-the-badge&labelColor=4c1d95" />
+## <img src="https://img.shields.io/badge/📡_Media_%26_Entertainment-7_tools-7c3aed?style=for-the-badge&labelColor=3b0764" />
 
 <details>
 <summary><h2>🎬 Jellyfin Media Player</h2>
@@ -517,13 +517,13 @@ stream BBC World Service
 
 ---
 
-## <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming-4_tools-16a34a?style=for-the-badge&labelColor=14532d" />
+## <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming-4_tools-16a34a?style=for-the-badge&labelColor=166534" />
 
 <details>
 <summary><h2>🏟️ Sports Tool</h2>
 <blockquote>Live scores, standings, schedules & news rendered as a broadcast-style inline card. Covers 60+ leagues — NBA, NFL, EPL, NHL, MLB, F1, MMA, tennis, golf and more. Zero API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/sports_tool_for_open_webui_d917524b)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-16a34a?style=for-the-badge&labelColor=166534)](https://openwebui.com/posts/sports_tool_for_open_webui_d917524b)
 </summary>
 
 <div align="center">
@@ -577,7 +577,7 @@ UFC results
 <summary><h2>🎮 Steam Game Info</h2>
 <blockquote>Fetch Steam game prices, reviews, and screenshots — rendered as a beautiful interactive card directly in chat. Shows artwork, screenshot gallery, review score, tags, and a store link. No API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/steam_game_lookup_rich_interactive_cards_for_any_g_a3879146)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-16a34a?style=for-the-badge&labelColor=166534)](https://openwebui.com/posts/steam_game_lookup_rich_interactive_cards_for_any_g_a3879146)
 </summary>
 
 <div align="center">
@@ -627,7 +627,7 @@ No API keys. No valves. Install and ask.
 <summary><h2>🎯 HLTV Tool</h2>
 <blockquote>Live CS2 match scores, results, world rankings, news and tournaments — scraped directly from HLTV.org in a broadcast-style dark card. No API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/hltv_tool_for_open_webui_b3fe146a)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-16a34a?style=for-the-badge&labelColor=166534)](https://openwebui.com/posts/hltv_tool_for_open_webui_b3fe146a)
 </summary>
 
 <div align="center">
@@ -679,7 +679,7 @@ FaZe schedule
 <summary><h2>🎮 Pokédex</h2>
 <blockquote>A fully interactive Pokédex in your chat — animated sprites, base stat bars, type badges, abilities, evolution chains, and flavor text for all 1,025 Pokémon. Powered by the free PokéAPI. Zero API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/pokedex_tool_for_open_webui_0cee0d5d)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-16a34a?style=for-the-badge&labelColor=166534)](https://openwebui.com/posts/pokedex_tool_for_open_webui_0cee0d5d)
 </summary>
 
 <div align="center">
@@ -723,13 +723,13 @@ show me Garchomp
 
 ---
 
-## <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-4_tools-06b6d4?style=for-the-badge&labelColor=0c4a6e" />
+## <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-4_tools-06b6d4?style=for-the-badge&labelColor=0e7490" />
 
 <details>
 <summary><h2>🧠 Thinking Filter</h2>
 <blockquote>The missing thinking toggle for llama.cpp + Qwen3.5. One click to unleash deep reasoning — full control over depth, reasoning style, and how answers are presented.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-06b6d4?style=for-the-badge&labelColor=0e7490)](https://openwebui.com/posts/thinking_toggle_one_click_reasoning_control_for_ll_bb3f66ad)
 </summary>
 
 <div align="center">
@@ -836,7 +836,7 @@ Enable the function and set it as default for your Qwen3.5 models if you want th
 <summary><h2>🧩 Ask User</h2>
 <blockquote>Replicate Claude's "ask follow-up questions before acting" behaviour — collect structured multi-step input through sequential popup dialogs before your AI writes a single word.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/ask_user_14182520)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-06b6d4?style=for-the-badge&labelColor=0e7490)](https://openwebui.com/posts/ask_user_14182520)
 </summary>
 
 <div align="center">
@@ -871,7 +871,7 @@ Enable the function and set it as default for your Qwen3.5 models if you want th
 <summary><h2>🎭 Persona Studio</h2>
 <blockquote>Instantly reshape how your AI thinks and communicates — dozens of crafted personas across multiple categories, plus a fully custom option.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-06b6d4?style=for-the-badge&labelColor=0e7490)](https://openwebui.com/posts/persona_selector_over_150_personas_for_your_daily_c4406010)
 </summary>
 
 <div align="center">
@@ -905,7 +905,7 @@ Set a custom persona: you are a brutally honest editor
 <summary><h2>🌌 Omniscient Orchestrator</h2>
 <blockquote>Stop getting generic answers. Make your LLM pause, ask the right questions, pick a strategy — then produce something genuinely tailored to your goal.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/orchestrator_0f269681)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-06b6d4?style=for-the-badge&labelColor=0e7490)](https://openwebui.com/posts/orchestrator_0f269681)
 </summary>
 
 <div align="center">
@@ -935,13 +935,13 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 ---
 
-## <img src="https://img.shields.io/badge/🌍_Information_%26_Reference-4_tools-f59e0b?style=for-the-badge&labelColor=78350f" />
+## <img src="https://img.shields.io/badge/🌍_Information_%26_Reference-4_tools-f59e0b?style=for-the-badge&labelColor=92400e" />
 
 <details>
 <summary><h2>🌤️ Weather</h2>
 <blockquote>Beautiful real-time weather cards with current conditions, hourly forecast, and 7-day outlook — powered by Open-Meteo. Zero API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/weather_tool_fa9d870e)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-f59e0b?style=for-the-badge&labelColor=92400e)](https://openwebui.com/posts/weather_tool_fa9d870e)
 </summary>
 
 <div align="center">
@@ -990,7 +990,7 @@ forecast for Paris
 <summary><h2>📖 Wikipedia</h2>
 <blockquote>Instant encyclopedia lookups — smart search, section-aware summaries, disambiguation handling, and 20+ languages. Zero config required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/wikipedia_tool_00b03142)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-f59e0b?style=for-the-badge&labelColor=92400e)](https://openwebui.com/posts/wikipedia_tool_00b03142)
 </summary>
 
 <div align="center">
@@ -1029,7 +1029,7 @@ Search Wikipedia for quantum entanglement
 <summary><h2>🔤 Language Pronunciation Guide</h2>
 <blockquote>Interactive pronunciation player for any word or phrase in 35+ languages — IPA, syllable flip-cards, audio playback (normal & slow), and travel navigator mode. Powered by gTTS.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/pronunciation_and_translation_tool_d8a83bca)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-f59e0b?style=for-the-badge&labelColor=92400e)](https://openwebui.com/posts/pronunciation_and_translation_tool_d8a83bca)
 </summary>
 
 <div align="center">
@@ -1078,7 +1078,7 @@ how do I say "thank you" in Arabic?
 <summary><h2>📈 Stock Info Tool</h2>
 <blockquote>Real-time stock market cards — live price, interactive charts, and company info for any publicly traded stock. Side-by-side comparisons, configurable currency, and adjustable chart history. Powered by Yahoo Finance. Zero API key required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/stock_info_tool_for_open_webui_c6923bff)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-f59e0b?style=for-the-badge&labelColor=92400e)](https://openwebui.com/posts/stock_info_tool_for_open_webui_c6923bff)
 </summary>
 
 <div align="center">
@@ -1123,7 +1123,7 @@ what's the price of NVDA?
 
 ---
 
-## <img src="https://img.shields.io/badge/🎨_Image_%26_Video-3_tools-ec4899?style=for-the-badge&labelColor=831843" />
+## <img src="https://img.shields.io/badge/🎨_Image_%26_Video-3_tools-ec4899?style=for-the-badge&labelColor=9d174d" />
 
 > ⚠️ These tools require a local GPU and [ComfyUI](https://github.com/comfyanonymous/ComfyUI) running. See each tool's prerequisites for setup details.
 
@@ -1131,7 +1131,7 @@ what's the price of NVDA?
 <summary><h2>🎥 LTX-2.3 Video Generator</h2>
 <blockquote>Generate cinematic AI videos from a text prompt or uploaded image — powered by LTX-Video 2.3 (22B FP8) running locally in ComfyUI, with an embedded player and mobile-compatible output.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-ec4899?style=for-the-badge&labelColor=9d174d)](https://openwebui.com/posts/ltx_23_video_generator_text_to_video_image_to_vide_d31d1572)
 </summary>
 
 > 🙏 Adapted from **[Haervwe's WAN 2.2 ComfyUI tool](https://github.com/Haervwe/open-webui-tools)** — the original inspiration for this implementation.
@@ -1190,7 +1190,7 @@ timelapse of storm clouds rolling over a mountain range
 <summary><h2>🎨 Qwen Image Edit</h2>
 <blockquote>Edit and composite images using Qwen Image Edit 2511 via ComfyUI — accepts 1, 2, or 3 reference images, auto-selects the right workflow, and returns the result in chat.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qwen_image_edit_for_open_webui_56ca9eca)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-ec4899?style=for-the-badge&labelColor=9d174d)](https://openwebui.com/posts/qwen_image_edit_for_open_webui_56ca9eca)
 </summary>
 
 <div align="center">
@@ -1247,7 +1247,7 @@ Requires ComfyUI with:
 <summary><h2>🔍 RTX Image Upscaler</h2>
 <blockquote>Upscale any image up to 4× using NVIDIA RTX Video Super Resolution — hardware-accelerated AI upscaling running locally in ComfyUI. NVIDIA GPU required.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-ec4899?style=for-the-badge&labelColor=9d174d)](https://openwebui.com/posts/rtx_image_upscaler_for_open_webui_aba04f86)
 </summary>
 
 <div align="center">
@@ -1294,13 +1294,13 @@ upscale 2x
 
 ---
 
-## <img src="https://img.shields.io/badge/🛠_Utilities-4_tools-64748b?style=for-the-badge&labelColor=1e293b" />
+## <img src="https://img.shields.io/badge/🛠_Utilities-4_tools-64748b?style=for-the-badge&labelColor=334155" />
 
 <details>
 <summary><h2>📱 QR Code Generator</h2>
 <blockquote>Generate QR codes for any URL, text, or data and embed them directly in chat — styled, auto-sized, and instantly scannable. Zero setup, zero API keys.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/qr_code_generator_for_open_webui_fb931955)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-64748b?style=for-the-badge&labelColor=334155)](https://openwebui.com/posts/qr_code_generator_for_open_webui_fb931955)
 </summary>
 
 <div align="center">
@@ -1335,7 +1335,7 @@ create a QR code for "Hello, World!"
 <summary><h2>🛠️ Quick Utils</h2>
 <blockquote>Swiss Army knife for everyday chat tasks — 11 zero-dependency utilities in a single tool.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/quick_utils_11_zero_dependency_tools_in_one_swiss_f0d0517b)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-64748b?style=for-the-badge&labelColor=334155)](https://openwebui.com/posts/quick_utils_11_zero_dependency_tools_in_one_swiss_f0d0517b)
 </summary>
 
 <div align="center">
@@ -1392,7 +1392,7 @@ pick a random number between 1 and 100
 <summary><h2>😂 Joke Tool</h2>
 <blockquote>Give your AI a sense of humour — 300+ curated programmer jokes, live API fetching, and batch delivery on demand.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/jokes_tool_14d95010)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-64748b?style=for-the-badge&labelColor=334155)](https://openwebui.com/posts/jokes_tool_14d95010)
 </summary>
 
 <div align="center">
@@ -1426,7 +1426,7 @@ Tell me 5 programming jokes
 <summary><h2>💾 VRAM Unload</h2>
 <blockquote>Free your GPU memory without leaving the chat — one action button that detects loaded llama.cpp models and unloads them from VRAM instantly.</blockquote>
 
-[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-7c3aed?style=for-the-badge&labelColor=2e1065)](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-64748b?style=for-the-badge&labelColor=334155)](https://openwebui.com/posts/llamacpp_unload_unload_llamacpp_models_from_vram_d_b4252014)
 </summary>
 
 <div align="center">
