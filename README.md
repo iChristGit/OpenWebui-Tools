@@ -20,37 +20,50 @@
 
 <br/>
 
-<!-- Quick-jump badge strip -->
+<!-- Quick-jump badge strip — grouped by category -->
 <p>
-  <a href="#-jellyfin-media-player"><img src="https://img.shields.io/badge/-🎬_Jellyfin-7c3aed?style=flat-square" /></a>
-  <a href="#-youtube-player"><img src="https://img.shields.io/badge/-📺_YouTube-7244eb?style=flat-square" /></a>
-  <a href="#-news-reader"><img src="https://img.shields.io/badge/-📰_News_Reader-5e59e7?style=flat-square" /></a>
-  <a href="#-reddit-explorer"><img src="https://img.shields.io/badge/-🌐_Reddit-5563e5?style=flat-square" /></a>
-  <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-4b6ee3?style=flat-square" /></a>
-  <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports-4178e0?style=flat-square" /></a>
-  <a href="#-thinking-filter"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-3782de?style=flat-square" /></a>
-  <a href="#-steam-game-info"><img src="https://img.shields.io/badge/-🎮_Steam_Info-2d8ddc?style=flat-square" /></a>
-  <br/>
-  <a href="#-ltx-23-video-generator"><img src="https://img.shields.io/badge/-🎥_LTX_Video-2497da?style=flat-square" /></a>
-  <a href="#-podcast-player"><img src="https://img.shields.io/badge/-🎙_Podcasts-1aa1d8?style=flat-square" /></a>
-  <a href="#-wikipedia"><img src="https://img.shields.io/badge/-📖_Wikipedia-10acd6?style=flat-square" /></a>
-  <a href="#-ask-user"><img src="https://img.shields.io/badge/-🧩_Ask_User-06b6d4?style=flat-square" /></a>
-  <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-05a8bf?style=flat-square" /></a>
-  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-049aaa?style=flat-square" /></a>
-  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-038c96?style=flat-square" /></a>
-  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-027f82?style=flat-square" /></a>
-  <br/>
-  <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-02726e?style=flat-square" /></a>
-  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-01655a?style=flat-square" /></a>
-  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Lyrics-015847?style=flat-square" /></a>
-  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Codes-014b36?style=flat-square" /></a>
-  <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-014030?style=flat-square" /></a>
-  <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-01332a?style=flat-square" /></a>
-  <a href="#-vram-unload"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-012622?style=flat-square" /></a>
-  <br/>
-  <a href="#-radio"><img src="https://img.shields.io/badge/-📻_Radio-011a1a?style=flat-square" /></a>
-  <a href="#-stock-info-tool"><img src="https://img.shields.io/badge/-📈_Stocks-011212?style=flat-square" /></a>
-  <a href="#-pokédex"><img src="https://img.shields.io/badge/-🎮_Pokédex-010c0c?style=flat-square" /></a>
+  <img src="https://img.shields.io/badge/📡_Media_%26_Entertainment-━━━━━━━━━━━━━━━-7c3aed?style=flat-square&labelColor=3b0764" /><br/>
+  <a href="#-jellyfin-media-player"><img src="https://img.shields.io/badge/-🎬_Jellyfin-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+  <a href="#-youtube-player"><img src="https://img.shields.io/badge/-📺_YouTube-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+  <a href="#-news-reader"><img src="https://img.shields.io/badge/-📰_News_Reader-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+  <a href="#-reddit-explorer"><img src="https://img.shields.io/badge/-🌐_Reddit-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+  <a href="#-podcast-player"><img src="https://img.shields.io/badge/-🎙_Podcasts-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+  <a href="#-genius-song-lyrics"><img src="https://img.shields.io/badge/-🎵_Lyrics-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+  <a href="#-radio"><img src="https://img.shields.io/badge/-📻_Radio-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming-━━━━━━━━━━━━━━━-16a34a?style=flat-square&labelColor=14532d" /><br/>
+  <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports-16a34a?style=flat-square&labelColor=166534" /></a>
+  <a href="#-steam-game-info"><img src="https://img.shields.io/badge/-🎮_Steam_Info-16a34a?style=flat-square&labelColor=166534" /></a>
+  <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-16a34a?style=flat-square&labelColor=166534" /></a>
+  <a href="#-pokédex"><img src="https://img.shields.io/badge/-🎮_Pokédex-16a34a?style=flat-square&labelColor=166534" /></a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-━━━━━━━━━━━━━━━-06b6d4?style=flat-square&labelColor=0c4a6e" /><br/>
+  <a href="#-thinking-filter"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-06b6d4?style=flat-square&labelColor=0e7490" /></a>
+  <a href="#-ask-user"><img src="https://img.shields.io/badge/-🧩_Ask_User-06b6d4?style=flat-square&labelColor=0e7490" /></a>
+  <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-06b6d4?style=flat-square&labelColor=0e7490" /></a>
+  <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-06b6d4?style=flat-square&labelColor=0e7490" /></a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/🌍_Information_%26_Reference-━━━━━━━━━━━━━━━-f59e0b?style=flat-square&labelColor=78350f" /><br/>
+  <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-f59e0b?style=flat-square&labelColor=92400e" /></a>
+  <a href="#-wikipedia"><img src="https://img.shields.io/badge/-📖_Wikipedia-f59e0b?style=flat-square&labelColor=92400e" /></a>
+  <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-f59e0b?style=flat-square&labelColor=92400e" /></a>
+  <a href="#-stock-info-tool"><img src="https://img.shields.io/badge/-📈_Stocks-f59e0b?style=flat-square&labelColor=92400e" /></a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/🎨_Image_%26_Video_Generation-━━━━━━━━━━━━━━━-ec4899?style=flat-square&labelColor=831843" /><br/>
+  <a href="#-ltx-23-video-generator"><img src="https://img.shields.io/badge/-🎥_LTX_Video-ec4899?style=flat-square&labelColor=9d174d" /></a>
+  <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-ec4899?style=flat-square&labelColor=9d174d" /></a>
+  <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-ec4899?style=flat-square&labelColor=9d174d" /></a>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/🛠️_Utilities-━━━━━━━━━━━━━━━-64748b?style=flat-square&labelColor=1e293b" /><br/>
+  <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Codes-64748b?style=flat-square&labelColor=334155" /></a>
+  <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-64748b?style=flat-square&labelColor=334155" /></a>
+  <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-64748b?style=flat-square&labelColor=334155" /></a>
+  <a href="#-vram-unload"><img src="https://img.shields.io/badge/-💾_VRAM_Unload-64748b?style=flat-square&labelColor=334155" /></a>
 </p>
 
 </div>
@@ -108,29 +121,22 @@ This allows embedded tool UIs to access local resources and render at full size.
 
 ## 🗺️ What's Inside
 
-**📡 Media & Entertainment** `7 tools`
-[🎬 Jellyfin](#-jellyfin-media-player) · [📺 YouTube](#-youtube-player) · [📰 News Reader](#-news-reader) · [🌐 Reddit](#-reddit-explorer) · [🎙 Podcasts](#-podcast-player) · [🎵 Lyrics](#-genius-song-lyrics) · [📻 Radio](#-radio)
+| Category | Tools |
+|----------|-------|
+| 📡 **Media & Entertainment** · `7 tools` | [🎬 Jellyfin](#-jellyfin-media-player) · [📺 YouTube](#-youtube-player) · [📰 News Reader](#-news-reader) · [🌐 Reddit](#-reddit-explorer) · [🎙 Podcasts](#-podcast-player) · [🎵 Lyrics](#-genius-song-lyrics) · [📻 Radio](#-radio) |
+| 🏆 **Sports & Gaming** · `4 tools` | [🏟️ Sports](#-sports-tool) · [🎮 Steam](#-steam-game-info) · [🎯 HLTV CS2](#-hltv-tool) · [🎮 Pokédex](#-pokédex) |
+| 🤖 **AI & Workflow** · `4 tools` | [🧠 Thinking Filter](#-thinking-filter) · [🧩 Ask User](#-ask-user) · [🎭 Personas](#-persona-studio) · [🌌 Orchestrator](#-omniscient-orchestrator) |
+| 🌍 **Information & Reference** · `4 tools` | [🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide) · [📈 Stocks](#-stock-info-tool) |
+| 🎨 **Image & Video Generation** · `3 tools` ⚙️ | [🎥 LTX Video](#-ltx-23-video-generator) · [🎨 Qwen Edit](#-qwen-image-edit) · [🔍 RTX Upscale](#-rtx-image-upscaler) |
+| 🛠️ **Utilities** · `4 tools` | [📱 QR Codes](#-qr-code-generator) · [🛠️ Quick Utils](#-quick-utils) · [😂 Jokes](#-joke-tool) · [💾 VRAM Unload](#-vram-unload) |
 
-**🏆 Sports & Gaming** `4 tools`
-[🏟️ Sports](#-sports-tool) · [🎮 Steam](#-steam-game-info) · [🎯 HLTV CS2](#-hltv-tool) · [🎮 Pokédex](#-pokédex)
-
-**🤖 AI & Workflow** `4 tools`
-[🧠 Thinking Filter](#-thinking-filter) · [🧩 Ask User](#-ask-user) · [🎭 Personas](#-persona-studio) · [🌌 Orchestrator](#-omniscient-orchestrator)
-
-**🌍 Information & Reference** `4 tools`
-[🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide) · [📈 Stocks](#-stock-info-tool)
-
-**🎨 Image & Video Generation** `3 tools` *(requires ComfyUI)*
-[🎥 LTX Video](#-ltx-23-video-generator) · [🎨 Qwen Edit](#-qwen-image-edit) · [🔍 RTX Upscale](#-rtx-image-upscaler)
-
-**🛠️ Utilities** `4 tools`
-[📱 QR Codes](#-qr-code-generator) · [🛠️ Quick Utils](#-quick-utils) · [😂 Jokes](#-joke-tool) · [💾 VRAM Unload](#-vram-unload)
+> ⚙️ Image & Video Generation tools require a local GPU / ComfyUI instance.
 
 ---
 
 > 👇 Click any tool name below to expand — screenshots, features, setup & example prompts inside.
 
-## 📡 Media & Entertainment
+## <img src="https://img.shields.io/badge/📡_Media_%26_Entertainment-7_tools-7c3aed?style=for-the-badge&labelColor=4c1d95" />
 
 <details>
 <summary><h2>🎬 Jellyfin Media Player</h2>
@@ -511,7 +517,7 @@ stream BBC World Service
 
 ---
 
-## 🏆 Sports & Gaming
+## <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming-4_tools-16a34a?style=for-the-badge&labelColor=14532d" />
 
 <details>
 <summary><h2>🏟️ Sports Tool</h2>
@@ -717,7 +723,7 @@ show me Garchomp
 
 ---
 
-## 🤖 AI & Workflow
+## <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-4_tools-06b6d4?style=for-the-badge&labelColor=0c4a6e" />
 
 <details>
 <summary><h2>🧠 Thinking Filter</h2>
@@ -929,7 +935,7 @@ Any prompt where you'd normally need 3 rounds of re-prompting
 
 ---
 
-## 🌍 Information & Reference
+## <img src="https://img.shields.io/badge/🌍_Information_%26_Reference-4_tools-f59e0b?style=for-the-badge&labelColor=78350f" />
 
 <details>
 <summary><h2>🌤️ Weather</h2>
@@ -1117,7 +1123,7 @@ what's the price of NVDA?
 
 ---
 
-## 🎨 Image & Video Generation
+## <img src="https://img.shields.io/badge/🎨_Image_%26_Video-3_tools-ec4899?style=for-the-badge&labelColor=831843" />
 
 > ⚠️ These tools require a local GPU and [ComfyUI](https://github.com/comfyanonymous/ComfyUI) running. See each tool's prerequisites for setup details.
 
@@ -1288,7 +1294,7 @@ upscale 2x
 
 ---
 
-## 🛠️ Utilities
+## <img src="https://img.shields.io/badge/🛠_Utilities-4_tools-64748b?style=for-the-badge&labelColor=1e293b" />
 
 <details>
 <summary><h2>📱 QR Code Generator</h2>
