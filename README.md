@@ -22,7 +22,7 @@
 
 <!-- Quick-jump badge strip — grouped by category -->
 <p>
-  <img src="https://img.shields.io/badge/📡_Media_%26_Entertainment-━━━━━━━━━━━━━━━-7c3aed?style=flat-square&labelColor=3b0764" /><br/>
+  <img src="https://img.shields.io/badge/📡_Media_%26_Entertainment--7c3aed?style=flat-square&labelColor=3b0764" /><br/>
   <a href="#-jellyfin-media-player"><img src="https://img.shields.io/badge/-🎬_Jellyfin-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
   <a href="#-youtube-player"><img src="https://img.shields.io/badge/-📺_YouTube-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
   <a href="#-news-reader"><img src="https://img.shields.io/badge/-📰_News_Reader-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
@@ -32,34 +32,34 @@
   <a href="#-radio"><img src="https://img.shields.io/badge/-📻_Radio-7c3aed?style=flat-square&labelColor=4c1d95" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming-━━━━━━━━━━━━━━━-16a34a?style=flat-square&labelColor=14532d" /><br/>
+  <img src="https://img.shields.io/badge/🏆_Sports_%26_Gaming--16a34a?style=flat-square&labelColor=14532d" /><br/>
   <a href="#-sports-tool"><img src="https://img.shields.io/badge/-🏟️_Sports-16a34a?style=flat-square&labelColor=166534" /></a>
   <a href="#-steam-game-info"><img src="https://img.shields.io/badge/-🎮_Steam_Info-16a34a?style=flat-square&labelColor=166534" /></a>
   <a href="#-hltv-tool"><img src="https://img.shields.io/badge/-🎯_HLTV_CS2-16a34a?style=flat-square&labelColor=166534" /></a>
   <a href="#-pokédex"><img src="https://img.shields.io/badge/-🎮_Pokédex-16a34a?style=flat-square&labelColor=166534" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-━━━━━━━━━━━━━━━-06b6d4?style=flat-square&labelColor=0c4a6e" /><br/>
+  <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow--06b6d4?style=flat-square&labelColor=0c4a6e" /><br/>
   <a href="#-thinking-filter"><img src="https://img.shields.io/badge/-🧠_Thinking_Filter-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-ask-user"><img src="https://img.shields.io/badge/-🧩_Ask_User-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-06b6d4?style=flat-square&labelColor=0e7490" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🌍_Information_%26_Reference-━━━━━━━━━━━━━━━-f59e0b?style=flat-square&labelColor=78350f" /><br/>
+  <img src="https://img.shields.io/badge/🌍_Information_%26_Reference--f59e0b?style=flat-square&labelColor=78350f" /><br/>
   <a href="#-weather"><img src="https://img.shields.io/badge/-🌤️_Weather-f59e0b?style=flat-square&labelColor=92400e" /></a>
   <a href="#-wikipedia"><img src="https://img.shields.io/badge/-📖_Wikipedia-f59e0b?style=flat-square&labelColor=92400e" /></a>
   <a href="#-language-pronunciation-guide"><img src="https://img.shields.io/badge/-🔤_Pronunciation-f59e0b?style=flat-square&labelColor=92400e" /></a>
   <a href="#-stock-info-tool"><img src="https://img.shields.io/badge/-📈_Stocks-f59e0b?style=flat-square&labelColor=92400e" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🎨_Image_%26_Video_Generation-━━━━━━━━━━━━━━━-ec4899?style=flat-square&labelColor=831843" /><br/>
+  <img src="https://img.shields.io/badge/🎨_Image_%26_Video_Generation--ec4899?style=flat-square&labelColor=831843" /><br/>
   <a href="#-ltx-23-video-generator"><img src="https://img.shields.io/badge/-🎥_LTX_Video-ec4899?style=flat-square&labelColor=9d174d" /></a>
   <a href="#-qwen-image-edit"><img src="https://img.shields.io/badge/-🎨_Qwen_Edit-ec4899?style=flat-square&labelColor=9d174d" /></a>
   <a href="#-rtx-image-upscaler"><img src="https://img.shields.io/badge/-🔍_RTX_Upscale-ec4899?style=flat-square&labelColor=9d174d" /></a>
 </p>
 <p>
-  <img src="https://img.shields.io/badge/🛠️_Utilities-━━━━━━━━━━━━━━━-64748b?style=flat-square&labelColor=1e293b" /><br/>
+  <img src="https://img.shields.io/badge/🛠️_Utilities--64748b?style=flat-square&labelColor=1e293b" /><br/>
   <a href="#-qr-code-generator"><img src="https://img.shields.io/badge/-📱_QR_Codes-64748b?style=flat-square&labelColor=334155" /></a>
   <a href="#-quick-utils"><img src="https://img.shields.io/badge/-🛠️_Quick_Utils-64748b?style=flat-square&labelColor=334155" /></a>
   <a href="#-joke-tool"><img src="https://img.shields.io/badge/-😂_Jokes-64748b?style=flat-square&labelColor=334155" /></a>
