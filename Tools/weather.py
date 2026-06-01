@@ -321,6 +321,15 @@ html,body{{
   <div class="wx-forecast">{forecast_html}</div>
   <div class="wx-footer">Powered by Open-Meteo · No API key required</div>
 </div>
+<script>
+  function reportHeight() {{
+    const h = document.documentElement.scrollHeight;
+    parent.postMessage({{ type: 'iframe:height', height: h }}, '*');
+  }}
+  window.addEventListener('load', reportHeight);
+  // Also re-report when content changes size
+  new ResizeObserver(reportHeight).observe(document.body);
+</script>
 </body>
 </html>"""
 
