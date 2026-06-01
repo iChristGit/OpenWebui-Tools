@@ -877,6 +877,16 @@ function postH() {{
 
 setTimeout(postH, 120);
 window.addEventListener('load', function() {{ setTimeout(postH, 300); }});
+
+setTimeout(postH, 120);
+window.addEventListener('load', function() {{ setTimeout(postH, 300); }});
+function reportHeight() {{
+const h = document.documentElement.scrollHeight;
+parent.postMessage({{ type: 'iframe:height', height: h }}, '*');
+}}
+window.addEventListener('load', reportHeight);
+// Also re-report when content changes size
+new ResizeObserver(reportHeight).observe(document.body);
 </script>
 </body>
 </html>""".strip()
