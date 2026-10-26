@@ -1443,13 +1443,14 @@ def _build_generated_css() -> str:
 # ---------------------------------------------------------------------------
 # 2.0.0: Thinking Words. Replaces the "Thinking..." label with rotating words.
 # 2.6.0: i18n refactor -> single compact pipe-delimited source (TW_PACKS_RAW).
+# 2.7.0: nl completed + it/pt added -> order is en|fr|es|de|nl|it|pt.
 # ---------------------------------------------------------------------------
-LANG_ORDER = ["en", "fr", "es", "de", "nl"]  # 1st segment = English (fallback)
+LANG_ORDER = ["en", "fr", "es", "de", "nl", "it", "pt"]  # 1st segment = English (fallback)
 TW_SEG_SEP = "|"
 
 # Compact i18n source. Each pack phrase is ONE pipe-delimited line:
-#   "english|french|spanish|german|dutch"
-# Each label is {english_key: "french|spanish|german|dutch"} (English is the key).
+#   "english|french|spanish|german|dutch|italian|portuguese"
+# Each label is {english_key: "french|...|portuguese"} (English is the key).
 # To add a language: append its segment to every line and extend LANG_ORDER.
 # An empty segment means "no translation for that language".
 
@@ -1458,10 +1459,11 @@ def _expand_pack(packs_raw, lang_order):
 
     en_dict:   {pack: [english words]}
     i18n_dict: {lang: {pack: [words]}} for non-English langs.
-    A language's list is index-aligned with the English list; an empty segment
-    means that phrase is not translated in that language and is OMITTED from
-    that language's deck (this preserves the original per-language deck sizes,
-    e.g. Dutch intentionally ships fewer phrases than English).
+    A language's list is index-aligned with the English list. Every language now
+    ships the full set of phrases, so all seven decks share the same length and
+    the rotation cycle is identical regardless of the active language (cycle
+    parity). The empty-segment filter below is kept only as a defensive guard;
+    it must no longer trigger for any language, including Dutch.
     """
     en_dict = {}
     i18n_dict = {}
@@ -1484,7 +1486,7 @@ def _expand_pack(packs_raw, lang_order):
 def _expand_labels(labels_raw, lang_order):
     """Return {lang: {english_key: translated_value}} from compact labels.
 
-    labels_raw: {english_key: "fr|es|de|nl"} (English is the key, not a segment).
+    labels_raw: {english_key: "fr|es|de|nl|it|pt"} (English is the key, not a segment).
     A language appears only if it has at least one non-empty segment. Within a
     present language, an empty segment falls back to the English key.
     """
@@ -1506,213 +1508,213 @@ def _expand_labels(labels_raw, lang_order):
     return out
 
 
-# Every phrase: "en|fr|es|de|nl". Empty tail segment = no translation.
+# Every phrase: "en|fr|es|de|nl|it|pt". Empty segment = no translation.
 TW_PACKS_RAW = {
     'claude': [
-        "Thinking this through|En train d'y réfléchir|Pensando en esto|Denke darüber nach|Aan het denken",
-        'Going over the details|Passage en revue des détails|Revisando los detalles|Gehe die Details durch|Bezig met nadenken',
-        'Pondering|Réflexion en cours|Meditando|Grüble|Bezig met reflecteren',
-        'Trying harder|Effort de concentration|Esfuerzo mental|Mühevolle Anstrengung|Informatie verzamelen',
-        'Mulling it over|Méditation sur le sujet|Dándole vueltas|Sinne darüber nach|Opties afwegen',
-        'Connecting the dots|Connexion des idées|Conectando ideas|Verbinde die Punkte|Verbanden leggen',
-        'Chewing on that|Rumination de la question|Masticando la pregunta|Käue das durch|Overwegen',
-        'Weighing options|Pondération des options|Sopesando opciones|Wäge Optionen ab|Analyseren',
-        'Digging deeper|Approfondissement|Profundizando|Grabe tiefer|',
-        'Untangling this|Démêlage de ce problème|Desenredando esto|Entwirre das|',
-        "Cooking up an answer|Préparation d'une réponse|Preparando una respuesta|Bringe eine Antwort zustande|",
-        'Working it out|Résolution en cours|Trabajando en ello|Arbeite es aus|',
-        'Reading between the lines|Lecture entre les lignes|Leyendo entre líneas|Zwischen den Zeilen lesen|',
-        'Considering angles|Étude des angles|Considerando ángulos|Betrachte Blickwinkel|',
-        'Double-checking|Vérification|Doble verificación|Doppelprüfung|',
-        'Sharpening the answer|Peaufinage de la réponse|Puliendo la respuesta|Verfeinere die Antwort|',
-        'Almost there|Presque prêt|Ya casi|Fast geschafft|',
-        'Gathering my thoughts|Rassemblement des pensées|Recogiendo pensamientos|Sammle meine Gedanken|',
-        'Turning it over|Examen sous toutes les coutures|Dándole la vuelta|Wälze das um|',
-        'Following the thread|Suivi du fil conducteur|Siguiendo el hilo|Folge dem Faden|',
-        'Getting to the bottom of it|Recherche de la solution|Llegando al fondo|Gehe der Sache auf den Grund|',
-        "Looking at the big picture|Vue d'ensemble|Viendo el panorama|Betrachte das Gesamtbild|",
-        'Breaking it down|Décomposition du problème|Desglosando|Breche es herunter|',
-        'Piecing it together|Assemblage des pièces|Ensamblando piezas|Setze die Teile zusammen|',
-        'Taking a closer look|Examen attentif|Mirando más de cerca|Siehe genauer hin|',
-        'Exploring possibilities|Exploration des possibilités|Explorando posibilidades|Erkunde Möglichkeiten|',
-        'Checking my reasoning|Vérification du raisonnement|Revisando el razonamiento|Prüfe meine Logik|',
-        'Putting it all together|Mise en commun|Uniéndolo todo|Füge alles zusammen|',
-        'Examining the evidence|Examen des indices|Examinando la evidencia|Untersuche die Hinweise|',
-        'Sorting through ideas|Tri des idées|Ordenando ideas|Sortiere Ideen|',
-        'Connecting the pieces|Reliure des éléments|Conectando piezas|Verbinde die Stücke|',
-        'Thinking it over|Réflexion approfondie|Pensándolo bien|Denke es durch|',
-        'Giving this some thought|Attention portée au sujet|Poniéndole atención|Schenke dem Beachtung|',
-        'Reflecting on this|Méditation sur ce point|Reflexionando sobre esto|Sinniere darüber|',
-        'Analyzing the question|Analyse de la question|Analizando la pregunta|Analysiere die Frage|',
-        'Looking at it from every side|Étude sous chaque angle|Mirándolo desde todos los lados|Betrachte von jeder Seite|',
-        "Trying another angle|Essai d'une autre approche|Probando otro ángulo|Versuche einen anderen Winkel|",
-        'Working through the logic|Travail logique|Trabajando la lógica|Arbeite die Logik durch|',
-        'Making sense of it|Donner du sens|Dándole sentido|Bringe Sinn hinein|',
-        'Searching my memory|Recherche en mémoire|Buscando en mi memoria|Suche in meiner Erinnerung|',
-        'Narrowing it down|Affinage|Acotando|Grenze ein|',
-        'Drawing conclusions|Tirage de conclusions|Sacando conclusiones|Ziehe Schlüsse|',
-        'Crafting a response|Rédaction de la réponse|Redactando la respuesta|Formuliere eine Antwort|',
-        'Organizing my thoughts|Organisation des pensées|Organizando mis pensamientos|Organisiere meine Gedanken|',
-        'Finding the right words|Trouver les bons mots|Buscando las palabras correctas|Finde die richtigen Worte|',
-        'Refining the answer|Raffinement de la réponse|Refinando la respuesta|Verfeinere die Antwort|',
-        'Polishing things up|Polissage|Puliendo detalles|Poliere auf|',
-        'Checking the facts|Vérification des faits|Verificando hechos|Prüfe die Fakten|',
-        'Considering the options|Étude des options|Considerando opciones|Berücksichtige Optionen|',
-        'Balancing the details|Équilibrage des détails|Equilibrando detalles|Balanciere die Details|',
-        'Looking deeper|Approfondissement|Mirando más profundo|Blicke tiefer|',
-        'Thinking carefully|Réflexion soignée|Pensando con cuidado|Denke sorgfältig|',
-        'Giving it my full attention|Attention totale|Poniendo toda la atención|Volle Aufmerksamkeit|',
-        'Doing the heavy lifting|Travail de fond|Haciendo el trabajo duro|Harte Arbeit|',
-        'Running through scenarios|Simulation de scénarios|Recorriendo escenarios|Spiele Szenarien durch|',
-        "Testing a few ideas|Test d'idées|Probando ideas|Teste Ideen|",
-        'Zooming in|Zoom avant|Acercando|Hereinzoomen|',
-        'Zooming out|Zoom arrière|Alejando|Herauszoomen|',
-        'Rethinking this|Remise en question|Repensando esto|Überdenke das|',
-        'Second-guessing myself|Auto-doute|Dudando de mí mismo|Selbstzweifel|',
-        "Making a plan|Élaboration d'un plan|Haciendo un plan|Erstelle einen Plan|",
-        'Mapping it out|Cartographie|Mapeando|Karte es auf|',
-        'Laying it all out|Exposition complète|Exponiendo todo|Lege alles dar|',
-        "Digesting this|Digestion de l'info|Digiriendo esto|Verdaue das|",
-        'Absorbing the details|Absorption des détails|Absorbiendo detalles|Nehme Details auf|',
-        'Reading it again|Relecture|Releyendo|Lese erneut|',
-        'Taking it step by step|Étape par étape|Paso a paso|Schritt für Schritt|',
-        'Thinking out loud|Pensée à voix haute|Pensando en voz alta|Denke laut|',
-        'Thinking really hard|Effort intellectuel|Pensando muy fuerte|Denke sehr hart|',
-        'Brainstorming|Brainstorming|Lluvia de ideas|Brainstorming|',
-        'Deliberating|Délibération|Deliberando|Berate|',
-        'Contemplating|Contemplation|Contemplando|Sinniere|',
-        'Ruminating|Rumination|Rumiando|Grüble nach|',
-        'Cogitating|Cogitation|Cogitando|Kopfrechnen|',
-        'Noodling on it|Élaboration tranquille|Dándole al coco|Sinne ruhig darüber nach|',
-        'Wrestling with this|Lutte avec le problème|Luchando con esto|Ringe mit dem Problem|',
-        'Doing some mental math|Calcul mental|Haciendo cuentas|Kopfrechnen|',
-        'Building the answer|Construction de la réponse|Construyendo la respuesta|Baue die Antwort|',
-        'Assembling my thoughts|Assemblage des pensées|Ensamblando pensamientos|Setze Gedanken zusammen|',
-        'Looking for the best approach|Recherche de la meilleure approche|Buscando el mejor enfoque|Suche den besten Ansatz|',
-        'Choosing my words|Choix des mots|Eligiendo palabras|Wähle meine Worte|',
-        'Picking the best answer|Sélection de la meilleure réponse|Escogiendo la mejor respuesta|Wähle die beste Antwort|',
-        'Putting in the effort|Effort soutenu|Poniendo esfuerzo|Gib Mühe|',
-        'Thinking deeply|Pensée profonde|Pensando a fondo|Denke tiefgründig|',
-        'Staying with it|Persévérance|Siguiendo con ello|Bleibe dran|',
-        'Going the extra mile|Excellence|Dando un paso más|Gehe die Extrameile|',
-        'Making sure it is right|Vérification de justesse|Asegurando que esté bien|Stelle sicher, dass es stimmt|',
-        'Cross-checking|Double vérification|Contraverificación|Kreuzprüfung|',
-        'Reviewing my notes|Revue des notes|Revisando mis notas|Überprüfe meine Notizen|',
-        'Sketching it out|Esquisse|Bocetando|Skizziere es|',
-        'Finding the pattern|Détection du motif|Encontrando el patrón|Finde das Muster|',
-        'Spotting the catch|Repérage du piège|Detectando la trampa|Erkenne den Haken|',
-        'Tracing the logic|Suivi de la logique|Siguiendo la lógica|Verfolge die Logik|',
-        "Chasing an idea|Poursuite d'une idée|Persiguiendo una idea|Jage einer Idee nach|",
-        "Catching a thought|Saisie d'une pensée|Captando un pensamiento|Fange einen Gedanken|",
-        'Letting ideas simmer|Laisser mijoter|Dejando reposar|Lass Ideen ziehen|',
-        'Warming up|Échauffement|Entrando en calor|Aufwärmen|',
-        'Getting my bearings|Prise de repères|Orientándome|Orientiere mich|',
-        'Gaining clarity|Gain de clarté|Ganando claridad|Gewinne Klarheit|',
-        'Seeing the whole picture|Vision globale|Viendo el cuadro completo|Sehe das ganze Bild|',
-        'Getting the details right|Précision des détails|Cuidando los detalles|Bringe Details richtig|',
-        'Tying up loose ends|Finitions|Atando cabos|Verknüpfe lose Enden|',
-        'Weaving it together|Tissage|Tejiendo|Verwebe es|',
-        'Pulling it together|Rassemblement|Uniéndolo|Füge es zusammen|',
-        'Fine-tuning|Ajustement fin|Ajustando|Feinabstimmung|',
-        'One moment|Un instant|Un momento|Einen Moment|',
-        'Hang tight|Patience|Espera|Geduld|',
-        'Bear with me|Encore un peu|Ten paciencia|Hab Geduld|',
-        'Just a sec|Juste une seconde|Un segundito|Nur eine Sekunde|',
-        'Working on it|Travail en cours|Trabajando en ello|Arbeite daran|',
-        'Give me a moment|Un moment svp|Dame un momento|Gib mir einen Moment|',
-        'Deep in thought|Absorbé par la réflexion|En profundas reflexiones|Vertieft in Gedanken|',
-        'Lost in thought|Perdu dans mes pensées|Perdido en mis pensamientos|Versunken in Gedanken|',
-        'Wheels turning|Rouages en marche|Engranajes girando|Räder drehen sich|',
-        'Gears turning|Engrenages actifs|Ruedas en movimiento|Zahnräder laufen|',
-        'Brain whirring|Cerveau en ébullition|Cerebro zumbando|Gehirn surrt|',
-        'Neurons firing|Neurones en action|Neuronas disparando|Neuronen feuern|',
-        'Lightbulb loading|Ampoule en chargement|Bombilla cargando|Glühbirne lädt|',
-        'Coming up with something good|Préparation de quelque chose de bien|Algo bueno se acerca|Etwas Gutes entsteht|',
+        "Thinking this through|En train d'y réfléchir|Pensando en esto|Denke darüber nach|Aan het denken|Ci sto riflettendo|A pensar nisto",
+        'Going over the details|Passage en revue des détails|Revisando los detalles|Gehe die Details durch|Bezig met nadenken|Rivedendo i dettagli|A rever os detalhes',
+        'Pondering|Réflexion en cours|Meditando|Grüble|Bezig met reflecteren|Sto ponderando|A ponderar',
+        'Trying harder|Effort de concentration|Esfuerzo mental|Mühevolle Anstrengung|Informatie verzamelen|Mi sto impegnando di più|A esforçar-me mais',
+        'Mulling it over|Méditation sur le sujet|Dándole vueltas|Sinne darüber nach|Opties afwegen|La sto rimuginando|A ruminar a ideia',
+        'Connecting the dots|Connexion des idées|Conectando ideas|Verbinde die Punkte|Verbanden leggen|Sto collegando i puntini|A ligar os pontos',
+        'Chewing on that|Rumination de la question|Masticando la pregunta|Käue das durch|Overwegen|La sto masticando|A mastigar a ideia',
+        'Weighing options|Pondération des options|Sopesando opciones|Wäge Optionen ab|Analyseren|Sto valutando le opzioni|A pesar opções',
+        'Digging deeper|Approfondissement|Profundizando|Grabe tiefer|Dieper graven|Sto scavando più a fondo|A aprofundar',
+        'Untangling this|Démêlage de ce problème|Desenredando esto|Entwirre das|Dit ontwarren|Sto districando la matassa|A desembrulhar isto',
+        "Cooking up an answer|Préparation d'une réponse|Preparando una respuesta|Bringe eine Antwort zustande|Een antwoord bedenken|Sto preparando una risposta|A preparar uma resposta",
+        'Working it out|Résolution en cours|Trabajando en ello|Arbeite es aus|Het uitwerken|Sto risolvendo|A resolvê-lo',
+        'Reading between the lines|Lecture entre les lignes|Leyendo entre líneas|Zwischen den Zeilen lesen|Tussen de regels lezen|Leggo tra le righe|A ler entre linhas',
+        'Considering angles|Étude des angles|Considerando ángulos|Betrachte Blickwinkel|Hoeken bekijken|Sto valutando gli aspetti|A considerar ângulos',
+        'Double-checking|Vérification|Doble verificación|Doppelprüfung|Dubbel controleren|Sto ricontrollando|A verificar novamente',
+        'Sharpening the answer|Peaufinage de la réponse|Puliendo la respuesta|Verfeinere die Antwort|Het antwoord slijpen|Sto affilando la risposta|A afiar a resposta',
+        'Almost there|Presque prêt|Ya casi|Fast geschafft|Bijna klaar|Quasi fatto|Quase lá',
+        'Gathering my thoughts|Rassemblement des pensées|Recogiendo pensamientos|Sammle meine Gedanken|Mijn gedachten verzamelen|Sto raccogliendo i pensieri|A reunir os pensamentos',
+        'Turning it over|Examen sous toutes les coutures|Dándole la vuelta|Wälze das um|Het wentelen|La sto rigirando|A virar e revirar',
+        'Following the thread|Suivi du fil conducteur|Siguiendo el hilo|Folge dem Faden|Het draadje volgen|Sto seguendo il filo|A seguir o fio',
+        'Getting to the bottom of it|Recherche de la solution|Llegando al fondo|Gehe der Sache auf den Grund|De oorzaak achterhalen|Vado a fondo|A ir ao fundo',
+        "Looking at the big picture|Vue d'ensemble|Viendo el panorama|Betrachte das Gesamtbild|Het grote geheel bekijken|Guardo il quadro generale|A ver a panorâmica",
+        'Breaking it down|Décomposition du problème|Desglosando|Breche es herunter|Het opsplitsen|Lo sto scomponendo|A decompor',
+        'Piecing it together|Assemblage des pièces|Ensamblando piezas|Setze die Teile zusammen|De stukken samenbrengen|Sto unendo i pezzi|A juntar as peças',
+        'Taking a closer look|Examen attentif|Mirando más de cerca|Siehe genauer hin|Dichterbij kijken|Guardo più da vicino|A ver mais de perto',
+        'Exploring possibilities|Exploration des possibilités|Explorando posibilidades|Erkunde Möglichkeiten|Mogelijkheden verkennen|Esploro le possibilità|A explorar possibilidades',
+        'Checking my reasoning|Vérification du raisonnement|Revisando el razonamiento|Prüfe meine Logik|Mijn redenering controleren|Verifico il mio ragionamento|A verificar o meu raciocínio',
+        'Putting it all together|Mise en commun|Uniéndolo todo|Füge alles zusammen|Alles samenbrengen|Sto unendo tutto|A juntar tudo',
+        'Examining the evidence|Examen des indices|Examinando la evidencia|Untersuche die Hinweise|Het bewijs onderzoeken|Esamino gli indizi|A examinar as provas',
+        'Sorting through ideas|Tri des idées|Ordenando ideas|Sortiere Ideen|Ideën sorteren|Sto setacciando le idee|A separar ideias',
+        'Connecting the pieces|Reliure des éléments|Conectando piezas|Verbinde die Stücke|De stukken verbinden|Sto collegando i pezzi|A ligar as peças',
+        'Thinking it over|Réflexion approfondie|Pensándolo bien|Denke es durch|Erover nadenken|Ci sto pensando|A pensar bem',
+        'Giving this some thought|Attention portée au sujet|Poniéndole atención|Schenke dem Beachtung|Hierover nadenken|Ci sto dedicando attenzione|A dedicar atenção a isto',
+        'Reflecting on this|Méditation sur ce point|Reflexionando sobre esto|Sinniere darüber|Hierover reflecteren|Rifletto su questo|A refletir sobre isto',
+        'Analyzing the question|Analyse de la question|Analizando la pregunta|Analysiere die Frage|De vraag analyseren|Analizzo la domanda|A analisar a pergunta',
+        'Looking at it from every side|Étude sous chaque angle|Mirándolo desde todos los lados|Betrachte von jeder Seite|Van alle kanten bekijken|La guardo da ogni angolo|A ver de todos os lados',
+        "Trying another angle|Essai d'une autre approche|Probando otro ángulo|Versuche einen anderen Winkel|Een andere hoek proberen|Provo un'altra angolazione|A tentar outro ângulo",
+        'Working through the logic|Travail logique|Trabajando la lógica|Arbeite die Logik durch|De logica doorlopen|Sto percorrendo la logica|A percorrer a lógica',
+        'Making sense of it|Donner du sens|Dándole sentido|Bringe Sinn hinein|Er betekenis aan geven|Cerco di darci un senso|A dar-lhe sentido',
+        'Searching my memory|Recherche en mémoire|Buscando en mi memoria|Suche in meiner Erinnerung|In mijn geheugen zoeken|Cerco nella memoria|A procurar na memória',
+        'Narrowing it down|Affinage|Acotando|Grenze ein|Het verfijnen|Sto restringendo|A afunilar',
+        'Drawing conclusions|Tirage de conclusions|Sacando conclusiones|Ziehe Schlüsse|Conclusies trekken|Traggo le conclusioni|A tirar conclusões',
+        'Crafting a response|Rédaction de la réponse|Redactando la respuesta|Formuliere eine Antwort|Een antwoord formuleren|Sto scrivendo una risposta|A redigir uma resposta',
+        'Organizing my thoughts|Organisation des pensées|Organizando mis pensamientos|Organisiere meine Gedanken|Mijn gedachten ordenen|Organizzo i pensieri|A organizar os pensamentos',
+        'Finding the right words|Trouver les bons mots|Buscando las palabras correctas|Finde die richtigen Worte|De juiste woorden vinden|Cerco le parole giuste|A procurar as palavras certas',
+        'Refining the answer|Raffinement de la réponse|Refinando la respuesta|Verfeinere die Antwort|Het antwoord verfijnen|Sto rifinendo la risposta|A refinar a resposta',
+        'Polishing things up|Polissage|Puliendo detalles|Poliere auf|De details oppoetsen|Sto lucidando i dettagli|A polir os detalhes',
+        'Checking the facts|Vérification des faits|Verificando hechos|Prüfe die Fakten|De feiten controleren|Verifico i fatti|A verificar os factos',
+        'Considering the options|Étude des options|Considerando opciones|Berücksichtige Optionen|De opties afwegen|Considero le opzioni|A considerar as opções',
+        'Balancing the details|Équilibrage des détails|Equilibrando detalles|Balanciere die Details|De details balanceren|Bilancio i dettagli|A equilibrar os detalhes',
+        'Looking deeper|Approfondissement|Mirando más profundo|Blicke tiefer|Dieper kijken|Guardo più a fondo|A olhar mais fundo',
+        'Thinking carefully|Réflexion soignée|Pensando con cuidado|Denke sorgfältig|Zorgvuldig nadenken|Penso con attenzione|A pensar com cuidado',
+        "Giving it my full attention|Attention totale|Poniendo toda la atención|Volle Aufmerksamkeit|Alle aandacht eraan geven|Ci dedico tutta l'attenzione|Dou-lhe toda a atenção",
+        'Doing the heavy lifting|Travail de fond|Haciendo el trabajo duro|Harte Arbeit|Het zware werk doen|Faccio il lavoro pesante|A fazer o trabalho pesado',
+        "Running through scenarios|Simulation de scénarios|Recorriendo escenarios|Spiele Szenarien durch|Scenario's doorlopen|Simulo gli scenari|A percorrer cenários",
+        "Testing a few ideas|Test d'idées|Probando ideas|Teste Ideen|Enkele ideeën testen|Provo qualche idea|A testar algumas ideias",
+        'Zooming in|Zoom avant|Acercando|Hereinzoomen|Inzoomen|Sto ingrandendo|A aproximar',
+        'Zooming out|Zoom arrière|Alejando|Herauszoomen|Uitzoomen|Sto allontanando|A afastar',
+        'Rethinking this|Remise en question|Repensando esto|Überdenke das|Hierover opnieuw nadenken|Ci ripenso|A repensar',
+        'Second-guessing myself|Auto-doute|Dudando de mí mismo|Selbstzweifel|Aan mezelf twijfelen|Mi metto in discussione|Duvido de mim mesmo',
+        "Making a plan|Élaboration d'un plan|Haciendo un plan|Erstelle einen Plan|Een plan maken|Sto facendo un piano|A fazer um plano",
+        'Mapping it out|Cartographie|Mapeando|Karte es auf|Het in kaart brengen|Lo sto mappando|A mapear',
+        'Laying it all out|Exposition complète|Exponiendo todo|Lege alles dar|Alles op een rij zetten|Sto esponendo tutto|A expor tudo',
+        "Digesting this|Digestion de l'info|Digiriendo esto|Verdaue das|Dit verteren|Sto digerendo|A digerir",
+        'Absorbing the details|Absorption des détails|Absorbiendo detalles|Nehme Details auf|De details opnemen|Assorbo i dettagli|A absorver os detalhes',
+        'Reading it again|Relecture|Releyendo|Lese erneut|Het opnieuw lezen|Lo rileggo|A reler',
+        'Taking it step by step|Étape par étape|Paso a paso|Schritt für Schritt|Stap voor stap|Procedo per gradi|Passo a passo',
+        'Thinking out loud|Pensée à voix haute|Pensando en voz alta|Denke laut|Hardop denken|Penso ad alta voce|A pensar em voz alta',
+        'Thinking really hard|Effort intellectuel|Pensando muy fuerte|Denke sehr hart|Heel hard nadenken|Penso con tutte le forze|A pensar muito',
+        'Brainstorming|Brainstorming|Lluvia de ideas|Brainstorming|Brainstormen|Brainstorming|Chuva de ideias',
+        'Deliberating|Délibération|Deliberando|Berate|Overleggen|Sto deliberando|A deliberar',
+        'Contemplating|Contemplation|Contemplando|Sinniere|Contempleren|Contemplo|A contemplar',
+        'Ruminating|Rumination|Rumiando|Grüble nach|Herkawen|Rumino|A ruminar',
+        'Cogitating|Cogitation|Cogitando|Kopfrechnen|Cogiteren|Cogito|A cogitar',
+        'Noodling on it|Élaboration tranquille|Dándole al coco|Sinne ruhig darüber nach|Rustig eraan prutsen|Ci armeggio sopra|A ralar com isto',
+        'Wrestling with this|Lutte avec le problème|Luchando con esto|Ringe mit dem Problem|Met dit worstelen|Lotto con questo|A debater-me com isto',
+        "Doing some mental math|Calcul mental|Haciendo cuentas|Kopfrechnen|Een beetje hoofdrekenen|Faccio un po' di conti a mente|A fazer contas de cabeça",
+        'Building the answer|Construction de la réponse|Construyendo la respuesta|Baue die Antwort|Het antwoord opbouwen|Costruisco la risposta|A construir a resposta',
+        'Assembling my thoughts|Assemblage des pensées|Ensamblando pensamientos|Setze Gedanken zusammen|Mijn gedachten bundelen|Assemblo i pensieri|A juntar os pensamentos',
+        "Looking for the best approach|Recherche de la meilleure approche|Buscando el mejor enfoque|Suche den besten Ansatz|De beste aanpak zoeken|Cerco l'approccio migliore|A procurar a melhor abordagem",
+        'Choosing my words|Choix des mots|Eligiendo palabras|Wähle meine Worte|Mijn woorden kiezen|Scelgo le parole|A escolher as palavras',
+        'Picking the best answer|Sélection de la meilleure réponse|Escogiendo la mejor respuesta|Wähle die beste Antwort|Het beste antwoord kiezen|Scegli la risposta migliore|A escolher a melhor resposta',
+        'Putting in the effort|Effort soutenu|Poniendo esfuerzo|Gib Mühe|Mijn best doen|Ci metto impegno|A dedicar esforço',
+        'Thinking deeply|Pensée profonde|Pensando a fondo|Denke tiefgründig|Diep nadenken|Penso a fondo|A pensar a fundo',
+        'Staying with it|Persévérance|Siguiendo con ello|Bleibe dran|Dran blijven|Insisto|A insistir',
+        'Going the extra mile|Excellence|Dando un paso más|Gehe die Extrameile|De extra mijl gaan|Faccio uno sforzo in più|A fazer um esforço extra',
+        'Making sure it is right|Vérification de justesse|Asegurando que esté bien|Stelle sicher, dass es stimmt|Controleren of het klopt|Verifico che sia corretto|Garanto que está correto',
+        'Cross-checking|Double vérification|Contraverificación|Kreuzprüfung|Kruislings controleren|Faccio una doppia verifica|Verificação cruzada',
+        'Reviewing my notes|Revue des notes|Revisando mis notas|Überprüfe meine Notizen|Mijn notities doornemen|Ripasso i miei appunti|A rever as minhas notas',
+        'Sketching it out|Esquisse|Bocetando|Skizziere es|Het schetsen|Lo schizzo|A esboçar',
+        'Finding the pattern|Détection du motif|Encontrando el patrón|Finde das Muster|Het patroon vinden|Trovo il modello|A encontrar o padrão',
+        "Spotting the catch|Repérage du piège|Detectando la trampa|Erkenne den Haken|Het addertje opsporen|Individuo l'inghippo|A detetar a armadilha",
+        'Tracing the logic|Suivi de la logique|Siguiendo la lógica|Verfolge die Logik|De logica volgen|Ripercorro la logica|A seguir a lógica',
+        "Chasing an idea|Poursuite d'une idée|Persiguiendo una idea|Jage einer Idee nach|Een idee najagen|Inseguo un'idea|A perseguir uma ideia",
+        "Catching a thought|Saisie d'une pensée|Captando un pensamiento|Fange einen Gedanken|Een gedachte vangen|Catturo un pensiero|A captar um pensamento",
+        'Letting ideas simmer|Laisser mijoter|Dejando reposar|Lass Ideen ziehen|Ideeën laten sudderen|Lascio sobbollire le idee|A deixar as ideias repousar',
+        'Warming up|Échauffement|Entrando en calor|Aufwärmen|Opwarmen|Mi sto scaldando|A aquecer',
+        'Getting my bearings|Prise de repères|Orientándome|Orientiere mich|Mijn weg vinden|Mi oriento|A orientar-me',
+        'Gaining clarity|Gain de clarté|Ganando claridad|Gewinne Klarheid|Helderheid krijgen|Acquisto chiarezza|A ganhar clareza',
+        'Seeing the whole picture|Vision globale|Viendo el cuadro completo|Sehe das ganze Bild|Het geheel zien|Vedo il quadro completo|A ver o quadro completo',
+        'Getting the details right|Précision des détails|Cuidando los detalles|Bringe Details richtig|De details goed krijgen|Curo i dettagli|A cuidar dos detalhes',
+        'Tying up loose ends|Finitions|Atando cabos|Verknüpfe lose Enden|Losse eindjes aan elkaar knopen|Sto annodando le parti in sospeso|A atar pontas soltas',
+        'Weaving it together|Tissage|Tejiendo|Verwebe es|Het verweven|Intreccio il tutto|A tecer tudo',
+        'Pulling it together|Rassemblement|Uniéndolo|Füge es zusammen|Het samenbrengen|Raccolgo il tutto|A reunir tudo',
+        'Fine-tuning|Ajustement fin|Ajustando|Feinabstimmung|Fijnafstemmen|Perfeziono|A afinar',
+        'One moment|Un instant|Un momento|Einen Moment|Een moment|Un momento|Um momento',
+        'Hang tight|Patience|Espera|Geduld|Wacht even|Un attimo|Um instante',
+        'Bear with me|Encore un peu|Ten paciencia|Hab Geduld|Nog even volhouden|Abbi pazienza|Tenha paciência',
+        'Just a sec|Juste une seconde|Un segundito|Nur eine Sekunde|Slechts een seconde|Solo un secondo|Só um segundo',
+        'Working on it|Travail en cours|Trabajando en ello|Arbeite daran|Eraan werken|Ci sto lavorando|A trabalhar nisso',
+        'Give me a moment|Un moment svp|Dame un momento|Gib mir einen Moment|Geef me een moment|Datemi un momento|Dêem-me um momento',
+        'Deep in thought|Absorbé par la réflexion|En profundas reflexiones|Vertieft in Gedanken|Verdiept in gedachten|Assorto nei pensieri|Absorto em pensamentos',
+        'Lost in thought|Perdu dans mes pensées|Perdido en mis pensamientos|Versunken in Gedanken|Verloren in gedachten|Perso nei pensieri|Perdido em pensamentos',
+        'Wheels turning|Rouages en marche|Engranajes girando|Räder drehen sich|De wielen draaien|Le ruote girano|As rodas a girar',
+        'Gears turning|Engrenages actifs|Ruedas en movimiento|Zahnräder laufen|De tandwielen draaien|Gli ingranaggi girano|As engrenagens a girar',
+        'Brain whirring|Cerveau en ébullition|Cerebro zumbando|Gehirn surrt|De hersenen zoemen|Il cervello ronza|O cérebro a zumbir',
+        'Neurons firing|Neurones en action|Neuronas disparando|Neuronen feuern|Neuronen vuren|Neuroni in azione|Neurónios a disparar',
+        'Lightbulb loading|Ampoule en chargement|Bombilla cargando|Glühbirne lädt|De gloeilamp laadt|Lampadina in caricamento|Lâmpada a carregar',
+        'Coming up with something good|Préparation de quelque chose de bien|Algo bueno se acerca|Etwas Gutes entsteht|Iets goeds bedenken|Preparo qualcosa di buono|A preparar algo bom',
     ],
     'dev': [
-        'Fixing bugs|Correction de bugs|Arreglando bugs|Behebe Bugs|Berekenen',
-        'Compiling thoughts|Compilation des pensées|Compilando pensamientos|Kompiliere Gedanken|Logica controleren',
-        "Refactoring ideas|Refactoring d'idées|Refactorizando ideas|Refactoring von Ideen|Variabelen invullen",
-        'Reading the docs|Lecture de la doc|Leyendo los docs|Lese die Doku|Cache lezen',
-        'Rubber-ducking|Canard en plastique|Pato de goma|Gummientente|Data verwerken',
-        'Running tests|Lancement des tests|Ejecutando tests|Führe Tests aus|Indexeren',
-        'Resolving merge conflicts|Résolution de conflits git|Resolviendo conflictos git|Löse Merge-Konflikte|',
-        'Grepping my memory|grep de ma mémoire|grep de mi memoria|grep mein Gedächtnis|',
-        'Optimizing|Optimisation|Optimizando|Optimiere|',
-        'Checking edge cases|Vérification des cas limites|Revisando casos límite|Prüfe Randfälle|',
-        'Linting my thoughts|Lint de mes pensées|Lint de mis pensamientos|Lint meine Gedanken|',
-        'Clearing the cache|Vidage du cache|Limpiando la caché|Leere den Cache|',
-        'Reviewing the diff|Revue du diff|Revisando el diff|Reviewe den Diff|',
-        "Writing a unit test|Écriture d'un test unitaire|Escribiendo un test unitario|Schreibe einen Unit-Test|",
-        'Stack Overflow-ing|Stack Overflow|Stack Overflow|Stack Overflow|',
-        'Deploying an answer|Déploiement de la réponse|Desplegando una respuesta|Deploye eine Antwort|',
-        'Squashing commits|Squash de commits|Squashing commits|Squashe Commits|',
-        'Profiling the problem|Profilage du problème|Profileando el problema|Profile das Problem|',
-        "Blaming the cache|C'est la faute du cache|Culpa de la caché|Schuld ist der Cache|",
-        'Shipping it|En production|A producción|Ab damit|',
+        'Fixing bugs|Correction de bugs|Arreglando bugs|Behebe Bugs|Berekenen|Correggo bug|A corrigir bugs',
+        'Compiling thoughts|Compilation des pensées|Compilando pensamientos|Kompiliere Gedanken|Logica controleren|Compilo pensieri|A compilar pensamentos',
+        "Refactoring ideas|Refactoring d'idées|Refactorizando ideas|Refactoring von Ideen|Variabelen invullen|Rifattorizzo idee|A refatorar ideias",
+        'Reading the docs|Lecture de la doc|Leyendo los docs|Lese die Doku|Cache lezen|Leggo la documentazione|A ler a documentação',
+        'Rubber-ducking|Canard en plastique|Pato de goma|Gummientente|Data verwerken|Anatroccolo di gomma|Pato de borracha',
+        'Running tests|Lancement des tests|Ejecutando tests|Führe Tests aus|Indexeren|Eseguo i test|A correr testes',
+        'Resolving merge conflicts|Résolution de conflits git|Resolviendo conflictos git|Löse Merge-Konflikte|Merge-conflicten oplossen|Risolvo conflitti di merge|A resolver conflitos de merge',
+        'Grepping my memory|grep de ma mémoire|grep de mi memoria|grep mein Gedächtnis|Geheugen doorzoeken|grep nella memoria|grep na memória',
+        'Optimizing|Optimisation|Optimizando|Optimiere|Optimaliseren|Ottimizzo|A otimizar',
+        'Checking edge cases|Vérification des cas limites|Revisando casos límite|Prüfe Randfälle|Randgevallen testen|Controllo i casi limite|A verificar casos-limite',
+        'Linting my thoughts|Lint de mes pensées|Lint de mis pensamientos|Lint meine Gedanken|Gedachten linten|Lint dei miei pensieri|Lint dos meus pensamentos',
+        'Clearing the cache|Vidage du cache|Limpiando la caché|Leere den Cache|Cache wissen|Svuoto la cache|A limpar a cache',
+        'Reviewing the diff|Revue du diff|Revisando el diff|Reviewe den Diff|Diff bekijken|Rivedo il diff|A rever o diff',
+        "Writing a unit test|Écriture d'un test unitaire|Escribiendo un test unitario|Schreibe einen Unit-Test|Unit-test schrijven|Scrivo un test unitario|A escrever um teste unitário",
+        'Stack Overflow-ing|Stack Overflow|Stack Overflow|Stack Overflow|Stack Overflow|Stack Overflow|Stack Overflow',
+        'Deploying an answer|Déploiement de la réponse|Desplegando una respuesta|Deploye eine Antwort|Antwoord uitrollen|Deploy della risposta|A publicar uma resposta',
+        'Squashing commits|Squash de commits|Squashing commits|Squashe Commits|Commits samenvoegen|Squash dei commit|Squash de commits',
+        'Profiling the problem|Profilage du problème|Profileando el problema|Profile das Problem|Probleem analyseren|Profilo il problema|A perfilar o problema',
+        "Blaming the cache|C'est la faute du cache|Culpa de la caché|Schuld ist der Cache|Cache de schuld geven|La colpa è della cache|A culpa é da cache",
+        'Shipping it|En production|A producción|Ab damit|Uitrollen|In produzione|Para produção',
     ],
     'playful': [
-        "Consulting the oracle|Consultation de l'oracle|Consultando al oráculo|Befrage das Orakel|Hersenen opwarmen",
-        'Asking the hamsters|Demande aux hamsters|Preguntando a los hámsteres|Frage die Hamster|Tandwielen draaien',
-        'Herding thoughts|Rassemblement des pensées|Pastoreando pensamientos|Hüte meine Gedanken|Even denken…',
-        'Warming up brain cells|Réchauffement des neurones|Calentando neuronas|Wärme Gehirnzellen auf|Brein aan het werk',
-        'Summoning wisdom|Invocation de sagesse|Invocando sabiduría|Beschwöre Weisheit|Synapsen knetteren',
-        'Shuffling neurons|Mélange des neurones|Barajando neuronas|Mische Neuronen|',
-        'Polishing the crystal ball|Polissage de la boule de cristal|Puliendo la bola de cristal|Poliere die Kristallkugel|',
-        'Feeding the gremlins|Nourrissage des gremlins|Alimentando gremlins|Füttere die Gremlins|',
-        'Stretching synapses|Étirement des synapses|Estirando sinapsis|Dehne Synapsen|',
-        'Brewing coffee for neurons|Café pour neurones|Café para neuronas|Kaffee für Neuronen|',
-        'Doing mental gymnastics|Gymnastique mentale|Gimnasia mental|Mentale Gymnastik|',
-        'Waking the wizards|Réveil des sorciers|Despertando a los magos|Wecke die Zauberer|',
-        'Spinning the wheel|Rotation de la roue|Girando la ruleta|Drehe das Rad|',
-        'Poking the idea box|Chatouillage de la boîte à idées|Haciendo cosquillas a la caja de ideas|Kitzle die Ideenbox|',
-        'Tickling the hamster wheel|Faire craquer les jointures|Crujiendo nudillos|Knacke mit den Fingern|',
-        'Cracking knuckles||||',
+        "Consulting the oracle|Consultation de l'oracle|Consultando al oráculo|Befrage das Orakel|Hersenen opwarmen|Consulto l'oracolo|A consultar o oráculo",
+        'Asking the hamsters|Demande aux hamsters|Preguntando a los hámsteres|Frage die Hamster|Tandwielen draaien|Chiedo ai criceti|A perguntar aos hamsteres',
+        'Herding thoughts|Rassemblement des pensées|Pastoreando pensamientos|Hüte meine Gedanken|Even denken…|Raduno i pensieri|A pastorear pensamentos',
+        'Warming up brain cells|Réchauffement des neurones|Calentando neuronas|Wärme Gehirnzellen auf|Brein aan het werk|Scaldo le cellule cerebrali|A aquecer células cerebrais',
+        'Summoning wisdom|Invocation de sagesse|Invocando sabiduría|Beschwöre Weisheit|Synapsen knetteren|Evoco saggezza|A invocar sabedoria',
+        'Shuffling neurons|Mélange des neurones|Barajando neuronas|Mische Neuronen|Neuronen door elkaar schudden|Mescolo i neuroni|A embaralhar neurónios',
+        'Polishing the crystal ball|Polissage de la boule de cristal|Puliendo la bola de cristal|Poliere die Kristallkugel|Kristallen bol poetsen|Lustro la sfera di cristallo|A polir a bola de cristal',
+        'Feeding the gremlins|Nourrissage des gremlins|Alimentando gremlins|Füttere die Gremlins|Gremlins voederen|Nutro i gremlin|A alimentar gremlins',
+        'Stretching synapses|Étirement des synapses|Estirando sinapsis|Dehne Synapsen|Synapsen rekken|Stiro le sinapsi|A esticar sinapses',
+        'Brewing coffee for neurons|Café pour neurones|Café para neuronas|Kaffee für Neuronen|Koffie zetten voor neuronen|Preparo caffè per i neuroni|A fazer café para neurónios',
+        'Doing mental gymnastics|Gymnastique mentale|Gimnasia mental|Mentale Gymnastik|Mentale gymnastiek|Faccio ginnastica mentale|A fazer ginástica mental',
+        'Waking the wizards|Réveil des sorciers|Despertando a los magos|Wecke die Zauberer|Tovenaars wakker maken|Sveglio i maghi|A acordar os magos',
+        'Spinning the wheel|Rotation de la roue|Girando la ruleta|Drehe das Rad|Rad draaien|Faccio girare la ruota|A girar a roda',
+        'Poking the idea box|Chatouillage de la boîte à idées|Haciendo cosquillas a la caja de ideas|Kitzle die Ideenbox|Ideeënbox porren|Solletico il barattolo delle idee|A fazer cócegas na caixa de ideias',
+        'Tickling the hamster wheel|Faire craquer les jointures|Crujiendo nudillos|Knacke mit den Fingern|Hamsterrad kietelen|Solletico la ruota dei criceti|A fazer cócegas à roda dos hamsteres',
+        'Cracking knuckles|Crac des doigts|Crujiendo los nudillos|Knacke die Fingerknöchel|Vingers kraken|Scrocchio le dita|A estalar os dedos',
     ],
     'science': [
-        'Running the numbers|Calcul des chiffres|Calculando números|Berechne Zahlen|Hypothesen toetsen',
-        "Formulating hypotheses|Formulation d'hypothèses|Formulando hipótesis|Formuliere Hypothesen|Data analyseren",
-        'Calibrating|Calibrage|Calibrando|Kalibriere|Variabelen wegen',
-        'Simulating outcomes|Simulation de résultats|Simulando resultados|Simuliere Ergebnisse|Patronen herkennen',
-        'Cross-referencing|Recoupement|Contrastando|Kreuzreferenziere|Experiment uitvoeren',
-        'Testing theories|Test de théories|Probando teorías|Teste Theorien|',
-        'Measuring twice|Double mesure|Midiendo dos veces|Zweimal messen|',
-        'Crunching data|Traitement de données|Procesando datos|Verarbeite Daten|',
-        'Peer reviewing myself|Revue par les pairs interne|Revisión de pares interna|Peer-Review im Kopf|',
-        'Isolating variables|Isolation des variables|Aislando variables|Isoliere Variablen|',
-        "Balancing the equation|Équilibrage de l'équation|Equilibrando la ecuación|Balanciere die Gleichung|",
-        'Observing patterns|Observation de motifs|Observando patrones|Beobachte Muster|',
+        'Running the numbers|Calcul des chiffres|Calculando números|Berechne Zahlen|Hypothesen toetsen|Calcolo i numeri|A calcular os números',
+        "Formulating hypotheses|Formulation d'hypothèses|Formulando hipótesis|Formuliere Hypothesen|Data analyseren|Formulo ipotesi|A formular hipóteses",
+        'Calibrating|Calibrage|Calibrando|Kalibriere|Variabelen wegen|Calibro|A calibrar',
+        'Simulating outcomes|Simulation de résultats|Simulando resultados|Simuliere Ergebnisse|Patronen herkennen|Simulo i risultati|A simular resultados',
+        'Cross-referencing|Recoupement|Contrastando|Kreuzreferenziere|Experiment uitvoeren|Faccio incroci|A cruzar referências',
+        'Testing theories|Test de théories|Probando teorías|Teste Theorien|Theorieën testen|Testo le teorie|A testar teorias',
+        'Measuring twice|Double mesure|Midiendo dos veces|Zweimal messen|Twee keer meten|Misuro due volte|A medir duas vezes',
+        'Crunching data|Traitement de données|Procesando datos|Verarbeite Daten|Data verwerken|Elaboro i dati|A processar dados',
+        'Peer reviewing myself|Revue par les pairs interne|Revisión de pares interna|Peer-Review im Kopf|Peer review van mezelf|Peer review di me stesso|Revisão por pares interna',
+        'Isolating variables|Isolation des variables|Aislando variables|Isoliere Variablen|Variabelen isoleren|Isolo le variabili|A isolar variáveis',
+        "Balancing the equation|Équilibrage de l'équation|Equilibrando la ecuación|Balanciere die Gleichung|Vergelijking in balans brengen|Bilancio l'equazione|A equilibrar a equação",
+        'Observing patterns|Observation de motifs|Observando patrones|Beobachte Muster|Patronen observeren|Osservo i modelli|A observar padrões',
     ],
     'hacker': [
-        'Initializing neural net|Initialisation du réseau neuronal|Inicializando red neuronal|Initialisiere neuronales Netz|Denkproces initialiseren',
-        'Decrypting the question|Déchiffrement de la question|Descifrando la pregunta|Entschlüssele die Frage|Inference starten',
-        "Parsing intent|Analyse de l'intention|Parseando intención|Parse Intent|Neurale lagen activeren",
-        'Allocating brain|Allocation de cerveau|Asignando cerebro|Allokiere Gehirn|Tokens verwerken',
-        'Handshaking with logic|Poignée de main logique|Handshake con la lógica|Handshake mit Logik|Context laden',
-        'Booting reasoning core|Démarrage du noyau de raisonnement|Arrancando núcleo de razonamiento|Starte Reasoning-Kern|',
-        'Tracing the stack|Trace de la stack|Trazeando la stack|Trace den Stack|',
-        "Injecting insight|Injection d'insight|Inyectando insight|Injiziere Insight|",
-        'Compiling answer|Compilation de la réponse|Compilando respuesta|Kompiliere Antwort|',
-        "Bypassing the obvious|Contournement de l'évident|Evitando lo obvio|Umgehe das Offensichtliche|",
-        'Sudo thinking|sudo réfléchir|sudo pensar|sudo denken|',
-        "Opening a root shell|Ouverture d'un shell root|Abriendo shell root|Öffne Root-Shell|",
+        'Initializing neural net|Initialisation du réseau neuronal|Inicializando red neuronal|Initialisiere neuronales Netz|Denkproces initialiseren|Inizializzo la rete neurale|A inicializar a rede neural',
+        'Decrypting the question|Déchiffrement de la question|Descifrando la pregunta|Entschlüssele die Frage|Inference starten|Decifro la domanda|A decifrar a pergunta',
+        "Parsing intent|Analyse de l'intention|Parseando intención|Parse Intent|Neurale lagen activeren|Analizzo l'intento|A analisar a intenção",
+        'Allocating brain|Allocation de cerveau|Asignando cerebro|Allokiere Gehirn|Tokens verwerken|Assegno cervello|A alocar cérebro',
+        'Handshaking with logic|Poignée de main logique|Handshake con la lógica|Handshake mit Logik|Context laden|Handshake con la logica|Aperto de mão com a lógica',
+        'Booting reasoning core|Démarrage du noyau de raisonnement|Arrancando núcleo de razonamiento|Starte Reasoning-Kern|Redeneerkern opstarten|Avvio il nucleo di ragionamento|A arrancar o núcleo de raciocínio',
+        'Tracing the stack|Trace de la stack|Trazeando la stack|Trace den Stack|Stack volgen|Traccio lo stack|A rastrear a stack',
+        "Injecting insight|Injection d'insight|Inyectando insight|Injiziere Insight|Inzicht injecteren|Inietto intuizione|A injetar perspicácia",
+        'Compiling answer|Compilation de la réponse|Compilando respuesta|Kompiliere Antwort|Antwoord compileren|Compilo la risposta|A compilar a resposta',
+        "Bypassing the obvious|Contournement de l'évident|Evitando lo obvio|Umgehe das Offensichtliche|Voor de hand liggende omzeilen|Evito l'ovvio|A contornar o óbvio",
+        'Sudo thinking|sudo réfléchir|sudo pensar|sudo denken|sudo nadenken|sudo pensare|sudo pensar',
+        "Opening a root shell|Ouverture d'un shell root|Abriendo shell root|Öffne Root-Shell|Root-shell openen|Apro una shell root|A abrir uma shell root",
     ],
     'zen': [
-        'Breathing|Respiration|Respirando|Atme|Ademhalen',
-        'Finding clarity|Recherche de clarté|Encontrando claridad|Finde Klarheit|Laat het zakken',
-        'Letting it settle|Laisser décanter|Dejando asentar|Lass es sich setzen|Stilte…',
-        'Taking a moment|Prendre un moment|Tomándome un momento|Nimm dir einen Moment|In de flow',
-        'Focusing|Concentration|Enfocándome|Fokussiere|Laten stromen',
-        "Seeking balance|Recherche d'équilibre|Buscando equilibrio|Suche Balance|",
-        'Quieting the noise|Apaisement du bruit|Silenciando el ruido|Stille das Rauschen|',
-        'Listening closely|Écoute attentive|Escuchando atentamente|Höre aufmerksam zu|',
+        'Breathing|Respiration|Respirando|Atme|Ademhalen|Respiro|A respirar',
+        'Finding clarity|Recherche de clarté|Encontrando claridad|Finde Klarheit|Laat het zakken|Trovo chiarezza|A encontrar clareza',
+        'Letting it settle|Laisser décanter|Dejando asentar|Lass es sich setzen|Stilte…|Lascio decantare|A deixar assentar',
+        'Taking a moment|Prendre un moment|Tomándome un momento|Nimm dir einen Moment|In de flow|Prendo un momento|Tomo um momento',
+        'Focusing|Concentration|Enfocándome|Fokussiere|Laten stromen|Mi concentro|A focar',
+        "Seeking balance|Recherche d'équilibre|Buscando equilibrio|Suche Balance|In balans komen|Cerco l'equilibrio|A procurar equilíbrio",
+        'Quieting the noise|Apaisement du bruit|Silenciando el ruido|Stille das Rauschen|Ruis dempen|Placo il rumore|A acalmar o ruído',
+        'Listening closely|Écoute attentive|Escuchando atentamente|Höre aufmerksam zu|Aandachtig luisteren|Ascolto con attenzione|A ouvir com atenção',
     ],
     'minimal': [
-        'Thinking|Réflexion|Pensando|Denke|Denken…',
-        'Reasoning|Raisonnement|Razonando|Logik|Nadenken…',
-        'Working|Traitement|Trabajando|Arbeite|Wachten…',
-        'Processing|Analyse|Procesando|Verarbeite|Bezig…',
-        'Considering|Étude|Considerando|Prüfe|Denkt…',
+        'Thinking|Réflexion|Pensando|Denke|Denken…|Pensiero|A pensar',
+        'Reasoning|Raisonnement|Razonando|Logik|Nadenken…|Ragionamento|Raciocínio',
+        'Working|Traitement|Trabajando|Arbeite|Wachten…|Lavoro|A trabalhar',
+        'Processing|Analyse|Procesando|Verarbeite|Bezig…|Elaborazione|Processamento',
+        'Considering|Étude|Considerando|Prüfe|Denkt…|Valutazione|A considerar',
     ],
 }
 
@@ -1879,130 +1881,134 @@ TW_TIMER_NAMES = {"default": "Default", "off": "Off", "on": "Show seconds"}
 # 2.5.0: i18n — translations for all user-facing labels in the injected UI.
 # Keys match the English originals; values are per-language dicts.
 # ---------------------------------------------------------------------------
-# {english_key: "fr|es|de|nl"}
+# {english_key: "fr|es|de|nl|it|pt"}
 I18N_UI_RAW = {
-    'Message Loading Indicator': 'Indicateur de chargement|Indicador de carga|Nachrichten-Ladeanzeige|Indicator bericht laden',
-    'How a reply shows that it is still loading. Saved in this browser.': "Comment une réponse indique qu'elle est encore en cours de chargement. Sauvegardé dans ce navigateur.|Cómo una respuesta indica que aún se está cargando. Guardado en este navegador.|Wie eine Antwort anzeigt, dass sie noch lädt. In diesem Browser gespeichert.|Hoe een antwoord aangeeft dat het nog laadt. Opgeslagen in deze browser.",
-    'Thinking Indicator': 'Indicateur de réflexion|Indicador de razonamiento|Denkanzeige|Denkindicator',
-    'The icon beside the Thinking header while a model reasons. Saved in this browser.': "L'icône à côté de l'en-tête Réflexion pendant que le modèle raisonne. Sauvegardé dans ce navigateur.|El icono junto al encabezado Razonamiento mientras el modelo razona. Guardado en este navegador.|Das Symbol neben dem Denken-Header, während ein Modell überlegt. In diesem Browser gespeichert.|Het icoon naast de Denken-header terwijl een model redeneert. Opgeslagen in deze browser.",
-    'Thinking Words': 'Mots de réflexion|Palabras de razonamiento|Denkwörter|Denkwoorden',
-    'Rotating words shown instead of the plain “Thinking…” label while a model reasons. Saved in this browser.': 'Mots rotatifs affichés à la place du libellé « Réflexion… » pendant que le modèle raisonne. Sauvegardé dans ce navigateur.|Palabras rotativas en lugar de la etiqueta «Razonando…» mientras el modelo razona. Guardado en este navegador.|Rotierende Wörter statt der Beschriftung „Denkt nach…“, während ein Modell überlegt. In diesem Browser gespeichert.|Roterende woorden in plaats van het label “Aan het denken…” terwijl een model redeneert. Opgeslagen in deze browser.',
-    'Thinking label': 'Libellé Réflexion|Etiqueta Razonamiento|Denken-Beschriftung|Denken-label',
-    'Phrase Effect': 'Effet de phrase|Efecto de frase|Phraseneffekt|Zinseffect',
-    'How each phrase animates in. Random picks a different effect every time the phrase changes.': 'Animation de chaque phrase. Aléatoire choisit un effet différent à chaque changement.|Cómo se anima cada frase. Aleatorio elige un efecto diferente en cada cambio.|Wie jede Phrase animiert wird. Zufällig wählt bei jedem Wechsel einen anderen Effekt.|Hoe elke zin animeert. Willekeurig kiest bij elke wissel een ander effect.',
-    'Phrase Font': 'Police de phrase|Fuente de frase|Phrasenschrift|Zinlettertype',
-    'Typeface for the thinking phrases (fonts already on your device).': 'Police des phrases de réflexion (polices déjà sur votre appareil).|Tipografía de las frases de razonamiento (fuentes ya en tu dispositivo).|Schriftart für Denkphrasen (Bereits auf Ihrem Gerät vorhandene Schriften).|Lettertype voor de denkzinnen (lettertypen al op uw apparaat).',
-    'Phrase Color': 'Couleur de phrase|Color de frase|Pharbenfarbe|Zinskleur',
-    'Color or gradient of the thinking phrases.': 'Couleur ou dégradé des phrases de réflexion.|Color o degradado de las frases de razonamiento.|Farbe oder Verlauf der Denkphrasen.|Kleur of verloop van de denkzinnen.',
-    'Change Interval': 'Intervalle de changement|Intervalo de cambio|Wechselintervall|Wisselinterval',
-    'How long each thinking phrase stays on screen. Drag left for faster, right for slower.': "Durée d'affichage de chaque phrase. Glissez à gauche pour accélérer, à droite pour ralentir.|Duración de cada frase en pantalla. Arrastra a la izquierda para acelerar, a la derecha para ralentizar.|Wie lange jede Denkphrase angezeigt wird. Nach links für schneller, nach rechts für langsamer.|Hoe lang elke denkzin op scherm blijft. Sleep naar links voor sneller, rechts voor langzamer.",
-    'Reset': 'Réinitialiser|Restablecer|Zurücksetzen|Herstel',
-    'Custom Color': 'Couleur personnalisée|Color personalizado|Eigene Farbe|Aangepaste kleur',
-    'Pick any color, then choose “Custom” in Phrase Color above to use it.': 'Choisissez une couleur, puis sélectionnez « Personnalisée » dans Couleur de phrase ci-dessus.|Elige un color, luego selecciona «Personalizado» en Color de frase arriba.|Wählen Sie eine Farbe, dann „Eigene“ bei Pharbenfarbe oben.|Kies een kleur, selecteer daarna “Aangepast” bij Zinskleur hierboven.',
-    'Change Rhythm': 'Rythme de changement|Ritmo de cambio|Wechselrhythmus|Wisselritme',
-    'Steady changes at exactly the interval; Natural varies each phrase by up to 40%.': "Régulier : changement exact à l'intervalle ; Naturel : varie chaque phrase de 40% max.|Constante cambia exactamente en el intervalo; Natural varía cada frase hasta un 40%.|Gleichmäßig wechselt genau im Intervall; Natürlich variiert jede Phrase um bis zu 40%.|Gelijkmatig wisselt exact op het interval; Natuurlijk varieert elke zin tot 40%.",
-    'Thinking Indicator Size': "Taille de l'indicateur de réflexion|Tamaño del indicador de razonamiento|Größe der Denkanzeige|Grootte denkindicator",
-    'Scale the icon beside the Thinking header. Drag right for larger, left for smaller. Saved in this browser.': "Redimensionne l'icône à côté de l'en-tête Réflexion. Glissez à droite pour agrandir, à gauche pour réduire. Sauvegardé dans ce navigateur.|Escala el icono junto al encabezado Razonamiento. Arrastra a la derecha para agrandar, a la izquierda para reducir. Guardado en este navegador.|Skaliert das Symbol neben der Denken-Überschrift. Nach rechts ziehen zum Vergrößern, nach links zum Verkleinern. In diesem Browser gespeichert.|Schaalt het icoon naast de denkkop. Sleep naar rechts voor groter, naar links voor kleiner. Opgeslagen in deze browser.",
-    'Message Indicator Size': "Taille de l'indicateur de message|Tamaño del indicador de mensaje|Größe der Nachrichtenanzeige|Grootte berichtindicator",
-    'Scale the loading indicator shown in a reply. Drag right for larger, left for smaller. Does not affect the full-width Legacy Bars and Shimmer Lines styles. Saved in this browser.': "Redimensionne l'indicateur de chargement d'une réponse. Glissez à droite pour agrandir, à gauche pour réduire. Sans effet sur les styles pleine largeur Legacy Bars et Shimmer Lines. Sauvegardé dans ce navigateur.|Escala el indicador de carga de una respuesta. Arrastra a la derecha para agrandar, a la izquierda para reducir. No afecta a los estilos de ancho completo Legacy Bars y Shimmer Lines. Guardado en este navegador.|Skaliert die Ladeanzeige einer Antwort. Nach rechts ziehen zum Vergrößern, nach links zum Verkleinern. Wirkt nicht auf die Vollbreiten-Stile Legacy Bars und Shimmer Lines. In diesem Browser gespeichert.|Schaalt de laadindicator van een antwoord. Sleep naar rechts voor groter, naar links voor kleiner. Geldt niet voor de volledige-breedte stijlen Legacy Bars en Shimmer Lines. Opgeslagen in deze browser.",
-    'Thinking Timer': 'Minuteur de réflexion|Temporizador de razonamiento|Denk-Timer|Denk-timer',
-    'Show a live seconds counter next to the words.': 'Affiche un compteur de secondes en direct à côté des mots.|Muestra un contador de segundos en vivo junto a las palabras.|Zeigt einen Live-Sekundenzähler neben den Wörtern an.|Toon een live secondenteller naast de woorden.',
+    'Message Loading Indicator': 'Indicateur de chargement|Indicador de carga|Nachrichten-Ladeanzeige|Indicator bericht laden|Indicatore di caricamento del messaggio|Indicador de carregamento da mensagem',
+    'How a reply shows that it is still loading. Saved in this browser.': "Comment une réponse indique qu'elle est encore en cours de chargement. Sauvegardé dans ce navigateur.|Cómo una respuesta indica que aún se está cargando. Guardado en este navegador.|Wie eine Antwort anzeigt, dass sie noch lädt. In diesem Browser gespeichert.|Hoe een antwoord aangeeft dat het nog laadt. Opgeslagen in deze browser.|Come una risposta indica che è ancora in caricamento. Salvato in questo browser.|Como uma resposta indica que ainda está a carregar. Guardado neste navegador.",
+    'Thinking Indicator': 'Indicateur de réflexion|Indicador de razonamiento|Denkanzeige|Denkindicator|Indicatore di ragionamento|Indicador de raciocínio',
+    'The icon beside the Thinking header while a model reasons. Saved in this browser.': "L'icône à côté de l'en-tête Réflexion pendant que le modèle raisonne. Sauvegardé dans ce navigateur.|El icono junto al encabezado Razonamiento mientras el modelo razona. Guardado en este navegador.|Das Symbol neben dem Denken-Header, während ein Modell überlegt. In diesem Browser gespeichert.|Het icoon naast de Denken-header terwijl een model redeneert. Opgeslagen in deze browser.|L'icona accanto all'intestazione Ragionamento mentre il modello ragiona. Salvato in questo browser.|O ícone junto ao cabeçalho Raciocínio enquanto o modelo raciocina. Guardado neste navegador.",
+    'Thinking Words': 'Mots de réflexion|Palabras de razonamiento|Denkwörter|Denkwoorden|Parole di ragionamento|Palavras de raciocínio',
+    'Rotating words shown instead of the plain “Thinking…” label while a model reasons. Saved in this browser.': 'Mots rotatifs affichés à la place du libellé « Réflexion… » pendant que le modèle raisonne. Sauvegardé dans ce navigateur.|Palabras rotativas en lugar de la etiqueta «Razonando…» mientras el modelo razona. Guardado en este navegador.|Rotierende Wörter statt der Beschriftung „Denkt nach…“, während ein Modell überlegt. In diesem Browser gespeichert.|Roterende woorden in plaats van het label “Aan het denken…” terwijl een model redeneert. Opgeslagen in deze browser.|Parole rotanti mostrate al posto della semplice etichetta «Riflessione…» mentre il modello ragiona. Salvato in questo browser.|Palavras giratórias em vez da etiqueta simples “A pensar…” enquanto o modelo raciocina. Guardado neste navegador.',
+    'Thinking label': 'Libellé Réflexion|Etiqueta Razonamiento|Denken-Beschriftung|Denken-label|Etichetta Ragionamento|Etiqueta Raciocínio',
+    'Phrase Effect': 'Effet de phrase|Efecto de frase|Phraseneffekt|Zinseffect|Effetto della frase|Efeito da frase',
+    'How each phrase animates in. Random picks a different effect every time the phrase changes.': 'Animation de chaque phrase. Aléatoire choisit un effet différent à chaque changement.|Cómo se anima cada frase. Aleatorio elige un efecto diferente en cada cambio.|Wie jede Phrase animiert wird. Zufällig wählt bei jedem Wechsel einen anderen Effekt.|Hoe elke zin animeert. Willekeurig kiest bij elke wissel een ander effect.|Come ogni frase appare animata. Casuale sceglie un effetto diverso a ogni cambio di frase.|Como cada frase é animada. Aleatório escolhe um efeito diferente a cada mudança de frase.',
+    'Phrase Font': 'Police de phrase|Fuente de frase|Phrasenschrift|Zinlettertype|Carattere della frase|Fonte da frase',
+    'Typeface for the thinking phrases (fonts already on your device).': 'Police des phrases de réflexion (polices déjà sur votre appareil).|Tipografía de las frases de razonamiento (fuentes ya en tu dispositivo).|Schriftart für Denkphrasen (Bereits auf Ihrem Gerät vorhandene Schriften).|Lettertype voor de denkzinnen (lettertypen al op uw apparaat).|Carattere per le frasi di ragionamento (font già presenti sul dispositivo).|Tipo de letra para as frases de raciocínio (fontes já no seu dispositivo).',
+    'Phrase Color': 'Couleur de phrase|Color de frase|Pharbenfarbe|Zinskleur|Colore della frase|Cor da frase',
+    'Color or gradient of the thinking phrases.': 'Couleur ou dégradé des phrases de réflexion.|Color o degradado de las frases de razonamiento.|Farbe oder Verlauf der Denkphrasen.|Kleur of verloop van de denkzinnen.|Colore o sfumatura delle frasi di ragionamento.|Cor ou degradê das frases de raciocínio.',
+    'Change Interval': 'Intervalle de changement|Intervalo de cambio|Wechselintervall|Wisselinterval|Intervallo di cambio|Intervalo de mudança',
+    'How long each thinking phrase stays on screen. Drag left for faster, right for slower.': "Durée d'affichage de chaque phrase. Glissez à gauche pour accélérer, à droite pour ralentir.|Duración de cada frase en pantalla. Arrastra a la izquierda para acelerar, a la derecha para ralentizar.|Wie lange jede Denkphrase angezeigt wird. Nach links für schneller, nach rechts für langsamer.|Hoe lang elke denkzin op scherm blijft. Sleep naar links voor sneller, rechts voor langzamer.|Permanenza di ogni frase di ragionamento sullo schermo. Trascina a sinistra per velocizzare, a destra per rallentare.|Duração de cada frase de raciocínio no ecrã. Arraste para a esquerda para acelerar, para a direita para abrandar.",
+    'Reset': 'Réinitialiser|Restablecer|Zurücksetzen|Herstel|Ripristina|Repor',
+    'Custom Color': 'Couleur personnalisée|Color personalizado|Eigene Farbe|Aangepaste kleur|Colore personalizzato|Cor personalizada',
+    'Pick any color, then choose “Custom” in Phrase Color above to use it.': 'Choisissez une couleur, puis sélectionnez « Personnalisée » dans Couleur de phrase ci-dessus.|Elige un color, luego selecciona «Personalizado» en Color de frase arriba.|Wählen Sie eine Farbe, dann „Eigene“ bei Pharbenfarbe oben.|Kies een kleur, selecteer daarna “Aangepast” bij Zinskleur hierboven.|Scegli un colore, poi seleziona «Personalizzato» in Colore della frase sopra per usarlo.|Escolha uma cor e depois selecione “Personalizada” em Cor da frase acima para a usar.',
+    'Change Rhythm': 'Rythme de changement|Ritmo de cambio|Wechselrhythmus|Wisselritme|Ritmo di cambio|Ritmo de mudança',
+    'Steady changes at exactly the interval; Natural varies each phrase by up to 40%.': "Régulier : changement exact à l'intervalle ; Naturel : varie chaque phrase de 40% max.|Constante cambia exactamente en el intervalo; Natural varía cada frase hasta un 40%.|Gleichmäßig wechselt genau im Intervall; Natürlich variiert jede Phrase um bis zu 40%.|Gelijkmatig wisselt exact op het interval; Natuurlijk varieert elke zin tot 40%.|Regolare cambia esattamente all'intervallo; Naturale varia ogni frase fino al 40%.|Constante muda exatamente no intervalo; Natural varia cada frase até 40%.",
+    'Thinking Indicator Size': "Taille de l'indicateur de réflexion|Tamaño del indicador de razonamiento|Größe der Denkanzeige|Grootte denkindicator|Dimensione dell'indicatore di ragionamento|Tamanho do indicador de raciocínio",
+    'Scale the icon beside the Thinking header. Drag right for larger, left for smaller. Saved in this browser.': "Redimensionne l'icône à côté de l'en-tête Réflexion. Glissez à droite pour agrandir, à gauche pour réduire. Sauvegardé dans ce navigateur.|Escala el icono junto al encabezado Razonamiento. Arrastra a la derecha para agrandar, a la izquierda para reducir. Guardado en este navegador.|Skaliert das Symbol neben der Denken-Überschrift. Nach rechts ziehen zum Vergrößern, nach links zum Verkleinern. In diesem Browser gespeichert.|Schaalt het icoon naast de denkkop. Sleep naar rechts voor groter, naar links voor kleiner. Opgeslagen in deze browser.|Ridimensiona l'icona accanto all'intestazione Ragionamento. Trascina a destra per ingrandire, a sinistra per rimpicciolire. Salvato in questo browser.|Redimensiona o ícone junto ao cabeçalho Raciocínio. Arraste para a direita para aumentar, para a esquerda para reduzir. Guardado neste navegador.",
+    'Message Indicator Size': "Taille de l'indicateur de message|Tamaño del indicador de mensaje|Größe der Nachrichtenanzeige|Grootte berichtindicator|Dimensione dell'indicatore del messaggio|Tamanho do indicador da mensagem",
+    'Scale the loading indicator shown in a reply. Drag right for larger, left for smaller. Does not affect the full-width Legacy Bars and Shimmer Lines styles. Saved in this browser.': "Redimensionne l'indicateur de chargement d'une réponse. Glissez à droite pour agrandir, à gauche pour réduire. Sans effet sur les styles pleine largeur Legacy Bars et Shimmer Lines. Sauvegardé dans ce navigateur.|Escala el indicador de carga de una respuesta. Arrastra a la derecha para agrandar, a la izquierda para reducir. No afecta a los estilos de ancho completo Legacy Bars y Shimmer Lines. Guardado en este navegador.|Skaliert die Ladeanzeige einer Antwort. Nach rechts ziehen zum Vergrößern, nach links zum Verkleinern. Wirkt nicht auf die Vollbreiten-Stile Legacy Bars und Shimmer Lines. In diesem Browser gespeichert.|Schaalt de laadindicator van een antwoord. Sleep naar rechts voor groter, naar links voor kleiner. Geldt niet voor de volledige-breedte stijlen Legacy Bars en Shimmer Lines. Opgeslagen in deze browser.|Ridimensiona l'indicatore di caricamento mostrato in una risposta. Trascina a destra per ingrandire, a sinistra per rimpicciolire. Non influisce sugli stili a larghezza intera Legacy Bars e Shimmer Lines. Salvato in questo browser.|Redimensiona o indicador de carregamento mostrado numa resposta. Arraste para a direita para aumentar, para a esquerda para reduzir. Não afeta os estilos de largura total Legacy Bars e Shimmer Lines. Guardado neste navegador.",
+    'Thinking Timer': 'Minuteur de réflexion|Temporizador de razonamiento|Denk-Timer|Denk-timer|Cronometro di ragionamento|Cronómetro de raciocínio',
+    'Show a live seconds counter next to the words.': 'Affiche un compteur de secondes en direct à côté des mots.|Muestra un contador de segundos en vivo junto a las palabras.|Zeigt einen Live-Sekundenzähler neben den Wörtern an.|Toon een live secondenteller naast de woorden.|Mostra un contatore di secondi in tempo reale accanto alle parole.|Mostra um contador de segundos em direto junto às palavras.',
+    'Language': 'Langue|Idioma|Sprache|Taal|Lingua|Idioma',
+    'Choose the language for the thinking words and these settings. Saved in this browser.': 'Choisissez la langue des mots de réflexion et de ces réglages. Sauvegardé dans ce navigateur.|Elige el idioma de las palabras de razonamiento y de estos ajustes. Guardado en este navegador.|Sprache für Denkphrasen und diese Einstellungen wählen. In diesem Browser gespeichert.|Kies de taal voor de denkwoorden en deze instellingen. Opgeslagen in deze browser.|Scegli la lingua delle parole di ragionamento e di queste impostazioni. Salvato in questo browser.|Escolha o idioma das palavras de raciocínio e destas definições. Guardado neste navegador.',
+    'Auto (detect)': 'Auto (détection)|Auto (detectar)|Auto (erkennen)|Auto (detectie)|Auto (rilevamento)|Auto (deteção)',
+    'Default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
 }
 
 I18N_PACK_NAMES_RAW = {
-    'default': 'Par défaut|Por defecto|Standard|Standaard',
-    'off': 'Original « Pensée… »|Original «Pensando…»|Original „Denkt nach…“|Origineel “Aan het denken…”',
-    'claude': 'Style Claude|Estilo Claude|Claude-Stil|Claude-stijl',
-    'dev': 'Dev & Debug|Dev & Debug|Dev & Debug|Dev & Debug',
-    'playful': 'Ludique|Divertido|Verspielt|Speels',
-    'science': 'Labo scientifique|Laboratorio|Wissenschaftslabor|Wetenschapslab',
-    'hacker': 'Terminal Hacker|Terminal Hacker|Hacker-Terminal|Hacker-terminal',
-    'zen': 'Zen|Zen|Zen|Zen',
-    'minimal': 'Minimal|Mínimo|Minimal|Minimaal',
-    'mix': 'Mélange aléatoire (tous packs)|Mezcla aleatoria (todos)|Zufallsmix (alle Packs)|Willekeurige mix (alle packs)',
-    'custom': 'Personnalisé (liste admin)|Personalizado (lista admin)|Eigene (Admin-Liste)|Aangepast (adminlijst)',
+    'default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
+    'off': 'Original « Pensée… »|Original «Pensando…»|Original „Denkt nach…“|Origineel “Aan het denken…”|Originale «Pensiero…»|Original “Pensando…”',
+    'claude': 'Style Claude|Estilo Claude|Claude-Stil|Claude-stijl|Stile Claude|Estilo Claude',
+    'dev': 'Dev & Debug|Dev & Debug|Dev & Debug|Dev & Debug|Dev & Debug|Dev & Depuração',
+    'playful': 'Ludique|Divertido|Verspielt|Speels|Giocoso|Divertido',
+    'science': 'Labo scientifique|Laboratorio|Wissenschaftslabor|Wetenschapslab|Laboratorio scientifico|Laboratório científico',
+    'hacker': 'Terminal Hacker|Terminal Hacker|Hacker-Terminal|Hacker-terminal|Terminale Hacker|Terminal Hacker',
+    'zen': 'Zen|Zen|Zen|Zen|Zen|Zen',
+    'minimal': 'Minimal|Mínimo|Minimal|Minimaal|Minimale|Mínimo',
+    'mix': 'Mélange aléatoire (tous packs)|Mezcla aleatoria (todos)|Zufallsmix (alle Packs)|Willekeurige mix (alle packs)|Mix casuale (tutti i pack)|Mistura aleatória (todos os pacotes)',
+    'custom': 'Personnalisé (liste admin)|Personalizado (lista admin)|Eigene (Admin-Liste)|Aangepast (adminlijst)|Personalizzato (lista admin)|Personalizado (lista admin)',
 }
 
 I18N_FX_NAMES_RAW = {
-    'default': 'Par défaut|Por defecto|Standard|',
-    'random': 'Aléatoire (change à chaque phrase)|Aleatorio (cambia en cada frase)|Zufällig (wechselt bei jeder Phrase)|',
-    'shimmer': 'Balayage lumineux|Barrido brillante|Schimmer-Sweep|',
-    'gradient': 'Dégradé fluide|Degradado fluido|Farbverlauf|',
-    'rainbow': 'Arc-en-ciel|Arcoíris|Regenbogen|',
-    'neon': 'Néon clignotant|Neón parpadeante|Neon-Flackern|',
-    'glow': 'Lueur douce|Resplandor suave|Weiches Leuchten|',
-    'fade': 'Fondu montant|Fundido ascendente|Aufblenden|',
-    'slide': 'Glissement|Deslizamiento|Slot-Glide|',
-    'typewriter': 'Machine à écrire|Máquina de escribir|Schreibmaschine|',
-    'scramble': 'Décodage / Brouillage|Descifrado / Barajar|Decodieren / Scramble|',
-    'blur': "Flou d'entrée|Desenfoque de entrada|Weichzeichner|",
-    'wave': 'Vague de lettres|Ola de letras|Buchstabenwelle|',
-    'bounce': 'Chute de lettres|Caída de letras|Buchstabenfall|',
-    'cascade': 'Cascade de lettres|Cascada de letras|Buchstabenkaskade|',
-    'glitch': 'Glitch|Glitch|Glitch|',
-    'pop': 'Pop|Pop|Pop|',
-    'flip': 'Retournement|Volteo|Drehen|',
-    'reveal': 'Révélation|Revelado|Wisch-Enthüllung|',
-    'pulse': 'Pulsation douce|Pulso suave|Sanfter Puls|',
-    'plain': 'Simple|Simple|Einfach|',
+    'default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
+    'random': 'Aléatoire (change à chaque phrase)|Aleatorio (cambia en cada frase)|Zufällig (wechselt bei jeder Phrase)|Willekeurig (wisselt bij elke zin)|Casuale (cambia a ogni frase)|Aleatório (muda a cada frase)',
+    'shimmer': 'Balayage lumineux|Barrido brillante|Schimmer-Sweep|Glansveeg|Scintillio luminoso|Brilho deslizante',
+    'gradient': 'Dégradé fluide|Degradado fluido|Farbverlauf|Kleurverloop|Gradiente fluido|Degradê fluido',
+    'rainbow': 'Arc-en-ciel|Arcoíris|Regenbogen|Regenboog|Arcobaleno|Arco-íris',
+    'neon': 'Néon clignotant|Neón parpadeante|Neon-Flackern|Neon-flikkering|Neon tremolante|Neon cintilante',
+    'glow': 'Lueur douce|Resplandor suave|Weiches Leuchten|Zachte gloed|Bagliore morbido|Brilho suave',
+    'fade': 'Fondu montant|Fundido ascendente|Aufblenden|Opkomende fade|Comparsa in dissolvenza|Surgir em desvanecimento',
+    'slide': 'Glissement|Deslizamiento|Slot-Glide|Verschuiving|Scorrimento a slot|Deslizamento',
+    'typewriter': 'Machine à écrire|Máquina de escribir|Schreibmaschine|Typmachine|Macchina da scrivere|Máquina de escrever',
+    'scramble': 'Décodage / Brouillage|Descifrado / Barajar|Decodieren / Scramble|Decoderen / warrelen|Decodifica / Mescolamento|Decodificação / Embaralhado',
+    'blur': "Flou d'entrée|Desenfoque de entrada|Weichzeichner|Vage ingang|Sfocatura in entrata|Desfoque de entrada",
+    'wave': 'Vague de lettres|Ola de letras|Buchstabenwelle|Lettersgolf|Onda di lettere|Onda de letras',
+    'bounce': 'Chute de lettres|Caída de letras|Buchstabenfall|Dalende letters|Caduta di lettere|Queda de letras',
+    'cascade': 'Cascade de lettres|Cascada de letras|Buchstabenkaskade|Letterscascade|Cascata di lettere|Cascata de letras',
+    'glitch': 'Glitch|Glitch|Glitch|Glitch|Glitch|Glitch',
+    'pop': 'Pop|Pop|Pop|Pop|Pop|Pop',
+    'flip': 'Retournement|Volteo|Drehen|Omdraaien|Capovolgimento|Virada',
+    'reveal': 'Révélation|Revelado|Wisch-Enthüllung|Veegonthulling|Rivelazione a cancellino|Revelação com limpeza',
+    'pulse': 'Pulsation douce|Pulso suave|Sanfter Puls|Zachte puls|Pulsazione morbida|Pulsação suave',
+    'plain': 'Simple|Simple|Einfach|Eenvoudig|Semplice|Simples',
 }
 
 I18N_FONT_NAMES_RAW = {
-    'default': 'Par défaut|Por defecto|Standard|',
-    'random': 'Aléatoire (change à chaque phrase)|Aleatorio (cambia en cada frase)|Zufällig (wechselt bei jeder Phrase)|',
-    'theme': 'Correspondre au thème|Coincide con el tema|Theme anpassen|',
-    'mono': 'Monospace|Monoespaciada|Monospace|',
-    'serif': 'Serif|Serif|Serif|',
-    'italic': 'Italique élégant|Cursiva elegante|Elegante Kursiv|',
-    'rounded': 'Arrondi|Redondeada|Abgerundet|',
-    'hand': 'Manuscrit|Manuscrita|Handschrift|',
-    'caps': 'Capitales larges|Mayúsculas anchas|Breite Großbuchstaben|',
-    'small': 'Petites capitales|Pequeñas mayúsculas|Kapitälchen|',
+    'default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
+    'random': 'Aléatoire (change à chaque phrase)|Aleatorio (cambia en cada frase)|Zufällig (wechselt bei jeder Phrase)|Willekeurig (wisselt bij elke zin)|Casuale (cambia a ogni frase)|Aleatório (muda a cada frase)',
+    'theme': 'Correspondre au thème|Coincide con el tema|Theme anpassen|Thema volgen|Abbina al tema|Corresponder ao tema',
+    'mono': 'Monospace|Monoespaciada|Monospace|Monospace|Monospazio|Monoespaçada',
+    'serif': 'Serif|Serif|Serif|Serif|Serif|Serifada',
+    'italic': 'Italique élégant|Cursiva elegante|Elegante Kursiv|Elegant cursief|Corsivo elegante|Itálico elegante',
+    'rounded': 'Arrondi|Redondeada|Abgerundet|Afgerond|Arrotondato|Arredondada',
+    'hand': 'Manuscrit|Manuscrita|Handschrift|Handgeschreven|Scrittura a mano|Manuscrita',
+    'caps': 'Capitales larges|Mayúsculas anchas|Breite Großbuchstaben|Brede hoofdletters|Maiuscole ampie|Maiúsculas largas',
+    'small': 'Petites capitales|Pequeñas mayúsculas|Kapitälchen|Kleine kapitalen|Maiuscoletto|Maiúsculas pequenas',
 }
 
 I18N_RHYTHM_NAMES_RAW = {
-    'default': 'Par défaut|Por defecto|Standard|',
-    'steady': 'Régulier|Constante|Gleichmäßig|',
-    'natural': 'Naturel (varie +/-40%)|Natural (varía +/-40%)|Natürlich (variiert +/-40%)|',
+    'default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
+    'steady': 'Régulier|Constante|Gleichmäßig|Gelijkmatig|Regolare|Constante',
+    'natural': 'Naturel (varie +/-40%)|Natural (varía +/-40%)|Natürlich (variiert +/-40%)|Natuurlijk (varieert +/-40%)|Naturale (varia +/-40%)|Natural (varia +/-40%)',
 }
 
 I18N_TIMER_NAMES_RAW = {
-    'default': 'Par défaut|Por defecto|Standard|',
-    'off': 'Désactivé|Apagado|Aus|',
-    'on': 'Afficher les secondes|Mostrar segundos|Sekunden anzeigen|',
+    'default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
+    'off': 'Désactivé|Apagado|Aus|Uitgeschakeld|Disattivato|Desativado',
+    'on': 'Afficher les secondes|Mostrar segundos|Sekunden anzeigen|Seconden tonen|Mostra i secondi|Mostrar segundos',
 }
 
 I18N_COLOR_NAMES_RAW = {
-    'default': 'Par défaut|Por defecto|Standard|',
-    'custom': 'Personnalisé (choisir une couleur)|Personalizado (elige un color)|Eigene (Farbe wählen)|',
-    'random': 'Aléatoire (change à chaque phrase)|Aleatorio (cambia en cada frase)|Zufällig (wechselt bei jeder Phrase)|',
-    'theme': 'Correspondre au thème|Coincide con el tema|Theme anpassen|',
-    'orange': 'Orange Claude|Naranja Claude|Claude Orange|',
-    'blue': 'Bleu|Azul|Blau|',
-    'purple': 'Violet|Morado|Lila|',
-    'green': 'Vert|Verde|Grün|',
-    'pink': 'Rose|Rosa|Rosa|',
-    'gold': 'Or|Dorado|Gold|',
-    'cyan': 'Cyan|Cian|Cyan|',
-    'red': 'Rouge|Rojo|Rot|',
-    'tangerine': 'Orange (vif)|Naranja (brillante)|Orange (hell)|',
-    'yellow': 'Jaune|Amarillo|Gelb|',
-    'lime': 'Citron vert|Lima|Limette|',
-    'teal': 'Bleu-vert|Ver azulado|Blaugrün|',
-    'sky': 'Bleu ciel|Azul cielo|Himmelblau|',
-    'indigo': 'Indigo|Índigo|Indigo|',
-    'violet': 'Violet|Violeta|Violett|',
-    'fuchsia': 'Fuchsia|Fucsia|Fuchsia|',
-    'rose': 'Rose|Rosa|Rose|',
-    'brown': 'Marron|Marrón|Braun|',
-    'grey': 'Gris|Gris|Grau|',
-    'silver': 'Argent|Plata|Silber|',
-    'white': 'Blanc|Blanco|Weiß|',
-    'black': 'Noir|Negro|Schwarz|',
+    'default': 'Par défaut|Por defecto|Standard|Standaard|Predefinito|Padrão',
+    'custom': 'Personnalisé (choisir une couleur)|Personalizado (elige un color)|Eigene (Farbe wählen)|Aangepast (kies een kleur)|Personalizzato (scegli un colore)|Personalizado (escolha uma cor)',
+    'random': 'Aléatoire (change à chaque phrase)|Aleatorio (cambia en cada frase)|Zufällig (wechselt bei jeder Phrase)|Willekeurig (wisselt bij elke zin)|Casuale (cambia a ogni frase)|Aleatório (muda a cada frase)',
+    'theme': 'Correspondre au thème|Coincide con el tema|Theme anpassen|Thema volgen|Abbina al tema|Corresponder ao tema',
+    'orange': 'Orange Claude|Naranja Claude|Claude Orange|Claude Oranje|Arancione Claude|Laranja Claude',
+    'blue': 'Bleu|Azul|Blau|Blauw|Blu|Azul',
+    'purple': 'Violet|Morado|Lila|Paars|Viola|Roxo',
+    'green': 'Vert|Verde|Grün|Groen|Verde|Verde',
+    'pink': 'Rose|Rosa|Rosa|Roze|Rosa|Rosa',
+    'gold': 'Or|Dorado|Gold|Goud|Oro|Dourado',
+    'cyan': 'Cyan|Cian|Cyan|Cyaan|Ciano|Ciano',
+    'red': 'Rouge|Rojo|Rot|Rood|Rosso|Vermelho',
+    'tangerine': 'Orange (vif)|Naranja (brillante)|Orange (hell)|Oranje (fel)|Arancione (vivace)|Laranja (brilhante)',
+    'yellow': 'Jaune|Amarillo|Gelb|Geel|Giallo|Amarelo',
+    'lime': 'Citron vert|Lima|Limette|Limoengroen|Lime|Verde-lima',
+    'teal': 'Bleu-vert|Ver azulado|Blaugrün|Blauwgroen|Verde acqua|Verde-azulado',
+    'sky': 'Bleu ciel|Azul cielo|Himmelblau|Hemelblauw|Azzurro|Azul-celeste',
+    'indigo': 'Indigo|Índigo|Indigo|Indigo|Indaco|Índigo',
+    'violet': 'Violet|Violeta|Violett|Violet|Violetto|Violeta',
+    'fuchsia': 'Fuchsia|Fucsia|Fuchsia|Fuchsia|Fucsia|Fúcsia',
+    'rose': 'Rose|Rosa|Rose|Roos|Rosa|Rosa',
+    'brown': 'Marron|Marrón|Braun|Bruin|Marrone|Marrom',
+    'grey': 'Gris|Gris|Grau|Grijs|Grigio|Cinza',
+    'silver': 'Argent|Plata|Silber|Zilver|Argento|Prata',
+    'white': 'Blanc|Blanco|Weiß|Wit|Bianco|Branco',
+    'black': 'Noir|Negro|Schwarz|Zwart|Nero|Preto',
 }
 
 # ---------------------------------------------------------------------------
-# 2.5.0: Translated thinking-word packs (FR, ES, DE).
+# 2.5.0: Translated thinking-word packs (FR, ES, DE, NL, IT, PT).
 # Structure: TW_PACKS_I18N[lang][pack_name] = [words...]
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
@@ -2236,22 +2242,40 @@ LOADER_SCRIPT = r"""
   var CSS = __CSS__;
   var ROOT = document.documentElement;
 
-  // --- i18n: detect active language (valve override > browser > html lang) ---
-  var LANG = (function () {
+  // --- i18n: active language (user picker > admin valve (explicit only) > <html lang> > en) ---
+  // A language counts if it has a UI pack OR a translated word pack (so e.g.
+  // 'nl' resolves even before every UI string is translated).
+  var hasPack = function (l) {
+    return !!(l && ((CFG.i18n && CFG.i18n[l]) || (CFG.tw && CFG.tw.packsI18n && CFG.tw.packsI18n[l])));
+  };
+  var KEY_LANG = 'owui-language';
+  function resolveLang() {
+    // 1) Explicit user choice wins. 'default'/'auto' both mean auto-detect.
+    var stored = null;
+    try { stored = localStorage.getItem(KEY_LANG); } catch (e) {}
+    if (stored && stored !== 'default' && stored !== 'auto' && (stored === 'en' || hasPack(stored))) return stored;
+    // 2) Admin valve, but only when it forces an EXPLICIT language ('auto'/'default' = detect).
     var forced = CFG.language;
-    if (forced && forced !== 'auto') { console.log('[osk-diag] LANG forced =', forced); return forced; }
+    if (forced && forced !== 'auto' && forced !== 'default') return forced;
+    // 3) Open WebUI interface language = <html lang>. navigator.language is
+    //    deliberately NOT consulted (browser language is not a source here).
     var htmlLang = (ROOT.getAttribute('lang') || '').slice(0, 2).toLowerCase();
-    var nav = (navigator.language || '').slice(0, 2).toLowerCase();
-    // A language counts if it has a UI pack OR a translated word pack (so e.g.
-    // 'nl' resolves even before every UI string is translated).
-    var hasPack = function (l) {
-      return !!(l && ((CFG.i18n && CFG.i18n[l]) || (CFG.tw && CFG.tw.packsI18n && CFG.tw.packsI18n[l])));
-    };
-    if (htmlLang && hasPack(htmlLang)) { console.log('[osk-diag] LANG from <html lang> =', htmlLang); return htmlLang; }
-    if (nav && hasPack(nav)) { console.log('[osk-diag] LANG from navigator.language =', nav); return nav; }
-    console.log('[osk-diag] LANG fallback -> en (no i18n/pack entry for html="' + htmlLang + '" nav="' + nav + '"; CFG.i18n keys: ' + Object.keys(CFG.i18n || {}).join(',') + ')');
+    if (htmlLang && hasPack(htmlLang)) return htmlLang;
+    // 4) Final fallback.
     return 'en';
-  })();
+  }
+  var LANG = resolveLang();
+  // Live switch: the language picker writes data-osk-language on <html>, and Open
+  // WebUI sets <html lang> late (Svelte hydration). Observe BOTH attributes so
+  // LANG re-resolves when OWUI changes the interface language, then force mounted
+  // thinking words to re-render immediately (LANG is part of the thinking sig()).
+  if (window.MutationObserver) {
+    new MutationObserver(function () {
+      var prev = LANG;
+      LANG = resolveLang();
+      if (LANG !== prev) { if (TW && TW.refresh) TW.refresh(); schedule(); }
+    }).observe(ROOT, { attributes: true, attributeFilter: ['data-osk-language', 'lang'] });
+  }
   // Helper: translate a UI label via CFG.i18n, fallback to the English key.
   function t(key) {
     return (CFG.i18n && CFG.i18n[LANG] && CFG.i18n[LANG][key]) || key;
@@ -2273,6 +2297,15 @@ LOADER_SCRIPT = r"""
   var NAMES_TW_COLOR = locNames(CFG.tw.colorNames, CFG.i18nColorNames);
   var NAMES_TW_RHYTHM = locNames(CFG.tw.rhythmNames, CFG.i18nRhythmNames);
   var NAMES_TW_TIMER = locNames(CFG.tw.timerNames, CFG.i18nTimerNames);
+  // Language picker names: language names stay in their own language (standard
+  // practice for language pickers). ONE single auto entry: 'default' = auto
+  // detection of the Open WebUI interface language (<html lang>). The old
+  // duplicate 'auto' key is gone (legacy stored 'auto' falls back to 'default').
+  var NAMES_LANGUAGE = {
+    'default': t('Auto (detect)'),
+    'en': 'English', 'fr': 'français', 'es': 'español', 'de': 'Deutsch',
+    'nl': 'Nederlands', 'it': 'italiano', 'pt': 'português'
+  };
   var MARKUP =
     '<span class="osk-bars"><span class="osk-bars-in">' +
     '<span class="osk-b osk-r1"></span>' +
@@ -2347,7 +2380,10 @@ LOADER_SCRIPT = r"""
 
     function label(value) {
       if (value !== 'default' || spec.fallback === 'default') return NAMES[value];
-      return NAMES.default + ' (' + (NAMES[spec.fallback] || spec.fallback) + ')';
+      // Language picker: fallback is 'auto', which has no NAMES entry -> show
+      // the single 'default' label ("Auto (détection)") without a redundant suffix.
+      var fb = NAMES[spec.fallback];
+      return fb ? NAMES.default + ' (' + fb + ')' : NAMES.default;
     }
 
     function preview(value) {
@@ -2807,8 +2843,9 @@ LOADER_SCRIPT = r"""
       return !p || p === 'off' ? 'default' : p;
     }
     function sig() {
+      // LANG included so a language switch re-renders mounted words live.
       return [pack(), ROOT.getAttribute('data-osk-tw-fx'), ROOT.getAttribute('data-osk-tw-font'),
-        ROOT.getAttribute('data-osk-tw-color'), ROOT.getAttribute('data-osk-tw-rhythm'), baseMs].join('|');
+        ROOT.getAttribute('data-osk-tw-color'), ROOT.getAttribute('data-osk-tw-rhythm'), baseMs, LANG].join('|');
     }
     function holdFor() {
       return ROOT.getAttribute('data-osk-tw-rhythm') === 'natural'
@@ -3118,9 +3155,18 @@ LOADER_SCRIPT = r"""
       return p;
     }
 
+    // Language first: it controls the words + labels of every row below, so it
+    // sits at the top of the Interface block (right after the size sliders).
+    add('osk-language', 'owui-language', 'data-osk-language', NAMES_LANGUAGE, CFG.language,
+      t('Language'), t('Choose the language for the thinking words and these settings. Saved in this browser.'),
+      function (shown) {
+        var l = shown === 'auto' ? LANG : shown;
+        var deck = (CFG.tw && CFG.tw.packsI18n && CFG.tw.packsI18n[l]) || {};
+        return pv((deck.minimal && deck.minimal[0]) || 'Thinking', {});
+      }, null, 'osk-think-size');
     add('osk-tw-words', 'owui-thinking-words', 'data-osk-tw', NAMES_TW_PACK, T.fallbacks.pack,
       t('Thinking Words'), t('Rotating words shown instead of the plain \u201cThinking\u2026\u201d label while a model reasons. Saved in this browser.'),
-      function (shown) { return pv(T.glyphs[shown] || 'Aa', {}); }, t('Thinking label'), 'osk-think-size');
+      function (shown) { return pv(T.glyphs[shown] || 'Aa', {}); }, t('Thinking label'), 'osk-language');
     add('osk-tw-fx', 'owui-thinking-words-fx', 'data-osk-tw-fx', NAMES_TW_FX, T.fallbacks.fx,
       t('Phrase Effect'), t('How each phrase animates in. Random picks a different effect every time the phrase changes.'),
       function (shown) { return shown === 'random' ? pv(DICE, {}) : pv('Thinking', { 'data-fx': shown }, shown); }, null, 'osk-tw-words');
@@ -3291,6 +3337,12 @@ LOADER_SCRIPT = r"""
     return {
       pickers: pickers,
       scan: sync,
+      // Force mounted thinking words to re-render now (used when LANG changes
+      // live: the sig() already includes LANG, this makes the chat follow at once).
+      refresh: function () {
+        var els = document.querySelectorAll('.osk-tw');
+        for (var i = 0; i < els.length; i++) if (els[i]._tw) render(els[i]);
+      },
       apply: function () { pickers.forEach(function (p) { p.apply(); }); }
     };
   })();
@@ -3457,7 +3509,7 @@ class Event:
         )
         language: Literal["auto", "en", "fr", "es", "de", "it", "pt", "nl"] = Field(
             default="auto",
-            description="Language for thinking words and UI labels. 'auto' detects the browser language via document.documentElement.lang. Set explicitly to force a language.",
+            description="Language for thinking words and UI labels. 'auto' follows the Open WebUI interface language (<html lang>); a user's explicit choice in Settings > Interface wins. Set explicitly to force a language.",
         )
         label_pattern: str = Field(
             default="thinking|reasoning|réflexion|réfléchir|en train|denken|aan het|nadenk|denkt|pensando|pensieri|riflessione|denk|redene|penser",
