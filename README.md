@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=28%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0221,50:7c3aed,100:06b6d4&height=220&section=header&text=Open%20WebUI%20Tools&fontSize=54&fontColor=fff&animation=fadeIn&fontAlignY=36&desc=29%20tools%20to%20supercharge%20your%20AI%20%E2%80%94%20install%20in%2030%20seconds&descAlignY=57&descSize=17" />
 
 <br/>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/28_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
+  <img src="https://img.shields.io/badge/29_Tools-ready%20to%20install-7c3aed?style=flat-square&labelColor=2e1065" />
   <img src="https://img.shields.io/badge/30_Seconds-to%20set%20up-5563e5?style=flat-square&labelColor=232368" />
   <img src="https://img.shields.io/badge/Zero_API_Keys-100%25%20free%20%26%20local-2d8ddc?style=flat-square&labelColor=17376b" />
   <img src="https://img.shields.io/badge/Self_Hosted-privacy%20first-06b6d4?style=flat-square&labelColor=0c4a6e" />
@@ -45,6 +45,7 @@
   <a href="#-persona-studio"><img src="https://img.shields.io/badge/-🎭_Personas-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-omniscient-orchestrator"><img src="https://img.shields.io/badge/-🌌_Orchestrator-06b6d4?style=flat-square&labelColor=0e7490" /></a>
   <a href="#-message-loading-indicator--thinking-studio"><img src="https://img.shields.io/badge/-⏳_Loading_Indicator-06b6d4?style=flat-square&labelColor=0e7490" /></a>
+  <a href="#-tool-builder"><img src="https://img.shields.io/badge/-🧰_Tool_Builder-06b6d4?style=flat-square&labelColor=0e7490" /></a>
 </p>
 <p>
   <img src="https://img.shields.io/badge/🌍_Information_%26_Reference--f59e0b?style=flat-square&labelColor=92400e" /><br/>
@@ -127,7 +128,7 @@ This allows embedded tool UIs to access local resources and render at full size.
 |----------|-------|
 | 📡 **Media & Entertainment** · `7 tools` | [🎬 Jellyfin](#-jellyfin-media-player) · [📺 YouTube](#-youtube-player) · [📰 News Reader](#-news-reader) · [🌐 Reddit](#-reddit-explorer) · [🎙 Podcasts](#-podcast-player) · [🎵 Lyrics](#-genius-song-lyrics) · [📻 Radio](#-radio) |
 | 🏆 **Sports & Gaming** · `4 tools` | [🏟️ Sports](#-sports-tool) · [🎮 Steam](#-steam-game-info) · [🎯 HLTV CS2](#-hltv-tool) · [🎮 Pokédex](#-pokédex) |
-| 🤖 **AI & Workflow** · `5 tools` | [🧠 Thinking Filter](#-thinking-filter) · [🧩 Ask User](#-ask-user) · [🎭 Personas](#-persona-studio) · [🌌 Orchestrator](#-omniscient-orchestrator) · [⏳ Loading Indicator](#-message-loading-indicator--thinking-studio) |
+| 🤖 **AI & Workflow** · `6 tools` | [🧠 Thinking Filter](#-thinking-filter) · [🧩 Ask User](#-ask-user) · [🎭 Personas](#-persona-studio) · [🌌 Orchestrator](#-omniscient-orchestrator) · [⏳ Loading Indicator](#-message-loading-indicator--thinking-studio) · [🧰 Tool Builder](#-tool-builder) |
 | 🌍 **Information & Reference** · `4 tools` | [🌤️ Weather](#-weather) · [📖 Wikipedia](#-wikipedia) · [🔤 Pronunciation](#-language-pronunciation-guide) · [📈 Stocks](#-stock-info-tool) |
 | 🎨 **Image & Video Generation** · `4 tools` ⚙️ | [🎥 LTX Video](#-ltx-23-video-generator) · [🎨 Qwen Edit](#-qwen-image-edit) · [🎨 Qwen 2.1 Edit](#-qwen-image-21-edit) · [🔍 RTX Upscale](#-rtx-image-upscaler) |
 | 🛠️ **Utilities** · `4 tools` | [📱 QR Codes](#-qr-code-generator) · [🛠️ Quick Utils](#-quick-utils) · [😂 Jokes](#-joke-tool) · [💾 VRAM Unload](#-vram-unload) |
@@ -725,7 +726,7 @@ show me Garchomp
 
 ---
 
-## <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-5_tools-06b6d4?style=for-the-badge&labelColor=0e7490" />
+## <img src="https://img.shields.io/badge/🤖_AI_%26_Workflow-6_tools-06b6d4?style=for-the-badge&labelColor=0e7490" />
 
 <details>
 <summary><h2>🧠 Thinking Filter</h2>
@@ -1060,6 +1061,84 @@ Then ask any reasoning model a hard question and watch it think in style.
 | Words aren't replacing "Thinking…" | Add your UI language to `label_pattern` |
 | Other plugin's loader disappeared | Both plugins must use the Shared Assets Protocol — update to the latest version of each |
 | Animations look static | Your OS has "reduce motion" enabled; the function respects it |
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary><h2>🧰 Tool Builder</h2>
+<blockquote>Describe a tool in chat and get a working, installed Open WebUI tool back. The LLM writes the code, Tool Builder verifies it, then installs it in one step. No copy-pasting, no Workspace editor.</blockquote>
+
+[![Install on Open WebUI](https://img.shields.io/badge/⬇️_Install-Open_WebUI_Marketplace-06b6d4?style=for-the-badge&labelColor=0e7490)](https://openwebui.com/posts/tool_builder_lets_the_llm_create_test_and_fix_tool_da10af42)
+</summary>
+
+<img width="948" height="1248" alt="Untitled" src="https://github.com/user-attachments/assets/e13fb4e2-0460-427e-aee6-59ec964a5d95" />
+
+
+| Feature | Detail |
+|---------|--------|
+| 💬 Build from chat | Say what you want; the LLM calls `save_tool` with the full `.py` and it lands in Workspace → Tools |
+| ✅ Verified before install | Every tool is loaded and each method is called once, so broken code is caught before you see it |
+| 🩹 Patch edits | `patch_tool` applies SEARCH/REPLACE blocks instead of resending the whole file |
+| 📊 Polish score | `improve_tool` rates an existing tool out of 10 and lists what to add (status steps, citations, empty states…) |
+| ⏪ Version history | Automatic backups on every save, with `revert_tool` to roll back after a bad edit |
+| 🎨 Design kits | Ready-made `ui`, `events`, `http`, `llm` and `store` helpers inlined via `# @include`, so cards come out consistent |
+| 📋 Planning helper | `plan_tool` gives a short design template so non-trivial tools come out polished |
+| 🔎 Browse & read | `list_tools` and `read_tool` find and show your installed tools |
+| 🏷️ Your branding | Author, URL and license are stamped into the header of every tool you build |
+| 🔒 Admin-only by default | New tools are private to their creator unless you choose otherwise |
+
+<details>
+<summary><b>⚙️ Setup</b></summary>
+
+Works out of the box on a default Docker or `open-webui serve` install.
+
+1. Install and enable the tool
+2. After a tool is built, **refresh the browser (F5)**, then switch the new tool on from the ➕ / Tools menu in the message box
+
+**Requirements:** `httpx`
+
+> ⚠️ Tools run arbitrary Python on your server. Keep `ADMIN_ONLY` on unless you fully trust your users.
+
+**Admin valves**
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `OWUI_URL` | `http://localhost:8080` | Address of your Open WebUI server as seen from inside the server |
+| `API_KEY` | *(empty)* | Optional `sk-...` key; empty reuses the logged-in user's session |
+| `ADMIN_ONLY` | `true` | Only admins can create or change tools |
+| `ACCESS` | `private` | Who can see new tools: `private` or `public` |
+| `TEST_TIMEOUT` | `30` | Seconds each verification call may run |
+| `BACKUP_DIR` | `/tmp/tool_builder_backups` | Where version backups go (empty disables backups) |
+| `BACKUP_KEEP` | `10` | Backup versions kept per tool |
+
+**User valves**
+
+| Valve | Default | What it does |
+|-------|---------|--------------|
+| `AUTHOR` / `AUTHOR_URL` | *(empty)* | Written into the header of every tool you build |
+| `LICENSE` | *(empty)* | License written to the header, e.g. `MIT` |
+| `NEW_TOOL_ACCESS` | *(empty)* | Override who can see your tools: `private` or `public` |
+| `AUTO_VERSION_BUMP` | `true` | Raises the patch version on every update |
+| `VERIFY` | `true` | Calls every method once after saving. Turn off for tools needing keys or slow services |
+| `STYLE_REQUIREMENTS` | *(empty)* | Your preferences in plain words, e.g. "dark cards, teal accent, free APIs only" |
+
+</details>
+
+<details>
+<summary><b>🗣️ Example prompts</b></summary>
+
+```
+build me a tool that shows the current ISS location
+make a tool that converts units
+list my tools
+make my weather tool nicer
+change the accent color in my stock tool to teal
+revert my last change to the joke tool
+```
 
 </details>
 
