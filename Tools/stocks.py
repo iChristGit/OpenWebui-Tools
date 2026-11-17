@@ -18,7 +18,8 @@ description: >
     - chart_days: Number of days for price chart (7, 30, 90, 180, 365, max)
 
 author: ichrist
-version: 2.0.0
+contributer: Papi-Gordo
+version: 2.0.1
 license: MIT
 requirements: httpx
 """
@@ -66,40 +67,55 @@ def _fetch_with_cors(ticker: str) -> dict:
 
 
 def _get_quote(ticker: str) -> dict:
-    """Fetch current quote data using v8/chart endpoint (the only free working Yahoo endpoint)."""
+    """Fetch stock quote using Yahoo Finance chart metadata."""
     try:
         data = _fetch_json(
-            _YAHOO_CHART + ticker, params={"range": "1d", "interval": "1m"}
+            _YAHOO_CHART + ticker.upper(),
+            params={
+                "range": "1d",
+                "interval": "1m",
+                "prepost": "false",
+            },
         )
-        result = data.get("chart", {}).get("result", [])
-        if not result:
+
+        results = data.get("chart", {}).get("result") or []
+        if not results:
             return {}
-        meta = result[0].get("meta", {})
-        # Build a quote-like dict from chart data so existing card builders work
+
+        meta = results[0].get("meta", {})
+        price = meta.get("regularMarketPrice")
+
+        if price is None:
+            return {}
+
+        previous_close = meta.get("previousClose")
+        if previous_close is None:
+            previous_close = meta.get("chartPreviousClose")
+
+        change = price - previous_close if previous_close is not None else None
+
+        change_pct = change / previous_close * 100 if previous_close else None
+
         return {
-            "symbol": meta.get("symbol", ticker),
+            "symbol": meta.get("symbol", ticker.upper()),
             "shortName": meta.get("shortName", ticker),
             "longName": meta.get("longName", meta.get("shortName", ticker)),
             "currency": meta.get("currency", "USD"),
-            "regularMarketPrice": meta.get("regularMarketPrice"),
-            "regularMarketChange": meta.get("regularMarketPrice")
-            - meta.get("chartPreviousClose", meta.get("regularMarketPrice")),
-            "regularMarketChangePercent": 0,
-            "regularMarketPreviousClose": meta.get(
-                "chartPreviousClose", meta.get("regularMarketPrice")
-            ),
+            "regularMarketPrice": price,
+            "regularMarketChange": change,
+            "regularMarketChangePercent": change_pct,
+            "regularMarketPreviousClose": previous_close,
             "regularMarketTime": meta.get("regularMarketTime"),
+            "regularMarketOpen": meta.get("regularMarketOpen"),
             "regularMarketDayHigh": meta.get("regularMarketDayHigh"),
             "regularMarketDayLow": meta.get("regularMarketDayLow"),
-            "regularMarketOpen": meta.get("regularMarketPrice")
-            and meta.get("chartPreviousClose"),
             "regularMarketVolume": meta.get("regularMarketVolume"),
             "fiftyTwoWeekHigh": meta.get("fiftyTwoWeekHigh"),
             "fiftyTwoWeekLow": meta.get("fiftyTwoWeekLow"),
-            "hasPrePostMarketData": meta.get("hasPrePostMarketData", False),
-            "currentTradingPeriod": meta.get("currentTradingPeriod", {}),
         }
-    except Exception:
+
+    except Exception as exc:
+        print(f"Yahoo Finance quote error: {exc}")
         return {}
 
 
@@ -231,7 +247,7 @@ def _build_quote_card(quote: dict, compact: bool = False) -> str:
     market_time = quote.get("regularMarketTime")
 
     # Pre-compute for f-string compat
-    _open_price = prev_close
+    _open_price = quote.get("regularMarketOpen")
     _day_low = day_low
     _day_high = day_high
     _week_low = f52l
@@ -335,7 +351,13 @@ def _build_sparkline(data: list, positive: bool) -> str:
 
 def _build_chart_card(ticker: str, days: int = 30) -> str:
     """Build a price chart card with a full chart view."""
-    days_map = {7: "7d", 30: "30d", 90: "90d", 180: "6m", 365: "1y"}
+    days_map = {
+        7: "5d",
+        30: "1mo",
+        90: "3mo",
+        180: "6mo",
+        365: "1y",
+    }
     range_key = days_map.get(days, "30d")
 
     try:
@@ -613,8 +635,8 @@ class Tools:
         ticker: str = None,
         action: str = "quote",
         days: int = None,
-        __event_emitter__: Optional = None,
-    ) -> "HTMLResponse | str":
+        __event_emitter__=None,
+    ) -> str:
         """
         Get beautiful stock market info cards for any publicly traded stock.
 
@@ -672,7 +694,37 @@ class Tools:
                 html = _build_quote_card(quote)
 
             await _emit(__event_emitter__, "✅ Stock data loaded!", done=True)
-            return HTMLResponse(content=html, headers={"content-disposition": "inline"})
+
+            response = HTMLResponse(
+                content=html, headers={"Content-Disposition": "inline"}
+            )
+
+            if action == "quote" and quote:
+                context = {
+                    "status": "success",
+                    "source": "Yahoo Finance",
+                    "ticker": quote["symbol"],
+                    "price": quote["regularMarketPrice"],
+                    "currency": quote["currency"],
+                    "previous_close": quote["regularMarketPreviousClose"],
+                    "change": quote["regularMarketChange"],
+                    "change_percent": quote["regularMarketChangePercent"],
+                    "as_of_utc": (
+                        datetime.fromtimestamp(
+                            quote["regularMarketTime"], timezone.utc
+                        ).isoformat()
+                        if quote.get("regularMarketTime")
+                        else None
+                    ),
+                    "instruction": (
+                        "Use these exact quote values. "
+                        "Do not invent or estimate prices. "
+                        "Check the quote timestamp for freshness."
+                    ),
+                }
+                return response, context
+
+            return response
 
         except ValueError as ve:
             msg = f"❌ {ve}"
